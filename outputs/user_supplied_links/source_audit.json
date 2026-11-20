@@ -1,0 +1,43 @@
+{
+  "drive": {
+    "source_url": "https://drive.google.com/file/d/1x1fWg54HHkBc4zABBs3n2Szl6izrwr3n/view",
+    "file_id": "1x1fWg54HHkBc4zABBs3n2Szl6izrwr3n",
+    "local_path": "data\\archives\\user_oring\\Data.zip",
+    "bytes": 1383934519,
+    "sha256": "1e785532382b487eb2838aa9bfa860c0b07e80a72ebe9acf46abd938d0af59d9",
+    "license": "not yet verified; user-provided shared file",
+    "actual_dataset": "Conrod bearing installation classification",
+    "classes": 16,
+    "images": 1573,
+    "original_provider": "https://github.com/alireza768/Bearing-Dataset",
+    "ring_compatible": false,
+    "used_for_ring_training": false
+  },
+  "roboflow": {
+    "source_url": "https://universe.roboflow.com/el-ewg0p/o-ring-defect-detection-doyk7/dataset/1",
+    "http_status": 403,
+    "downloaded": false,
+    "classes_listed": [
+      "Crack",
+      "Cutting",
+      "Inner-Stamped",
+      "OK",
+      "Outer-Stamped"
+    ]
+  },
+  "ring_retraining_performed": false,
+  "reason": "Drive 자료는 베어링 설치 상태 16종으로 별도 실제 학습 완료. Ring용으로 합치지 않았으며 Roboflow 원본은 403으로 미확보.",
+  "existing_ring_model_preserved": true,
+  "bearing_retraining_performed": true,
+  "bearing_task": "installation_16class",
+  "bearing_model_version": "bearing-full-2a5a1d481f-bearing_cnn_spatial_aug_accuracy",
+  "bearing_accuracy": 0.5721003134796239,
+  "bearing_macro_f1": 0.5555665708425055,
+  "bearing_report": "outputs/bearing_installation/REPORT.md",
+  "bearing_training_complete": true,
+  "bearing_target_met": false,
+  "bearing_evaluation_images": 638,
+  "bearing_correct": 365,
+  "bearing_validation_accuracy": 0.948051948051948,
+  "bearing_baseline_accuracy": 0.0987460815047022
+}

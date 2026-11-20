@@ -1,0 +1,49 @@
+{
+  "task": "defect_type_multiclass",
+  "run_mode": "full",
+  "n": 42,
+  "accuracy": 0.8095238095238095,
+  "macro_f1": 0.5677655677655677,
+  "class_report": {
+    "t_contamination": {
+      "precision": 0.9230769230769231,
+      "recall": 0.8,
+      "f1-score": 0.8571428571428571,
+      "support": 15.0
+    },
+    "t_scratch": {
+      "precision": 0.7586206896551724,
+      "recall": 0.9565217391304348,
+      "f1-score": 0.8461538461538461,
+      "support": 23.0
+    },
+    "unfinished_surface": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 4.0
+    },
+    "accuracy": 0.8095238095238095,
+    "macro avg": {
+      "precision": 0.5605658709106985,
+      "recall": 0.5855072463768116,
+      "f1-score": 0.5677655677655677,
+      "support": 42.0
+    },
+    "weighted avg": {
+      "precision": 0.7451054692434003,
+      "recall": 0.8095238095238095,
+      "f1-score": 0.7694924123495551,
+      "support": 42.0
+    }
+  },
+  "mean_inference_ms": 14.811804762021417,
+  "parameters": 101699,
+  "train_images": 33,
+  "validation_images": 12,
+  "evaluation_images": 42,
+  "binary_supported": false,
+  "binary_recall": null,
+  "train_seconds": 39.99035970005207,
+  "data_signature": "39c0eaa20157fcf0529dd8ce57b67f0e4a98673757b914aa7cd526ea9ad05ebe"
+}

@@ -1,0 +1,35 @@
+{
+  "dataset": "Ring",
+  "total_images": 551,
+  "labeled_images": 87,
+  "verified_normal_images": 0,
+  "annotated_defect_images": 87,
+  "unlabeled_images": 464,
+  "class_names": [
+    "t_contamination",
+    "t_scratch",
+    "unfinished_surface"
+  ],
+  "source_url": "https://huggingface.co/datasets/VISION-Workshop/VISION-Datasets",
+  "binary_supported": false,
+  "label_reason": "공식 train/val의 모든 이미지에 결함 어노테이션이 있다. inference에는 정답이 없으므로 정상으로 사용할 수 없다. 검증된 정상 표본이 없어 이진 분류와 제조 불량 감소율은 평가 불가.",
+  "exact_duplicate_extra_images": 0,
+  "extensions": {
+    ".jpg": 551
+  },
+  "resolutions": [
+    {
+      "width": 512,
+      "height": 511,
+      "count": 1
+    },
+    {
+      "width": 1280,
+      "height": 1024,
+      "count": 550
+    }
+  ],
+  "bbox_count": 116,
+  "polygon_count": 116,
+  "source_note": "공식 polygon은 원본 bbox를 보완한 라벨이며 정밀 제조 계측 정답이 아니다."
+}

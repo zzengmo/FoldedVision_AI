@@ -1,0 +1,8 @@
+{
+  "model": "bearing_cnn_spatial_augmented",
+  "epoch": 33,
+  "loss": 0.14624983072280884,
+  "accuracy": 0.946959912776947,
+  "val_loss": 0.24788837134838104,
+  "val_accuracy": 0.9415584206581116
+}

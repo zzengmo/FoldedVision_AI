@@ -1,0 +1,43 @@
+{
+  "task": "bearing_installation_16class",
+  "part_type": "ConrodBearing",
+  "model_name": "bearing_cnn_spatial_aug_accuracy",
+  "model_version": "bearing-full-2a5a1d481f-bearing_cnn_spatial_aug_accuracy",
+  "model_path": "models/bearing_installation/bearing_cnn_final.keras",
+  "input_size": [
+    192,
+    192
+  ],
+  "channel_order": "RGB",
+  "preprocessing": "JPEG reduced-color-4 decode -> RGB -> cv2.INTER_AREA resize; uint8 input",
+  "normalization": "model embeds Rescaling(1/255)",
+  "output_index_to_class_id": {
+    "0": 1,
+    "1": 2,
+    "2": 3,
+    "3": 4,
+    "4": 5,
+    "5": 6,
+    "6": 7,
+    "7": 8,
+    "8": 9,
+    "9": 10,
+    "10": 11,
+    "11": 12,
+    "12": 13,
+    "13": 14,
+    "14": 15,
+    "15": 16
+  },
+  "binary_quality_supported": false,
+  "normal_defect_mapping": null,
+  "source_url": "https://drive.google.com/file/d/1x1fWg54HHkBc4zABBs3n2Szl6izrwr3n/view",
+  "original_provider": "https://github.com/alireza768/Bearing-Dataset",
+  "data_signature": "2a5a1d481f13e89351f907eca4684ed181df69a7cabcfad67b1d8ab703f0d096",
+  "limitations": [
+    "동일 엔진 고정 장면의 설치 조합 분류",
+    "새 엔진/공장 일반화 미검증",
+    "번호 블록은 촬영 연속성 누수 완화를 위한 가정",
+    "기존 Ring 3종과 직접 성능 비교 불가"
+  ]
+}

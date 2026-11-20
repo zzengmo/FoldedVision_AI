@@ -1,0 +1,28 @@
+Model: "ring_baseline"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 256, 256, 32)      896       
+                                                                 
+ max_pooling2d (MaxPooling2  (None, 128, 128, 32)      0         
+ D)                                                              
+                                                                 
+ conv2d_1 (Conv2D)           (None, 128, 128, 64)      18496     
+                                                                 
+ max_pooling2d_1 (MaxPoolin  (None, 64, 64, 64)        0         
+ g2D)                                                            
+                                                                 
+ conv2d_2 (Conv2D)           (None, 64, 64, 128)       73856     
+                                                                 
+ global_average_pooling2d (  (None, 128)               0         
+ GlobalAveragePooling2D)                                         
+                                                                 
+ dense (Dense)               (None, 64)                8256      
+                                                                 
+ dense_1 (Dense)             (None, 3)                 195       
+                                                                 
+=================================================================
+Total params: 101699 (397.26 KB)
+Trainable params: 101699 (397.26 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

@@ -1,0 +1,5 @@
+name,validation_accuracy,validation_macro_f1
+bearing_cnn_baseline,0.461038961038961,0.436500104427736
+bearing_cnn_spatial,0.8506493506493507,0.8521765849268289
+bearing_cnn_spatial_augmented,0.9090909090909091,0.898579782790309
+bearing_cnn_spatial_aug_accuracy,0.948051948051948,0.9452936876504988

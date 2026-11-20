@@ -1,0 +1,76 @@
+{
+  "dataset": "Ring",
+  "model_name": "baseline_rgb",
+  "model_version": "ring-full-39c0eaa2-baseline_rgb-v1",
+  "model_path": "models/ring_cnn_final.keras",
+  "input_size": [
+    256,
+    256
+  ],
+  "channel_order": "RGB",
+  "normalization": "float32 / 255.0",
+  "preprocessing": "rgb",
+  "resize": "cv2.INTER_AREA; full frame resized to square",
+  "clahe": {
+    "color_space": "LAB",
+    "clipLimit": 2.0,
+    "tileGridSize": [
+      8,
+      8
+    ]
+  },
+  "denoise": {
+    "method": "GaussianBlur",
+    "kernel": [
+      3,
+      3
+    ],
+    "sigma": 0
+  },
+  "classes": [
+    {
+      "index": 0,
+      "name": "t_contamination",
+      "korean": "오염"
+    },
+    {
+      "index": 1,
+      "name": "t_scratch",
+      "korean": "긁힘"
+    },
+    {
+      "index": 2,
+      "name": "unfinished_surface",
+      "korean": "표면 미가공"
+    }
+  ],
+  "binary_supported": false,
+  "defect_score_meaning": null,
+  "threshold": null,
+  "type_confidence_threshold": 0.7008383274078369,
+  "review_policy": "전부 수동 검토. 자동 OK/NG 또는 NG 분리 실적으로 사용하지 않음.",
+  "segmentation": {
+    "model_path": "models/ring_unet.keras",
+    "preprocessing": "rgb",
+    "threshold": 0.05,
+    "loss": "bce",
+    "label": "공식 polygon에 대한 결함 위치 추정",
+    "data_signature": "39c0eaa20157fcf0529dd8ce57b67f0e4a98673757b914aa7cd526ea9ad05ebe",
+    "enabled_for_inference": false,
+    "validation_dice": 0.014314715747223766,
+    "all_foreground_validation_dice": 0.014314715747223766,
+    "acceptance_rule": "validation Dice >= 0.10 and > all-foreground Dice + 0.02"
+  },
+  "source_url": "https://huggingface.co/datasets/VISION-Workshop/VISION-Datasets",
+  "data_signature": "39c0eaa20157fcf0529dd8ce57b67f0e4a98673757b914aa7cd526ea9ad05ebe",
+  "run_mode": "full",
+  "limitations": [
+    "공식 train/val의 모든 이미지에 결함 어노테이션이 있다. inference에는 정답이 없으므로 정상으로 사용할 수 없다. 검증된 정상 표본이 없어 이진 분류와 제조 불량 감소율은 평가 불가.",
+    "소량 데이터",
+    "근접 중복 미검증",
+    "256 축소에 따른 미세 결함 손실",
+    "polygon은 원본 bbox 보완 라벨",
+    "Softmax 점수는 확률 보정되지 않음"
+  ],
+  "split_policy": "공식 train 내부 75:25 분리. 공식 val을 최종 홀드아웃으로 재지정"
+}

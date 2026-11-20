@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "protected_files": 2351,
+  "data_files": 2317,
+  "protected_hashes_unchanged": true,
+  "data_path_set_unchanged": true,
+  "baseline_notebook_byte_identical": true,
+  "all_retained_models_byte_identical": true,
+  "immutable_final_metrics_and_predictions_byte_identical": true,
+  "notebooks": {
+    "01_Ring_CNN_Baseline.ipynb": {
+      "cells": 32,
+      "schema_valid": true,
+      "all_code_parses": true,
+      "no_saved_error_outputs": true
+    },
+    "02_Ring_DeepLearning_Final.ipynb": {
+      "cells": 58,
+      "schema_valid": true,
+      "all_code_parses": true,
+      "no_saved_error_outputs": true
+    }
+  },
+  "seconds": 14.131921699969098
+}

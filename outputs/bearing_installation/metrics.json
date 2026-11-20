@@ -1,0 +1,132 @@
+{
+  "task": "bearing_installation_16class",
+  "run_mode": "full",
+  "selected_model": "bearing_cnn_spatial_aug_accuracy",
+  "train_images": 773,
+  "validation_images": 154,
+  "evaluation_images": 638,
+  "correct": 365,
+  "accuracy": 0.5721003134796239,
+  "macro_f1": 0.5555665708425055,
+  "class_report": {
+    "installation_01": {
+      "precision": 0.6031746031746031,
+      "recall": 0.9743589743589743,
+      "f1-score": 0.7450980392156863,
+      "support": 39.0
+    },
+    "installation_02": {
+      "precision": 0.8863636363636364,
+      "recall": 1.0,
+      "f1-score": 0.9397590361445783,
+      "support": 39.0
+    },
+    "installation_03": {
+      "precision": 0.4666666666666667,
+      "recall": 0.175,
+      "f1-score": 0.2545454545454545,
+      "support": 40.0
+    },
+    "installation_04": {
+      "precision": 0.7254901960784313,
+      "recall": 0.925,
+      "f1-score": 0.8131868131868132,
+      "support": 40.0
+    },
+    "installation_05": {
+      "precision": 0.38095238095238093,
+      "recall": 0.4,
+      "f1-score": 0.3902439024390244,
+      "support": 40.0
+    },
+    "installation_06": {
+      "precision": 0.631578947368421,
+      "recall": 0.9,
+      "f1-score": 0.7422680412371134,
+      "support": 40.0
+    },
+    "installation_07": {
+      "precision": 0.5806451612903226,
+      "recall": 0.45,
+      "f1-score": 0.5070422535211268,
+      "support": 40.0
+    },
+    "installation_08": {
+      "precision": 0.6756756756756757,
+      "recall": 0.625,
+      "f1-score": 0.6493506493506493,
+      "support": 40.0
+    },
+    "installation_09": {
+      "precision": 0.2903225806451613,
+      "recall": 0.225,
+      "f1-score": 0.2535211267605634,
+      "support": 40.0
+    },
+    "installation_10": {
+      "precision": 0.6333333333333333,
+      "recall": 0.475,
+      "f1-score": 0.5428571428571428,
+      "support": 40.0
+    },
+    "installation_11": {
+      "precision": 0.34545454545454546,
+      "recall": 0.475,
+      "f1-score": 0.4,
+      "support": 40.0
+    },
+    "installation_12": {
+      "precision": 0.75,
+      "recall": 0.375,
+      "f1-score": 0.5,
+      "support": 40.0
+    },
+    "installation_13": {
+      "precision": 0.23255813953488372,
+      "recall": 0.25,
+      "f1-score": 0.24096385542168675,
+      "support": 40.0
+    },
+    "installation_14": {
+      "precision": 0.5384615384615384,
+      "recall": 0.35,
+      "f1-score": 0.42424242424242425,
+      "support": 40.0
+    },
+    "installation_15": {
+      "precision": 0.5344827586206896,
+      "recall": 0.775,
+      "f1-score": 0.6326530612244898,
+      "support": 40.0
+    },
+    "installation_16": {
+      "precision": 0.9142857142857143,
+      "recall": 0.8,
+      "f1-score": 0.8533333333333334,
+      "support": 40.0
+    },
+    "accuracy": 0.5721003134796239,
+    "macro avg": {
+      "precision": 0.5743403673691252,
+      "recall": 0.573397435897436,
+      "f1-score": 0.5555665708425055,
+      "support": 638.0
+    },
+    "weighted avg": {
+      "precision": 0.573806107957213,
+      "recall": 0.5721003134796239,
+      "f1-score": 0.5546673170279675,
+      "support": 638.0
+    }
+  },
+  "target_accuracy": 0.95,
+  "target_met": false,
+  "binary_quality_supported": false,
+  "data_signature": "2a5a1d481f13e89351f907eca4684ed181df69a7cabcfad67b1d8ab703f0d096",
+  "limitations": [
+    "동일 엔진 고정 장면의 설치 조합 분류",
+    "새 엔진/공장 일반화 미검증",
+    "번호 블록은 촬영 연속성 누수 완화를 위한 가정",
+    "기존 Ring 3종과 직접 성능 비교 불가"
+  ]
+}

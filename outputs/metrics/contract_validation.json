@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": [
+    "scenario_zero_prevalence",
+    "scenario_counts",
+    "binary_threshold_requires_two_verified_classes",
+    "binary_threshold_selection",
+    "segmentation_perfect_mask",
+    "split_no_exact_overlap",
+    "holdout_only_export",
+    "binary_columns_null",
+    "probability_sums",
+    "metrics_match_prediction_csv",
+    "isolated_dependency_check",
+    "two_notebooks_no_python_modules"
+  ]
+}

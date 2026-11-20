@@ -1,0 +1,15 @@
+[
+  {
+    "notebook": "01_Ring_CNN_Baseline.ipynb",
+    "run_mode": "full",
+    "all_cells_executed": true,
+    "seconds": 51.726915999897756
+  },
+  {
+    "notebook": "02_Ring_DeepLearning_Final.ipynb",
+    "run_mode": "full",
+    "all_cells_executed": true,
+    "seconds": 50.27671509992797,
+    "isolated_environment": true
+  }
+]

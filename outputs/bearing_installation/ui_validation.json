@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "artifact_only": true,
+  "training_dataset_required": false,
+  "http_status": 200,
+  "api_name": "/bearing_installation",
+  "class_pred": 1,
+  "model_version": "bearing-full-2a5a1d481f-bearing_cnn_spatial_aug_accuracy",
+  "prediction_matches_exported_csv": true,
+  "local_only": true,
+  "server_closed_after_validation": true,
+  "seconds": 38.589263100060634
+}

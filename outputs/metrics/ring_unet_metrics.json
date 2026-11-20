@@ -1,0 +1,15 @@
+{
+  "mean_dice": 0.007536734119402477,
+  "mean_iou": 0.003864469982328869,
+  "pixel_precision": 0.003864469982328869,
+  "pixel_recall": 1.0,
+  "pixel_tp": 10637,
+  "pixel_fp": 2741875,
+  "pixel_fn": 0,
+  "task": "polygon_union_segmentation",
+  "run_mode": "full",
+  "evaluation_images": 42,
+  "pixel_threshold": 0.05,
+  "selected_loss": "bce",
+  "vanished_holdout_masks": []
+}

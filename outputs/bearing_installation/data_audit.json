@@ -1,0 +1,37 @@
+{
+  "task": "bearing_installation_16class",
+  "total_images": 1573,
+  "original_train": 933,
+  "original_validation": 640,
+  "exact_duplicate_extra": 3,
+  "excluded_train": 6,
+  "train_images": 773,
+  "validation_images": 154,
+  "evaluation_images": 638,
+  "classes": [
+    "installation_01",
+    "installation_02",
+    "installation_03",
+    "installation_04",
+    "installation_05",
+    "installation_06",
+    "installation_07",
+    "installation_08",
+    "installation_09",
+    "installation_10",
+    "installation_11",
+    "installation_12",
+    "installation_13",
+    "installation_14",
+    "installation_15",
+    "installation_16"
+  ],
+  "verified_normal_defect_mapping": false,
+  "group_policy": "같은 클래스의 파일명 번호 5장 블록. 실제 부품/촬영 세션 ID는 제공되지 않음.",
+  "limitations": [
+    "동일 엔진 고정 장면의 설치 조합 분류",
+    "새 엔진/공장 일반화 미검증",
+    "번호 블록은 촬영 연속성 누수 완화를 위한 가정",
+    "기존 Ring 3종과 직접 성능 비교 불가"
+  ]
+}

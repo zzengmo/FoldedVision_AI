@@ -1,0 +1,52 @@
+Model: "ring_improved"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ random_flip (RandomFlip)    (None, 256, 256, 3)       0         
+                                                                 
+ random_rotation (RandomRot  (None, 256, 256, 3)       0         
+ ation)                                                          
+                                                                 
+ conv2d (Conv2D)             (None, 256, 256, 32)      896       
+                                                                 
+ batch_normalization (Batch  (None, 256, 256, 32)      128       
+ Normalization)                                                  
+                                                                 
+ activation (Activation)     (None, 256, 256, 32)      0         
+                                                                 
+ conv2d_1 (Conv2D)           (None, 256, 256, 32)      9248      
+                                                                 
+ max_pooling2d (MaxPooling2  (None, 128, 128, 32)      0         
+ D)                                                              
+                                                                 
+ conv2d_2 (Conv2D)           (None, 128, 128, 64)      18496     
+                                                                 
+ batch_normalization_1 (Bat  (None, 128, 128, 64)      256       
+ chNormalization)                                                
+                                                                 
+ activation_1 (Activation)   (None, 128, 128, 64)      0         
+                                                                 
+ max_pooling2d_1 (MaxPoolin  (None, 64, 64, 64)        0         
+ g2D)                                                            
+                                                                 
+ conv2d_3 (Conv2D)           (None, 64, 64, 128)       73856     
+                                                                 
+ batch_normalization_2 (Bat  (None, 64, 64, 128)       512       
+ chNormalization)                                                
+                                                                 
+ activation_2 (Activation)   (None, 64, 64, 128)       0         
+                                                                 
+ global_average_pooling2d (  (None, 128)               0         
+ GlobalAveragePooling2D)                                         
+                                                                 
+ dense (Dense)               (None, 64)                8256      
+                                                                 
+ dropout (Dropout)           (None, 64)                0         
+                                                                 
+ dense_1 (Dense)             (None, 3)                 195       
+                                                                 
+=================================================================
+Total params: 111843 (436.89 KB)
+Trainable params: 111395 (435.14 KB)
+Non-trainable params: 448 (1.75 KB)
+_________________________________________________________________

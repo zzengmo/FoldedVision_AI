@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "date": "2026-11-19",
+  "timezone": "Asia/Seoul",
+  "memory_file": "AGENTS.md",
+  "backup": {
+    "path": "archive/2026-11-19_before_cleanup.zip",
+    "bytes": 131110902,
+    "sha256": "777bfa79ff21637a93df61f5bcf63f17e0afa26ffaa31226c6e6d86262f83de7",
+    "files": 263,
+    "all_entry_hashes_verified": true
+  },
+  "removed_targets": 17,
+  "removed_file_entries": 34072,
+  "removed_bytes_logical": 2263793028,
+  "removed_directory_groups": [
+    "installation/test caches",
+    "quick smoke-test models and outputs",
+    "empty unused O-Ring folders"
+  ],
+  "archived_groups": [
+    "old Ring improvement_v2",
+    "old Ring cross_validation_v3",
+    "old revisions",
+    "old final notebook PART 10-12",
+    "old v2/CV figures"
+  ],
+  "preserved": {
+    "data_files": 2317,
+    "protected_files": 2351,
+    "baseline_notebook_byte_identical": true,
+    "current_model_files_byte_identical": true,
+    "final_metrics_and_predictions_byte_identical": true,
+    "installed_venv_preserved": true,
+    "data_directory_entirely_preserved": true
+  },
+  "final_notebook_cells": {
+    "before": 88,
+    "after": 58,
+    "archived": 30
+  },
+  "validation": {
+    "protected_hash_comparison": "passed",
+    "notebook_schema_and_syntax": "passed",
+    "ring_and_bearing_actual_predictions": "passed",
+    "both_baseline_models_load": "passed",
+    "pip_check": "passed",
+    "new_training_performed": false,
+    "temporary_validation_files_removed": true
+  },
+  "active_outputs_folders": [
+    "bearing_installation",
+    "cleanup_records",
+    "figures",
+    "integration",
+    "metrics",
+    "predictions",
+    "user_supplied_links"
+  ],
+  "active_models_folders": [
+    "bearing_installation"
+  ]
+}

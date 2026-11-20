@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "artifact_only_inference": true,
+  "no_dataset_in_deployment": true,
+  "saved_model_matches_export": true,
+  "http_status": 200,
+  "actual_image_upload_api": true,
+  "api_decision": "REVIEW",
+  "local_only": true,
+  "model_version": "ring-full-39c0eaa2-baseline_rgb-v1",
+  "localization_method": "gradcam_attention_not_defect_mask"
+}

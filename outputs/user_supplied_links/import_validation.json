@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "bearing_zip_rejected": true,
+  "augmentation_grouping": true,
+  "zip_path_escape_rejected": true,
+  "new_ring_training_performed": false
+}

@@ -1,0 +1,8 @@
+{
+  "polygon_supported": true,
+  "train_vanished": [],
+  "validation_vanished": [],
+  "positive_pixel_fraction": 0.00708146532997489,
+  "resize": "nearest",
+  "note": "원본 polygon union. 배경 픽셀은 정상 부품 정답이 아님."
+}

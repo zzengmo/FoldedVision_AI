@@ -1,0 +1,32 @@
+{
+  "task": "bearing_installation_16class",
+  "target_accuracy": 0.95,
+  "run_mode": "full",
+  "candidates": [
+    {
+      "name": "bearing_cnn_baseline",
+      "spatial": false,
+      "augment": false
+    },
+    {
+      "name": "bearing_cnn_spatial",
+      "spatial": true,
+      "augment": false
+    },
+    {
+      "name": "bearing_cnn_spatial_augmented",
+      "spatial": true,
+      "augment": true
+    },
+    {
+      "name": "bearing_cnn_spatial_aug_accuracy",
+      "spatial": true,
+      "augment": true,
+      "monitor_accuracy": true
+    }
+  ],
+  "max_epochs": 70,
+  "image_size": 192,
+  "selection": "validation Macro F1, then accuracy, then fewer parameters",
+  "holdout": "original Classification Validation; duplicates removed; never used for fit"
+}

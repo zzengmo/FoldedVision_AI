@@ -1,0 +1,28 @@
+{
+  "selected": {
+    "model_path": "models/ring_unet.keras",
+    "preprocessing": "rgb",
+    "threshold": 0.05,
+    "loss": "bce",
+    "label": "공식 polygon에 대한 결함 위치 추정",
+    "data_signature": "39c0eaa20157fcf0529dd8ce57b67f0e4a98673757b914aa7cd526ea9ad05ebe",
+    "enabled_for_inference": false,
+    "validation_dice": 0.014314715747223766,
+    "all_foreground_validation_dice": 0.014314715747223766,
+    "acceptance_rule": "validation Dice >= 0.10 and > all-foreground Dice + 0.02"
+  },
+  "candidates": [
+    {
+      "loss": "bce",
+      "threshold": 0.05,
+      "mean_dice": 0.014314715747223766,
+      "mean_iou": 0.007317860921223958
+    },
+    {
+      "loss": "bce_dice",
+      "threshold": 0.05,
+      "mean_dice": 0.014314715747223766,
+      "mean_iou": 0.007317860921223958
+    }
+  ]
+}

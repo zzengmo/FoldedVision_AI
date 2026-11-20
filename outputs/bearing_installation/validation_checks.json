@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "checks": {
+    "split_sha_and_capture_blocks_disjoint": true,
+    "counts_and_16_classes_each_split": true,
+    "metrics_recomputed_from_638_predictions": true,
+    "selection_matches_validation_ranking": true,
+    "both_notebooks_bearing_cells_executed_without_errors": true,
+    "existing_ring_weights_and_metrics_preserved": true,
+    "four_candidates_actually_trained_in_full_mode": true
+  },
+  "training_metadata": {
+    "bearing_cnn_baseline": {
+      "epochs_run": 70,
+      "train_seconds": null,
+      "parameters": 29552,
+      "history_provenance": "Actual executed notebook Keras stdout; printed rounded values; checkpoint weights unchanged"
+    },
+    "bearing_cnn_spatial": {
+      "epochs_run": 22,
+      "train_seconds": null,
+      "parameters": 1254688,
+      "history_provenance": "Actual Keras stdout from executed improved training; printed rounded values. Checkpoint weights unchanged."
+    },
+    "bearing_cnn_spatial_augmented": {
+      "epochs_run": 33,
+      "train_seconds": 259.96806069999,
+      "parameters": 1254688,
+      "history_provenance": null
+    },
+    "bearing_cnn_spatial_aug_accuracy": {
+      "epochs_run": 61,
+      "train_seconds": 511.61585699999705,
+      "parameters": 1254688,
+      "history_provenance": null
+    }
+  },
+  "accuracy": 0.5721003134796239,
+  "macro_f1": 0.5555665708425055,
+  "correct": 365,
+  "n": 638,
+  "target_met": false
+}

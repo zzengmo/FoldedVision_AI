@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "actual_ring_inference_matches_saved_predictions": true,
+  "actual_bearing_inference_matches_saved_predictions": true,
+  "ring_gradcam_created": true,
+  "ring_baseline_loads": true,
+  "bearing_baseline_loads": true,
+  "tensorflow_version": "2.15.0",
+  "notebook_requires_no_archived_cells_for_inference": true,
+  "no_training_performed": true,
+  "ring_model_version": "ring-full-39c0eaa2-baseline_rgb-v1",
+  "bearing_model_version": "bearing-full-2a5a1d481f-bearing_cnn_spatial_aug_accuracy",
+  "seconds": 45.996229300042614
+}

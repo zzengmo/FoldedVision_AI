@@ -1,0 +1,42 @@
+{
+  "task": "defect_type_multiclass",
+  "run_mode": "full",
+  "n": 12,
+  "accuracy": 0.3333333333333333,
+  "macro_f1": 0.32407407407407407,
+  "class_report": {
+    "t_contamination": {
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1-score": 0.75,
+      "support": 3.0
+    },
+    "t_scratch": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 7.0
+    },
+    "unfinished_surface": {
+      "precision": 0.14285714285714285,
+      "recall": 0.5,
+      "f1-score": 0.2222222222222222,
+      "support": 2.0
+    },
+    "accuracy": 0.3333333333333333,
+    "macro avg": {
+      "precision": 0.24761904761904763,
+      "recall": 0.5,
+      "f1-score": 0.32407407407407407,
+      "support": 12.0
+    },
+    "weighted avg": {
+      "precision": 0.17380952380952377,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.22453703703703706,
+      "support": 12.0
+    }
+  },
+  "mean_inference_ms": 26.2222416640725,
+  "parameters": 111843
+}

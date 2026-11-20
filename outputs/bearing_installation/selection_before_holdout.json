@@ -1,0 +1,6 @@
+{
+  "selected": "bearing_cnn_spatial_aug_accuracy",
+  "validation_accuracy": 0.948051948051948,
+  "validation_macro_f1": 0.9452936876504988,
+  "holdout_used_for_selection": false
+}

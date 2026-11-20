@@ -1,0 +1,12 @@
+{
+  "kind": "hypothetical_scenario_not_measured",
+  "total": 10000,
+  "assumed_prevalence": 0.02,
+  "assumed_recall": 0.95,
+  "assumed_fpr": 0.03,
+  "defective_before": 200.0,
+  "separated_defective": 190.0,
+  "remaining_defective": 10.000000000000009,
+  "false_rejected_normal": 294.0,
+  "inflow_reduction_pct": 95.0
+}
