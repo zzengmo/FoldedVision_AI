@@ -1,0 +1,123 @@
+{
+  "date_kst": "2026-11-23",
+  "powerpoint": {
+    "SlideCount": 27,
+    "Clipping": []
+  },
+  "presentation_minutes": 20,
+  "visualization_slides": 6,
+  "visualization_minutes": 4,
+  "deck": {
+    "path": "outputs/presentation/FoldedVision_공정제어실_팀발표.pptx",
+    "bytes": 2064020,
+    "sha256": "76f6b83e83f6fb4114ea9a5206fcd80b24a3ca0f5ba8eb762b0cdfc911f25e8c"
+  },
+  "script": {
+    "path": "outputs/presentation/FoldedVision_공정제어실_팀발표_최종_대본.txt",
+    "bytes": 18131,
+    "sha256": "d4fa4d09c6f6534cc776e08bd67bb7f841a590744a7596c9fbceea1c67a042f9"
+  },
+  "web": {
+    "webgl_canvas": true,
+    "decisions": [
+      {
+        "job": "PCB · 검출",
+        "value": "71.6%",
+        "selected_route": "분리",
+        "recommended_route": "분리"
+      },
+      {
+        "job": "Lens · 오검출",
+        "value": "0.145",
+        "selected_route": "분리",
+        "recommended_route": "재검"
+      },
+      {
+        "job": "Ring · 오분류",
+        "value": "96.6%",
+        "selected_route": "재검",
+        "recommended_route": "재검"
+      },
+      {
+        "job": "PCB2 · 정상",
+        "value": "0.000008",
+        "selected_route": "통과",
+        "recommended_route": "통과"
+      }
+    ],
+    "mobile": {
+      "content": 390,
+      "viewport": 390
+    },
+    "runtime_errors": []
+  },
+  "captures": [
+    {
+      "path": "outputs/presentation/공정캡처/plant_overview.png",
+      "bytes": 331850,
+      "sha256": "33044da6ecf1fb97c591cf8d7b8101bd61a7d936874a68a6435aefa1b8b57555"
+    },
+    {
+      "path": "outputs/presentation/공정캡처/camera_lens.png",
+      "bytes": 290360,
+      "sha256": "83087b2a0edb84a3ff9032a9e6272f8b6f8e81af804cf4631d48f4f7743a92ba"
+    },
+    {
+      "path": "outputs/presentation/공정캡처/sort_pcb.png",
+      "bytes": 511612,
+      "sha256": "e4b1c696142bc93085e2fe7d2a2e814536bd45388ad6019aa596fcaa4c2ae474"
+    },
+    {
+      "path": "outputs/presentation/공정캡처/audit_ring.png",
+      "bytes": 413840,
+      "sha256": "af02f8f46086216e75b0d30ed76e0f241956774048090fb08b60d9202025aa7c"
+    },
+    {
+      "path": "outputs/presentation/공정캡처/scores.png",
+      "bytes": 146675,
+      "sha256": "2671ae552b6ccc5fde119b2ec71e7bfbf19a5c3040a34dbaede4fbdad28f2077"
+    },
+    {
+      "path": "outputs/presentation/공정캡처/evidence_gallery.png",
+      "bytes": 610383,
+      "sha256": "3c7085e7ee35b810b8e2c8797a76f387ae3a7b849696fdc0d4996aab1ce7a8e9"
+    }
+  ],
+  "study_guides": [
+    {
+      "path": "outputs/presentation/공부자료/Lens_딥러닝_공부자료.pdf",
+      "bytes": 596836,
+      "sha256": "b5ab632197aceadec569a18b31d0e70822dc1ed4a8a166332a69ed7013ef0bb4",
+      "pages": 5
+    },
+    {
+      "path": "outputs/presentation/공부자료/PCB_딥러닝_공부자료.pdf",
+      "bytes": 3730656,
+      "sha256": "aca752de5ed02478b0d52b2cf87b258f1c3b80bb59232684e3bc3a4c7abbacc9",
+      "pages": 5
+    },
+    {
+      "path": "outputs/presentation/공부자료/Ring_딥러닝_공부자료.pdf",
+      "bytes": 638985,
+      "sha256": "479116652f1352174dd30d13bc302c79a2c99b2a02709b6358c27d77dc92ec14",
+      "pages": 5
+    }
+  ],
+  "prior_deck_archive": {
+    "path": "archive/2026-11-23_before_industrial_deck.zip",
+    "bytes": 914352,
+    "sha256": "7749906e53e7119dd49ba0d2ee4c7e71341e3dc77340d203c1022f501d1f7390"
+  },
+  "prior_deck_files": [
+    {
+      "path": "outputs/presentation/FoldedVision_팀발표_20분_최종.pptx",
+      "bytes": 920152,
+      "sha256": "4abfe2925a4f2c10fe4bbc299d84dc904b551882d583722f5200d392d4dc2d75"
+    },
+    {
+      "path": "outputs/presentation/FoldedVision_팀발표_20분_최종_대본.txt",
+      "bytes": 19772,
+      "sha256": "ce0d23585620a368ce7736a9185e981f51127e6ed6d3cb01c326a098c595a377"
+    }
+  ]
+}

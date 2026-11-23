@@ -1,0 +1,79 @@
+{
+  "date_kst": "2026-11-23",
+  "deck": {
+    "SlideCount": 19,
+    "Rendered": 19,
+    "Clipping": [],
+    "speaker_notes": 19,
+    "script_duration_minutes": 20
+  },
+  "protected_files_sha256_matched": 9137,
+  "protected_categories": [
+    "Ring and team notebooks, including baselines",
+    "source data and model weights",
+    "model outputs and reports",
+    "web source and evidence images",
+    "existing backups and launch environments"
+  ],
+  "previous_presentations_archive": {
+    "path": "archive/2026-11-23_previous_presentations.zip",
+    "bytes": 2170046,
+    "sha256": "ca74e944f5db2a5f4e70e487757ed4bc24f7dada97ced75a5a19e0b267d73baa"
+  },
+  "archived_then_removed": [
+    {
+      "path": "outputs/presentation/FoldedVision_팀발표_20분.pptx",
+      "bytes": 597184,
+      "sha256": "93f73eebe8116c124de08a359b457ce0d595b1789648a4ed8ed63871074590ea"
+    },
+    {
+      "path": "outputs/presentation/FoldedVision_팀발표_20분_대본.txt",
+      "bytes": 18621,
+      "sha256": "7e264dfd28511a35993bb39e577e235efee1a3d05cf64d083a8d05a9267c0e08"
+    },
+    {
+      "path": "outputs/presentation/FoldedVision_팀발표_20분_PCB설명보완.pptx",
+      "bytes": 597123,
+      "sha256": "4525b88a01bf3468130853bc81021a0e7d2d6ea6bd81f0fa24c89803d866ff5c"
+    },
+    {
+      "path": "outputs/presentation/FoldedVision_팀발표_20분_PCB설명보완_대본.txt",
+      "bytes": 18500,
+      "sha256": "fc1374638cce278352acbff53766f901b84c650cb8b3a9263877bc55074affab"
+    },
+    {
+      "path": "outputs/site_preview/cases.png",
+      "bytes": 365008,
+      "sha256": "96144f7d80741eaf0f06015b53520b3592de3edfcace93269bfd846f0349010c"
+    },
+    {
+      "path": "outputs/site_preview/factory.png",
+      "bytes": 467386,
+      "sha256": "a321c4297cd569b74804cacc5794521527bb57e482d1b97bf33c89196efd9996"
+    },
+    {
+      "path": "outputs/site_preview/mobile.png",
+      "bytes": 172499,
+      "sha256": "1c7c3cc92555de2da7d2cafbf513a1ac3a4223b7d860fbd5b45f175f4f9079d0"
+    }
+  ],
+  "duplicate_notebooks_removed": [
+    {
+      "path": "01_Lens_CNN_Baseline.ipynb",
+      "bytes": 1559463,
+      "sha256": "0dafd6866b7db7583ba62cd3ff1a3f5ce4cfbe8a2b9ba76e791f2e98ecda3e2b",
+      "identical_source": "team/lens/01_Lens_CNN_Baseline.ipynb"
+    },
+    {
+      "path": "02_Lens_DeepLearning_Final.ipynb",
+      "bytes": 1941250,
+      "sha256": "494ddd48fb47d71f0581ce848abdd98eaf17e58ac3a23ea68a7d6b91e11302ef",
+      "identical_source": "team/lens/02_Lens_DeepLearning_Final.ipynb"
+    }
+  ],
+  "rebuildable_web_files_removed": 38,
+  "rebuildable_web_bytes_removed": 2338426,
+  "web_build_command": "Start_FoldedVision.cmd",
+  "web_rebuild_verified": true,
+  "temporary_presentation_workdir_removed": true
+}

@@ -1,0 +1,10 @@
+{
+  "global_best_validation_ap": 0.7493323091267743,
+  "detail_best_validation_ap": 0.8603122136224817,
+  "detail_candidates_validation_ap": {
+    "linear": 0.7546156608516098,
+    "dense96": 0.8603122136224817
+  },
+  "test_reuse": "The same published test rows were already evaluated for the whole-image experiment. Follow-up is a benchmark comparison.",
+  "record": "pcb_detail_metrics.json"
+}

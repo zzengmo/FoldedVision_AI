@@ -1,0 +1,183 @@
+{
+  "ring": {
+    "cases": [
+      {
+        "id": "ring-contamination",
+        "title": "오염 유형을 맞힌 Ring",
+        "outcome": "success",
+        "description": "오염 라벨과 모델 추정 유형이 일치했습니다. 열지도는 분류에 참고한 영역을 보여줍니다.",
+        "truth": "오염",
+        "result": "오염 · 유형 점수 64.5%",
+        "source": "VISION Ring · 최종 평가 val:1 · 저장된 CNN 추론",
+        "original": "/evidence/ring-success-original.webp",
+        "overlay": "/evidence/ring-success-attention.webp",
+        "overlayLabel": "Grad-CAM 주목 영역"
+      },
+      {
+        "id": "ring-unfinished",
+        "title": "표면 미가공을 긁힘으로 혼동",
+        "outcome": "failure",
+        "description": "이 사진을 포함해 최종 평가의 표면 미가공 4장 모두 긁힘으로 분류됐습니다. 파란 박스는 데이터에 있는 정답 위치입니다.",
+        "truth": "표면 미가공",
+        "result": "긁힘 · 유형 점수 69.9%",
+        "source": "VISION Ring · 최종 평가 val:16 · 예측 CSV와 COCO 정답",
+        "original": "/evidence/ring-failure-original.webp",
+        "overlay": "/evidence/ring-failure-ground-truth.webp",
+        "overlayLabel": "정답 위치"
+      }
+    ],
+    "processImages": [
+      {
+        "title": "데이터 탐색",
+        "src": "/evidence/ring-eda.webp"
+      },
+      {
+        "title": "OpenCV 전처리 비교",
+        "src": "/evidence/ring-preprocessing.webp"
+      },
+      {
+        "title": "베이스라인 CNN 구조",
+        "src": "/evidence/ring-baseline.webp"
+      },
+      {
+        "title": "최종 혼동행렬",
+        "src": "/evidence/ring-eval.webp"
+      }
+    ]
+  },
+  "lens": {
+    "cases": [
+      {
+        "id": "lens-mask-match",
+        "title": "결함 위치가 겹친 Lens",
+        "outcome": "success",
+        "description": "U-Net 위치 분할 테스트에서 정답과 예측의 겹침이 컸던 사례입니다. 노랑은 겹침, 초록은 정답만, 빨강은 예측만 있는 곳입니다.",
+        "truth": "결함 마스크 존재",
+        "result": "U-Net Dice 0.93",
+        "source": "VISION Lens · test val/000080.jpg · 최종 노트북 U-Net 평가",
+        "original": "/evidence/lens-success-original.webp",
+        "overlay": "/evidence/lens-success-overlay.webp",
+        "overlayLabel": "정답·U-Net 예측 겹침"
+      },
+      {
+        "id": "lens-false-positive",
+        "title": "정상 구역을 불량으로 오검출",
+        "outcome": "failure",
+        "description": "최종 CNN의 오검출 구역 모음에서 한 구역을 발췌했습니다. 테스트 사진 전체가 불량이어도, 사진 안에는 결함 라벨이 없는 정상 구역이 있습니다.",
+        "truth": "정상 구역",
+        "result": "CNN 불량 판정 · FP",
+        "source": "VISION Lens · test의 실제 CNN 구역 오검출 · 최종 노트북",
+        "original": "/evidence/lens-cnn-fp.webp",
+        "overlay": null,
+        "overlayLabel": null,
+        "originalLabel": "정상 구역"
+      },
+      {
+        "id": "lens-mask-miss",
+        "title": "렌즈 결함 위치 누락",
+        "outcome": "failure",
+        "description": "U-Net이 이 평가 사진의 결함을 표시하지 못했습니다. 초록은 정답에만 존재하는 영역입니다.",
+        "truth": "결함 마스크 존재",
+        "result": "U-Net Dice 0.00",
+        "source": "VISION Lens · test val/000124.jpg · 최종 노트북 U-Net 평가",
+        "original": "/evidence/lens-miss-original.webp",
+        "overlay": "/evidence/lens-miss-overlay.webp",
+        "overlayLabel": "정답·U-Net 예측 겹침"
+      }
+    ],
+    "processImages": [
+      {
+        "title": "결함 종류와 데이터 분포",
+        "src": "/evidence/lens-eda.webp"
+      },
+      {
+        "title": "작업 배율과 256 구역",
+        "src": "/evidence/lens-patches.webp"
+      },
+      {
+        "title": "전처리 비교",
+        "src": "/evidence/lens-preprocessing.webp"
+      },
+      {
+        "title": "기준·개선 CNN 비교",
+        "src": "/evidence/lens-eval.webp"
+      }
+    ]
+  },
+  "pcb": {
+    "cases": [
+      {
+        "id": "pcb-yolo-location",
+        "title": "납땜 과다의 위치 검출",
+        "outcome": "success",
+        "description": "기존 YOLO 예시에서 납땜 과다로 표시된 예측 박스 일부가 정답 위치와 대응합니다. 저장된 한 장의 정답·예측 시각화입니다.",
+        "truth": "초록: 정답 박스",
+        "result": "빨강: 검출 박스 · 가장 높은 점수 71.6%",
+        "source": "원본 PCB validation · 기존 YOLO 노트북의 정답과 예측",
+        "original": "/evidence/pcb-baseline-ground-truth.webp",
+        "overlay": "/evidence/pcb-baseline-prediction.webp",
+        "overlayLabel": "기존 YOLO 검출 박스",
+        "originalLabel": "정답 박스"
+      },
+      {
+        "id": "pcb4-normal-fp",
+        "title": "정상 PCB4 사진 3장 오검출",
+        "outcome": "failure",
+        "description": "선정 모델은 정상 20장 중 3장을 NG로 표시했습니다. 노트북에 남은 집계이며, 오검출 사진 원본은 이 화면에 제공되지 않습니다.",
+        "truth": "PCB4 정상 20장",
+        "result": "오검출 3장 · 15.0%",
+        "source": "PCB4 test 40장 · PCB_VisA 최종 보고서",
+        "original": null,
+        "overlay": "/evidence/pcb4-fp-chart.webp",
+        "overlayLabel": "실제 정상 오검출 비교"
+      },
+      {
+        "id": "pcb4-defect-recall",
+        "title": "PCB4 불량 사진 20장 검출",
+        "outcome": "success",
+        "description": "최종 PCB4 평가의 불량 사진 20장을 모두 NG로 분류했습니다. 개별 박스의 유형·위치 평가는 별도의 mAP 지표입니다.",
+        "truth": "PCB4 불량 20장",
+        "result": "NG 검출 20장 · Recall 100%",
+        "source": "PCB4 test 40장 · PCB_VisA 최종 보고서",
+        "original": null,
+        "overlay": "/evidence/pcb4-detected-chart.webp",
+        "overlayLabel": "실제 불량 사진 검출 비교"
+      }
+    ],
+    "processImages": [
+      {
+        "title": "PCB4 유형별 실제 사진과 정답 박스",
+        "src": "/evidence/pcb4-eda.webp"
+      },
+      {
+        "title": "기존 YOLO 라벨 정책",
+        "src": "/evidence/pcb-original-labels.webp"
+      },
+      {
+        "title": "기존 YOLO 정답·예측 비교",
+        "src": "/evidence/pcb-baseline-comparison.webp"
+      },
+      {
+        "title": "PCB4 추가 학습 후 오검출 비교",
+        "src": "/evidence/pcb4-fp-chart.webp"
+      }
+    ]
+  },
+  "bearing": {
+    "cases": [],
+    "processImages": [
+      {
+        "title": "베어링 학습 표본",
+        "src": "/evidence/bearing-samples.webp"
+      },
+      {
+        "title": "베어링 후보 비교",
+        "src": "/evidence/bearing-model-comparison.webp"
+      },
+      {
+        "title": "베어링 최종 혼동행렬",
+        "src": "/evidence/bearing-confusion.webp"
+      }
+    ]
+  }
+}

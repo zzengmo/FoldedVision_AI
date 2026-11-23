@@ -1,0 +1,67 @@
+{
+  "scope": "MSDD round machined metal images, any annotated defect versus empty annotation. Separate from VISION Ring.",
+  "split_counts": {
+    "test": {
+      "0": 25,
+      "1": 125
+    },
+    "train": {
+      "0": 183,
+      "1": 1012
+    },
+    "validation": {
+      "0": 36,
+      "1": 114
+    }
+  },
+  "part_groups": {
+    "test": 30,
+    "train": 239,
+    "validation": 30
+  },
+  "same_vision_ring_bytes": 0,
+  "selected": "dense96",
+  "candidate_validation_mean_ap": {
+    "linear": 0.7349073397121328,
+    "dense96": 0.8327421669393029
+  },
+  "checkpoint": "msdd_model.keras",
+  "validation": {
+    "n": 150,
+    "ap": 0.9766895983737013,
+    "auc": 0.9188596491228069,
+    "accuracy": 0.82,
+    "f1": 0.8656716417910447,
+    "recall": 0.7631578947368421,
+    "fpr": 0.0,
+    "tn": 36,
+    "fp": 0,
+    "fn": 27,
+    "tp": 87,
+    "threshold": 0.9878681898117065,
+    "normal_ap": 0.6887947355049044,
+    "balanced_accuracy": 0.881578947368421
+  },
+  "test": {
+    "n": 150,
+    "ap": 0.9789276161261025,
+    "auc": 0.8944,
+    "accuracy": 0.7666666666666667,
+    "f1": 0.8416289592760181,
+    "recall": 0.744,
+    "fpr": 0.12,
+    "tn": 22,
+    "fp": 3,
+    "fn": 32,
+    "tp": 93,
+    "threshold": 0.9878681898117065,
+    "normal_ap": 0.5912248259326113,
+    "balanced_accuracy": 0.812
+  },
+  "input_shape": [
+    160,
+    160,
+    3
+  ],
+  "input_dtype": "uint8 RGB"
+}

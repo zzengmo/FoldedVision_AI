@@ -1,0 +1,90 @@
+{
+  "date_kst": "2026-11-23",
+  "powerpoint": {
+    "SlideCount": 30,
+    "TimingEnds": "20:00",
+    "NewSlides": [
+      4,
+      5,
+      23
+    ],
+    "Clipping": []
+  },
+  "presentation_pdf_pages": 30,
+  "visualization": {
+    "slides": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "minutes": 4
+  },
+  "guides": {
+    "Lens": {
+      "pages": 6,
+      "citation_links": 9
+    },
+    "Ring": {
+      "pages": 6,
+      "citation_links": 10
+    },
+    "PCB": {
+      "pages": 6,
+      "citation_links": 15
+    }
+  },
+  "source_provenance": "DATA_SOURCES.md",
+  "pcb4_image_crosscheck": "outputs/quality_upgrade/pcb4_source_audit.json",
+  "prior_outputs_archive": {
+    "path": "archive/2026-11-23_before_data_provenance_revision.zip",
+    "sha256": "61dcf7701e68dc6258511347015a1a56e33e6a1e87b5edc942a631ce59a3e3a0",
+    "bytes": 7690506
+  },
+  "final_outputs": [
+    {
+      "path": "outputs/presentation/FoldedVision_공정제어실_팀발표.pptx",
+      "sha256": "e77585e67c56c22271716c2f13f231c37ecb98666e4641386213d991b4c5e158",
+      "bytes": 2206933
+    },
+    {
+      "path": "outputs/presentation/FoldedVision_공정제어실_팀발표.pdf",
+      "sha256": "73a0b4acc8f8282a0a9fc3d65fc7e0fda056df2fa2e1fa6ac57be83db67a6c33",
+      "bytes": 1741927
+    },
+    {
+      "path": "outputs/presentation/FoldedVision_공정제어실_팀발표_최종_대본.txt",
+      "sha256": "a88de7e3ebc96511a75be2085467f7218366e41630b28d75ece8cc4f1facaeed",
+      "bytes": 19779
+    },
+    {
+      "path": "outputs/presentation/공부자료/Lens_딥러닝_공부자료.pdf",
+      "sha256": "cf6076c46f311059eef1d4bef45ce118e742de154dc7009d408e176d01f47a72",
+      "bytes": 636700
+    },
+    {
+      "path": "outputs/presentation/공부자료/Ring_딥러닝_공부자료.pdf",
+      "sha256": "c8269c06250e87a4233cda8b62483e3a327a10688d5a7d259bcd1555d43f9262",
+      "bytes": 671796
+    },
+    {
+      "path": "outputs/presentation/공부자료/PCB_딥러닝_공부자료.pdf",
+      "sha256": "a7e373113b231005317af992756f878fab7593d142ecda8bdbf1ae51ef967050",
+      "bytes": 3772867
+    }
+  ],
+  "oral_script_revision": {
+    "slides_with_speaker_notes": 30,
+    "presentation_minutes": 20,
+    "ring_minutes": 5,
+    "demonstration_minutes": 4,
+    "visible_pptx_content_verified_identical": true,
+    "prior_deck_and_script": {
+      "path": "archive/2026-11-23_before_oral_script_revision.zip",
+      "sha256": "277bf674a9a72bc6726057df439c63aaf9bff9a833ccfc2bb83a186288c08da5",
+      "bytes": 2078956
+    }
+  }
+}

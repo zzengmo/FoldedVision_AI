@@ -1,0 +1,22 @@
+{
+  "ring": {
+    "records": 42,
+    "replayed": 9,
+    "max_score_delta": 1.196778259271447e-06
+  },
+  "lens": {
+    "records": 3410,
+    "replayed": 12,
+    "max_score_delta": 4.2198730471065815e-07
+  },
+  "pcb": {
+    "records": 1324,
+    "replayed": 12,
+    "max_score_delta": 1.2407791137869495e-06
+  },
+  "msdd": {
+    "records": 150,
+    "replayed": 12,
+    "max_score_delta": 5.47906761155792e-07
+  }
+}

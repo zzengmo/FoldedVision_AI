@@ -1,0 +1,496 @@
+{
+  "date": "2026-11-23",
+  "ring": {
+    "scope": "VISION Ring existing same split, three defect types. No verified normal images.",
+    "split_counts": {
+      "test": {
+        "0": 15,
+        "1": 23,
+        "2": 4
+      },
+      "train": {
+        "0": 10,
+        "1": 18,
+        "2": 5
+      },
+      "validation": {
+        "0": 3,
+        "1": 7,
+        "2": 2
+      }
+    },
+    "class_names": [
+      "t_contamination",
+      "t_scratch",
+      "unfinished_surface"
+    ],
+    "selected_transfer": "global_tiles_48",
+    "encoder": "vision_ring_encoder.keras",
+    "head": "vision_ring_global_tiles_48_head.keras",
+    "feature_views": "global_tiles",
+    "candidates": {
+      "global_linear": {
+        "validation_macro_f1": 0.5063492063492063,
+        "checkpoint": "vision_ring_global_linear_head.keras"
+      },
+      "global_48": {
+        "validation_macro_f1": 0.4487734487734487,
+        "checkpoint": "vision_ring_global_48_head.keras"
+      },
+      "global_tiles_linear": {
+        "validation_macro_f1": 0.611111111111111,
+        "checkpoint": "vision_ring_global_tiles_linear_head.keras"
+      },
+      "global_tiles_48": {
+        "validation_macro_f1": 0.8333333333333334,
+        "checkpoint": "vision_ring_global_tiles_48_head.keras"
+      }
+    },
+    "legacy": {
+      "n": 42,
+      "correct": 34,
+      "accuracy": 0.8095238095238095,
+      "macro_f1": 0.5677655677655677
+    },
+    "test": {
+      "n": 42,
+      "accuracy": 0.9285714285714286,
+      "macro_f1": 0.8914431673052364,
+      "correct": 39,
+      "confusion": [
+        [
+          13,
+          0,
+          2
+        ],
+        [
+          1,
+          22,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "per_class": {
+        "t_contamination": {
+          "precision": 0.9285714285714286,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.896551724137931,
+          "support": 15.0
+        },
+        "t_scratch": {
+          "precision": 1.0,
+          "recall": 0.9565217391304348,
+          "f1-score": 0.9777777777777777,
+          "support": 23.0
+        },
+        "unfinished_surface": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 4.0
+        },
+        "accuracy": 0.9285714285714286,
+        "macro avg": {
+          "precision": 0.8650793650793651,
+          "recall": 0.9410628019323672,
+          "f1-score": 0.8914431673052364,
+          "support": 42.0
+        },
+        "weighted avg": {
+          "precision": 0.9427437641723356,
+          "recall": 0.9285714285714286,
+          "f1-score": 0.9318372559751871,
+          "support": 42.0
+        }
+      }
+    },
+    "input_dtype": "uint8 RGB",
+    "legacy_preserved": true
+  },
+  "lens": {
+    "scope": "VISION Lens grid patch classification. Test has 52 defective whole images, no verified normal whole images.",
+    "data_images": {
+      "train": 50,
+      "validation": 16,
+      "test": 52
+    },
+    "patch_counts": {
+      "train": {
+        "total": 3203,
+        "defect": 748
+      },
+      "validation": {
+        "total": 806,
+        "defect": 141
+      },
+      "test": {
+        "total": 3410,
+        "defect": 579
+      }
+    },
+    "original_patch_counts": {
+      "train": [
+        2277,
+        759
+      ],
+      "validation": [
+        806,
+        141
+      ],
+      "test": [
+        3410,
+        579
+      ]
+    },
+    "checkpoint": "lens_patch_model.keras",
+    "selected": "dense96",
+    "candidate_validation_ap": {
+      "linear": 0.5904293994926758,
+      "dense96": 0.6324589009583245
+    },
+    "legacy": {
+      "ap": 0.418667,
+      "auc": 0.755983,
+      "recall": 0.920553,
+      "fpr": 0.654186
+    },
+    "validation": {
+      "n": 806,
+      "ap": 0.6324589009583245,
+      "auc": 0.8441955953714073,
+      "accuracy": 0.5459057071960298,
+      "f1": 0.4227129337539432,
+      "recall": 0.950354609929078,
+      "fpr": 0.5398496240601504,
+      "tn": 306,
+      "fp": 359,
+      "fn": 7,
+      "tp": 134,
+      "threshold": 0.0368250347673893
+    },
+    "test": {
+      "n": 3410,
+      "ap": 0.6680934844435192,
+      "auc": 0.85919675392536,
+      "accuracy": 0.5457478005865103,
+      "f1": 0.4085528827796869,
+      "recall": 0.924006908462867,
+      "fpr": 0.5316142705757683,
+      "tn": 1326,
+      "fp": 1505,
+      "fn": 44,
+      "tp": 535,
+      "threshold": 0.0368250347673893
+    },
+    "whole_image_defect_detection_count": 52,
+    "original_patch_px": 256,
+    "input_shape": [
+      160,
+      160,
+      3
+    ],
+    "input_dtype": "uint8 RGB"
+  },
+  "pcb": {
+    "scope": "VisA PCB1-PCB3 photo classification from the whole image and four overlapping crops; independent of PCB4 YOLO.",
+    "split_counts": {
+      "test": {
+        "0": 1204,
+        "1": 120
+      },
+      "train": {
+        "0": 1446,
+        "1": 144
+      },
+      "validation": {
+        "0": 361,
+        "1": 36
+      }
+    },
+    "board_counts": {
+      "pcb1": {
+        "test": {
+          "0": 402,
+          "1": 40
+        },
+        "train": {
+          "0": 482,
+          "1": 48
+        },
+        "validation": {
+          "0": 120,
+          "1": 12
+        }
+      },
+      "pcb2": {
+        "test": {
+          "0": 400,
+          "1": 40
+        },
+        "train": {
+          "0": 481,
+          "1": 48
+        },
+        "validation": {
+          "0": 120,
+          "1": 12
+        }
+      },
+      "pcb3": {
+        "test": {
+          "0": 402,
+          "1": 40
+        },
+        "train": {
+          "0": 483,
+          "1": 48
+        },
+        "validation": {
+          "0": 121,
+          "1": 12
+        }
+      }
+    },
+    "validation_rule": "20% of the official training set per board and class, seed 42; select by AP, threshold by F1",
+    "exact_duplicates_excluded": 0,
+    "checkpoint": "pcb_detail_dense96_head.keras",
+    "selected": "detail_dense96",
+    "candidate_validation_ap": {
+      "native": 0.31904817506394134,
+      "linear": 0.7493323091267743,
+      "dense96": 0.732115365540769,
+      "detail_linear": 0.7546156608516098,
+      "detail_dense96": 0.8603122136224817
+    },
+    "validation": {
+      "n": 397,
+      "ap": 0.8603122136224817,
+      "auc": 0.9306709756848262,
+      "accuracy": 0.9748110831234257,
+      "f1": 0.8529411764705882,
+      "recall": 0.8055555555555556,
+      "fpr": 0.008310249307479225,
+      "tn": 358,
+      "fp": 3,
+      "fn": 7,
+      "tp": 29,
+      "threshold": 0.03801044076681137
+    },
+    "test": {
+      "n": 1324,
+      "ap": 0.7845622352705002,
+      "auc": 0.9413275193798449,
+      "accuracy": 0.9539274924471299,
+      "f1": 0.7136150234741784,
+      "recall": 0.6333333333333333,
+      "fpr": 0.014119601328903655,
+      "tn": 1187,
+      "fp": 17,
+      "fn": 44,
+      "tp": 76,
+      "threshold": 0.03801044076681137
+    },
+    "test_by_board": {
+      "pcb1": {
+        "n": 442,
+        "ap": 0.8919677439005596,
+        "auc": 0.985136815920398,
+        "accuracy": 0.9592760180995475,
+        "f1": 0.7692307692307693,
+        "recall": 0.75,
+        "fpr": 0.01990049751243781,
+        "tn": 394,
+        "fp": 8,
+        "fn": 10,
+        "tp": 30,
+        "threshold": 0.03801044076681137
+      },
+      "pcb2": {
+        "n": 440,
+        "ap": 0.820613808645523,
+        "auc": 0.9158125,
+        "accuracy": 0.9659090909090909,
+        "f1": 0.7945205479452054,
+        "recall": 0.725,
+        "fpr": 0.01,
+        "tn": 396,
+        "fp": 4,
+        "fn": 11,
+        "tp": 29,
+        "threshold": 0.03801044076681137
+      },
+      "pcb3": {
+        "n": 442,
+        "ap": 0.7072915418244263,
+        "auc": 0.9353233830845771,
+        "accuracy": 0.9366515837104072,
+        "f1": 0.5483870967741935,
+        "recall": 0.425,
+        "fpr": 0.012437810945273632,
+        "tn": 397,
+        "fp": 5,
+        "fn": 23,
+        "tp": 17,
+        "threshold": 0.03801044076681137
+      }
+    },
+    "input_shape": [
+      160,
+      160,
+      3
+    ],
+    "input_dtype": "uint8 RGB",
+    "encoder": "pcb_detail_encoder.keras",
+    "feature_views": "global_tiles",
+    "comparison": {
+      "global_best_validation_ap": 0.7493323091267743,
+      "detail_best_validation_ap": 0.8603122136224817,
+      "detail_candidates_validation_ap": {
+        "linear": 0.7546156608516098,
+        "dense96": 0.8603122136224817
+      },
+      "test_reuse": "The same published test rows were already evaluated for the whole-image experiment. Follow-up is a benchmark comparison."
+    },
+    "global_test": {
+      "n": 1324,
+      "ap": 0.6649666342731385,
+      "auc": 0.9219269102990033,
+      "accuracy": 0.9365558912386707,
+      "f1": 0.6379310344827587,
+      "recall": 0.6166666666666667,
+      "fpr": 0.03156146179401993,
+      "tn": 1166,
+      "fp": 38,
+      "fn": 46,
+      "tp": 74,
+      "threshold": 0.8045884966850281
+    }
+  },
+  "msdd": {
+    "scope": "MSDD round machined metal images, any annotated defect versus empty annotation. Separate from VISION Ring.",
+    "split_counts": {
+      "test": {
+        "0": 25,
+        "1": 125
+      },
+      "train": {
+        "0": 183,
+        "1": 1012
+      },
+      "validation": {
+        "0": 36,
+        "1": 114
+      }
+    },
+    "part_groups": {
+      "test": 30,
+      "train": 239,
+      "validation": 30
+    },
+    "same_vision_ring_bytes": 0,
+    "selected": "dense96",
+    "candidate_validation_mean_ap": {
+      "linear": 0.7349073397121328,
+      "dense96": 0.8327421669393029
+    },
+    "checkpoint": "msdd_model.keras",
+    "validation": {
+      "n": 150,
+      "ap": 0.9766895983737013,
+      "auc": 0.9188596491228069,
+      "accuracy": 0.82,
+      "f1": 0.8656716417910447,
+      "recall": 0.7631578947368421,
+      "fpr": 0.0,
+      "tn": 36,
+      "fp": 0,
+      "fn": 27,
+      "tp": 87,
+      "threshold": 0.9878681898117065,
+      "normal_ap": 0.6887947355049044,
+      "balanced_accuracy": 0.881578947368421
+    },
+    "test": {
+      "n": 150,
+      "ap": 0.9789276161261025,
+      "auc": 0.8944,
+      "accuracy": 0.7666666666666667,
+      "f1": 0.8416289592760181,
+      "recall": 0.744,
+      "fpr": 0.12,
+      "tn": 22,
+      "fp": 3,
+      "fn": 32,
+      "tp": 93,
+      "threshold": 0.9878681898117065,
+      "normal_ap": 0.5912248259326113,
+      "balanced_accuracy": 0.812
+    },
+    "input_shape": [
+      160,
+      160,
+      3
+    ],
+    "input_dtype": "uint8 RGB"
+  },
+  "cases": {
+    "ring": [
+      {
+        "role": "hit",
+        "truth": "unfinished_surface",
+        "prediction": "unfinished_surface",
+        "score": 0.9999989,
+        "sample": "val:16",
+        "src": "./evidence/quality/ring-hit.webp"
+      },
+      {
+        "role": "error",
+        "truth": "t_contamination",
+        "prediction": "unfinished_surface",
+        "score": 0.9656172,
+        "sample": "val:11",
+        "src": "./evidence/quality/ring-error.webp"
+      }
+    ],
+    "lens": [
+      {
+        "role": "hit",
+        "truth": 1,
+        "prediction": 1,
+        "score": 0.45599496,
+        "sample": "val/000066.jpg (192, 192)",
+        "src": "./evidence/quality/lens-hit.webp"
+      },
+      {
+        "role": "error",
+        "truth": 0,
+        "prediction": 1,
+        "score": 0.14480872,
+        "sample": "val/000066.jpg (384, 0)",
+        "src": "./evidence/quality/lens-error.webp"
+      }
+    ],
+    "pcb": [
+      {
+        "role": "hit",
+        "truth": 1,
+        "prediction": 1,
+        "score": 0.99670047,
+        "sample": "pcb1/Data/Images/Anomaly/000.JPG",
+        "src": "./evidence/quality/pcb-hit.webp"
+      },
+      {
+        "role": "error",
+        "truth": 1,
+        "prediction": 0,
+        "score": 0.008001995,
+        "sample": "pcb1/Data/Images/Anomaly/015.JPG",
+        "src": "./evidence/quality/pcb-error.webp"
+      }
+    ]
+  }
+}

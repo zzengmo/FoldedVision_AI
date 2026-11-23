@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-23",
+  "changed_slide": 6,
+  "slide_count": 30,
+  "duration": "20:00",
+  "revised_section_timing": "01:48–02:25",
+  "illustration": {
+    "source": "user-supplied reference, original publisher unverified",
+    "sha256": "a8a782563aa4425232bd470398f40790cebb3a1ce24608e8e12988b0b4256773"
+  },
+  "company_product_source": "https://kind.krx.co.kr/external/2026/05/13/000873/20260513001943/11013.htm",
+  "photos_reused_from_existing_deck": [
+    {
+      "name": "Lens",
+      "task": "미세 결함 찾기",
+      "width": 256,
+      "height": 256,
+      "original_slide": 24,
+      "sha256": "0dd7863f157e0c47f0971fe3e70fc465518ba490e5bca1ea496d46ac61408085"
+    },
+    {
+      "name": "Ring",
+      "task": "표면 결함 유형 분류",
+      "width": 560,
+      "height": 448,
+      "original_slide": 24,
+      "sha256": "e8f781fb6ae96e11281be4569b1d99ab02d1295889efac03915d466d49fb6e9d"
+    },
+    {
+      "name": "PCB",
+      "task": "결함 위치 찾기",
+      "width": 640,
+      "height": 640,
+      "original_slide": 20,
+      "sha256": "10f7fc9366eb603dfb7d736bd07630ea5378fa61aa9477daa3e9d8548b238f2d"
+    }
+  ],
+  "notes_match_script": true,
+  "other_slides_and_notes_byte_identical": true,
+  "linked_krx_source_in_powerpoint_and_pdf": true,
+  "previous_version": {
+    "path": "archive/2026-11-23_before_topic_rationale_revision.zip",
+    "sha256": "b85f4983b6a2f5d4f58bf3836425e134d03eb6f80e8a51283db16d75472104b6"
+  }
+}

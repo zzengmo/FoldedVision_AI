@@ -1,0 +1,138 @@
+{
+  "previous_files": {
+    "01_Ring_CNN_Baseline.ipynb": {
+      "verified_path": "01_Ring_CNN_Baseline.ipynb",
+      "sha256": "aaee7f01a8e6ca8c79b51039e716fc4386e5fc54bc512812589b57f367f03276"
+    },
+    "02_Ring_DeepLearning_Final.ipynb": {
+      "verified_path": "archive/2026-11-23_before_quality_upgrade_02.ipynb",
+      "sha256": "37908ac52a5003c8c4244523d907e558d2dd09cc23fb0560e2823170de3af4aa"
+    },
+    "models/ring_cnn_baseline.keras": {
+      "verified_path": "models/ring_cnn_baseline.keras",
+      "sha256": "cd093eb93cefe86be60f2ac6f2be47890542a41b12ed67f14776ab2ef9277b3b"
+    },
+    "models/ring_cnn_final.keras": {
+      "verified_path": "models/ring_cnn_final.keras",
+      "sha256": "4ddb59229a0c29fb30cfaf4a948a4e8e67ee21c86285a1bda54b587fdbd6cd19"
+    },
+    "outputs/integration/ring_metrics.json": {
+      "verified_path": "outputs/integration/ring_metrics.json",
+      "sha256": "1c89ff73bc6bc466aac6934cb83b178ce0259b9d39c8285c51e57efc5de9c789"
+    },
+    "team/lens/01_Lens_CNN_Baseline.ipynb": {
+      "verified_path": "team/lens/01_Lens_CNN_Baseline.ipynb",
+      "sha256": "0dafd6866b7db7583ba62cd3ff1a3f5ce4cfbe8a2b9ba76e791f2e98ecda3e2b"
+    },
+    "team/lens/02_Lens_DeepLearning_Final.ipynb": {
+      "verified_path": "team/lens/02_Lens_DeepLearning_Final.ipynb",
+      "sha256": "494ddd48fb47d71f0581ce848abdd98eaf17e58ac3a23ea68a7d6b91e11302ef"
+    },
+    "PCB_VisA.ipynb": {
+      "verified_path": "PCB_VisA.ipynb",
+      "sha256": "57ff77bcb452f56ba1ffa5ad002227019045dd87f5537daab1ca2fcaee87fee0"
+    },
+    "PCB_YOLO.ipynb": {
+      "verified_path": "PCB_YOLO.ipynb",
+      "sha256": "8685203cf18cc354f3d76fa056a55723cf815408eabab366b8095d259bc13443"
+    }
+  },
+  "original_cells": 58,
+  "appended_cells": 11,
+  "existing_cells_equal": true,
+  "optional_default_off": true,
+  "notebook_sha256": "0be60b4e9bee2d7c9a047ca29b5355a2ac6bd47664cf6a19ee98449e0f0b0b00",
+  "archives_verified": {
+    "VisA_20220922.tar": {
+      "bytes": 1929840640,
+      "sha256": "2eb8690c803ab37de0324772964100169ec8ba1fa3f7e94291c9ca673f40f362"
+    },
+    "Lens.tar.gz": {
+      "bytes": 75168801,
+      "sha256": "55abfa1ecc8c02eab1d14eabb714a927bfc1a8c4dea11a725c8252452301b6c3"
+    },
+    "MobileNetV2_0.5_160.h5": {
+      "bytes": 3201480,
+      "sha256": "070ad37fe8ad66e6b4ed991dd59bc3931094782a4a1e43ab0fa234194b928aa9"
+    },
+    "VisA_2cls_highshot.csv": {
+      "bytes": 658163,
+      "sha256": "c3331eede15f2da8a75b380d4fbfb24f75ee036ec9a25147eca898da6e972f09"
+    }
+  },
+  "msdd_files_verified": 2993,
+  "model_checkpoints": {
+    "lens_patch_dense96_head.keras": {
+      "bytes": 3999068,
+      "sha256": "b85910b382583c7037b0f5671370bd9fcba5c07a88da6703e47652e3753b7d84"
+    },
+    "lens_patch_linear_head.keras": {
+      "bytes": 234776,
+      "sha256": "2bad2d383843d4a476fe5a57e3c705362c0b70061b55b2ed6b777d9c7a54e64c"
+    },
+    "lens_patch_model.keras": {
+      "bytes": 7357211,
+      "sha256": "aae144c0fed724e4fbc775a4537a10291e952f38bf9dcec46e0ada7ab6682d96"
+    },
+    "msdd_dense96_head.keras": {
+      "bytes": 3998865,
+      "sha256": "5a1a24940bf5b4c47f08f67d9ea8508e8a8736614ba51623adc0a52ee2166302"
+    },
+    "msdd_linear_head.keras": {
+      "bytes": 234573,
+      "sha256": "f13593a5f5843d11149795b56386c7011a0ab068601a625e8ff6128449da28c9"
+    },
+    "msdd_model.keras": {
+      "bytes": 7356990,
+      "sha256": "75afe15abc76e47587175855820f62154ffe1db4619c464ca172904814c9b675"
+    },
+    "pcb_detail_dense96_head.keras": {
+      "bytes": 11937301,
+      "sha256": "ddac9a9f16b383eff0660dc8e8031856c06046403c97876e765640c15913da75"
+    },
+    "pcb_detail_encoder.keras": {
+      "bytes": 3357982,
+      "sha256": "3bc9205c5f3761c97287ee9ea0a04d0eff36fdcb6665fbc048fbdbd5cd4bd4c1"
+    },
+    "pcb_detail_linear_head.keras": {
+      "bytes": 665041,
+      "sha256": "4d4f70329e0967201f47f20bc4a5191ab99e242c5bbd4f214161990603914111"
+    },
+    "pcb_native_cnn.keras": {
+      "bytes": 388127,
+      "sha256": "b8fb5f63a2432a79c5830dfce21d83af3eb07e400f2b0f2522c9e3c3016886ed"
+    },
+    "pcb_transfer_dense96_head.keras": {
+      "bytes": 3997543,
+      "sha256": "59924783791e9aaf3c21775705d932403bfcd48a07b1a6255679d40597a8bf61"
+    },
+    "pcb_transfer_linear_head.keras": {
+      "bytes": 233251,
+      "sha256": "92070bf07cc981266bc3a12980999a86fa99281d8dafa1e3926f0a17e986c829"
+    },
+    "pcb_visa_model.keras": {
+      "bytes": 3591394,
+      "sha256": "057d0d3972b1e6128eac48b2f1bdfe359e6e0aef1fef247b15fa7baa81ee16ad"
+    },
+    "vision_ring_encoder.keras": {
+      "bytes": 3357982,
+      "sha256": "4199e9d5ba5388637c19a07c7df599aa10ee401d989f92bd0c3349a3a612e645"
+    },
+    "vision_ring_global_48_head.keras": {
+      "bytes": 2078401,
+      "sha256": "157109a315821dd028d5f8838a1008fd01a0d60a6093792111028a6a7604c77e"
+    },
+    "vision_ring_global_linear_head.keras": {
+      "bytes": 272130,
+      "sha256": "87e58e24a31f6c127351727459035f236391350cf36753ab468bbe3c3ba43aff"
+    },
+    "vision_ring_global_tiles_48_head.keras": {
+      "bytes": 6184417,
+      "sha256": "a41e14ebbe2c3515dcc92ea2c69fe2084c85dface30c026a1492701432c5c0d1"
+    },
+    "vision_ring_global_tiles_linear_head.keras": {
+      "bytes": 783908,
+      "sha256": "86e502fb223d1616bae4645dff53bb20edce87570091bf90d3cabe47ae1579ec"
+    }
+  }
+}

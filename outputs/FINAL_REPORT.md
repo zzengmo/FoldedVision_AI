@@ -25,7 +25,7 @@ Ring 성능과 합쳐서 보고하지 않습니다. [베어링 상세 보고서]
 
 ## 코드와 통합 파일
 
-- [베이스라인 코드](../01_Ring_CNN_Baseline.ipynb), [최종 코드](../02_Ring_DeepLearning_Final.ipynb).
+- [베이스라인 코드](../notebooks/ring/01_Ring_CNN_Baseline.ipynb), [최종 코드](../notebooks/ring/02_Ring_DeepLearning_Final.ipynb).
 - [팀 통합 지표](integration/ring_metrics.json), [입력·클래스·모델 설정](integration/ring_model_config.json), [42장 실제 예측](integration/ring_predictions.csv).
 - `figures/`에는 데이터·학습 곡선·혼동행렬·설명용 그림, `metrics/`에는 분할과 수치가 있습니다.
 - [데이터 출처](../DATA_SOURCES.md), [수업과 구현 연결](../COURSE_ALIGNMENT.md).

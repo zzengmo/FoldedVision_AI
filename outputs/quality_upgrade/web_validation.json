@@ -1,0 +1,29 @@
+{
+  "url": "http://127.0.0.1:4187/",
+  "platform": "Edge headless",
+  "checks": [
+    {
+      "part": "Ring",
+      "compared_metric": "92.9%",
+      "visible_holdout_images": 2,
+      "lightbox": true
+    },
+    {
+      "part": "Lens",
+      "compared_metric": "0.668",
+      "visible_holdout_images": 2,
+      "lightbox": true
+    },
+    {
+      "part": "PCB",
+      "compared_metric": "0.785",
+      "visible_holdout_images": 2,
+      "lightbox": true
+    }
+  ],
+  "mobile_width": {
+    "content": 390,
+    "viewport": 390
+  },
+  "runtime_errors": []
+}

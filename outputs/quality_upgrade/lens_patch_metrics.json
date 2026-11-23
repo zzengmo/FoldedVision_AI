@@ -1,0 +1,84 @@
+{
+  "scope": "VISION Lens grid patch classification. Test has 52 defective whole images, no verified normal whole images.",
+  "data_images": {
+    "train": 50,
+    "validation": 16,
+    "test": 52
+  },
+  "patch_counts": {
+    "train": {
+      "total": 3203,
+      "defect": 748
+    },
+    "validation": {
+      "total": 806,
+      "defect": 141
+    },
+    "test": {
+      "total": 3410,
+      "defect": 579
+    }
+  },
+  "original_patch_counts": {
+    "train": [
+      2277,
+      759
+    ],
+    "validation": [
+      806,
+      141
+    ],
+    "test": [
+      3410,
+      579
+    ]
+  },
+  "checkpoint": "lens_patch_model.keras",
+  "selected": "dense96",
+  "candidate_validation_ap": {
+    "linear": 0.5904293994926758,
+    "dense96": 0.6324589009583245
+  },
+  "legacy": {
+    "ap": 0.418667,
+    "auc": 0.755983,
+    "recall": 0.920553,
+    "fpr": 0.654186
+  },
+  "validation": {
+    "n": 806,
+    "ap": 0.6324589009583245,
+    "auc": 0.8441955953714073,
+    "accuracy": 0.5459057071960298,
+    "f1": 0.4227129337539432,
+    "recall": 0.950354609929078,
+    "fpr": 0.5398496240601504,
+    "tn": 306,
+    "fp": 359,
+    "fn": 7,
+    "tp": 134,
+    "threshold": 0.0368250347673893
+  },
+  "test": {
+    "n": 3410,
+    "ap": 0.6680934844435192,
+    "auc": 0.85919675392536,
+    "accuracy": 0.5457478005865103,
+    "f1": 0.4085528827796869,
+    "recall": 0.924006908462867,
+    "fpr": 0.5316142705757683,
+    "tn": 1326,
+    "fp": 1505,
+    "fn": 44,
+    "tp": 535,
+    "threshold": 0.0368250347673893
+  },
+  "whole_image_defect_detection_count": 52,
+  "original_patch_px": 256,
+  "input_shape": [
+    160,
+    160,
+    3
+  ],
+  "input_dtype": "uint8 RGB"
+}

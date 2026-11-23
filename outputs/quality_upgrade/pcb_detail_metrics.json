@@ -1,0 +1,175 @@
+{
+  "scope": "VisA PCB1-PCB3 photo classification from the whole image and four overlapping crops; independent of PCB4 YOLO.",
+  "split_counts": {
+    "test": {
+      "0": 1204,
+      "1": 120
+    },
+    "train": {
+      "0": 1446,
+      "1": 144
+    },
+    "validation": {
+      "0": 361,
+      "1": 36
+    }
+  },
+  "board_counts": {
+    "pcb1": {
+      "test": {
+        "0": 402,
+        "1": 40
+      },
+      "train": {
+        "0": 482,
+        "1": 48
+      },
+      "validation": {
+        "0": 120,
+        "1": 12
+      }
+    },
+    "pcb2": {
+      "test": {
+        "0": 400,
+        "1": 40
+      },
+      "train": {
+        "0": 481,
+        "1": 48
+      },
+      "validation": {
+        "0": 120,
+        "1": 12
+      }
+    },
+    "pcb3": {
+      "test": {
+        "0": 402,
+        "1": 40
+      },
+      "train": {
+        "0": 483,
+        "1": 48
+      },
+      "validation": {
+        "0": 121,
+        "1": 12
+      }
+    }
+  },
+  "validation_rule": "20% of the official training set per board and class, seed 42; select by AP, threshold by F1",
+  "exact_duplicates_excluded": 0,
+  "checkpoint": "pcb_detail_dense96_head.keras",
+  "selected": "detail_dense96",
+  "candidate_validation_ap": {
+    "native": 0.31904817506394134,
+    "linear": 0.7493323091267743,
+    "dense96": 0.732115365540769,
+    "detail_linear": 0.7546156608516098,
+    "detail_dense96": 0.8603122136224817
+  },
+  "validation": {
+    "n": 397,
+    "ap": 0.8603122136224817,
+    "auc": 0.9306709756848262,
+    "accuracy": 0.9748110831234257,
+    "f1": 0.8529411764705882,
+    "recall": 0.8055555555555556,
+    "fpr": 0.008310249307479225,
+    "tn": 358,
+    "fp": 3,
+    "fn": 7,
+    "tp": 29,
+    "threshold": 0.03801044076681137
+  },
+  "test": {
+    "n": 1324,
+    "ap": 0.7845622352705002,
+    "auc": 0.9413275193798449,
+    "accuracy": 0.9539274924471299,
+    "f1": 0.7136150234741784,
+    "recall": 0.6333333333333333,
+    "fpr": 0.014119601328903655,
+    "tn": 1187,
+    "fp": 17,
+    "fn": 44,
+    "tp": 76,
+    "threshold": 0.03801044076681137
+  },
+  "test_by_board": {
+    "pcb1": {
+      "n": 442,
+      "ap": 0.8919677439005596,
+      "auc": 0.985136815920398,
+      "accuracy": 0.9592760180995475,
+      "f1": 0.7692307692307693,
+      "recall": 0.75,
+      "fpr": 0.01990049751243781,
+      "tn": 394,
+      "fp": 8,
+      "fn": 10,
+      "tp": 30,
+      "threshold": 0.03801044076681137
+    },
+    "pcb2": {
+      "n": 440,
+      "ap": 0.820613808645523,
+      "auc": 0.9158125,
+      "accuracy": 0.9659090909090909,
+      "f1": 0.7945205479452054,
+      "recall": 0.725,
+      "fpr": 0.01,
+      "tn": 396,
+      "fp": 4,
+      "fn": 11,
+      "tp": 29,
+      "threshold": 0.03801044076681137
+    },
+    "pcb3": {
+      "n": 442,
+      "ap": 0.7072915418244263,
+      "auc": 0.9353233830845771,
+      "accuracy": 0.9366515837104072,
+      "f1": 0.5483870967741935,
+      "recall": 0.425,
+      "fpr": 0.012437810945273632,
+      "tn": 397,
+      "fp": 5,
+      "fn": 23,
+      "tp": 17,
+      "threshold": 0.03801044076681137
+    }
+  },
+  "input_shape": [
+    160,
+    160,
+    3
+  ],
+  "input_dtype": "uint8 RGB",
+  "encoder": "pcb_detail_encoder.keras",
+  "feature_views": "global_tiles",
+  "comparison": {
+    "global_best_validation_ap": 0.7493323091267743,
+    "detail_best_validation_ap": 0.8603122136224817,
+    "detail_candidates_validation_ap": {
+      "linear": 0.7546156608516098,
+      "dense96": 0.8603122136224817
+    },
+    "test_reuse": "The same published test rows were already evaluated for the whole-image experiment. Follow-up is a benchmark comparison."
+  },
+  "global_test": {
+    "n": 1324,
+    "ap": 0.6649666342731385,
+    "auc": 0.9219269102990033,
+    "accuracy": 0.9365558912386707,
+    "f1": 0.6379310344827587,
+    "recall": 0.6166666666666667,
+    "fpr": 0.03156146179401993,
+    "tn": 1166,
+    "fp": 38,
+    "fn": 46,
+    "tp": 74,
+    "threshold": 0.8045884966850281
+  }
+}

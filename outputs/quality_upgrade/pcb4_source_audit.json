@@ -1,0 +1,142 @@
+{
+  "scope": "compare six PCB4 EDA panel photos to the official VisA archive; full training manifest was not provided",
+  "preview": "sites/foldedvision-inspection/public/evidence/pcb4-eda.webp",
+  "archive": "data/external/quality_upgrade/source_archives/VisA_20220922.tar",
+  "source_url": "https://registry.opendata.aws/visa/",
+  "candidate_images": 1105,
+  "distance": "mean absolute BGR difference after resized or center cropped 75 by 61 pixels, lower is closer; preview contains some annotation overlays",
+  "top5": {
+    "good": [
+      [
+        1.6472,
+        "pcb4/Data/Images/Normal/0022.JPG"
+      ],
+      [
+        5.3781,
+        "pcb4/Data/Images/Normal/0683.JPG"
+      ],
+      [
+        5.4578,
+        "pcb4/Data/Images/Normal/0264.JPG"
+      ],
+      [
+        7.127,
+        "pcb4/Data/Images/Normal/0196.JPG"
+      ],
+      [
+        7.3445,
+        "pcb4/Data/Images/Normal/0313.JPG"
+      ]
+    ],
+    "component_damage": [
+      [
+        1.7118,
+        "pcb4/Data/Images/Anomaly/016.JPG"
+      ],
+      [
+        7.5421,
+        "pcb4/Data/Images/Normal/0158.JPG"
+      ],
+      [
+        7.6882,
+        "pcb4/Data/Images/Anomaly/015.JPG"
+      ],
+      [
+        7.8394,
+        "pcb4/Data/Images/Normal/0688.JPG"
+      ],
+      [
+        7.8611,
+        "pcb4/Data/Images/Normal/0931.JPG"
+      ]
+    ],
+    "foreign_material": [
+      [
+        1.7464,
+        "pcb4/Data/Images/Anomaly/036.JPG"
+      ],
+      [
+        8.6831,
+        "pcb4/Data/Images/Normal/0109.JPG"
+      ],
+      [
+        8.98,
+        "pcb4/Data/Images/Normal/0379.JPG"
+      ],
+      [
+        9.0184,
+        "pcb4/Data/Images/Normal/0102.JPG"
+      ],
+      [
+        9.0805,
+        "pcb4/Data/Images/Anomaly/041.JPG"
+      ]
+    ],
+    "miss": [
+      [
+        1.5895,
+        "pcb4/Data/Images/Anomaly/046.JPG"
+      ],
+      [
+        7.0359,
+        "pcb4/Data/Images/Anomaly/086.JPG"
+      ],
+      [
+        7.6268,
+        "pcb4/Data/Images/Anomaly/021.JPG"
+      ],
+      [
+        8.1165,
+        "pcb4/Data/Images/Normal/0452.JPG"
+      ],
+      [
+        8.2082,
+        "pcb4/Data/Images/Anomaly/008.JPG"
+      ]
+    ],
+    "oxidation": [
+      [
+        1.6738,
+        "pcb4/Data/Images/Anomaly/094.JPG"
+      ],
+      [
+        7.7825,
+        "pcb4/Data/Images/Anomaly/076.JPG"
+      ],
+      [
+        8.0839,
+        "pcb4/Data/Images/Anomaly/084.JPG"
+      ],
+      [
+        8.5894,
+        "pcb4/Data/Images/Anomaly/037.JPG"
+      ],
+      [
+        9.1392,
+        "pcb4/Data/Images/Normal/0159.JPG"
+      ]
+    ],
+    "scratch": [
+      [
+        1.6836,
+        "pcb4/Data/Images/Anomaly/075.JPG"
+      ],
+      [
+        7.3102,
+        "pcb4/Data/Images/Anomaly/082.JPG"
+      ],
+      [
+        7.6404,
+        "pcb4/Data/Images/Normal/0448.JPG"
+      ],
+      [
+        7.934,
+        "pcb4/Data/Images/Anomaly/061.JPG"
+      ],
+      [
+        7.9524,
+        "pcb4/Data/Images/Anomaly/006.JPG"
+      ]
+    ]
+  }
+}

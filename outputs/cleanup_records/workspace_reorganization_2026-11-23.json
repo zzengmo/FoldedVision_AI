@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-23",
+  "notebooks": [
+    {
+      "from": "01_Ring_CNN_Baseline.ipynb",
+      "to": "notebooks/ring/01_Ring_CNN_Baseline.ipynb",
+      "sha256_before": "aaee7f01a8e6ca8c79b51039e716fc4386e5fc54bc512812589b57f367f03276",
+      "sha256_after": "01a1a0ff8ab2e2410e4360d279d9cdcd2520dd99c08a70221c1b6d2adf7f083c",
+      "edited_path_cells_zero_based": [
+        1
+      ]
+    },
+    {
+      "from": "02_Ring_DeepLearning_Final.ipynb",
+      "to": "notebooks/ring/02_Ring_DeepLearning_Final.ipynb",
+      "sha256_before": "0be60b4e9bee2d7c9a047ca29b5355a2ac6bd47664cf6a19ee98449e0f0b0b00",
+      "sha256_after": "4763ed3c40eebc2c54a62faf6d9a0f5f376a133787033081ba5255a4db4c46bc",
+      "edited_path_cells_zero_based": [
+        1,
+        60,
+        62
+      ]
+    },
+    {
+      "from": "team/lens/01_Lens_CNN_Baseline.ipynb",
+      "to": "notebooks/lens/01_Lens_CNN_Baseline.ipynb",
+      "sha256_before": "0dafd6866b7db7583ba62cd3ff1a3f5ce4cfbe8a2b9ba76e791f2e98ecda3e2b",
+      "sha256_after": "0dafd6866b7db7583ba62cd3ff1a3f5ce4cfbe8a2b9ba76e791f2e98ecda3e2b",
+      "edited_path_cells_zero_based": []
+    },
+    {
+      "from": "team/lens/02_Lens_DeepLearning_Final.ipynb",
+      "to": "notebooks/lens/02_Lens_DeepLearning_Final.ipynb",
+      "sha256_before": "494ddd48fb47d71f0581ce848abdd98eaf17e58ac3a23ea68a7d6b91e11302ef",
+      "sha256_after": "494ddd48fb47d71f0581ce848abdd98eaf17e58ac3a23ea68a7d6b91e11302ef",
+      "edited_path_cells_zero_based": []
+    },
+    {
+      "from": "PCB_VisA.ipynb",
+      "to": "notebooks/pcb/PCB_VisA.ipynb",
+      "sha256_before": "57ff77bcb452f56ba1ffa5ad002227019045dd87f5537daab1ca2fcaee87fee0",
+      "sha256_after": "57ff77bcb452f56ba1ffa5ad002227019045dd87f5537daab1ca2fcaee87fee0",
+      "edited_path_cells_zero_based": []
+    },
+    {
+      "from": "PCB_YOLO.ipynb",
+      "to": "notebooks/pcb/PCB_YOLO.ipynb",
+      "sha256_before": "8685203cf18cc354f3d76fa056a55723cf815408eabab366b8095d259bc13443",
+      "sha256_after": "8685203cf18cc354f3d76fa056a55723cf815408eabab366b8095d259bc13443",
+      "edited_path_cells_zero_based": []
+    }
+  ],
+  "removed_previous_presentation_files": [
+    {
+      "relative_path": "outputs/presentation/FoldedVision_Ring_발표_5분30초.pptx",
+      "sha256": "4c184c08bbf64da26499458b584fc5b4f0d509cb0087046499b21a8a8dcbc035"
+    },
+    {
+      "relative_path": "outputs/presentation/FoldedVision_공정제어실_팀발표.pptx",
+      "sha256": "f9e27111da30dbdec2392f2dfcb087e0c52ef7bb49815edd495e1d45ad870f60"
+    },
+    {
+      "relative_path": "outputs/presentation/FoldedVision_공정제어실_팀발표.pdf",
+      "sha256": "64537bb86d6efd0e043cb1e0bc4928c0b4bda55a26d041c96a3d37a10b5ba6d7"
+    },
+    {
+      "relative_path": "outputs/presentation/FoldedVision_공정제어실_팀발표_최종_대본.txt",
+      "sha256": "244df8a7276e2fa930cb790c747e7a66ce157107fa14dbb67b9b26ef50dfa159"
+    },
+    {
+      "relative_path": "archive/2026-11-23_before_data_provenance_revision.zip",
+      "sha256": "61dcf7701e68dc6258511347015a1a56e33e6a1e87b5edc942a631ce59a3e3a0"
+    },
+    {
+      "relative_path": "archive/2026-11-23_before_industrial_deck.zip",
+      "sha256": "7749906e53e7119dd49ba0d2ee4c7e71341e3dc77340d203c1022f501d1f7390"
+    },
+    {
+      "relative_path": "archive/2026-11-23_before_oral_script_revision.zip",
+      "sha256": "277bf674a9a72bc6726057df439c63aaf9bff9a833ccfc2bb83a186288c08da5"
+    },
+    {
+      "relative_path": "archive/2026-11-23_before_presentation_visual_revision.zip",
+      "sha256": "c6f5a5d669f200dfc17bd872cdee19d0d10bc02b0bb8d888dcb0196fd57492aa"
+    },
+    {
+      "relative_path": "archive/2026-11-23_before_topic_rationale_revision.zip",
+      "sha256": "b85f4983b6a2f5d4f58bf3836425e134d03eb6f80e8a51283db16d75472104b6"
+    },
+    {
+      "relative_path": "archive/2026-11-23_before_user_template_rebuild.zip",
+      "sha256": "be6f3b959957958bbcfaa3ac4f1d445c7c4a141513937857dbbe63a4639d1e91"
+    },
+    {
+      "relative_path": "archive/2026-11-23_previous_presentations.zip",
+      "sha256": "ca74e944f5db2a5f4e70e487757ed4bc24f7dada97ced75a5a19e0b267d73baa"
+    }
+  ],
+  "protected_file_counts": {
+    "data": 8863,
+    "models": 41
+  },
+  "protected_data_and_model_sha256_all_match": true,
+  "protected_inventory_sha256": "c77d1660595da1e5c5e1956c09cbb58969f9476d20a531459e356e189b9c15c7",
+  "project_root_resolution_tested_from_both_locations": true,
+  "ring_saved_model_prediction_matches_existing_csv": true,
+  "react_production_build_passed": true,
+  "previous_presentation_disposal": "Windows Recycle Bin",
+  "new_common_presentation": {
+    "slides": 21,
+    "common_slides": 11,
+    "common_duration": "04:50",
+    "ring_slides": 8,
+    "ring_duration": "05:30",
+    "pending_lens_and_pcb_slide_numbers": [12, 21],
+    "user_supplied_structure_diagram_slide": 5,
+    "product_photo_source": "https://www.etnews.com/20251204000169",
+    "product_information_source": "https://kind.krx.co.kr/external/2026/05/13/000873/20260513001943/11013.htm"
+  }
+}

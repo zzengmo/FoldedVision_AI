@@ -1,0 +1,37 @@
+{
+  "template_name": "제목 없는 디자인.pptx",
+  "template_sha256": "ad67604dcec611fda9582b7fbb86ff5129370eeb55bf9ca3d554215d47f1c034",
+  "slides": 30,
+  "presentation_minutes": 20,
+  "appendix_slide": 30,
+  "speaker_notes": 30,
+  "editable_schedule_table": 4,
+  "schedule_is_proposed": true,
+  "template_artwork_hashes_retained": [
+    "32d603b9412e2615af0342fa4f14d0f3985606779501c52cad4890dd014cf032",
+    "80d733b1befb90dd0678b173da08087800407174490e396bca93b19354174a11",
+    "dad1c0d64a07bce83ab943f4454a5ef279e36a7d6b325eb85c1231aeb74d5637"
+  ],
+  "old_deck_and_materials_backup": {
+    "path": "archive/2026-11-23_before_user_template_rebuild.zip",
+    "bytes": 3444574,
+    "sha256": "be6f3b959957958bbcfaa3ac4f1d445c7c4a141513937857dbbe63a4639d1e91"
+  },
+  "final_outputs": [
+    {
+      "path": "outputs/presentation/FoldedVision_공정제어실_팀발표.pptx",
+      "bytes": 2342161,
+      "sha256": "5f05964bea7907ddc5d528b97e1e4b433011c8bda729c0af75a2a1592836fbec"
+    },
+    {
+      "path": "outputs/presentation/FoldedVision_공정제어실_팀발표.pdf",
+      "bytes": 1624415,
+      "sha256": "1c05c2b1504395a5ce3e7617d8d80f980c050268acd282aa41627bb2d59c9197"
+    },
+    {
+      "path": "outputs/presentation/FoldedVision_공정제어실_팀발표_최종_대본.txt",
+      "bytes": 15800,
+      "sha256": "b4ba44fadf9db223d17abb1fc0552ec334cae840bcf2eb8a804c382de9bc891c"
+    }
+  ]
+}
