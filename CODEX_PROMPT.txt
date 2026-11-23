@@ -12,4 +12,10 @@ Ring 기준·최종 노트북은 notebooks/ring/에 있어. 이 폴더나 프로
 
 2026-11-23 추가 실험은 outputs/quality_upgrade/REPORT.md를 읽어줘. 노트북 02 마지막 절에서 링 결함 유형, 렌즈 구역, VisA PCB1–3 사진 분류, 별도 MSDD 학습과 추론을 실행할 수 있어. 추가 원본 PC 데이터는 data/external/quality_upgrade/에 있고 가중치는 models/quality_upgrade/에 있어. 기존 팀 PCB4 YOLO 및 Lens U-Net과 별도 실험이야. React 웹은 Start_FoldedVision.cmd에서 실행하고 추가 학습 섹션에서 재학습 지표 및 실제 평가 사례를 볼 수 있어.
 
+현재 발표 PPT는 outputs/presentation/FoldedVision_최종발표.pptx의 공통 도입부 10장이야. 표지, 목록형 목차, 개요, 주제 선정 배경, 주제 선정 이유, 문제 정의, 검사 대상, 데이터·라벨, 평가 설계, 검증 범위 순서야. 11장 판본에서 웹 시연 장이 빠진 최신 로컬 파일을 그대로 보존했어. 웹·3D 시연은 개인별 Lens·Ring·PCB 실험과 종합 결과 뒤에 배치하기로 했고, 참고 미리보기는 outputs/presentation/slide_previews/slide-web-demo.png에 남겼어. 개인별 상세 실험과 후반 시연은 다음에 이어 붙여줘. 최신 공통부 미리보기는 slide-01.png부터 slide-10.png까지야.
+
+디자인은 1장 표지만 어두운 표지를 유지하고, 2~10장은 흰색 계열 F8FAFC야. 사용자는 네모 상자·화살표 도식과 같은 좌우 배치의 반복을 싫어해. 3장은 투명 부품 클러스터, 4장은 제품 확대, 5장은 품질 프로세스 전체와 외주·제조 구간 확대, 6장은 밝은 검사 장면, 7장은 실제 예측 예시, 9장은 실험·평가 역할, 10장은 세 부품 이미지로 발표를 연결해. 8장은 학습·검증·테스트를 나눈 편집 가능한 6열 표이며 숫자는 그대로야. 검은 본문이나 네모 도식으로 되돌리지 말아줘.
+
+사용자 제공 제품·구조·품질 프로세스 사진과 발표자 노트의 출처·범위를 보존해줘. 선정 취지는 외주와 제조 사이에 사전 외관 불량 탐지를 두자는 사용자 설명이야. 생성 이미지는 outputs/presentation/자료/생성이미지/에 있으며 실제 제품·장비·평가 결과로 설명하면 안 돼. 실제 현장 효과를 검증했다고 쓰지 말아줘. 최신 저장 상태는 outputs/cleanup_records/presentation_history/github_save_snapshot_2026-11-23.json, 이전 디자인 기록은 rich_design_2026-11-23.json에서 확인해줘.
+
 이번에 진행할 작업: [여기에 이번 목표를 적기]

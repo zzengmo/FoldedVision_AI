@@ -1,0 +1,50 @@
+﻿{
+    "date":  "2026-11-23",
+    "timezone":  "Asia/Seoul",
+    "slide_count":  10,
+    "sha256":  "B5B8DAE8ECF21B34E55ECDAB4B8A1EF1E55AA285882AB8B907AE8C11EA65F73F",
+    "slide_titles":  [
+                         {
+                             "slide":  1,
+                             "title":  "Cover"
+                         },
+                         {
+                             "slide":  2,
+                             "title":  "발표 목차"
+                         },
+                         {
+                             "slide":  3,
+                             "title":  "프로젝트 개요"
+                         },
+                         {
+                             "slide":  4,
+                             "title":  "주제 선정 배경"
+                         },
+                         {
+                             "slide":  5,
+                             "title":  "주제 선정 이유"
+                         },
+                         {
+                             "slide":  6,
+                             "title":  "문제 정의"
+                         },
+                         {
+                             "slide":  7,
+                             "title":  "검사 대상과 부품별 과제"
+                         },
+                         {
+                             "slide":  8,
+                             "title":  "데이터와 라벨 구성"
+                         },
+                         {
+                             "slide":  9,
+                             "title":  "개발과 평가 설계"
+                         },
+                         {
+                             "slide":  10,
+                             "title":  "검증 범위와 부품별 실험"
+                         }
+                     ],
+    "source_ppt_unchanged":  true,
+    "notes":  "Current local PPT already contains ten slides: the web demonstration slide was removed from the shared introduction. Save the user-edited PPT unchanged; web demo belongs after individual experiments and results."
+}

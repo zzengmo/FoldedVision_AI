@@ -7,7 +7,7 @@
 
 React 포트폴리오는 부품별 평가 사례, 모델 비교, 개발 과정, 3D 검사 게임을 제공합니다. [웹 실행 안내](sites/foldedvision-inspection/README.md)
 
-최종 발표는 [PowerPoint](outputs/presentation/FoldedVision_최종발표.pptx)와 [표지 미리보기](outputs/presentation/slide_previews/표지.png)를 사용합니다. 현재 표지 한 장에는 외주 부품을 제조에 투입하기 전 외관 결함을 확인한다는 주제를 담았습니다. 이전 [검토 기록](outputs/presentation/REVIEW_NOTES.md)과 [발표 대본 기록](outputs/presentation/FoldedVision_공통발표_대본.txt)은 참고용입니다. 실제 시연 화면은 `outputs/presentation/공정캡처/`에 있습니다.
+최종 발표는 [PowerPoint](outputs/presentation/FoldedVision_최종발표.pptx)와 [표지 미리보기](outputs/presentation/slide_previews/표지.png)를 사용합니다. 현재 PPT는 표지와 [발표 목차](outputs/presentation/slide_previews/slide-02.png)를 포함한 공통 도입부 **10장**입니다. 개요, 주제 선정 배경, 주제 선정 이유, 문제 정의, 검사 대상, 데이터·라벨, 평가 설계, 검증 범위를 담았습니다. 사용자 제공 제품·구조·품질 프로세스 사진으로 외주와 제조 사이에 사전 외관 검사를 두자는 선정 취지를 설명합니다. 본문에는 투명 배경 부품 이미지, 제품·프로세스 확대, 실제 저장된 예측 사례를 배치했고 설명과 데이터 표는 편집 가능합니다. 생성형 AI 이미지는 실제 제품·장비·평가 결과 사진이 아닙니다. 1장 표지만 어두운 배경이며 2~10장은 흰색 계열입니다. 개인별 Lens·Ring·PCB 실험과 종합 결과 뒤에 웹·3D 시연을 배치할 예정이며, 공통부에서 뺀 [웹 시연 장 미리보기](outputs/presentation/slide_previews/slide-web-demo.png)는 참고용으로 보존했습니다. 최신 미리보기는 `slide-01.png`부터 `slide-10.png`까지입니다. 이전 [검토 기록](outputs/presentation/REVIEW_NOTES.md)과 [발표 대본 기록](outputs/presentation/FoldedVision_공통발표_대본.txt)은 참고용입니다. 실제 시연 화면은 `outputs/presentation/공정캡처/`에 있습니다.
 
 모델 구조와 노트북 읽는 순서는 [Lens 공부자료](outputs/presentation/공부자료/Lens_딥러닝_공부자료.pdf), [Ring 공부자료](outputs/presentation/공부자료/Ring_딥러닝_공부자료.pdf), [PCB 공부자료](outputs/presentation/공부자료/PCB_딥러닝_공부자료.pdf)로 따로 정리했습니다. 세 자료에 데이터 출처와 실제 이용 범위 부록을 넣었습니다. [전체 데이터 출처](DATA_SOURCES.md)
 

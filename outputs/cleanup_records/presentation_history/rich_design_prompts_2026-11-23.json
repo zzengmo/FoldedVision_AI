@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-23",
+  "mode": "built-in image_gen.imagegen",
+  "assets": [
+    {
+      "file": "outputs/presentation/자료/생성이미지/AI_부품클러스터_투명.png",
+      "slide": 3,
+      "prompt": "Use case: product-mockup. Asset type: premium photorealistic component cutout for a white engineering presentation. Transparent background, no backdrop. Create one sophisticated still-life composition of three credible precision components: a beautiful small optical glass lens assembly in a black machined barrel with restrained violet-blue anti-reflection coating in the right foreground, a brushed silver circular machined metal ring angled behind it toward center-left, and a small dark emerald green PCB with fine gold traces and realistic tiny electronic components angled across the lower-left. The objects form a compact elegant diagonal cluster with natural-looking separation and tactile depth, whole objects visible with generous 8 percent breathing room. Large objects, exceptionally crisp premium macro product photography, soft neutral daylight, controlled subtle cyan edge reflections, real metal, glass, and solder detail. No inspection camera, no conveyor, no computer, no humans. Keep it plausible physical product photography, not abstract AI art. No text, no labels, no logos, no numbers, no watermark, no arrows, no boxes, no graphic panels, no infographic. Transparent background and minimal soft contact shadow only; all three objects must be cleanly isolated. Wide landscape composition, approximately 3:2.",
+      "transparent_background": true
+    },
+    {
+      "file": "outputs/presentation/자료/생성이미지/AI_부품별발표_투명.png",
+      "slide": 11,
+      "prompt": "Use case: product-mockup. Asset type: three isolated photorealistic precision component cutouts for the closing handoff of an engineering presentation. Transparent background. Very wide horizontal panoramic canvas, approximately 3:1 aspect ratio. Arrange exactly three physically separate objects in one horizontal row with generous empty spacing between them, no overlap: LEFT a small optical glass lens assembly in a black precision barrel seen at a flattering three-quarter angle with blue-violet optical coatings; CENTER a polished brushed-silver circular machined metal ring standing slightly tilted in three-quarter view, center hole clearly visible; RIGHT a small square dark-green PCB with a central black chip, believable gold traces and tiny realistic mounted components, seen at a three-quarter angle. Each object is equally prominent, fully visible, centered inside its own third of the panorama, with at least 10 percent of the canvas width of clear space between objects and no object crossing into the neighboring third. Photographic studio lighting, bright neutral whites and silvers, restrained navy and cyan reflections, exceptionally clear premium macro material detail. Keep the overall silhouette balanced and uncluttered. No camera rig, no computer, no conveyor, no packaging. No text, no labels, no letters, no logos, no watermark, no numbers, no arrows, no boxes, no panel backgrounds, no decorative shapes. Completely transparent background with minimal natural contact shadows only. This is conceptual component photography, not a picture of specific branded factory products.",
+      "transparent_background": true
+    }
+  ],
+  "disclosure": "Generated concept art, not actual branded products, training photos, production equipment, or evaluation results.",
+  "layout_note": "PNG alpha is preserved. Crops are native editable PowerPoint picture crops; originals remain intact."
+}

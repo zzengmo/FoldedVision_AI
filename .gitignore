@@ -47,6 +47,10 @@ __pycache__/
 !/outputs/presentation/slide_previews/표지.png
 !/outputs/presentation/자료/
 !/outputs/presentation/자료/*.jpg
+!/outputs/presentation/자료/FoldedVision_AI_검사부품_생성이미지.png
+!/outputs/presentation/자료/품질경영_프로세스_참고.png
+!/outputs/presentation/자료/생성이미지/
+!/outputs/presentation/자료/생성이미지/*.png
 !/outputs/presentation/공부자료/
 !/outputs/presentation/공부자료/*.pdf
 !/outputs/presentation/공정캡처/

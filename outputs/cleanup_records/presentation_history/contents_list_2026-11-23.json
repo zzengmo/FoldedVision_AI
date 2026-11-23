@@ -1,0 +1,181 @@
+﻿{
+    "date":  "2026-11-23",
+    "timezone":  "Asia/Seoul",
+    "request":  "Place native bullet lists below each contents heading.",
+    "source_sha256":  "263C1FAB256675DB4034D1D00BE76F0303C7539EDEDB0F7AA5BC1589489B1C52",
+    "backup":  "C:\\Users\\nyzer\\OneDrive\\Desktop\\새 폴더\\FoldedVision_AI\\archive\\2026-11-23_before_contents_list\\FoldedVision_최종발표.pptx",
+    "candidate":  "C:\\Users\\nyzer\\OneDrive\\Desktop\\새 폴더\\FoldedVision_AI\\.cache\\contents-list\\candidate.pptx",
+    "slide_count":  2,
+    "approved_cover_render_unchanged":  true,
+    "native_bullet_lists":  4,
+    "native_bullet_items":  12,
+    "all_text_fits":  true,
+    "text_checks":  [
+                        {
+                            "name":  "Project brand",
+                            "text":  "FoldedVision AI",
+                            "font_size_pt":  19,
+                            "box_height":  38,
+                            "text_height":  22.8,
+                            "box_width":  390,
+                            "text_width":  149,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Contents title",
+                            "text":  "발표 목차",
+                            "font_size_pt":  34,
+                            "box_height":  60,
+                            "text_height":  40.8,
+                            "box_width":  850,
+                            "text_width":  160,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Number 01",
+                            "text":  "01",
+                            "font_size_pt":  23,
+                            "box_height":  38,
+                            "text_height":  27.6,
+                            "box_width":  55,
+                            "text_width":  34.87504,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Section 01",
+                            "text":  "프로젝트 배경",
+                            "font_size_pt":  21,
+                            "box_height":  38,
+                            "text_height":  25.2,
+                            "box_width":  340,
+                            "text_width":  140.75,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Native bullet list 01",
+                            "text":  "프로젝트 목표\r주제 선정 배경\r검사 대상",
+                            "font_size_pt":  15.5,
+                            "box_height":  89,
+                            "text_height":  69.8,
+                            "box_width":  330,
+                            "text_width":  109.5,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Number 02",
+                            "text":  "02",
+                            "font_size_pt":  23,
+                            "box_height":  38,
+                            "text_height":  27.6,
+                            "box_width":  55,
+                            "text_width":  34.87504,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Section 02",
+                            "text":  "데이터와 검사 설계",
+                            "font_size_pt":  21,
+                            "box_height":  38,
+                            "text_height":  25.2,
+                            "box_width":  340,
+                            "text_width":  190.125046,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Native bullet list 02",
+                            "text":  "데이터 출처와 라벨\r전처리와 모델 구성\r평가 방법",
+                            "font_size_pt":  15.5,
+                            "box_height":  89,
+                            "text_height":  69.8,
+                            "box_width":  330,
+                            "text_width":  140.5,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Number 03",
+                            "text":  "03",
+                            "font_size_pt":  23,
+                            "box_height":  38,
+                            "text_height":  27.6,
+                            "box_width":  55,
+                            "text_width":  34.87504,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Section 03",
+                            "text":  "부품별 실험",
+                            "font_size_pt":  21,
+                            "box_height":  38,
+                            "text_height":  25.2,
+                            "box_width":  340,
+                            "text_width":  119.75,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Native bullet list 03",
+                            "text":  "Lens 모델과 결과\rRing 모델과 결과\rPCB 모델과 결과",
+                            "font_size_pt":  15.5,
+                            "box_height":  89,
+                            "text_height":  69.8,
+                            "box_width":  330,
+                            "text_width":  125.75,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Number 04",
+                            "text":  "04",
+                            "font_size_pt":  23,
+                            "box_height":  38,
+                            "text_height":  27.6,
+                            "box_width":  55,
+                            "text_width":  34.87504,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Section 04",
+                            "text":  "결과와 시연",
+                            "font_size_pt":  21,
+                            "box_height":  38,
+                            "text_height":  25.2,
+                            "box_width":  340,
+                            "text_width":  119.75,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Native bullet list 04",
+                            "text":  "성능 비교\r오류 사례 분석\r웹·3D 시연",
+                            "font_size_pt":  15.5,
+                            "box_height":  89,
+                            "text_height":  69.8,
+                            "box_width":  330,
+                            "text_width":  109.5,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Program footer",
+                            "text":  "자화전자 KDT 최종 프로젝트",
+                            "font_size_pt":  10.5,
+                            "box_height":  23,
+                            "text_height":  12.6,
+                            "box_width":  600,
+                            "text_width":  139.375046,
+                            "fits":  true
+                        },
+                        {
+                            "name":  "Slide number",
+                            "text":  "02",
+                            "font_size_pt":  10.5,
+                            "box_height":  23,
+                            "text_height":  12.6,
+                            "box_width":  34,
+                            "text_width":  15.25,
+                            "fits":  true
+                        }
+                    ],
+    "final_presentation":  "outputs/presentation/FoldedVision_최종발표.pptx",
+    "final_sha256":  "DFF9E4DA02AB42172CA2878CE0952E24EA74A0FD8975E9D81893EBBB2713F71D",
+    "final_preview":  "outputs/presentation/slide_previews/slide-02.png",
+    "native_bullet_geometry_valid":  true,
+    "missing_internal_relationship_targets":  0,
+    "native_powerpoint_preview_reviewed":  true
+}

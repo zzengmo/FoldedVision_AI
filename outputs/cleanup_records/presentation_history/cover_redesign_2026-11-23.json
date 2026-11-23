@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-23",
+  "timezone": "Asia/Seoul",
+  "request": "기존 표지가 마음에 들지 않아 생성형 AI 이미지를 만들고 전문적인 PPT 표지로 재디자인해 달라는 사용자 요청.",
+  "final_presentation": "outputs/presentation/FoldedVision_최종발표.pptx",
+  "final_preview": "outputs/presentation/slide_previews/표지.png",
+  "generated_image": "outputs/presentation/자료/FoldedVision_AI_검사부품_생성이미지.png",
+  "backup_directory": "archive/2026-11-23_before_cover_redesign/",
+  "generation": {
+    "mode": "built-in image_gen.imagegen",
+    "prompt": "Use case: product-mockup. Asset type: full-bleed photographic cover artwork for a professional Korean engineering presentation about AI visual inspection of incoming manufacturing parts. Generate a premium photorealistic studio macro photograph, widescreen 16:9 landscape, extremely refined and credible industrial product photography. Composition: the LEFT 48 percent must be uninterrupted very dark midnight-navy negative space, smooth subtle gradient, with no objects or details so editable presentation titles can later be placed there. All subjects on the RIGHT 52 percent, large and visually arresting, carefully art-directed as a single optical engineering still life. Three distinct real-looking precision components resting on one matte graphite inspection stage: an optical glass lens assembly with delicate blue-violet anti-reflection coatings and a dark precision-machined barrel at upper-right; a polished silver machined circular metal ring angled in three-quarter view in the right-center foreground; and a compact dark emerald printed circuit board with fine gold traces and tiny realistic mounted electronic components at lower-right. A restrained cyan inspection light grazing across the components, only subtle coherent light, suggesting machine vision. Accurate plausible materials, beautifully defined brushed metal, optical glass reflections, real PCB texture, controlled depth of field but all three components clearly recognizable. Background fades smoothly from very dark navy left into muted slate-blue right; elegant physically plausible light and soft shadows, no clutter, no people. Editorial photography for a leading precision engineering firm's annual report, not a science fiction scene. The still life must remain inside right half with generous 8 percent top/bottom/right margin. No text, no letters, no labels, no logos, no watermark, no numbers, no UI, no floating interface boxes, no diagrams, no gratuitous neon beams. High detail, clean restrained luxury industrial aesthetic.",
+    "disclosure": "AI-generated concept artwork; not an actual manufacturer's product photograph or production-line photograph.",
+    "embedded_in": [
+      "slide image alternative text",
+      "speaker notes"
+    ]
+  },
+  "authoring": "Microsoft PowerPoint COM fallback; Spaces session tools and the @oai/artifact-tool runtime were unavailable.",
+  "source_sha256": "31B3E5E74428636D6CB41E48F9C9E44AAB8ED2E08509F1F106BF801171246527",
+  "final_sha256": "A54088F53591BC0D3008639A2415DFD06DC021AF4DAF9F7C23D302FFB5DBD7D1",
+  "image_sha256": "F849F589F6C772DC14504ECF0403073D5F6E2001E6AD76333F28733AA00FEE98",
+  "preview_sha256": "D2BBC5EDC7A7C2339D20ECCF6EB94B47FF0E6BF91441C98446634B63BF3415CD",
+  "validation": {
+    "slide_count": 1,
+    "slide_size_pt": [
+      960,
+      540
+    ],
+    "native_editable_text_objects": 6,
+    "embedded_generated_image": true,
+    "font": "Malgun Gothic",
+    "all_text_bounds_fit": true,
+    "xml_parts_parsed": 41,
+    "missing_internal_relationship_targets": 0,
+    "native_powerpoint_render_reviewed": true,
+    "preview_dimensions": [
+      1920,
+      1080
+    ],
+    "backup_sha256_matches_original": true
+  },
+  "design": {
+    "background": "Generated macro still life of Lens, Ring, PCB with uninterrupted midnight-navy negative space on the left.",
+    "text": "Editable Korean title, project brand and scope, program and dates.",
+    "palette": [
+      "midnight navy",
+      "white",
+      "cyan"
+    ]
+  }
+}

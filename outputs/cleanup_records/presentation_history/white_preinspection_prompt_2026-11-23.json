@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-23",
+  "mode": "built-in image_gen.imagegen edit",
+  "source": "outputs/presentation/자료/생성이미지/AI_제조전검사_콘셉트.png",
+  "output": "outputs/presentation/자료/생성이미지/AI_제조전검사_화이트_v2.png",
+  "prompt": "Edit this industrial preinspection concept image into a bright high-key industrial editorial photograph suitable for a clean white presentation. Preserve the central subject and physical logic: a believable machine-vision camera with circular inspection light above a precision conveyor, a metal ring being inspected, a small PCB further along the conveyor, and a shallow metal parts tray with an optical lens and ring in the foreground. Transform the entire environment from dark navy to a luminous clean white and very pale cool-gray engineering room with soft daylight and subtle cyan light. Replace the large empty black area on the left with a natural pale-gray cleanroom background, and reframe the scene into a balanced 4:3 landscape composition centered on the camera, conveyor and parts. The picture will be placed in the right half of a presentation with editable text outside the picture, so no need for empty dark text space. Keep the important hardware and foreground parts completely recognizable, crisp refined industrial product photography, restrained silver/white/navy/cyan palette, professional camera perspective and realistic materials. No text, no labels, no logos, no watermark, no arrows, no boxes, no panels, no infographic elements, no holograms. This remains a conceptual illustration, not an actual factory photograph. Change lighting, backdrop and composition while preserving the incoming-inspection subject.",
+  "disclosure": "AI-generated preinspection concept, not actual factory equipment or model evaluation results."
+}

@@ -1,0 +1,1149 @@
+﻿{
+    "date":  "2026-11-23",
+    "timezone":  "Asia/Seoul",
+    "source_sha256":  "E0CEF789417385B2510C519C0D288DFA697682C8ABE1DDA60ADCAC488243FA0C",
+    "backup":  "C:\\Users\\nyzer\\OneDrive\\Desktop\\새 폴더\\FoldedVision_AI\\archive\\2026-11-23_before_rich_design\\FoldedVision_최종발표.pptx",
+    "candidate":  "C:\\Users\\nyzer\\OneDrive\\Desktop\\새 폴더\\FoldedVision_AI\\.cache\\rich-design\\candidate.pptx",
+    "slide_count":  11,
+    "changed_slides":  [
+                           2,
+                           3,
+                           4,
+                           5,
+                           6,
+                           7,
+                           9,
+                           10,
+                           11
+                       ],
+    "preserved_slides":  [
+                             {
+                                 "slide":  1,
+                                 "render_unchanged":  true
+                             },
+                             {
+                                 "slide":  8,
+                                 "render_unchanged":  true
+                             }
+                         ],
+    "body_backgrounds":  [
+                             {
+                                 "slide":  2,
+                                 "white_background":  true
+                             },
+                             {
+                                 "slide":  3,
+                                 "white_background":  true
+                             },
+                             {
+                                 "slide":  4,
+                                 "white_background":  true
+                             },
+                             {
+                                 "slide":  5,
+                                 "white_background":  true
+                             },
+                             {
+                                 "slide":  6,
+                                 "white_background":  true
+                             },
+                             {
+                                 "slide":  7,
+                                 "white_background":  true
+                             },
+                             {
+                                 "slide":  8,
+                                 "white_background":  true
+                             },
+                             {
+                                 "slide":  9,
+                                 "white_background":  true
+                             },
+                             {
+                                 "slide":  10,
+                                 "white_background":  true
+                             },
+                             {
+                                 "slide":  11,
+                                 "white_background":  true
+                             }
+                         ],
+    "text_checks":  [
+                        {
+                            "slide":  2,
+                            "name":  "Project brand",
+                            "text":  "FoldedVision AI",
+                            "font_size_pt":  19,
+                            "width":  390,
+                            "height":  38,
+                            "text_width":  149,
+                            "text_height":  22.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Contents title",
+                            "text":  "발표 목차",
+                            "font_size_pt":  34,
+                            "width":  850,
+                            "height":  60,
+                            "text_width":  160,
+                            "text_height":  40.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Number 01",
+                            "text":  "01",
+                            "font_size_pt":  32,
+                            "width":  55,
+                            "height":  53,
+                            "text_width":  48.25,
+                            "text_height":  38.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Section 01",
+                            "text":  "프로젝트 배경",
+                            "font_size_pt":  21,
+                            "width":  340,
+                            "height":  38,
+                            "text_width":  140.75,
+                            "text_height":  25.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Native bullet list 01",
+                            "text":  "프로젝트 목표\r주제 선정 배경\r검사 대상",
+                            "font_size_pt":  15.5,
+                            "width":  330,
+                            "height":  89,
+                            "text_width":  109.5,
+                            "text_height":  69.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Number 02",
+                            "text":  "02",
+                            "font_size_pt":  32,
+                            "width":  55,
+                            "height":  53,
+                            "text_width":  48.25,
+                            "text_height":  38.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Section 02",
+                            "text":  "데이터와 검사 설계",
+                            "font_size_pt":  21,
+                            "width":  340,
+                            "height":  38,
+                            "text_width":  190.125046,
+                            "text_height":  25.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Native bullet list 02",
+                            "text":  "데이터 출처와 라벨\r전처리와 모델 구성\r평가 방법",
+                            "font_size_pt":  15.5,
+                            "width":  330,
+                            "height":  89,
+                            "text_width":  140.5,
+                            "text_height":  69.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Number 03",
+                            "text":  "03",
+                            "font_size_pt":  32,
+                            "width":  55,
+                            "height":  53,
+                            "text_width":  48.25,
+                            "text_height":  38.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Section 03",
+                            "text":  "부품별 실험",
+                            "font_size_pt":  21,
+                            "width":  340,
+                            "height":  38,
+                            "text_width":  119.75,
+                            "text_height":  25.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Native bullet list 03",
+                            "text":  "Lens 모델과 결과\rRing 모델과 결과\rPCB 모델과 결과",
+                            "font_size_pt":  15.5,
+                            "width":  330,
+                            "height":  89,
+                            "text_width":  125.75,
+                            "text_height":  69.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Number 04",
+                            "text":  "04",
+                            "font_size_pt":  32,
+                            "width":  55,
+                            "height":  53,
+                            "text_width":  48.25,
+                            "text_height":  38.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Section 04",
+                            "text":  "결과와 시연",
+                            "font_size_pt":  21,
+                            "width":  340,
+                            "height":  38,
+                            "text_width":  119.75,
+                            "text_height":  25.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Native bullet list 04",
+                            "text":  "성능 비교\r오류 사례 분석\r웹·3D 시연",
+                            "font_size_pt":  15.5,
+                            "width":  330,
+                            "height":  89,
+                            "text_width":  109.5,
+                            "text_height":  69.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Program footer",
+                            "text":  "자화전자 KDT 최종 프로젝트",
+                            "font_size_pt":  10.5,
+                            "width":  600,
+                            "height":  23,
+                            "text_width":  139.375046,
+                            "text_height":  12.6,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  2,
+                            "name":  "Slide number",
+                            "text":  "02",
+                            "font_size_pt":  10.5,
+                            "width":  34,
+                            "height":  23,
+                            "text_width":  15.25,
+                            "text_height":  12.6,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  3,
+                            "name":  "Project brand",
+                            "text":  "FoldedVision AI",
+                            "font_size_pt":  12,
+                            "width":  340,
+                            "height":  28,
+                            "text_width":  93.87504,
+                            "text_height":  14.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  3,
+                            "name":  "Slide title",
+                            "text":  "프로젝트 개요",
+                            "font_size_pt":  30,
+                            "width":  864,
+                            "height":  60,
+                            "text_width":  201,
+                            "text_height":  36,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  3,
+                            "name":  "Program footer",
+                            "text":  "자화전자 KDT 최종 프로젝트",
+                            "font_size_pt":  9,
+                            "width":  700,
+                            "height":  20,
+                            "text_width":  119.125038,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  3,
+                            "name":  "Page number",
+                            "text":  "03",
+                            "font_size_pt":  9,
+                            "width":  30,
+                            "height":  20,
+                            "text_width":  13.1250391,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  3,
+                            "name":  "Overview lead",
+                            "text":  "사진에서 찾는\r부품 외관 결함",
+                            "font_size_pt":  34,
+                            "width":  405,
+                            "height":  111,
+                            "text_width":  240,
+                            "text_height":  81.6,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  3,
+                            "name":  "Overview scope",
+                            "text":  "서로 다른 부품을\r각 과제에 맞는 딥러닝으로 분석",
+                            "font_size_pt":  18,
+                            "width":  365,
+                            "height":  67,
+                            "text_width":  265.875031,
+                            "text_height":  43.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  3,
+                            "name":  "Parts names",
+                            "text":  "Lens  Ring  PCB",
+                            "font_size_pt":  24,
+                            "width":  370,
+                            "height":  40,
+                            "text_width":  191.125046,
+                            "text_height":  28.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  3,
+                            "name":  "Model families",
+                            "text":  "CNN · U-Net · YOLO",
+                            "font_size_pt":  15,
+                            "width":  355,
+                            "height":  29,
+                            "text_width":  144.585037,
+                            "text_height":  18,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  3,
+                            "name":  "Output meaning",
+                            "text":  "유형·점수·위치를 확인하는 검사 포트폴리오",
+                            "font_size_pt":  13,
+                            "width":  360,
+                            "height":  41,
+                            "text_width":  258.25,
+                            "text_height":  15.6,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  4,
+                            "name":  "Project brand",
+                            "text":  "FoldedVision AI",
+                            "font_size_pt":  12,
+                            "width":  340,
+                            "height":  28,
+                            "text_width":  93.87504,
+                            "text_height":  14.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  4,
+                            "name":  "Slide title",
+                            "text":  "주제 선정 배경",
+                            "font_size_pt":  30,
+                            "width":  864,
+                            "height":  60,
+                            "text_width":  211.5,
+                            "text_height":  36,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  4,
+                            "name":  "Program footer",
+                            "text":  "자화전자 KDT 최종 프로젝트",
+                            "font_size_pt":  9,
+                            "width":  700,
+                            "height":  20,
+                            "text_width":  119.125038,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  4,
+                            "name":  "Page number",
+                            "text":  "04",
+                            "font_size_pt":  9,
+                            "width":  30,
+                            "height":  20,
+                            "text_width":  13.1250391,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  4,
+                            "name":  "Folded zoom product caption",
+                            "text":  "폴디드 줌 액추에이터",
+                            "font_size_pt":  18,
+                            "width":  510,
+                            "height":  30,
+                            "text_width":  181.125046,
+                            "text_height":  21.6,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  4,
+                            "name":  "Structure label",
+                            "text":  "액추에이터 구성 참고",
+                            "font_size_pt":  14,
+                            "width":  298,
+                            "height":  28,
+                            "text_width":  140.625046,
+                            "text_height":  16.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  4,
+                            "name":  "Product inspection question",
+                            "text":  "이 부품들을\r제조 전에 검사한다면?",
+                            "font_size_pt":  23,
+                            "width":  298,
+                            "height":  80,
+                            "text_width":  241.75,
+                            "text_height":  55.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  5,
+                            "name":  "Project brand",
+                            "text":  "FoldedVision AI",
+                            "font_size_pt":  12,
+                            "width":  340,
+                            "height":  28,
+                            "text_width":  93.87504,
+                            "text_height":  14.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  5,
+                            "name":  "Slide title",
+                            "text":  "주제 선정 이유",
+                            "font_size_pt":  30,
+                            "width":  864,
+                            "height":  60,
+                            "text_width":  211.5,
+                            "text_height":  36,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  5,
+                            "name":  "Program footer",
+                            "text":  "자화전자 KDT 최종 프로젝트",
+                            "font_size_pt":  9,
+                            "width":  700,
+                            "height":  20,
+                            "text_width":  119.125038,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  5,
+                            "name":  "Page number",
+                            "text":  "05",
+                            "font_size_pt":  9,
+                            "width":  30,
+                            "height":  20,
+                            "text_width":  13.1250391,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  5,
+                            "name":  "Process focus heading",
+                            "text":  "외주와 제조 사이",
+                            "font_size_pt":  23,
+                            "width":  289,
+                            "height":  40,
+                            "text_width":  185.375046,
+                            "text_height":  27.6,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  5,
+                            "name":  "Rationale takeaway",
+                            "text":  "제조에 들어가기 전,\r외관 불량을 먼저 확인",
+                            "font_size_pt":  23,
+                            "width":  289,
+                            "height":  81,
+                            "text_width":  239.5,
+                            "text_height":  55.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  5,
+                            "name":  "Quality reference caption",
+                            "text":  "품질관리 흐름에서 찾은 사전 검사 아이디어",
+                            "font_size_pt":  15,
+                            "width":  864,
+                            "height":  28,
+                            "text_width":  301.5,
+                            "text_height":  18,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  6,
+                            "name":  "Project brand",
+                            "text":  "FoldedVision AI",
+                            "font_size_pt":  12,
+                            "width":  340,
+                            "height":  28,
+                            "text_width":  93.87504,
+                            "text_height":  14.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  6,
+                            "name":  "Slide title",
+                            "text":  "문제 정의",
+                            "font_size_pt":  30,
+                            "width":  864,
+                            "height":  60,
+                            "text_width":  141,
+                            "text_height":  36,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  6,
+                            "name":  "Program footer",
+                            "text":  "자화전자 KDT 최종 프로젝트",
+                            "font_size_pt":  9,
+                            "width":  700,
+                            "height":  20,
+                            "text_width":  119.125038,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  6,
+                            "name":  "Page number",
+                            "text":  "06",
+                            "font_size_pt":  9,
+                            "width":  30,
+                            "height":  20,
+                            "text_width":  13.1250391,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  6,
+                            "name":  "Problem lead",
+                            "text":  "외주 부품의 불량을\r제조 투입 전에 확인",
+                            "font_size_pt":  31,
+                            "width":  572,
+                            "height":  98,
+                            "text_width":  291.5,
+                            "text_height":  74.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  6,
+                            "name":  "Review explanation",
+                            "text":  "사진과 모델 신호를 바탕으로\r재검·분리를 검토합니다",
+                            "font_size_pt":  16,
+                            "width":  260,
+                            "height":  73,
+                            "text_width":  214.5,
+                            "text_height":  38.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  6,
+                            "name":  "Problem scope",
+                            "text":  "제안하는 사전 검사 시나리오 · 실제 생산라인 효과는 후속 검증",
+                            "font_size_pt":  11,
+                            "width":  864,
+                            "height":  20,
+                            "text_width":  316.125031,
+                            "text_height":  13.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "Project brand",
+                            "text":  "FoldedVision AI",
+                            "font_size_pt":  12,
+                            "width":  340,
+                            "height":  28,
+                            "text_width":  93.87504,
+                            "text_height":  14.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "Slide title",
+                            "text":  "검사 대상과 부품별 과제",
+                            "font_size_pt":  30,
+                            "width":  864,
+                            "height":  60,
+                            "text_width":  342,
+                            "text_height":  36,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "Program footer",
+                            "text":  "자화전자 KDT 최종 프로젝트",
+                            "font_size_pt":  9,
+                            "width":  700,
+                            "height":  20,
+                            "text_width":  119.125038,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "Page number",
+                            "text":  "07",
+                            "font_size_pt":  9,
+                            "width":  30,
+                            "height":  20,
+                            "text_width":  13.1250391,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "Lens label",
+                            "text":  "Lens",
+                            "font_size_pt":  24,
+                            "width":  252,
+                            "height":  42,
+                            "text_width":  59.75,
+                            "text_height":  28.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "Lens caption",
+                            "text":  "정답·예측 위치 비교 예시",
+                            "font_size_pt":  11,
+                            "width":  252,
+                            "height":  24,
+                            "text_width":  127.875038,
+                            "text_height":  13.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "Lens task",
+                            "text":  "구역 분류와 위치 분할",
+                            "font_size_pt":  17,
+                            "width":  252,
+                            "height":  35,
+                            "text_width":  177,
+                            "text_height":  20.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "Lens detail",
+                            "text":  "CNN 구역 점수\rU-Net 위치 분할 실험",
+                            "font_size_pt":  13,
+                            "width":  252,
+                            "height":  43,
+                            "text_width":  132.5,
+                            "text_height":  31.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "Ring label",
+                            "text":  "Ring",
+                            "font_size_pt":  24,
+                            "width":  252,
+                            "height":  42,
+                            "text_width":  60.5,
+                            "text_height":  28.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "Ring caption",
+                            "text":  "Grad-CAM 주목 영역 예시",
+                            "font_size_pt":  11,
+                            "width":  252,
+                            "height":  24,
+                            "text_width":  134.375046,
+                            "text_height":  13.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "Ring task",
+                            "text":  "결함 유형 3종 분류",
+                            "font_size_pt":  17,
+                            "width":  252,
+                            "height":  35,
+                            "text_width":  152.875046,
+                            "text_height":  20.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "Ring detail",
+                            "text":  "오염, 긁힘, 표면 미가공\r유형과 분류 근거 확인",
+                            "font_size_pt":  13,
+                            "width":  252,
+                            "height":  43,
+                            "text_width":  141.25,
+                            "text_height":  31.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "PCB label",
+                            "text":  "PCB",
+                            "font_size_pt":  24,
+                            "width":  252,
+                            "height":  42,
+                            "text_width":  53.87504,
+                            "text_height":  28.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "PCB caption",
+                            "text":  "팀 YOLO 예측 박스 예시",
+                            "font_size_pt":  11,
+                            "width":  252,
+                            "height":  24,
+                            "text_width":  124.875038,
+                            "text_height":  13.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "PCB task",
+                            "text":  "결함 위치 검출",
+                            "font_size_pt":  17,
+                            "width":  252,
+                            "height":  35,
+                            "text_width":  120,
+                            "text_height":  20.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  7,
+                            "name":  "PCB detail",
+                            "text":  "사진 판정과 박스 검출\r정답·예측 위치 비교",
+                            "font_size_pt":  13,
+                            "width":  252,
+                            "height":  43,
+                            "text_width":  135.5,
+                            "text_height":  31.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  9,
+                            "name":  "Project brand",
+                            "text":  "FoldedVision AI",
+                            "font_size_pt":  12,
+                            "width":  340,
+                            "height":  28,
+                            "text_width":  93.87504,
+                            "text_height":  14.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  9,
+                            "name":  "Slide title",
+                            "text":  "개발과 평가 설계",
+                            "font_size_pt":  30,
+                            "width":  864,
+                            "height":  60,
+                            "text_width":  241.5,
+                            "text_height":  36,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  9,
+                            "name":  "Program footer",
+                            "text":  "자화전자 KDT 최종 프로젝트",
+                            "font_size_pt":  9,
+                            "width":  700,
+                            "height":  20,
+                            "text_width":  119.125038,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  9,
+                            "name":  "Page number",
+                            "text":  "09",
+                            "font_size_pt":  9,
+                            "width":  30,
+                            "height":  20,
+                            "text_width":  13.1250391,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  9,
+                            "name":  "Role 0 number",
+                            "text":  "01",
+                            "font_size_pt":  18,
+                            "width":  43,
+                            "height":  34,
+                            "text_width":  27.12504,
+                            "text_height":  21.6,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  9,
+                            "name":  "Role 0 title",
+                            "text":  "학습",
+                            "font_size_pt":  22,
+                            "width":  268,
+                            "height":  36,
+                            "text_width":  51.75,
+                            "text_height":  26.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  9,
+                            "name":  "Role 0 meaning",
+                            "text":  "가중치 학습, 전처리·구조 비교",
+                            "font_size_pt":  14,
+                            "width":  268,
+                            "height":  45,
+                            "text_width":  193.75,
+                            "text_height":  16.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  9,
+                            "name":  "Role 1 number",
+                            "text":  "02",
+                            "font_size_pt":  18,
+                            "width":  43,
+                            "height":  34,
+                            "text_width":  27.12504,
+                            "text_height":  21.6,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  9,
+                            "name":  "Role 1 title",
+                            "text":  "검증",
+                            "font_size_pt":  22,
+                            "width":  268,
+                            "height":  36,
+                            "text_width":  51.75,
+                            "text_height":  26.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  9,
+                            "name":  "Role 1 meaning",
+                            "text":  "후보 모델과 임계값 선택",
+                            "font_size_pt":  14,
+                            "width":  268,
+                            "height":  45,
+                            "text_width":  159.5,
+                            "text_height":  16.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  9,
+                            "name":  "Role 2 number",
+                            "text":  "03",
+                            "font_size_pt":  18,
+                            "width":  43,
+                            "height":  34,
+                            "text_width":  27.12504,
+                            "text_height":  21.6,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  9,
+                            "name":  "Role 2 title",
+                            "text":  "테스트",
+                            "font_size_pt":  22,
+                            "width":  268,
+                            "height":  36,
+                            "text_width":  73.75,
+                            "text_height":  26.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  9,
+                            "name":  "Role 2 meaning",
+                            "text":  "같은 조건의 성능·오류 비교",
+                            "font_size_pt":  14,
+                            "width":  268,
+                            "height":  45,
+                            "text_width":  176.625046,
+                            "text_height":  16.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  9,
+                            "name":  "Development sequence",
+                            "text":  "데이터 확인 · 전처리 · 기준 모델 · 개선 모델 · 최종 평가",
+                            "font_size_pt":  16,
+                            "width":  864,
+                            "height":  29,
+                            "text_width":  410.125031,
+                            "text_height":  19.2,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  10,
+                            "name":  "Project brand",
+                            "text":  "FoldedVision AI",
+                            "font_size_pt":  12,
+                            "width":  340,
+                            "height":  28,
+                            "text_width":  93.87504,
+                            "text_height":  14.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  10,
+                            "name":  "Slide title",
+                            "text":  "통합 웹과 3D 공정 시연",
+                            "font_size_pt":  30,
+                            "width":  864,
+                            "height":  60,
+                            "text_width":  332.25,
+                            "text_height":  36,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  10,
+                            "name":  "Program footer",
+                            "text":  "자화전자 KDT 최종 프로젝트",
+                            "font_size_pt":  9,
+                            "width":  700,
+                            "height":  20,
+                            "text_width":  119.125038,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  10,
+                            "name":  "Page number",
+                            "text":  "10",
+                            "font_size_pt":  9,
+                            "width":  30,
+                            "height":  20,
+                            "text_width":  13.1250391,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  10,
+                            "name":  "Camera view caption",
+                            "text":  "촬영 결과 확인",
+                            "font_size_pt":  12,
+                            "width":  268,
+                            "height":  23,
+                            "text_width":  84.75,
+                            "text_height":  14.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  10,
+                            "name":  "Sorting view caption",
+                            "text":  "분류 경로 선택",
+                            "font_size_pt":  12,
+                            "width":  268,
+                            "height":  23,
+                            "text_width":  84.75,
+                            "text_height":  14.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  10,
+                            "name":  "Demo interaction",
+                            "text":  "사례 선택 · 결과 확인 · 경로 선택",
+                            "font_size_pt":  17,
+                            "width":  560,
+                            "height":  31,
+                            "text_width":  261,
+                            "text_height":  20.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  10,
+                            "name":  "Demo current state",
+                            "text":  "현재는 저장 사례 재생 · 새 사진 실시간 추론 연결은 후속 과제",
+                            "font_size_pt":  10.5,
+                            "width":  560,
+                            "height":  18,
+                            "text_width":  299.25,
+                            "text_height":  12.6,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  11,
+                            "name":  "Project brand",
+                            "text":  "FoldedVision AI",
+                            "font_size_pt":  12,
+                            "width":  340,
+                            "height":  28,
+                            "text_width":  93.87504,
+                            "text_height":  14.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  11,
+                            "name":  "Slide title",
+                            "text":  "검증 범위와 부품별 실험",
+                            "font_size_pt":  30,
+                            "width":  864,
+                            "height":  60,
+                            "text_width":  342,
+                            "text_height":  36,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  11,
+                            "name":  "Program footer",
+                            "text":  "자화전자 KDT 최종 프로젝트",
+                            "font_size_pt":  9,
+                            "width":  700,
+                            "height":  20,
+                            "text_width":  119.125038,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  11,
+                            "name":  "Page number",
+                            "text":  "11",
+                            "font_size_pt":  9,
+                            "width":  30,
+                            "height":  20,
+                            "text_width":  13.1250391,
+                            "text_height":  10.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  11,
+                            "name":  "Handoff statement",
+                            "text":  "이어서, 부품별 실험을 소개합니다",
+                            "font_size_pt":  28,
+                            "width":  864,
+                            "height":  53,
+                            "text_width":  438.875031,
+                            "text_height":  33.6,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  11,
+                            "name":  "Verified scope heading",
+                            "text":  "확인한 범위",
+                            "font_size_pt":  14,
+                            "width":  405,
+                            "height":  28,
+                            "text_width":  79.75,
+                            "text_height":  16.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  11,
+                            "name":  "Verified scope detail",
+                            "text":  "공개 데이터 모델 비교·오류 분석·저장 결과 시연",
+                            "font_size_pt":  14,
+                            "width":  405,
+                            "height":  42,
+                            "text_width":  306.375031,
+                            "text_height":  16.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  11,
+                            "name":  "Next scope heading",
+                            "text":  "현장 적용 전 확인",
+                            "font_size_pt":  14,
+                            "width":  401,
+                            "height":  28,
+                            "text_width":  117.5,
+                            "text_height":  16.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  11,
+                            "name":  "Next scope detail",
+                            "text":  "정상 제품·촬영 조건·실시간 연결·공정 효과",
+                            "font_size_pt":  14,
+                            "width":  401,
+                            "height":  42,
+                            "text_width":  271.75,
+                            "text_height":  16.8,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  11,
+                            "name":  "Handoff label 0",
+                            "text":  "Lens / 구역·위치",
+                            "font_size_pt":  17,
+                            "width":  252,
+                            "height":  29,
+                            "text_width":  134.375046,
+                            "text_height":  20.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  11,
+                            "name":  "Handoff label 1",
+                            "text":  "Ring / 유형 분류",
+                            "font_size_pt":  17,
+                            "width":  252,
+                            "height":  29,
+                            "text_width":  136.25,
+                            "text_height":  20.4,
+                            "fits":  true
+                        },
+                        {
+                            "slide":  11,
+                            "name":  "Handoff label 2",
+                            "text":  "PCB / 위치 검출",
+                            "font_size_pt":  17,
+                            "width":  252,
+                            "height":  29,
+                            "text_width":  131.75,
+                            "text_height":  20.4,
+                            "fits":  true
+                        }
+                    ],
+    "native_table_slide":  8,
+    "generated_assets":  [
+                             "AI_부품클러스터_투명.png",
+                             "AI_부품별발표_투명.png"
+                         ],
+    "source_images_preserved":  true,
+    "all_crop_adjustments_are_native_powerpoint":  true,
+    "final_presentation":  "outputs/presentation/FoldedVision_최종발표.pptx",
+    "final_sha256":  "40A2DB012C7A526818BB933FDAB998787107590DA0F307BCF0CFE5DE4DCF37EB",
+    "package_validation":  {
+                               "parsed_xml_parts":  81,
+                               "slides":  11,
+                               "notes":  11,
+                               "white_body_slides":  10,
+                               "native_dataset_table_preserved":  true,
+                               "added_filled_diagram_boxes":  0,
+                               "missing_internal_relationship_targets":  0
+                           },
+    "all_slide_previews_reviewed":  true,
+    "image_prompts":  "outputs/cleanup_records/presentation_history/rich_design_prompts_2026-11-23.json"
+}
