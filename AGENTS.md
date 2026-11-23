@@ -195,3 +195,15 @@ GitHub에서 작업을 이어갈 때는 README.md와 CODEX_PROMPT.txt를 참고�
 - 웹·3D 시연은 개인별 Lens·Ring·PCB 실험과 종합 결과 뒤에 배치하는 흐름으로 논의했다. 아직 개인 파트와 후반 시연을 붙인 상태는 아니다. 기존 웹 시연 화면은 `outputs/presentation/slide_previews/slide-web-demo.png`에 참고용으로 남겼고 공통부에 다시 넣지 않는다.
 - 미리보기를 읽기 전용 PPT 복사본에서 `slide-01.png`~`slide-10.png`로 갱신했다. 번호가 맞지 않던 이전 `slide-11.png`와 갱신 전 미리보기는 `archive/2026-11-23_before_github_save/`에 보존했다. PPT 원본 SHA-256은 갱신 전후 동일하다.
 - 현재 파일의 슬라이드 목록과 해시는 `outputs/cleanup_records/presentation_history/github_save_snapshot_2026-11-23.json`에 있다. README와 CODEX_PROMPT는 10장 판본과 후반 시연 계획에 맞췄다. 원본 데이터·모델·실행 캐시·로컬 백업의 기존 Git 제외 규칙은 유지한다.
+
+## 2026-11-23 웹 디자인과 자동 공정
+
+- 사용자가 웹 전체 디자인과 3D 공정 품질 개선을 요청했다. 웹을 흰색·남색·청록색으로 바꾸고 기존 발표의 AI 생성 부품·검사 장면을 `sites/foldedvision-inspection/public/visuals/`로 복사했다. 실제 평가 사진과 구분해 표기한다. PPT는 변경하지 않았다.
+- 3D는 금속 컨베이어·광학 카메라·조명·렌즈/링/PCB 형상·분류 갠트리·트레이를 새로 구성했다. 네 저장 사례를 자동 반복하며 일시정지, 배속, 초기화, 직접 분류를 지원한다. 진행 시계는 `src/factoryTimeline.mjs`에 있고 `npm.cmd test`로 검증한다.
+- 시연은 저장 결과 재생이다. 웹 실시간 추론·실제 설비 제어로 설명하지 않는다. 기존 평가 JSON과 원본 모델·데이터는 보존했다. 자세한 사용법과 시각 검증 한계는 웹 README에 있다.
+
+## 2026-11-23 다른 PC 인수인계
+
+- 최신 상태와 새 PC 실행, 웹 파일별 역할, 네 자동 시나리오, 검증 결과, 남은 시각 검수, 게시 정보는 `CODEX_PROMPT.txt`에 정리했다. 웹 작업만 할 때 Python이나 대용량 데이터 복원은 필요 없다. 원본 데이터·가중치·백업은 기존 제외 규칙과 보존 원칙을 유지한다.
+- 게시 성공 주소는 https://foldedvision-inspection.wholehaven1026.chatgpt.site 이며 기존 본인 전용 접근을 유지했다. `.openai/hosting.json`의 project_id는 재사용한다. Sites 소스 커밋 `b2ef8e76f9d85a4dbc552d827ef1cf33aa5952f6`은 GitHub 커밋과 별개다. 로컬 포장 프로세스 오류 후 서버 빌드로 게시에 성공했다.
+- 상태 전환 테스트 4개·빌드·평가 자산 경로 검증은 통과했다. 브라우저 연결 불가로 최신 웹의 데스크톱/모바일·WebGL 시각 검수는 미완료다. 다음 웹 작업에서는 이 부분을 먼저 확인한다. 이전 `공정캡처/`와 PPT의 웹 미리보기는 이번 밝은 웹 디자인을 캡처한 이미지가 아니다.

@@ -38,19 +38,22 @@ function Header({ showUpgrade }) {
 
 function Hero() {
   return (
-    <div className="hero-wrap industrial-hero" id="top">
+    <section className="hero-wrap" id="top">
       <div className="shell hero-intro">
-        <div>
-          <span className="eyebrow"><span /> 제조 외관 검사 포트폴리오</span>
-          <h1>FoldedVision <em>검사 제어실</em></h1>
-          <p>Lens의 미세 결함, Ring의 표면 유형, PCB의 검출 근거를 한 라인에서 비교합니다.</p>
+        <div className="hero-copy">
+          <span className="eyebrow"><span /> DEEP LEARNING × MACHINE VISION</span>
+          <h1>제조에 들어가기 전,<br /><em>작은 결함까지.</em></h1>
+          <p>외주 부품과 제조 공정 사이에 더하는 시선.<br />Lens · Ring · PCB의 외관을 분석하고,<br className="desktop-break" /> 실제 평가 결과로 검사의 가능성을 확인합니다.</p>
+          <div className="hero-actions">
+            <a className="button primary" href="#factory"><Box size={18} /> 3D 자동 시연 보기</a>
+            <a className="button secondary" href="#overview"><ChartNoAxesColumnIncreasing size={18} /> 실험 결과 살펴보기</a>
+          </div>
+          <div className="hero-footnote"><span>TensorFlow / Keras</span><span>CNN · U-Net · YOLO</span></div>
         </div>
-        <div className="hero-actions">
-          <a className="button primary" href="#factory"><Box size={18} /> 공정 시작</a>
-          <a className="button secondary" href="#overview"><ChartNoAxesColumnIncreasing size={18} /> 결과 비교</a>
-        </div>
+        <figure className="hero-visual"><div className="hero-orbit" /><img src={import.meta.env.BASE_URL + 'visuals/inspection-parts.png'} alt="렌즈, 링과 회로 기판의 AI 생성 콘셉트 이미지" fetchPriority="high" /><figcaption>Lens · Ring · PCB <span>AI 생성 콘셉트</span></figcaption></figure>
       </div>
-    </div>
+      <div className="shell supply-flow"><span>외주 부품 입고</span><i /><strong><ScanLine size={19} />제조 전 외관 검사</strong><i /><span>제조 공정 투입</span><p>결함을 앞에서 확인하는 검사 흐름을 제안합니다.</p></div>
+    </section>
   );
 }
 
@@ -357,6 +360,7 @@ function App() {
           setPart(kind);
           document.getElementById('evidence').scrollIntoView({ behavior: 'smooth' });
         }} />
+        <section className="shell project-story" aria-labelledby="story-title"><figure><img src={import.meta.env.BASE_URL + 'visuals/clean-inspection.png'} alt="제조 투입 전 광학 검사 장면의 AI 생성 콘셉트" loading="lazy" /><figcaption>공정 제안 이해를 위한 AI 생성 이미지</figcaption></figure><div><span className="section-label">WHY FOLDEDVISION</span><h2 id="story-title">검사할 시점을<br />앞으로 옮기면 어떨까?</h2><p>자화전자의 품질 프로세스에서 출발한 질문입니다. 외주로 입고되는 폴디드 액추에이터 부품을 제조에 투입하기 전에 검사하는 흐름을 생각했습니다.</p><p>이 프로젝트는 Lens · Ring · PCB 공개 데이터로 부품별 딥러닝 검사를 실험하고, 그 결과를 하나의 가상 공정에서 설명합니다.</p><a className="text-link" href="#evidence">부품별 검사 사례 살펴보기</a></div></section>
         <InspectionOverview onPart={setPart} />
         <div className="shell workbench" style={{ '--part-accent': item.color }}>
           <section className="page-section evidence-section" id="evidence">

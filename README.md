@@ -5,7 +5,11 @@
 
 다른 PC에서 Codex로 이어갈 때는 이 저장소를 복제해서 폴더를 열고, [인수인계 프롬프트](CODEX_PROMPT.txt)의 마지막 줄에 목표를 적어 Codex에 붙여 넣어 주세요. Windows 설치 명령은 아래 노트북 실행 절에 있습니다.
 
-React 포트폴리오는 부품별 평가 사례, 모델 비교, 개발 과정, 3D 검사 게임을 제공합니다. [웹 실행 안내](sites/foldedvision-inspection/README.md)
+웹 작업을 이어갈 때는 Node.js와 npm만 준비한 뒤 `sites/foldedvision-inspection/`에서 `npm.cmd ci`, `npm.cmd test`, `npm.cmd run dev -- --host 127.0.0.1`을 실행합니다. Mac/Linux는 `npm`을 사용합니다. 웹의 저장 사례 시연에는 Python·원본 데이터·모델 가중치가 필요 없습니다. 최신 디자인, 3D 파일별 역할, 미완료 시각 검수와 게시 정보는 [인수인계 프롬프트](CODEX_PROMPT.txt)에 정리했습니다.
+
+React 포트폴리오는 부품별 평가 사례, 모델 비교, 개발 과정과 3D 자동 검사 시연을 제공합니다. 밝은 화면에서 투입·촬영·분류를 재생하며 일시정지·배속·직접 분류를 지원합니다. [웹 실행 안내](sites/foldedvision-inspection/README.md)
+
+[게시된 웹](https://foldedvision-inspection.wholehaven1026.chatgpt.site)은 기존 본인 전용 접근 설정을 유지합니다. GitHub의 소스와 Sites의 게시 저장소는 별개입니다.
 
 최종 발표는 [PowerPoint](outputs/presentation/FoldedVision_최종발표.pptx)와 [표지 미리보기](outputs/presentation/slide_previews/표지.png)를 사용합니다. 현재 PPT는 표지와 [발표 목차](outputs/presentation/slide_previews/slide-02.png)를 포함한 공통 도입부 **10장**입니다. 개요, 주제 선정 배경, 주제 선정 이유, 문제 정의, 검사 대상, 데이터·라벨, 평가 설계, 검증 범위를 담았습니다. 사용자 제공 제품·구조·품질 프로세스 사진으로 외주와 제조 사이에 사전 외관 검사를 두자는 선정 취지를 설명합니다. 본문에는 투명 배경 부품 이미지, 제품·프로세스 확대, 실제 저장된 예측 사례를 배치했고 설명과 데이터 표는 편집 가능합니다. 생성형 AI 이미지는 실제 제품·장비·평가 결과 사진이 아닙니다. 1장 표지만 어두운 배경이며 2~10장은 흰색 계열입니다. 개인별 Lens·Ring·PCB 실험과 종합 결과 뒤에 웹·3D 시연을 배치할 예정이며, 공통부에서 뺀 [웹 시연 장 미리보기](outputs/presentation/slide_previews/slide-web-demo.png)는 참고용으로 보존했습니다. 최신 미리보기는 `slide-01.png`부터 `slide-10.png`까지입니다. 이전 [검토 기록](outputs/presentation/REVIEW_NOTES.md)과 [발표 대본 기록](outputs/presentation/FoldedVision_공통발표_대본.txt)은 참고용입니다. 실제 시연 화면은 `outputs/presentation/공정캡처/`에 있습니다.
 
