@@ -2,15 +2,16 @@
 
 ## 팀 발표용 출처와 실제 학습 범위
 
-공통으로 확보한 공개 벤치마크는 VISION Workshop의 VISION Datasets입니다. Ring과 Lens는 확인한 VISION 원본으로 학습했습니다. 같은 배포처의 PCB_1과 PCB_2도 PC에 확보했으나, 확보한 파일을 팀의 최종 YOLO 학습에 썼는지는 현재 전달된 실행 기록으로 확정할 수 없습니다. [VISION 공식 배포](https://huggingface.co/datasets/VISION-Workshop/VISION-Datasets) · [논문 원본과 부록](https://arxiv.org/html/2306.07890#A1.SS1)
+공통 조사에 사용한 공개 벤치마크는 VISION Workshop의 VISION Datasets입니다. Ring 유형 분류와 Lens의 초기 구역·분할 실험에 VISION을 사용했습니다. Lens 담당 최종 사진 판정은 3CAD 카메라 커버에서 평가했습니다. 같은 VISION 배포처의 PCB_1과 PCB_2도 PC에 확보했으나, 확보한 파일을 팀의 최종 YOLO 학습에 썼는지는 현재 전달된 실행 기록으로 확정할 수 없습니다. [VISION 공식 배포](https://huggingface.co/datasets/VISION-Workshop/VISION-Datasets) · [논문 원본과 부록](https://arxiv.org/html/2306.07890#A1.SS1)
 
 |자료|확인된 범위|실제 사용 또는 확인 근거|
 |---|---|---|
 |VISION Ring|원본 551장, 유형 라벨 87장. 학습/검증/테스트 33/12/42장|기준 CNN과 추가 전이학습 모두 같은 테스트 42장. 학습 유형은 오염 10장, 스크래치 18장, 표면 미가공 5장. [Ring 지표](outputs/quality_upgrade/vision_ring_transfer_metrics.json)|
 |VISION Lens|원본 222장, 결함 정답 129장. 학습/검증/테스트 50/16/52장|검증된 정상 렌즈 전체 사진 0장. 기준 학습 구역 2,277개(정상 1,518, 불량 759)를 만들었고, 추가 학습에서 좌표 중복을 제거하고 정상 구역 후보를 늘려 3,203개를 사용. [Lens 지표](outputs/quality_upgrade/lens_patch_metrics.json)|
+|3CAD Aluminum Camera Cover|2,230장. 정상 1,153장, 불량 1,077장, 결함 10종. 팀 학습/검증/테스트 1,329/453/448장|Lens 담당 최종 사진 판정용. 팀 노트북의 추출·학습·평가 기록과 저자의 영어 클래스 배포 링크를 확인했습니다. 바이트 동일 사진 10묶음을 같은 분할에 배정했습니다. 공개 저장소에서 데이터 재배포 라이선스는 확인되지 않아 팀 자료는 교육용으로 사용합니다. [원저자 저장소](https://github.com/ShuCvlab/3CAD) · [다운로드 안내](https://github.com/ShuCvlab/3CAD/blob/main/train_utils/toolbox/datasets/README.md) · [원저자 논문](https://arxiv.org/abs/2502.05761) · [팀 최종 노트북](notebooks/lens/04_CameraCover_YOLO.ipynb)|
 |VISION PCB_1·PCB_2|다운로드 폴더의 `PCB_1.tar.gz`, `PCB_2.tar.gz`. COCO 학습 목록 47장과 80장|PCB 후보로 확보한 자료. 공식 클래스 목록과 팀 기존 9개 납땜 클래스를 자동 대응시키지 않았음. [VISION 원 논문 부록](https://arxiv.org/html/2306.07890#A1.SS1)|
-|팀 기존 PCB 납땜 자료|팀 노트북에 `final_solder`로 기록, 원본 학습 3,836장|기존 YOLO 가중치 및 PCB4 혼합 학습의 원본 분할. **원 배포 URL 미확인**. `notebooks/pcb/`의 팀 노트북 두 개의 출력을 근거로 수량을 표시|
-|팀 PCB4 추가분|200장, 정상 100장·불량 100장, 박스 142개. 학습/검증/테스트 120/40/40장|학습 스크래치 3장. 팀 EDA 사진 6장의 대응 원본을 공식 VisA PCB4 아카이브에서 찾음. 200장 전체의 샘플 매핑은 팀 manifest가 필요. [Amazon VisA](https://registry.opendata.aws/visa/) · [사진 대조 기록](outputs/quality_upgrade/pcb4_source_audit.json)|
+|팀 기존 PCB 납땜 자료|팀 전달본의 `final_solder` 학습/검증/테스트 3,836/687/686장|팀 최종 모델 설정에 기록된 기존 납땜 자료이며, 기존 YOLO 가중치와 PCB4 혼합 학습에 사용했다. 9종 객체 클래스와 분할 규모는 데이터 카드와 일치한다. [ParsaVictor PCB 납땜 데이터](https://huggingface.co/datasets/ParsaVictor/pcb-solder-defect-detection) · [팀 최종 설정](notebooks/pcb/final/outputs/integration/pcb_model_config.json)|
+|팀 PCB4 추가분|200장, 정상 100장·불량 100장, 박스 142개. 학습/검증/테스트 120/40/40장|팀 최종본에 원본 이미지·JSON, YOLO 변환본과 200개 분할 기록이 있다. 팀 설정은 `zhaolutuan/0422`의 고정 커밋을 출처로 기록한다. 공식 VisA 배포본과의 사진 대조는 예시 6장 범위다. [팀 최종 보고서](notebooks/pcb/final/FINAL_REPORT.md) · [Amazon VisA](https://registry.opendata.aws/visa/) · [사진 대조 기록](outputs/quality_upgrade/pcb4_source_audit.json)|
 |Amazon VisA PCB1–3|공식 high-shot 사진 분류 3,311장. 내부 학습 정상 1,446장·불량 144장|팀 PCB4 위치 검출과 별도 분류 실험. [공식 배포](https://registry.opendata.aws/visa/) · [공식 분할](https://github.com/amazon-science/spot-diff/blob/main/split_csv/2cls_highshot.csv) · [PCB1–3 지표](outputs/quality_upgrade/pcb_detail_metrics.json)|
 |원형 금속 부품 MSDD|사진과 폴리곤 라벨 1,495쌍|기존 VISION Ring 유형 학습에 합치지 않고 다른 부품의 결함 유무에 별도 사용. [원본 MSDD v9](https://universe.roboflow.com/msdd/msdd-prompt-learning-qjz4o/dataset/9) · [부품 기준 재분할](https://huggingface.co/datasets/rltjr/metal-surface-defect-v1/tree/4ffb06a9c318b4cbfca4e5d66320a47fa70d68a5)|
 

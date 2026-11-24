@@ -1,0 +1,265 @@
+{
+  "TP": 20,
+  "FP": 3,
+  "TN": 17,
+  "FN": 0,
+  "accuracy": 0.925,
+  "precision": 0.8695652173913043,
+  "recall": 1.0,
+  "f1": 0.9302325581395349,
+  "roc_auc": 1.0,
+  "average_precision": 1.0,
+  "false_positive_rate": 0.15,
+  "defect_inflow_reduction": 100.0,
+  "dataset_name": "PCB4 zhaolutuan/0422 pinned custom split",
+  "task_type": "image_binary_classification_and_object_detection",
+  "train_count": 120,
+  "validation_count": 40,
+  "test_count": 40,
+  "threshold": 0.10295861214399338,
+  "count_scope": "PCB4 benchmark split; mixed training run used 3836 original + 120 PCB4 images",
+  "mixed_training_unique_images": 3956,
+  "mixed_training_normal": 404,
+  "mixed_training_defective": 3552,
+  "mAP50": 0.8388716356107659,
+  "mAP50_95": 0.5890462377911906,
+  "object_detection": {
+    "weights": "C:\\Project\\AI_Source\\jahwa\\models\\pcb_yolo_final.pt",
+    "domain": "pcb4",
+    "split": "test",
+    "metrics": {
+      "metrics/precision(B)": 0.7742541845658927,
+      "metrics/recall(B)": 0.7925564293996519,
+      "metrics/mAP50(B)": 0.8388716356107659,
+      "metrics/mAP50-95(B)": 0.5890462377911906,
+      "fitness": 0.5890462377911906
+    },
+    "evaluation_settings": {
+      "imgsz": 800,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 300,
+      "native_end_to_end": false
+    },
+    "speed_ms": {
+      "preprocess": 0.4540199999610195,
+      "inference": 19.304467500114697,
+      "loss": 0.0018599997929413803,
+      "postprocess": 1.2561725005070912
+    },
+    "class_ap": {
+      "pcb4_component_damage": {
+        "precision": 0.7706049219411477,
+        "recall": 0.6824196877645906,
+        "ap50": 0.715,
+        "ap50_95": 0.3620375036557463
+      },
+      "pcb4_foreign_material": {
+        "precision": 1.0,
+        "recall": 0.7428624592336686,
+        "ap50": 0.945,
+        "ap50_95": 0.696
+      },
+      "pcb4_miss": {
+        "precision": 0.9593200602547345,
+        "recall": 0.9375,
+        "ap50": 0.9767391304347826,
+        "ap50_95": 0.8054079710144926
+      },
+      "pcb4_oxidation": {
+        "precision": 0.5148864361771718,
+        "recall": 0.6,
+        "ap50": 0.5626190476190476,
+        "ap50_95": 0.28578571428571425
+      },
+      "pcb4_scratch": {
+        "precision": 0.626459504456409,
+        "recall": 1.0,
+        "ap50": 0.995,
+        "ap50_95": 0.796
+      }
+    },
+    "classes_without_ground_truth": [
+      "insufficient_solder",
+      "excess_solder",
+      "solder_bridge",
+      "solder_void",
+      "missing_component",
+      "shifted_component",
+      "burn",
+      "physical_damage",
+      "oxidation"
+    ]
+  },
+  "score_is_probability": false,
+  "simulation_policy": "NG is removed before downstream assembly; no automatic REVIEW in in-domain evaluation",
+  "sample_uncertainty": "20 defective and 20 normal test images; one outcome changes recall or FPR by 5 percentage points",
+  "defect_inflow_reduction_95pct_wilson_percent": [
+    83.88698745050667,
+    100.0
+  ],
+  "defect_inflow_reduction_unit": "percent",
+  "original_domain_test_comparison": {
+    "selected": {
+      "weights": "C:\\Project\\AI_Source\\jahwa\\models\\pcb_yolo_final.pt",
+      "domain": "original",
+      "split": "test",
+      "metrics": {
+        "metrics/precision(B)": 0.9703278280290331,
+        "metrics/recall(B)": 0.7621767076288789,
+        "metrics/mAP50(B)": 0.8696264438267733,
+        "metrics/mAP50-95(B)": 0.617517232202952,
+        "fitness": 0.617517232202952
+      },
+      "evaluation_settings": {
+        "imgsz": 800,
+        "conf": 0.001,
+        "iou": 0.7,
+        "max_det": 300,
+        "native_end_to_end": false
+      },
+      "speed_ms": {
+        "preprocess": 0.41108615169082374,
+        "inference": 24.98689067061517,
+        "loss": 0.0020943147473277543,
+        "postprocess": 0.8726868803689084
+      },
+      "class_ap": {
+        "insufficient_solder": {
+          "precision": 0.9579346005702549,
+          "recall": 0.8570376321110642,
+          "ap50": 0.9195108959805973,
+          "ap50_95": 0.5229400136570914
+        },
+        "excess_solder": {
+          "precision": 0.9233581661160762,
+          "recall": 0.8381208412908171,
+          "ap50": 0.904026541925169,
+          "ap50_95": 0.5660634383113358
+        },
+        "solder_bridge": {
+          "precision": 0.9914934122260666,
+          "recall": 0.9005524861878453,
+          "ap50": 0.9192280601561014,
+          "ap50_95": 0.6174553806511751
+        },
+        "solder_void": {
+          "precision": 1.0,
+          "recall": 0.24642892558731377,
+          "ap50": 0.7428294573643413,
+          "ap50_95": 0.5304944434730237
+        },
+        "missing_component": {
+          "precision": 0.9858682614513472,
+          "recall": 0.9427737758539908,
+          "ap50": 0.9523328391401038,
+          "ap50_95": 0.7600145055721859
+        },
+        "shifted_component": {
+          "precision": 0.9886673451932403,
+          "recall": 1.0,
+          "ap50": 0.995,
+          "ap50_95": 0.8770047265077139
+        },
+        "burn": {
+          "precision": 0.9525418917948338,
+          "recall": 0.5625,
+          "ap50": 0.6261481818181819,
+          "ap50_95": 0.465662688386664
+        },
+        "physical_damage": {
+          "precision": 0.9627589468804458,
+          "recall": 0.75,
+          "ap50": 0.8979355742296918,
+          "ap50_95": 0.6005026610644257
+        }
+      },
+      "classes_without_ground_truth": [
+        "oxidation",
+        "pcb4_component_damage",
+        "pcb4_foreign_material",
+        "pcb4_miss",
+        "pcb4_oxidation",
+        "pcb4_scratch"
+      ]
+    },
+    "baseline": {
+      "weights": "C:\\Project\\AI_Source\\jahwa\\models\\best.pt",
+      "domain": "original",
+      "split": "test",
+      "metrics": {
+        "metrics/precision(B)": 0.8238835012082746,
+        "metrics/recall(B)": 0.8847300748117055,
+        "metrics/mAP50(B)": 0.8831310797834384,
+        "metrics/mAP50-95(B)": 0.6387120950328432,
+        "fitness": 0.6387120950328432
+      },
+      "evaluation_settings": {
+        "imgsz": 800,
+        "conf": 0.001,
+        "iou": 0.7,
+        "max_det": 300,
+        "native_end_to_end": false
+      },
+      "speed_ms": {
+        "preprocess": 0.4809932944801997,
+        "inference": 24.717225218680483,
+        "loss": 0.0023303206358546167,
+        "postprocess": 1.024520262334996
+      },
+      "class_ap": {
+        "insufficient_solder": {
+          "precision": 0.715046225868443,
+          "recall": 0.946236559139785,
+          "ap50": 0.9184235727473388,
+          "ap50_95": 0.521664997312124
+        },
+        "excess_solder": {
+          "precision": 0.6738191947589116,
+          "recall": 0.8956521739130435,
+          "ap50": 0.8975757947385854,
+          "ap50_95": 0.5483278937160588
+        },
+        "solder_bridge": {
+          "precision": 0.9675975779450875,
+          "recall": 0.9060773480662984,
+          "ap50": 0.9048174381855364,
+          "ap50_95": 0.616261417743784
+        },
+        "solder_void": {
+          "precision": 0.7652767794241919,
+          "recall": 0.8214285714285714,
+          "ap50": 0.8159523809523811,
+          "ap50_95": 0.5777044642857142
+        },
+        "missing_component": {
+          "precision": 0.9400938449668218,
+          "recall": 0.9459459459459459,
+          "ap50": 0.9536573989390891,
+          "ap50_95": 0.7698977500576549
+        },
+        "shifted_component": {
+          "precision": 0.9725008601581505,
+          "recall": 1.0,
+          "ap50": 0.995,
+          "ap50_95": 0.8753092033235582
+        },
+        "burn": {
+          "precision": 0.8216890216800206,
+          "recall": 0.625,
+          "ap50": 0.644622052704577,
+          "ap50_95": 0.5079215100143276
+        },
+        "physical_damage": {
+          "precision": 0.73504450486457,
+          "recall": 0.9375,
+          "ap50": 0.935,
+          "ap50_95": 0.6926095238095238
+        }
+      },
+      "classes_without_ground_truth": [
+        "oxidation"
+      ]
+    }
+  }
+}

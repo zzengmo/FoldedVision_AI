@@ -1,0 +1,34 @@
+{
+  "baseline_threshold": 0.0014023815747350454,
+  "baseline": {
+    "TP": 16,
+    "FP": 9,
+    "TN": 11,
+    "FN": 4,
+    "accuracy": 0.675,
+    "precision": 0.64,
+    "recall": 0.8,
+    "f1": 0.7111111111111111,
+    "roc_auc": 0.74625,
+    "average_precision": 0.7958227181574318,
+    "false_positive_rate": 0.45,
+    "defect_inflow_reduction": 80.0
+  },
+  "selected_threshold": 0.10295861214399338,
+  "selected": {
+    "TP": 20,
+    "FP": 3,
+    "TN": 17,
+    "FN": 0,
+    "accuracy": 0.925,
+    "precision": 0.8695652173913043,
+    "recall": 1.0,
+    "f1": 0.9302325581395349,
+    "roc_auc": 1.0,
+    "average_precision": 1.0,
+    "false_positive_rate": 0.15,
+    "defect_inflow_reduction": 100.0
+  },
+  "same_test_images": true,
+  "score_rule": "max confidence over all native classes; val-selected threshold per model"
+}

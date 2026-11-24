@@ -1,0 +1,124 @@
+{
+  "samples": [
+    {
+      "image_id": "val:21",
+      "part_type": "Ring",
+      "defect_type": "t_contamination",
+      "defect_score": 1.0,
+      "has_score": true,
+      "status": "REVIEW",
+      "image_path": "FoldedVision/Images/ring_000065",
+      "source_path": "data/raw/Ring/val/000065.jpg"
+    },
+    {
+      "image_id": "val:39",
+      "part_type": "Ring",
+      "defect_type": "t_scratch",
+      "defect_score": 1.0,
+      "has_score": true,
+      "status": "REVIEW",
+      "image_path": "FoldedVision/Images/ring_000083",
+      "source_path": "data/raw/Ring/val/000083.jpg"
+    },
+    {
+      "image_id": "val:29",
+      "part_type": "Ring",
+      "defect_type": "unfinished_surface",
+      "defect_score": 0.9983523,
+      "has_score": true,
+      "status": "REVIEW",
+      "image_path": "FoldedVision/Images/ring_000073",
+      "source_path": "data/raw/Ring/val/000073.jpg"
+    },
+    {
+      "image_id": "component_damage_007.jpg",
+      "part_type": "PCB",
+      "model_version": "pcb_yolo_final-15a7e7fc7f38",
+      "defect_type": "pcb4_component_damage",
+      "defect_score": 0.3089023530483246,
+      "has_score": true,
+      "threshold": 0.10295861214399338,
+      "has_threshold": true,
+      "status": "NG",
+      "image_path": "FoldedVision/Images/pcb_component_damage_007",
+      "source_path": "notebooks/pcb/final/data/pcb4_yolo/images/test/component_damage_007.jpg",
+      "detections": [
+        {
+          "label": "pcb4_component_damage",
+          "score": 0.3089023530483246,
+          "box": [
+            0.620328113853668,
+            0.4738643480383832,
+            0.7107961932759573,
+            0.5773163394651551
+          ]
+        },
+        {
+          "label": "pcb4_foreign_material",
+          "score": 0.1746908724308014,
+          "box": [
+            0.62404550543941,
+            0.4706363954405854,
+            0.70768964764647,
+            0.5601094563802084
+          ]
+        },
+        {
+          "label": "pcb4_oxidation",
+          "score": 0.16106311976909637,
+          "box": [
+            0.6173681784448638,
+            0.4597180131552876,
+            0.7213072292232373,
+            0.5826168889584749
+          ]
+        }
+      ],
+      "inference_ms": 232.5325999991037,
+      "has_time": true
+    },
+    {
+      "image_id": "good_097.jpg",
+      "part_type": "PCB",
+      "model_version": "pcb_yolo_final-15a7e7fc7f38",
+      "defect_type": null,
+      "defect_score": 0.06186668574810028,
+      "has_score": true,
+      "threshold": 0.10295861214399338,
+      "has_threshold": true,
+      "status": "OK",
+      "image_path": "FoldedVision/Images/pcb_good_097",
+      "source_path": "notebooks/pcb/final/data/pcb4_yolo/images/test/good_097.jpg",
+      "detections": [],
+      "inference_ms": 42.95989999809535,
+      "has_time": true
+    },
+    {
+      "image_id": "good_005.jpg",
+      "part_type": "PCB",
+      "model_version": "pcb_yolo_final-15a7e7fc7f38",
+      "defect_type": "pcb4_oxidation",
+      "defect_score": 0.16728229820728302,
+      "has_score": true,
+      "threshold": 0.10295861214399338,
+      "has_threshold": true,
+      "status": "NG",
+      "image_path": "FoldedVision/Images/pcb_good_005",
+      "source_path": "notebooks/pcb/final/data/pcb4_yolo/images/test/good_005.jpg",
+      "detections": [
+        {
+          "label": "pcb4_oxidation",
+          "score": 0.16728229820728302,
+          "box": [
+            0.22512889294631352,
+            0.34932086778723676,
+            0.35567554142408414,
+            0.560231139694435
+          ]
+        }
+      ],
+      "inference_ms": 42.90699999546632,
+      "has_time": true
+    }
+  ]
+}

@@ -12,6 +12,9 @@ __pycache__/
 /notebooks/lens/models/
 /notebooks/lens/outputs/
 /notebooks/pcb/jahwa/
+/notebooks/pcb/final/data/
+/notebooks/pcb/final/models/
+/notebooks/pcb/final/outputs/integration/examples/
 
 /models/*
 !/models/ring_cnn_baseline.keras
@@ -39,6 +42,7 @@ __pycache__/
 /outputs/presentation/*
 !/outputs/presentation/*.pptx
 !/outputs/presentation/*.pdf
+!/outputs/presentation/FoldedVision_최종발표_대본.txt
 !/outputs/presentation/*_최종_대본.txt
 !/outputs/presentation/FoldedVision_공통발표_대본.txt
 !/outputs/presentation/REVIEW_NOTES.md
@@ -75,3 +79,14 @@ __pycache__/
 !/outputs/quality_upgrade/preservation_check.json
 !/outputs/quality_upgrade/web_validation.json
 *.log
+
+/unity/*/Library/
+/unity/*/Temp/
+/unity/*/Logs/
+/unity/*/obj/
+/unity/*/UserSettings/
+/unity/*/Builds/
+/unity/*/.vs/
+/unity/*/*.csproj
+/unity/*/*.sln
+/unity/*/*.slnx

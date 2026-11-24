@@ -1,0 +1,188 @@
+{
+  "candidate": "C:\\Project\\AI_Source\\jahwa\\runs\\pcb4_transfer\\weights\\best.pt",
+  "selected": "C:\\Project\\AI_Source\\jahwa\\models\\pcb_yolo_final.pt",
+  "accepted_finetune": true,
+  "rule": "original val mAP50-95 drop <= 0.05 absolute AND PCB4 val image F1 > baseline",
+  "original_map_delta": 0.014694315705413241,
+  "baseline_image_val": {
+    "TP": 15,
+    "FP": 13,
+    "TN": 7,
+    "FN": 5,
+    "accuracy": 0.55,
+    "precision": 0.5357142857142857,
+    "recall": 0.75,
+    "f1": 0.625,
+    "roc_auc": 0.59125,
+    "average_precision": 0.6806475511558633,
+    "false_positive_rate": 0.65,
+    "defect_inflow_reduction": 75.0
+  },
+  "candidate_image_val": {
+    "TP": 20,
+    "FP": 2,
+    "TN": 18,
+    "FN": 0,
+    "accuracy": 0.95,
+    "precision": 0.9090909090909091,
+    "recall": 1.0,
+    "f1": 0.9523809523809523,
+    "roc_auc": 0.9625,
+    "average_precision": 0.9568313448247658,
+    "false_positive_rate": 0.1,
+    "defect_inflow_reduction": 100.0
+  },
+  "baseline_threshold": 0.0014023815747350454,
+  "candidate_threshold": 0.10295861214399338,
+  "original_validation": {
+    "weights": "C:\\Project\\AI_Source\\jahwa\\runs\\pcb4_transfer\\weights\\best.pt",
+    "domain": "original",
+    "split": "val",
+    "metrics": {
+      "metrics/precision(B)": 0.9375452492157208,
+      "metrics/recall(B)": 0.8729792210289888,
+      "metrics/mAP50(B)": 0.9351684789286987,
+      "metrics/mAP50-95(B)": 0.6496255391876223,
+      "fitness": 0.6496255391876223
+    },
+    "evaluation_settings": {
+      "imgsz": 800,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 300,
+      "native_end_to_end": false
+    },
+    "speed_ms": {
+      "preprocess": 0.417082823774919,
+      "inference": 24.21680902484808,
+      "loss": 0.002301746585882191,
+      "postprocess": 0.9047499271911221
+    },
+    "class_ap": {
+      "insufficient_solder": {
+        "precision": 0.9615200204811141,
+        "recall": 0.9353647934979834,
+        "ap50": 0.975581876832058,
+        "ap50_95": 0.5969577573104844
+      },
+      "excess_solder": {
+        "precision": 0.9572983082807534,
+        "recall": 0.8738738738738738,
+        "ap50": 0.9458618178315017,
+        "ap50_95": 0.6100946525025311
+      },
+      "solder_bridge": {
+        "precision": 0.9542251974924489,
+        "recall": 0.9226519337016574,
+        "ap50": 0.9415018261962623,
+        "ap50_95": 0.5956138056507772
+      },
+      "solder_void": {
+        "precision": 0.9236429804356379,
+        "recall": 0.8142019673175275,
+        "ap50": 0.9547994730036584,
+        "ap50_95": 0.6140725553669802
+      },
+      "missing_component": {
+        "precision": 1.0,
+        "recall": 0.9560207697333413,
+        "ap50": 0.9550000000000001,
+        "ap50_95": 0.7920536462743806
+      },
+      "shifted_component": {
+        "precision": 0.9626496491887312,
+        "recall": 1.0,
+        "ap50": 0.995,
+        "ap50_95": 0.8537838237031785
+      },
+      "burn": {
+        "precision": 0.8177044709751418,
+        "recall": 0.5483870967741935,
+        "ap50": 0.7405677498468106,
+        "ap50_95": 0.5286056609693017
+      },
+      "physical_damage": {
+        "precision": 0.9233213668719397,
+        "recall": 0.9333333333333333,
+        "ap50": 0.9730350877192984,
+        "ap50_95": 0.6058224117233455
+      }
+    },
+    "classes_without_ground_truth": [
+      "oxidation",
+      "pcb4_component_damage",
+      "pcb4_foreign_material",
+      "pcb4_miss",
+      "pcb4_oxidation",
+      "pcb4_scratch"
+    ]
+  },
+  "pcb4_validation": {
+    "weights": "C:\\Project\\AI_Source\\jahwa\\runs\\pcb4_transfer\\weights\\best.pt",
+    "domain": "pcb4",
+    "split": "val",
+    "metrics": {
+      "metrics/precision(B)": 0.7199177082149887,
+      "metrics/recall(B)": 0.5952804286363775,
+      "metrics/mAP50(B)": 0.720098778998779,
+      "metrics/mAP50-95(B)": 0.4361996058146059,
+      "fitness": 0.4361996058146059
+    },
+    "evaluation_settings": {
+      "imgsz": 800,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 300,
+      "native_end_to_end": false
+    },
+    "speed_ms": {
+      "preprocess": 0.347262499963108,
+      "inference": 19.28752000003442,
+      "loss": 0.0022024996724212542,
+      "postprocess": 1.3494549993993132
+    },
+    "class_ap": {
+      "pcb4_component_damage": {
+        "precision": 0.34148980131110585,
+        "recall": 0.3333333333333333,
+        "ap50": 0.44240476190476197,
+        "ap50_95": 0.22056930501930502
+      },
+      "pcb4_foreign_material": {
+        "precision": 0.4958855661282417,
+        "recall": 0.25,
+        "ap50": 0.4276923076923077,
+        "ap50_95": 0.32773076923076927
+      },
+      "pcb4_miss": {
+        "precision": 0.9307647151798966,
+        "recall": 1.0,
+        "ap50": 0.995,
+        "ap50_95": 0.7745416666666667
+      },
+      "pcb4_oxidation": {
+        "precision": 1.0,
+        "recall": 0.3930688098485542,
+        "ap50": 0.7403968253968252,
+        "ap50_95": 0.36065628815628814
+      },
+      "pcb4_scratch": {
+        "precision": 0.8314484584556991,
+        "recall": 1.0,
+        "ap50": 0.995,
+        "ap50_95": 0.49749999999999994
+      }
+    },
+    "classes_without_ground_truth": [
+      "insufficient_solder",
+      "excess_solder",
+      "solder_bridge",
+      "solder_void",
+      "missing_component",
+      "shifted_component",
+      "burn",
+      "physical_damage",
+      "oxidation"
+    ]
+  }
+}

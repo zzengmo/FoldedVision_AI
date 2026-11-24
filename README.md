@@ -9,11 +9,13 @@
 
 React 포트폴리오는 부품별 평가 사례, 모델 비교, 개발 과정과 3D 자동 검사 시연을 제공합니다. 밝은 화면에서 투입·촬영·분류를 재생하며 일시정지·배속·직접 분류를 지원합니다. [웹 실행 안내](sites/foldedvision-inspection/README.md)
 
+Unity 공정 시연에서는 외주 부품 투입부터 사전 검사와 갠트리 분류까지 확인할 수 있습니다. Lens는 3D 전시, Ring과 PCB는 저장 결과 재생이며 가상 공정 모드도 제공합니다. [Unity 실행 CMD](Start_FoldedVision_Unity.cmd) · [Unity 프로젝트 안내](unity/My%20project/README.md)
+
 [게시된 웹](https://foldedvision-inspection.wholehaven1026.chatgpt.site)은 기존 본인 전용 접근 설정을 유지합니다. GitHub의 소스와 Sites의 게시 저장소는 별개입니다.
 
-최종 발표는 [PowerPoint](outputs/presentation/FoldedVision_최종발표.pptx)와 [표지 미리보기](outputs/presentation/slide_previews/표지.png)를 사용합니다. 현재 PPT는 표지와 [발표 목차](outputs/presentation/slide_previews/slide-02.png)를 포함한 공통 도입부 **10장**입니다. 개요, 주제 선정 배경, 주제 선정 이유, 문제 정의, 검사 대상, 데이터·라벨, 평가 설계, 검증 범위를 담았습니다. 사용자 제공 제품·구조·품질 프로세스 사진으로 외주와 제조 사이에 사전 외관 검사를 두자는 선정 취지를 설명합니다. 본문에는 투명 배경 부품 이미지, 제품·프로세스 확대, 실제 저장된 예측 사례를 배치했고 설명과 데이터 표는 편집 가능합니다. 생성형 AI 이미지는 실제 제품·장비·평가 결과 사진이 아닙니다. 1장 표지만 어두운 배경이며 2~10장은 흰색 계열입니다. 개인별 Lens·Ring·PCB 실험과 종합 결과 뒤에 웹·3D 시연을 배치할 예정이며, 공통부에서 뺀 [웹 시연 장 미리보기](outputs/presentation/slide_previews/slide-web-demo.png)는 참고용으로 보존했습니다. 최신 미리보기는 `slide-01.png`부터 `slide-10.png`까지입니다. 이전 [검토 기록](outputs/presentation/REVIEW_NOTES.md)과 [발표 대본 기록](outputs/presentation/FoldedVision_공통발표_대본.txt)은 참고용입니다. 실제 시연 화면은 `outputs/presentation/공정캡처/`에 있습니다.
+최종 발표는 [PowerPoint](outputs/presentation/FoldedVision_최종발표.pptx), [발표용 PDF](outputs/presentation/FoldedVision_최종발표.pdf), [20분 대본](outputs/presentation/FoldedVision_최종발표_대본.txt)을 사용합니다. 총 **44장**으로 공통 도입부 1–11장, Lens 담당 12–20장, Ring 21–29장, PCB 30–39장, 종합 결과·오류 사례·도입 손익·결론과 한계 40–44장입니다. 4장에 11/12–11/30 가로 일정표가 있습니다. Lens 담당은 VISION 렌즈 구역 분류에서 [3CAD 카메라 커버 YOLO26n](notebooks/lens/04_CameraCover_YOLO.ipynb) 사진 판정으로 전환한 과정을 설명합니다. Ring·PCB는 기준 단계의 오류, 2차 학습, 학습 곡선, 혼동행렬을 포함하며 같은 테스트에서 모델별 결과를 비교합니다. 42–43장은 투입량·불량률·건당 비용을 가정해 자동 NG의 영향과 연간 도입 손익분기 비용을 계산합니다. [공통부 미리보기](outputs/presentation/slide_previews/)
 
-모델 구조와 노트북 읽는 순서는 [Lens 공부자료](outputs/presentation/공부자료/Lens_딥러닝_공부자료.pdf), [Ring 공부자료](outputs/presentation/공부자료/Ring_딥러닝_공부자료.pdf), [PCB 공부자료](outputs/presentation/공부자료/PCB_딥러닝_공부자료.pdf)로 따로 정리했습니다. 세 자료에 데이터 출처와 실제 이용 범위 부록을 넣었습니다. [전체 데이터 출처](DATA_SOURCES.md)
+발표 질문 대비 자료는 [Lens 초기 실험과 카메라 커버 최종 모델](outputs/presentation/공부자료/Lens_딥러닝_공부자료.pdf), [Ring 기준 CNN과 전이학습](outputs/presentation/공부자료/Ring_딥러닝_공부자료.pdf), [PCB 기준 YOLO와 PCB4 전이학습](outputs/presentation/공부자료/PCB_딥러닝_공부자료.pdf)입니다. 각 PDF에서 설계 이유, 학습 설정, 실제 오류, 예상 질문과 답변, 원본 기록 확인 순서를 볼 수 있습니다. [전체 데이터 출처](DATA_SOURCES.md)
 
 ## 2026-11-23 추가 학습
 
@@ -24,8 +26,9 @@ Windows에서는 [Start_FoldedVision.cmd](Start_FoldedVision.cmd)를 더블클�
 |파일|용도|
 |---|---|
 |[Ring 기준 노트북](notebooks/ring/01_Ring_CNN_Baseline.ipynb) · [Ring 최종 노트북](notebooks/ring/02_Ring_DeepLearning_Final.ipynb)|Ring 기준·최종 모델, 추가 실험과 저장 모델 추론|
-|[Lens 기준 노트북](notebooks/lens/01_Lens_CNN_Baseline.ipynb) · [Lens 최종 노트북](notebooks/lens/02_Lens_DeepLearning_Final.ipynb)|팀원의 학습 코드와 저장된 실행 결과|
-|[PCB VisA 노트북](notebooks/pcb/PCB_VisA.ipynb) · [PCB YOLO 노트북](notebooks/pcb/PCB_YOLO.ipynb)|팀원의 검출 학습·평가 기록|
+|[Lens 기준 노트북](notebooks/lens/01_Lens_CNN_Baseline.ipynb) · [VISION Lens 개선 실험](notebooks/lens/02_Lens_DeepLearning_Final.ipynb) · [카메라 커버 최종 노트북](notebooks/lens/04_CameraCover_YOLO.ipynb)|초기 렌즈 구역·분할 코드와 최종 커버 YOLO 학습·테스트 결과|
+|[PCB 최종 전달본](notebooks/pcb/final/README.md) · [평가 보고서](notebooks/pcb/final/FINAL_REPORT.md)|팀원의 최종 학습·추론 코드, 통합 설정과 저장된 평가. 데이터와 가중치는 원본 PC의 팀 ZIP에 보관|
+|[PCB VisA 노트북](notebooks/pcb/PCB_VisA.ipynb) · [PCB YOLO 노트북](notebooks/pcb/PCB_YOLO.ipynb)|기존 팀원의 검출 학습·평가 노트북|
 |[AGENTS.md](AGENTS.md)|지켜야 할 파일, 실제 성능, 출처, 실행 방법, 정리 이력|
 |[COURSE_ALIGNMENT.md](COURSE_ALIGNMENT.md)|배운 수업과 구현의 연결, 발표 순서|
 |[DATA_SOURCES.md](DATA_SOURCES.md)|원본 자료 출처·다운로드·이용 조건|
@@ -34,7 +37,9 @@ Windows에서는 [Start_FoldedVision.cmd](Start_FoldedVision.cmd)를 더블클�
 
 Ring 기준·최종 모델, 별도 베어링 최종 모델과 설정 JSON이 저장소에 포함됩니다. 해당 부품 사진을 준비하면 아래 시연 셀에서 추론할 수 있습니다. 원본 데이터, 실행 환경, 이전 실험 백업, 학습 중간 체크포인트는 원본 PC에 보관합니다. 새 PC에서 재학습할 때는 `DATA_SOURCES.md`의 위치에 맞춰 해당 데이터만 복원하세요.
 
-렌즈 노트북은 `notebooks/lens/`를 작업 위치로 열어 실행합니다. 팀 CNN과 U-Net 시연에는 팀원의 가중치, 통합 설정·지표·예측 파일과 샘플이 필요합니다. 기존 실행 결과는 팀 렌즈 최종 노트북 하단에 있습니다. `notebooks/pcb/`에는 팀이 전달한 PCB 노트북을 보존했습니다. 같은 PCB4 성능을 재현하려면 팀의 원래 `jahwa` 실행 환경, 가중치와 실행 스크립트가 필요합니다.
+렌즈 노트북은 `notebooks/lens/`를 작업 위치로 열어 실행합니다. 광학 렌즈 CNN·U-Net은 02번, 최종 카메라 커버 YOLO는 04번 노트북에서 저장된 실행 결과를 읽을 수 있습니다. 모델을 실행하려면 해당 팀 실행 폴더의 데이터·가중치·통합 설정을 복원합니다.
+
+PCB는 `notebooks/pcb/final/`에 2026-11-24 팀 전달본을 폴더 구조대로 보관했습니다. 이 폴더를 Python import 경로로 사용하면 `integration.predict_pcb()`가 통합 설정에 지정된 `pcb_yolo_final.pt`를 찾습니다. `inspect_pcb.py`를 CLI로 호출할 때 기본 가중치는 기준 모델인 `best.pt`입니다. 팀원의 검증 환경과 현재 Ring 환경이 다르고 전달본의 PyTorch 요구 버전도 실행 기록과 다르므로, PCB 실행 환경은 별도로 확인해야 합니다. 새 PC에는 팀 ZIP을 같은 위치에 풀어 데이터와 가중치를 복원합니다. [통합 규격](notebooks/pcb/final/TEAM_INTEGRATION.md) · [팀 실행 기록](notebooks/pcb/final/outputs/runtime_versions.json)
 
 ## 폴더 안내
 
@@ -43,7 +48,7 @@ FoldedVision_AI/
 ├─ notebooks/                        부품별 학습 코드 및 저장된 실행 결과
 │  ├─ lens/                           팀 Lens 기준·최종
 │  ├─ ring/                           내 Ring 기준·최종 및 추가 실험
-│  └─ pcb/                            팀 PCB VisA·YOLO
+│  └─ pcb/                            팀 PCB 노트북과 final/ 최종 전달본
 ├─ AGENTS.md                         프로젝트 기억·보존 규칙
 ├─ data/                             원본 압축·이미지·정답·출처·전처리 배열
 ├─ models/                           현재 노트북의 학습 모델

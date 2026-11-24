@@ -1,0 +1,84 @@
+{
+  "model_name": "FoldedVision AI PCB YOLO",
+  "model_version": "pcb_yolo_final-15a7e7fc7f38",
+  "model_path": "models/pcb_yolo_final.pt",
+  "framework": "Ultralytics/PyTorch",
+  "ultralytics_version": "8.4.215",
+  "input_size": 800,
+  "runtime_versions": {
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.2+cpu",
+    "numpy": "2.2.6",
+    "opencv": "4.10.0"
+  },
+  "weights_sha256": "15a7e7fc7f381bbb6b4db2f59b7a4dcb66b8b4ab84f67139d9c5bb7a8cf7439a",
+  "color_mode": "RGB",
+  "channel_order": "RGB CHW inside model; OpenCV input BGR is converted by predictor",
+  "normalization": "uint8 0..255 -> float 0..1; no ImageNet mean/std",
+  "preprocessing": "Ultralytics letterbox, no CLAHE in evaluated pipeline",
+  "label_mapping": {
+    "0": "insufficient_solder",
+    "1": "excess_solder",
+    "2": "solder_bridge",
+    "3": "solder_void",
+    "4": "missing_component",
+    "5": "shifted_component",
+    "6": "burn",
+    "7": "physical_damage",
+    "8": "oxidation",
+    "9": "pcb4_component_damage",
+    "10": "pcb4_foreign_material",
+    "11": "pcb4_miss",
+    "12": "pcb4_oxidation",
+    "13": "pcb4_scratch"
+  },
+  "image_label_mapping": {
+    "0": "normal",
+    "1": "defective"
+  },
+  "original_class_ids": {
+    "0": "insufficient_solder",
+    "1": "excess_solder",
+    "2": "solder_bridge",
+    "3": "solder_void",
+    "4": "missing_component",
+    "5": "shifted_component",
+    "6": "burn",
+    "7": "physical_damage",
+    "8": "oxidation"
+  },
+  "positive_class": 1,
+  "threshold": 0.10295861214399338,
+  "confidence_candidate_floor": 0.001,
+  "threshold_selection": "max validation image F1, tie: fewer FP then higher threshold",
+  "output_type": "OK/NG/REVIEW plus bounding boxes",
+  "nms": {
+    "iou": 0.45,
+    "agnostic": false,
+    "max_det": 300,
+    "native_end_to_end": false,
+    "end_to_end_model": "Ultralytics applies architecture-native postprocessing; iou NMS may be bypassed by end-to-end head"
+  },
+  "bbox_format": "xyxy original image pixels",
+  "defect_score": "maximum confidence over all predicted defect boxes; zero if none",
+  "dataset_source": [
+    "ParsaVictor/pcb-solder-defect-detection",
+    "zhaolutuan/0422@456f0c91ba9fcc7001ee4143957bc37ac27e12e0"
+  ],
+  "limitations": [
+    "Public-data PoC, not Jahwa actuator production validation",
+    "Confidence is not calibrated defect probability",
+    "Scratch: only one test image",
+    "Similar physical boards may cross splits",
+    "Boxes are not segmentation masks",
+    "REVIEW requires human/out-of-domain routing; no calibrated OOD detector",
+    "Original-domain held-out box recall decreased; do not claim full retention or universal replacement of baseline"
+  ],
+  "evaluation_scope": "PCB4 adaptation PoC; original-domain retention gate used validation, not test",
+  "original_test_tradeoff": {
+    "baseline_box_recall": 0.8847300748117055,
+    "selected_box_recall": 0.7621767076288789,
+    "baseline_map50_95": 0.6387120950328432,
+    "selected_map50_95": 0.617517232202952
+  }
+}

@@ -207,3 +207,49 @@ GitHub에서 작업을 이어갈 때는 README.md와 CODEX_PROMPT.txt를 참고�
 - 최신 상태와 새 PC 실행, 웹 파일별 역할, 네 자동 시나리오, 검증 결과, 남은 시각 검수, 게시 정보는 `CODEX_PROMPT.txt`에 정리했다. 웹 작업만 할 때 Python이나 대용량 데이터 복원은 필요 없다. 원본 데이터·가중치·백업은 기존 제외 규칙과 보존 원칙을 유지한다.
 - 게시 성공 주소는 https://foldedvision-inspection.wholehaven1026.chatgpt.site 이며 기존 본인 전용 접근을 유지했다. `.openai/hosting.json`의 project_id는 재사용한다. Sites 소스 커밋 `b2ef8e76f9d85a4dbc552d827ef1cf33aa5952f6`은 GitHub 커밋과 별개다. 로컬 포장 프로세스 오류 후 서버 빌드로 게시에 성공했다.
 - 상태 전환 테스트 4개·빌드·평가 자산 경로 검증은 통과했다. 브라우저 연결 불가로 최신 웹의 데스크톱/모바일·WebGL 시각 검수는 미완료다. 다음 웹 작업에서는 이 부분을 먼저 확인한다. 이전 `공정캡처/`와 PPT의 웹 미리보기는 이번 밝은 웹 디자인을 캡처한 이미지가 아니다.
+
+## 2026-11-24 팀 PCB 최종 전달본
+
+- 사용자가 제공한 `pcb.zip`의 내부 폴더를 `notebooks/pcb/final/`로 풀었다. 같은 폴더의 이전 `PCB_VisA.ipynb`, `PCB_YOLO.ipynb`는 보존한다. `final/` 아래에는 학습·평가 `pcb4_transfer.py`, 검사 `inspect_pcb.py`, 호출 규격 `integration.py`, 기준·최종 가중치, 데이터와 실행 결과가 있다.
+- ZIP SHA-256은 `c72628717554c41110709a463038d1419136e5ecfca3a018056685aa7d6aff76`이다. 추출 파일 11,187개(618,549,213바이트)의 크기와 CRC를 모두 대조했고, 최종 가중치 SHA-256이 팀 설정과 일치했다. 데이터 이미지·라벨 짝, PCB4 예측 40건과 혼동행렬, 30에포크 기록도 확인했다.
+- 최종 추론은 `integration.predict_pcb()`가 `outputs/integration/pcb_model_config.json`의 `models/pcb_yolo_final.pt`와 검증으로 고른 임계값 0.102958612를 사용한다. `inspect_pcb.py`의 CLI 기본 가중치는 `models/best.pt`다. 박스는 원본 이미지 픽셀 좌표다. 점수는 보정된 불량 확률로 해석하지 않는다.
+- PCB4 기존 테스트 40장(정상 20, 불량 20)의 저장 결과는 이미지 정확도 92.50%, 이미지 F1 93.02%, TP 20·TN 17·FP 3·FN 0이다. 박스 mAP50 83.89%, mAP50–95 58.90%다. 원본 PCB 테스트의 박스 Recall은 기준 대비 88.47%에서 76.22%로 낮아졌다. PCB4 테스트에서 모든 불량을 잡았다는 결과는 그 데이터 범위에 적용한다. PCB1–3 사진 분류는 별도 실험이다.
+- `final/data/`, `final/models/`, `final/outputs/integration/examples/`는 로컬 보존 대상이며 Git 제외 경로다. 팀의 `requirements.txt`와 `outputs/runtime_versions.json`의 PyTorch 버전이 다르므로 별도 실행 환경을 확인해야 한다. 현재 TF 환경에서 재추론·재학습을 실행하지 않았으며 웹·PPT는 변경하지 않았다. 팀 보고서에 언급된 별도 HTTP·UI 검증 JSON은 ZIP에 포함되지 않았다.
+
+## 2026-11-24 Ring·PCB 및 일정 발표 반영 이력
+
+- 현재 발표는 `outputs/presentation/FoldedVision_최종발표.pptx` 및 같은 이름의 PDF, 총 34장이다. 공통부 1–11장, Lens 제목 자리 12장, Ring 13–21장, PCB 22–31장이다. 두 담당 파트는 데이터 소개·EDA·전처리·모델 구성·1차 오류·2차 학습·학습 곡선과 혼동행렬·추론 비교·결론 순서로 구성했다.
+- 4장 가로 일정표는 주제 선정 11/12–18, 데이터 수집 11/19–22, 전처리 11/23–24, 모델 학습 11/25–27, 최종 모델링 11/28–30으로 배치했다. 주제 선정과 수집의 종료일은 사용자가 확인했으며, 나머지 날짜는 요청에 따라 배분한 계획이다. 날짜와 막대는 PowerPoint 도형으로 편집할 수 있다.
+- Ring은 VISION Ring 기준 RGB CNN과 전체+부분 전이학습을 같은 테스트 42장으로 비교했다. PCB는 팀 최종 전달본의 기준 YOLO 추론과 PCB4 전이학습을 구분했다. 실제 저장 예측과 라벨 근거를 쓰고 설명은 발표자 노트에 담았다.
+- 19장은 Ring 2차 분류기 16에포크 학습·검증 정확도와 손실, 같은 테스트 42장의 결함 유형 혼동행렬이다. 그래프는 `outputs/quality_upgrade/vision_ring_global_tiles_48_history.json`, 행렬은 `outputs/integration/ring_predictions.csv`와 `outputs/quality_upgrade/vision_ring_transfer_predictions.csv`에서 가져왔다. 검증 손실 최저는 9에포크이며 가중치를 복원했다. 후보 선택은 검증 Macro F1로 했다.
+- 28장은 PCB YOLO 30에포크 혼합 검증 박스 mAP·학습/검증 박스 손실, 별도 PCB4 테스트 40장의 사진 단위 혼동행렬이다. 팀 전달본의 `runs/pcb4_transfer/results.csv`, `outputs/integration/baseline_image_comparison.json`, `outputs/integration/pcb_predictions.csv`가 출처다.
+- PCB 뒤 32–34장은 부품별 종합 결과, 오류 사례 분석, 결론과 한계다. Ring의 스크래치→오염 예측은 `000086.jpg`, PCB4의 정상→NG 예측은 `good_005.jpg`를 사용했다. Lens 최종 평가 확정 후 12장과 종합표의 Lens 행에 반영한다. 웹·3D 공정 시연은 이번 발표 범위에서 제외했다.
+
+## 2026-11-24 Unity 공정 시각화
+
+- 기존 Unity 프로젝트 `unity/My project/`와 샘플 씬을 보존했다. Unity 6000.6.9f1, URP 17.6.0의 새 `Assets/FoldedVision/Scenes/FoldedVisionFactory.unity`가 시연 씬이다. 루트 `Start_FoldedVision_Unity.cmd`로 열고 Play를 누른다.
+- Lens는 광학 모듈과 검사기 모델링만 제공한다. PENDING, 추론 연결 없음, 분기·세션 집계 제외다. Ring의 유형 점수는 정상·불량 확률이 아니므로 저장 재생에서 REVIEW, PCB는 팀 PCB4 저장 판정과 위치 좌표를 사용한다. 두 부품 각 3건을 `Assets/FoldedVision/Resources/FoldedVision/replay.json`에 포장했다.
+- `Assets/FoldedVision/Editor/`는 메시·소재·프리팹 및 씬 생성과 Play Mode 검증, `Scripts/`는 공정 상태·로봇·대시보드다. 실제 자료를 갱신할 때는 `Tools/export_replay.py`를 사용한다. 1080p 캡처와 검증 기록은 `Presentation/`에 있다.
+- Play Mode에서 Lens 모델 전시, Ring REVIEW, PCB OK·NG, PCB 예측 박스, 갠트리 집기·놓기, 가상 모드 세 경로 및 대시보드 기능을 검증했다. `Presentation/FoldedVision_Factory_Demo.mp4`는 720p, 24fps, 약 14초의 Unity 렌더 영상이다.
+
+## 2026-11-24 카메라 커버 최종 결과 및 42장 발표본
+
+- 전달받은 `notebooks/lens/04_CameraCover_YOLO.ipynb`를 원본 해시 그대로 보존했다. 초기 VISION Lens 구역·분할과 최종 3CAD 카메라 커버 사진 판정은 대상과 평가 단위가 다르다.
+- 3CAD 커버 사진 2,230장(정상 1,153, 불량 1,077), 학습/검증/테스트 1,329/453/448장. CPU YOLO26n 40에포크. 검증 453장으로 OK 상한 0.0038509, NG 하한 0.0206086을 정했다.
+- 테스트 448장의 사진 F1 90.58%, 자동 NG Recall 93.95%, 정상 오검출률 12.45%. 정답별 [OK, REVIEW, NG]는 정상 [115, 89, 29], 불량 [4, 9, 202]. 박스 mAP50 69.03%, mAP50–95 42.83%. 발표에는 노트북 저장 로그와 출력 사진을 썼다.
+- 이 판본의 PPT/PDF는 42장이었다. 공통 1–11장, Lens 12–20장, Ring 21–29장, PCB 30–39장, 종합 40–42장. 20분 대본은 `outputs/presentation/FoldedVision_최종발표_대본.txt`. 공정 시연은 별도 Unity 프로젝트에서 실행하며 현재 발표 범위에는 포함하지 않았다.
+
+## 2026-11-24 손실 시나리오와 43장 발표본
+
+- 42장에 사전 검사 손실 차이를 추가했고 결론은 43장이다. 연 3,000만 개는 2026-06-01 알파경제의 카메라 액추에이터 CAPA 보도를 참고해 부품별 투입량 가정으로 사용했다. 불량률 2.3%는 사용자 제공 가정이며 공식 전국 평균 원자료는 확인하지 못했다. 건당 1,000원은 놓친 불량의 후공정 추가 손실을 보여주는 예시 단가다. [CAPA 보도](https://kr.investing.com/news/stock-market-news/article-1966473)
+- 부품별 독립 계산에서 미도입 불량 유입은 각각 690,000개다. 자동 NG만 분리하고 공개 테스트 검출률을 그대로 적용하면 카메라 커버 202/215 → 648,279개 차단·41,721개 잔존, PCB4 20/20 → 690,000개 차단·0개 잔존 가정이다. Ring은 유형 정확도 39/42와 이진 검출률을 구분해 적용 후 수치와 비용을 산정하지 않았다. 부품별 수치는 합산하지 않으며 재검·오검출·운영비를 제외한 조건부 비용 차이다.
+
+## 2026-11-24 손익분기점과 44장 발표본
+
+- 43장에 사전 검사 도입 손익분기점을 추가했다. 42장 가정 아래 연간 검사 총비용이 카메라 커버 648,279,000원(검사당 약 21.61원), PCB4 690,000,000원(검사당 23.00원)과 같으면 손익분기다. 연간 환산 설비비·운영비·재검·오분리 비용을 총비용에 포함한다. Ring은 이진 검출률 근거가 있어야 산정한다.
+- 25,500원은 사용자 제공 액추에이터 판매가 가정이다. 690,000개와 1:1로 환산한 175.95억 원은 규모 참고값이다. 단위 판매가와 실제 후공정 손실 차이, 순이익을 구분한다. 결론은 44장, PPT/PDF 및 20분 대본을 갱신했다.
+
+## 2026-11-24 담당자별 발표 질문 대비
+
+- `outputs/presentation/공부자료/`의 기존 파일명으로 Lens 9쪽, Ring 8쪽, PCB 8쪽 PDF를 갱신했다. 실제 학습 설정과 설계 이유, 저장 곡선·오류 사례, 계산 연습, 답변과 데이터 링크를 담았다.
+- Lens는 초기 VISION 광학 렌즈의 구역·U-Net 실험과 최종 3CAD 카메라 커버의 사진·박스 평가를 구분했다. Ring은 동일 테스트 42장으로 기준·전이학습을 비교하고, PCB는 팀 최종 전달본의 40장 사진 평가와 원본·PCB4 박스 평가를 구분했다.

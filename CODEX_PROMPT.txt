@@ -1,6 +1,6 @@
 다른 PC에서 FoldedVision_AI 저장소를 열었어. 이 프로젝트를 이어서 작업해줘.
 
-기준일은 2026-11-23이고 저장소는 https://github.com/zzengmo/FoldedVision_AI.git, 작업 브랜치는 main이야. README.md, AGENTS.md, DATA_SOURCES.md를 읽고 현재 Git 상태와 파일을 확인해줘. AGENTS.md의 과거 PPT 이력보다 아래 최신 10장 상태와 웹 자동 시연 상태를 기준으로 이어가줘. 이번 목표는 마지막 줄에 적을게. 원본 작업 PC에만 있던 data, archive, 일부 체크포인트가 새 PC에 필요하면 어떤 경로와 자료가 필요한지 알려줘. 자동으로 대용량 데이터를 받거나 전체 학습을 시작하지 말고, 요청한 기능부터 확인해줘.
+기준일은 2026-11-24이고 저장소는 https://github.com/zzengmo/FoldedVision_AI.git, 작업 브랜치는 main이야. README.md, AGENTS.md, DATA_SOURCES.md를 읽고 현재 Git 상태와 파일을 확인해줘. AGENTS.md의 과거 PPT 이력보다 아래 최신 44장 발표본, 담당자별 공부자료, 웹과 Unity 시연 상태를 기준으로 이어가줘. 이번 목표는 마지막 줄에 적을게. 원본 작업 PC에만 있던 data, archive, 일부 체크포인트가 새 PC에 필요하면 어떤 경로와 자료가 필요한지 알려줘. 자동으로 대용량 데이터를 받거나 전체 학습을 시작하지 말고, 요청한 기능부터 확인해줘.
 
 웹만 수정할 때는 Python, 학습 데이터, 체크포인트가 필요 없어. 노트북 학습·추론 작업이 필요할 때만 Python 3.11 가상환경을 만들어줘. Windows에서 py -3.11 -m venv .venv 실행 후 .venv\Scripts\python.exe -m pip install -r requirements-lock.txt로 설치하고, 노트북 커널을 같은 Python으로 선택해줘. OS가 다르면 호환되는 패키지를 확인해줘.
 
@@ -41,7 +41,9 @@
 
 Ring 기준·최종 노트북은 notebooks/ring/에 있어. 이 폴더나 프로젝트 루트에서 실행하면 같은 data, models, outputs를 써. 기존 Ring 모델의 최종 평가는 80.95%(34/42), Macro F1 0.5678이야. 세 가지 결함 유형을 추정하며 정상/불량 판정은 REVIEW로 표시해. Ring과 별개인 베어링 설치 조합 분류는 내부 검증 94.81%, 최종 평가 57.21%(365/638)야. 두 모델의 추론 전처리, 입력 크기, 클래스 순서는 각 설정 JSON과 현재 코드를 따라줘.
 
-렌즈 팀원의 노트북 두 개는 notebooks/lens/에 있어. 저장된 결과를 먼저 읽고, 실행할 때는 notebooks/lens/를 작업 위치로 사용해줘. 렌즈 최종 CNN과 U-Net .keras, 통합 config/metrics/predictions 파일, 테스트 샘플은 팀원에게 받아야 해. 기존 팀 렌즈 CNN은 구역 AP 0.419, Recall 92.1%, 정상 구역 오검출률 65.4%야. 테스트는 불량 사진 52장이라 정상 사진 오검출률은 미측정이고, 위치 U-Net은 실험용이야. 팀 PCB 원본 노트북은 notebooks/pcb/에 있고 기존 재현에 필요한 jahwa 실행 환경은 별도야.
+렌즈 팀원의 초기 광학 렌즈 노트북 01·02와 최종 3CAD 카메라 커버 노트북 04는 notebooks/lens/에 있어. 저장된 결과를 먼저 읽고, 실행할 때는 notebooks/lens/를 작업 위치로 사용해줘. 초기 렌즈 CNN·U-Net .keras, 최종 커버 YOLO .pt, 각각의 통합 결과와 테스트 샘플이 필요하면 담당자의 실행 폴더에서 해당 실험 자료를 받아야 해. 초기 렌즈 CNN은 구역 AP 0.419, Recall 92.1%, 정상 구역 오검출률 65.4%야. 테스트는 불량 사진 52장이라 정상 사진 오검출률은 미측정이고, 위치 U-Net은 실험용이야.
+
+2026-11-24에 받은 PCB 팀 최종 ZIP은 notebooks/pcb/final/에 풀었어. 이 폴더의 README.md와 TEAM_INTEGRATION.md를 읽고, 추론 진입점은 integration.predict_pcb를 사용해. PCB 데이터·가중치·예시 이미지는 Git 제외 경로라 다른 PC에는 팀 ZIP이 필요해. 검증 환경과 requirements.txt의 PyTorch 버전이 다르니 실행 환경을 먼저 확인해. 현재 웹 시연과의 실시간 추론 연결은 별도 작업이야.
 
 팀 통합이 목표면 받은 모델과 설정을 먼저 검증해줘. Python 추론 API에서 Ring·Lens·PCB를 부품별로 연결하고, React 화면은 검증된 실제 예측·유형·점수·위치만 보여주는 방향으로 진행해줘. 모델을 아직 못 받은 부품은 준비 상태를 명확히 표시하고, 정상/불량 판정이 검증되지 않은 항목은 REVIEW로 표시해줘.
 
@@ -49,10 +51,14 @@ Ring 기준·최종 노트북은 notebooks/ring/에 있어. 이 폴더나 프로
 
 추가 실험의 저장된 최신 수치는 src/qualityResults.json을 기준으로 해. Ring은 같은 테스트 42장의 유형 정확도 92.86%(39/42), Macro F1 0.8914야. Lens는 같은 3,410구역 AP 0.6681, Recall 92.40%, 정상 구역 오검출률 53.16%야. VisA PCB1–3 사진 분류는 1,324장 AP 0.7846, F1 0.7136이야. PCB4 YOLO의 이미지 F1 93.02%와 서로 다른 실험이므로 합치지 말아줘. 이 문단의 src는 웹 프로젝트 아래야. 추가 실험 가중치는 Git에 포함되지 않으므로 새 PC에서 최신 웹 수치를 읽는 것과 그 모델을 실제 추론하는 것은 구분해줘.
 
-현재 발표 PPT는 outputs/presentation/FoldedVision_최종발표.pptx의 공통 도입부 10장이야. 표지, 목록형 목차, 개요, 주제 선정 배경, 주제 선정 이유, 문제 정의, 검사 대상, 데이터·라벨, 평가 설계, 검증 범위 순서야. 11장 판본에서 웹 시연 장이 빠진 최신 로컬 파일을 그대로 보존했어. 웹·3D 시연은 개인별 Lens·Ring·PCB 실험과 종합 결과 뒤에 배치하기로 했고, 참고 미리보기는 outputs/presentation/slide_previews/slide-web-demo.png에 남겼어. 개인별 상세 실험과 후반 시연은 다음에 이어 붙여줘. 최신 공통부 미리보기는 slide-01.png부터 slide-10.png까지야.
+현재 발표는 outputs/presentation/FoldedVision_최종발표.pptx, 같은 이름의 PDF, FoldedVision_최종발표_대본.txt야. 총 44장으로 공통부 1–11장, Lens 12–20장, Ring 21–29장, PCB 30–39장, 종합 결과·오류 사례·도입 손익·결론과 한계 40–44장이야. 4장은 프로젝트 일정표야. Lens 담당은 notebooks/lens/04_CameraCover_YOLO.ipynb의 3CAD 알루미늄 카메라 커버 테스트 448장을 최종 보고해. 자동 NG Recall 93.95%, 사진 F1 90.58%, 정상 오검출률 12.45%, 별도 박스 mAP50 69.03%야. 광학 렌즈의 초기 구역 실험과 검사 대상·지표가 달라 직접 비교하지 않아. Ring과 PCB는 기존 기록을 유지하면서 동일 테스트로 전후 비교해. 학습 곡선은 Lens 17장, Ring 27장, PCB 36장에 있어. 42장은 부품별 연 3,000만 개·불량률 2.3%·건당 손실 1,000원 가정의 자동 NG 시나리오야. 43장은 손익분기 비용이며 25,500원은 사용자 제공 판매가 환산 참고치야. Ring의 유형 정확도는 불량 검출률로 사용하지 않아. 웹·3D 공정 시연은 이번 발표 범위에서 제외했어.
 
-디자인은 1장 표지만 어두운 표지를 유지하고, 2~10장은 흰색 계열 F8FAFC야. 사용자는 네모 상자·화살표 도식과 같은 좌우 배치의 반복을 싫어해. 3장은 투명 부품 클러스터, 4장은 제품 확대, 5장은 품질 프로세스 전체와 외주·제조 구간 확대, 6장은 밝은 검사 장면, 7장은 실제 예측 예시, 9장은 실험·평가 역할, 10장은 세 부품 이미지로 발표를 연결해. 8장은 학습·검증·테스트를 나눈 편집 가능한 6열 표이며 숫자는 그대로야. 검은 본문이나 네모 도식으로 되돌리지 말아줘.
+발표 질문을 준비할 때는 outputs/presentation/공부자료/에 있는 Lens 9쪽, Ring 8쪽, PCB 8쪽 PDF를 열어줘. 실제 모델 설정과 오판 사례, 예상 질문, 답변과 계산 연습이 들어 있어.
+
+표지만 어두운 디자인이고 본문은 흰색 계열이야. 공통부에는 프로젝트 개요, 4장 일정, 제품·공정 배경, 부품별 과제·데이터·검증 범위가 있어. 디자인을 변경하기 전에 실제 PPT와 발표자 노트를 기준으로 장 순서를 확인해. 사용자는 네모 상자·화살표 도식과 같은 좌우 배치의 반복을 싫어해.
 
 사용자 제공 제품·구조·품질 프로세스 사진과 발표자 노트의 출처·범위를 보존해줘. 선정 취지는 외주와 제조 사이에 사전 외관 불량 탐지를 두자는 사용자 설명이야. 생성 이미지는 outputs/presentation/자료/생성이미지/에 있으며 실제 제품·장비·평가 결과로 설명하면 안 돼. 실제 현장 효과를 검증했다고 쓰지 말아줘. PPT 저장 상태는 outputs/cleanup_records/presentation_history/github_save_snapshot_2026-11-23.json, 이전 디자인 기록은 rich_design_2026-11-23.json에서 확인해줘.
+
+Unity 시각화가 목표면 unity/My project/README.md를 먼저 읽어줘. Unity 6000.6.9f1, URP 17.6.0에서 만든 Assets/FoldedVision/Scenes/FoldedVisionFactory.unity를 Start_FoldedVision_Unity.cmd 또는 Tools → FoldedVision → Open Factory로 열고 Play를 눌러. Lens는 3D 모델과 설비만 제공하고, Ring은 저장 유형 결과로 REVIEW, PCB는 팀 PCB4 검증 임계값과 저장 예측으로 분류해. 가상 시연의 집계와 실제 테스트는 따로 표시해. 생성 메시와 프리팹을 그대로 보존하고, 장면 수정 전에는 기존 씬의 수동 편집을 확인해.
 
 이번에 진행할 작업: [여기에 이번 목표를 적기]

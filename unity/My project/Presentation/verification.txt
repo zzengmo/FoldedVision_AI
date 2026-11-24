@@ -1,0 +1,7 @@
+Unity 6000.6.9f1
+URP PC_RPAsset
+Graphics NVIDIA GeForce RTX 5060 Laptop GPU / Direct3D12
+Game view 3840 × 2160
+Capture path: Unity URP, 1920 × 1080, including the runtime canvas
+Editor Game View overview average 183.1 FPS (~2 s, view size above)
+Verified: Lens model only, Ring REVIEW, PCB NG+PASS and prediction box, gantry attach/release, pause, reset, history, speed, tour, and all demo routes.
