@@ -1,0 +1,288 @@
+﻿{
+    "date":  "2026-11-25",
+    "master":  "outputs/presentation/FoldedVision_최종발표.pptx",
+    "slide_count":  51,
+    "source_web_slides":  49,
+    "source_lens_slides":  44,
+    "order":  [
+                  "1-11 common",
+                  "12-20 Lens",
+                  "21-29 Ring",
+                  "30-39 PCB",
+                  "40-41 results and errors",
+                  "42-43 cost scenarios",
+                  "44 conclusion",
+                  "45-51 web and Unity demo"
+              ],
+    "stale_cover_mentions":  0,
+    "broken_relationships":  0,
+    "numbered_slides":  49,
+    "script_sections":  51,
+    "script_target_seconds":  1200,
+    "embedded_video_sha256":  "753976246143FBAE05EF47E07930AD89705D5981ED5F395076E9F07F0EA00506",
+    "embedded_video_preserved":  true,
+    "all_slides_rendered":  true,
+    "off_slide_text":  0,
+    "pptx_sha256":  "5E2006EA36A77E4D8DA2C2E827D550D7AE261E251C2EBF5A25CB27BE7C43507A",
+    "pdf_sha256":  "3F055544AC96857E8068051DB0A3497281BEFFE27BF1749111A6E26238A8C4B0",
+    "notes":  "Lens latest results are from the supplied PPT; notebook05 and weights not supplied. Lens and Ring cost conversion deferred. Existing website and Unity source code unchanged.",
+    "slide_map":  [
+                      {
+                          "index":  1,
+                          "part":  "ppt/slides/slide1.xml",
+                          "title":  "검사"
+                      },
+                      {
+                          "index":  2,
+                          "part":  "ppt/slides/slide2.xml",
+                          "title":  "발표 목차"
+                      },
+                      {
+                          "index":  3,
+                          "part":  "ppt/slides/slide3.xml",
+                          "title":  "프로젝트 개요"
+                      },
+                      {
+                          "index":  4,
+                          "part":  "ppt/slides/slide4.xml",
+                          "title":  "프로젝트 일정"
+                      },
+                      {
+                          "index":  5,
+                          "part":  "ppt/slides/slide5.xml",
+                          "title":  "최종 프로젝트"
+                      },
+                      {
+                          "index":  6,
+                          "part":  "ppt/slides/slide6.xml",
+                          "title":  "최종 프로젝트"
+                      },
+                      {
+                          "index":  7,
+                          "part":  "ppt/slides/slide7.xml",
+                          "title":  "최종 프로젝트"
+                      },
+                      {
+                          "index":  8,
+                          "part":  "ppt/slides/slide8.xml",
+                          "title":  "검사 대상과 부품별 과제"
+                      },
+                      {
+                          "index":  9,
+                          "part":  "ppt/slides/slide9.xml",
+                          "title":  "최종 프로젝트"
+                      },
+                      {
+                          "index":  10,
+                          "part":  "ppt/slides/slide10.xml",
+                          "title":  "최종 프로젝트"
+                      },
+                      {
+                          "index":  11,
+                          "part":  "ppt/slides/slide11.xml",
+                          "title":  "최종 프로젝트"
+                      },
+                      {
+                          "index":  12,
+                          "part":  "ppt/slides/slide12.xml",
+                          "title":  "최종 프로젝트"
+                      },
+                      {
+                          "index":  13,
+                          "part":  "ppt/slides/slide13.xml",
+                          "title":  "렌즈 전이학습 전략"
+                      },
+                      {
+                          "index":  14,
+                          "part":  "ppt/slides/slide14.xml",
+                          "title":  "렌즈 데이터 · 결함 없는 구역을 정상으로"
+                      },
+                      {
+                          "index":  15,
+                          "part":  "ppt/slides/slide15.xml",
+                          "title":  "렌즈 전처리 · 640 조각과 빈 라벨"
+                      },
+                      {
+                          "index":  16,
+                          "part":  "ppt/slides/slide16.xml",
+                          "title":  "YOLO26n 전이학습 · 렌즈 결함 검출"
+                      },
+                      {
+                          "index":  17,
+                          "part":  "ppt/slides/slide17.xml",
+                          "title":  "렌즈 전이학습 곡선"
+                      },
+                      {
+                          "index":  18,
+                          "part":  "ppt/slides/slide18.xml",
+                          "title":  "렌즈 구역 판정과 테스트 혼동행렬"
+                      },
+                      {
+                          "index":  19,
+                          "part":  "ppt/slides/slide19.xml",
+                          "title":  "렌즈 추론 · 실제 검출 사례"
+                      },
+                      {
+                          "index":  20,
+                          "part":  "ppt/slides/slide20.xml",
+                          "title":  "렌즈 결과와 적용 범위"
+                      },
+                      {
+                          "index":  21,
+                          "part":  "ppt/slides/slide21.xml",
+                          "title":  "Ring"
+                      },
+                      {
+                          "index":  22,
+                          "part":  "ppt/slides/slide22.xml",
+                          "title":  "Ring"
+                      },
+                      {
+                          "index":  23,
+                          "part":  "ppt/slides/slide23.xml",
+                          "title":  "Ring"
+                      },
+                      {
+                          "index":  24,
+                          "part":  "ppt/slides/slide24.xml",
+                          "title":  "Ring"
+                      },
+                      {
+                          "index":  25,
+                          "part":  "ppt/slides/slide25.xml",
+                          "title":  "Ring"
+                      },
+                      {
+                          "index":  26,
+                          "part":  "ppt/slides/slide26.xml",
+                          "title":  "Ring"
+                      },
+                      {
+                          "index":  27,
+                          "part":  "ppt/slides/slide27.xml",
+                          "title":  "Ring"
+                      },
+                      {
+                          "index":  28,
+                          "part":  "ppt/slides/slide28.xml",
+                          "title":  "Ring"
+                      },
+                      {
+                          "index":  29,
+                          "part":  "ppt/slides/slide29.xml",
+                          "title":  "Ring"
+                      },
+                      {
+                          "index":  30,
+                          "part":  "ppt/slides/slide30.xml",
+                          "title":  "PCB"
+                      },
+                      {
+                          "index":  31,
+                          "part":  "ppt/slides/slide31.xml",
+                          "title":  "PCB"
+                      },
+                      {
+                          "index":  32,
+                          "part":  "ppt/slides/slide32.xml",
+                          "title":  "PCB"
+                      },
+                      {
+                          "index":  33,
+                          "part":  "ppt/slides/slide33.xml",
+                          "title":  "PCB"
+                      },
+                      {
+                          "index":  34,
+                          "part":  "ppt/slides/slide34.xml",
+                          "title":  "PCB"
+                      },
+                      {
+                          "index":  35,
+                          "part":  "ppt/slides/slide35.xml",
+                          "title":  "PCB"
+                      },
+                      {
+                          "index":  36,
+                          "part":  "ppt/slides/slide36.xml",
+                          "title":  "PCB"
+                      },
+                      {
+                          "index":  37,
+                          "part":  "ppt/slides/slide37.xml",
+                          "title":  "PCB"
+                      },
+                      {
+                          "index":  38,
+                          "part":  "ppt/slides/slide38.xml",
+                          "title":  "PCB"
+                      },
+                      {
+                          "index":  39,
+                          "part":  "ppt/slides/slide39.xml",
+                          "title":  "PCB"
+                      },
+                      {
+                          "index":  40,
+                          "part":  "ppt/slides/slide40.xml",
+                          "title":  "최종 프로젝트"
+                      },
+                      {
+                          "index":  41,
+                          "part":  "ppt/slides/slide41.xml",
+                          "title":  "최종 프로젝트"
+                      },
+                      {
+                          "index":  42,
+                          "part":  "ppt/slides/slide42.xml",
+                          "title":  "사전 검사에 따른 손실 차이"
+                      },
+                      {
+                          "index":  43,
+                          "part":  "ppt/slides/slide43.xml",
+                          "title":  "사전 검사 도입의 손익분기점"
+                      },
+                      {
+                          "index":  44,
+                          "part":  "ppt/slides/slide44.xml",
+                          "title":  "결론과 한계"
+                      },
+                      {
+                          "index":  45,
+                          "part":  "ppt/slides/slide45.xml",
+                          "title":  "PCB "
+                      },
+                      {
+                          "index":  46,
+                          "part":  "ppt/slides/slide46.xml",
+                          "title":  "검사 셀"
+                      },
+                      {
+                          "index":  47,
+                          "part":  "ppt/slides/slide47.xml",
+                          "title":  "같은 검사 위치에서 사진을 확인하고"
+                      },
+                      {
+                          "index":  48,
+                          "part":  "ppt/slides/slide48.xml",
+                          "title":  "최종 프로젝트"
+                      },
+                      {
+                          "index":  49,
+                          "part":  "ppt/slides/slide49.xml",
+                          "title":  "Lens·Ring·PCB"
+                      },
+                      {
+                          "index":  50,
+                          "part":  "ppt/slides/slide50.xml",
+                          "title":  "화면에 가상 검사 결과라고 표시"
+                      },
+                      {
+                          "index":  51,
+                          "part":  "ppt/slides/slide51.xml",
+                          "title":  {
+
+                                    }
+                      }
+                  ]
+}

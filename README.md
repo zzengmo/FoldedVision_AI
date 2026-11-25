@@ -13,9 +13,11 @@ Unity 공정 시연에서는 외주 부품 투입부터 사전 검사와 갠트�
 
 [게시된 웹](https://foldedvision-inspection.wholehaven1026.chatgpt.site)은 기존 본인 전용 접근 설정을 유지합니다. GitHub의 소스와 Sites의 게시 저장소는 별개입니다.
 
-최종 발표는 [PowerPoint](outputs/presentation/FoldedVision_최종발표.pptx), [발표용 PDF](outputs/presentation/FoldedVision_최종발표.pdf), [20분 대본](outputs/presentation/FoldedVision_최종발표_대본.txt)을 사용합니다. 총 **44장**으로 공통 도입부 1–11장, Lens 담당 12–20장, Ring 21–29장, PCB 30–39장, 종합 결과·오류 사례·도입 손익·결론과 한계 40–44장입니다. 4장에 11/12–11/30 가로 일정표가 있습니다. Lens 담당은 VISION 렌즈 구역 분류에서 [3CAD 카메라 커버 YOLO26n](notebooks/lens/04_CameraCover_YOLO.ipynb) 사진 판정으로 전환한 과정을 설명합니다. Ring·PCB는 기준 단계의 오류, 2차 학습, 학습 곡선, 혼동행렬을 포함하며 같은 테스트에서 모델별 결과를 비교합니다. 42–43장은 투입량·불량률·건당 비용을 가정해 자동 NG의 영향과 연간 도입 손익분기 비용을 계산합니다. [공통부 미리보기](outputs/presentation/slide_previews/)
+최종 발표의 기준 파일은 **[FoldedVision_최종발표.pptx](outputs/presentation/FoldedVision_최종발표.pptx)** 하나입니다. [같은 판본 PDF](outputs/presentation/FoldedVision_최종발표.pdf), [20분 대본](outputs/presentation/FoldedVision_최종발표_대본.txt), [전 장 미리보기](outputs/presentation/slide_previews/)도 이 파일에 맞췄습니다. 2026-11-25 웹 편집본의 담당자 표기·일정·웹과 Unity 시연을 최신 렌즈 전이학습 내용과 통합했습니다. GitHub 저장 직전 사용자가 수정한 최신 순서를 반영했으며, 총 **51장**으로 공통 1–11장 → Lens 12–20장 → Ring 21–29장 → PCB 30–39장 → 종합 결과·오류 40–41장 → 손익 42–43장 → 결론 44장 → 웹·Unity 시연과 내장 영상 45–51장입니다.
 
-발표 질문 대비 자료는 [Lens 초기 실험과 카메라 커버 최종 모델](outputs/presentation/공부자료/Lens_딥러닝_공부자료.pdf), [Ring 기준 CNN과 전이학습](outputs/presentation/공부자료/Ring_딥러닝_공부자료.pdf), [PCB 기준 YOLO와 PCB4 전이학습](outputs/presentation/공부자료/PCB_딥러닝_공부자료.pdf)입니다. 각 PDF에서 설계 이유, 학습 설정, 실제 오류, 예상 질문과 답변, 원본 기록 확인 순서를 볼 수 있습니다. [전체 데이터 출처](DATA_SOURCES.md)
+Lens는 VISION 렌즈 테스트 52장·3,410구역의 AP 0.419 → 0.843, 정상 구역 오검출률 65.4% → 17.4%를 보고합니다. 해당 최신 수치는 사용자가 제공한 PPT가 출처이며 노트북 05와 가중치는 미제공 상태입니다. 저장소의 과거 추가 실험 AP 0.6681과 구분합니다. Ring·PCB의 기존 비교 지표는 유지했습니다. Lens 구역 Recall과 Ring 유형 정확도를 제품 불량 검출률로 환산하지 않으며 두 부품의 손익은 산정을 보류합니다. Unity 시연은 저장 결과 재생이며 Lens의 최신 모델 추론은 연결되지 않았습니다. 이전 파일은 최신본으로 사용하지 않습니다.
+
+발표 질문 대비 자료는 [Lens 과거 실험 자료](outputs/presentation/공부자료/Lens_딥러닝_공부자료.pdf), [Ring 기준 CNN과 전이학습](outputs/presentation/공부자료/Ring_딥러닝_공부자료.pdf), [PCB 기준 YOLO와 PCB4 전이학습](outputs/presentation/공부자료/PCB_딥러닝_공부자료.pdf)입니다. Lens 공부자료는 이전 실험판이므로 최신 렌즈 전이학습 설명은 최종 PPT 12–20장을 기준으로 확인합니다. [전체 데이터 출처](DATA_SOURCES.md)
 
 ## 2026-11-23 추가 학습
 
@@ -26,7 +28,7 @@ Windows에서는 [Start_FoldedVision.cmd](Start_FoldedVision.cmd)를 더블클�
 |파일|용도|
 |---|---|
 |[Ring 기준 노트북](notebooks/ring/01_Ring_CNN_Baseline.ipynb) · [Ring 최종 노트북](notebooks/ring/02_Ring_DeepLearning_Final.ipynb)|Ring 기준·최종 모델, 추가 실험과 저장 모델 추론|
-|[Lens 기준 노트북](notebooks/lens/01_Lens_CNN_Baseline.ipynb) · [VISION Lens 개선 실험](notebooks/lens/02_Lens_DeepLearning_Final.ipynb) · [카메라 커버 최종 노트북](notebooks/lens/04_CameraCover_YOLO.ipynb)|초기 렌즈 구역·분할 코드와 최종 커버 YOLO 학습·테스트 결과|
+|[Lens 기준 노트북](notebooks/lens/01_Lens_CNN_Baseline.ipynb) · [VISION Lens 개선 실험](notebooks/lens/02_Lens_DeepLearning_Final.ipynb) · [과거 커버 실험](notebooks/lens/04_CameraCover_YOLO.ipynb)|보존된 기존 실험 코드. 최종 PPT의 렌즈 전이학습 노트북 05는 미제공|
 |[PCB 최종 전달본](notebooks/pcb/final/README.md) · [평가 보고서](notebooks/pcb/final/FINAL_REPORT.md)|팀원의 최종 학습·추론 코드, 통합 설정과 저장된 평가. 데이터와 가중치는 원본 PC의 팀 ZIP에 보관|
 |[PCB VisA 노트북](notebooks/pcb/PCB_VisA.ipynb) · [PCB YOLO 노트북](notebooks/pcb/PCB_YOLO.ipynb)|기존 팀원의 검출 학습·평가 노트북|
 |[AGENTS.md](AGENTS.md)|지켜야 할 파일, 실제 성능, 출처, 실행 방법, 정리 이력|
@@ -37,7 +39,7 @@ Windows에서는 [Start_FoldedVision.cmd](Start_FoldedVision.cmd)를 더블클�
 
 Ring 기준·최종 모델, 별도 베어링 최종 모델과 설정 JSON이 저장소에 포함됩니다. 해당 부품 사진을 준비하면 아래 시연 셀에서 추론할 수 있습니다. 원본 데이터, 실행 환경, 이전 실험 백업, 학습 중간 체크포인트는 원본 PC에 보관합니다. 새 PC에서 재학습할 때는 `DATA_SOURCES.md`의 위치에 맞춰 해당 데이터만 복원하세요.
 
-렌즈 노트북은 `notebooks/lens/`를 작업 위치로 열어 실행합니다. 광학 렌즈 CNN·U-Net은 02번, 최종 카메라 커버 YOLO는 04번 노트북에서 저장된 실행 결과를 읽을 수 있습니다. 모델을 실행하려면 해당 팀 실행 폴더의 데이터·가중치·통합 설정을 복원합니다.
+렌즈 노트북은 `notebooks/lens/`를 작업 위치로 열어 실행합니다. 기존 광학 렌즈 CNN·U-Net은 02번, 과거 커버 YOLO는 04번 노트북에 보존했습니다. 현재 최종 PPT의 렌즈 전이학습 노트북 05와 가중치는 아직 제공되지 않았습니다. 최신 모델을 실제 실행하려면 해당 자료와 데이터·통합 설정을 별도로 받아야 합니다.
 
 PCB는 `notebooks/pcb/final/`에 2026-11-24 팀 전달본을 폴더 구조대로 보관했습니다. 이 폴더를 Python import 경로로 사용하면 `integration.predict_pcb()`가 통합 설정에 지정된 `pcb_yolo_final.pt`를 찾습니다. `inspect_pcb.py`를 CLI로 호출할 때 기본 가중치는 기준 모델인 `best.pt`입니다. 팀원의 검증 환경과 현재 Ring 환경이 다르고 전달본의 PyTorch 요구 버전도 실행 기록과 다르므로, PCB 실행 환경은 별도로 확인해야 합니다. 새 PC에는 팀 ZIP을 같은 위치에 풀어 데이터와 가중치를 복원합니다. [통합 규격](notebooks/pcb/final/TEAM_INTEGRATION.md) · [팀 실행 기록](notebooks/pcb/final/outputs/runtime_versions.json)
 
