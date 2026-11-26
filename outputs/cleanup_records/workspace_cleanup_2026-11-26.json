@@ -1,0 +1,185 @@
+{
+    "date":  "2026-11-26",
+    "time_zone":  "Asia/Seoul",
+    "current_files":  [
+                          "outputs/presentation/FoldedVision_최종발표.pptx",
+                          "outputs/presentation/FoldedVision_Ring_발표대본_김현모.pdf",
+                          "outputs/presentation/FoldedVision_3D_검사공정_시네마틱.mp4"
+                      ],
+    "organization":  {
+                         "date":  "2026-11-26",
+                         "archive":  "archive/2026-11-26_presentation_drafts.zip",
+                         "archive_sha256":  "007c7346994e54ac045b965c7ab01f057c3676d8cc26aff218a07fb8715d53de",
+                         "archived_files":  69,
+                         "archived_original_bytes":  81740432,
+                         "removed_regenerable":  [
+                                                     {
+                                                         "path":  "sites/foldedvision-inspection/dist",
+                                                         "files":  41,
+                                                         "bytes":  6859915
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/AssetImportWorkerHW0-prev.log",
+                                                         "files":  1,
+                                                         "bytes":  68222
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/AssetImportWorkerHW0-UDS-prev.log",
+                                                         "files":  1,
+                                                         "bytes":  324
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/AssetImportWorkerHW0-UDS.log",
+                                                         "files":  1,
+                                                         "bytes":  324
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/AssetImportWorkerHW0.log",
+                                                         "files":  1,
+                                                         "bytes":  4771305
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/AssetImportWorkerHW1-prev.log",
+                                                         "files":  1,
+                                                         "bytes":  65950
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/AssetImportWorkerHW1-UDS-prev.log",
+                                                         "files":  1,
+                                                         "bytes":  324
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/AssetImportWorkerHW1-UDS.log",
+                                                         "files":  1,
+                                                         "bytes":  324
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/AssetImportWorkerHW1.log",
+                                                         "files":  1,
+                                                         "bytes":  4308923
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/AssetImportWorkerHW2-UDS.log",
+                                                         "files":  1,
+                                                         "bytes":  324
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/AssetImportWorkerHW2.log",
+                                                         "files":  1,
+                                                         "bytes":  4320215
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/AssetImportWorkerHW3-UDS.log",
+                                                         "files":  1,
+                                                         "bytes":  324
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/AssetImportWorkerHW3.log",
+                                                         "files":  1,
+                                                         "bytes":  3834485
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/Editor-prev.log",
+                                                         "files":  1,
+                                                         "bytes":  4214789
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/Editor-UDS-prev.log",
+                                                         "files":  1,
+                                                         "bytes":  313
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/Editor-UDS.log",
+                                                         "files":  1,
+                                                         "bytes":  313
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/Editor.log",
+                                                         "files":  1,
+                                                         "bytes":  5020202
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/Packages-Update.log",
+                                                         "files":  1,
+                                                         "bytes":  1690
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/shadercompiler-AssetImportWorkerHW0-0.log",
+                                                         "files":  1,
+                                                         "bytes":  627
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/shadercompiler-AssetImportWorkerHW1-0.log",
+                                                         "files":  1,
+                                                         "bytes":  3238
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/shadercompiler-AssetImportWorkerHW2-0.log",
+                                                         "files":  1,
+                                                         "bytes":  2989
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/shadercompiler-AssetImportWorkerHW3-0.log",
+                                                         "files":  1,
+                                                         "bytes":  384
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/shadercompiler-UnityShaderCompiler.exe-0.log",
+                                                         "files":  1,
+                                                         "bytes":  211
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/UDS-Service-prev.log",
+                                                         "files":  1,
+                                                         "bytes":  717
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/UDS-Service.log",
+                                                         "files":  1,
+                                                         "bytes":  717
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Logs/upm.log",
+                                                         "files":  1,
+                                                         "bytes":  6299
+                                                     },
+                                                     {
+                                                         "path":  "unity/My project/Library/TempArtifacts",
+                                                         "files":  0,
+                                                         "bytes":  0
+                                                     }
+                                                 ],
+                         "removed_regenerable_files":  66,
+                         "removed_regenerable_bytes":  33483448,
+                         "skipped_active_paths":  [
+
+                                                  ]
+                     },
+    "preservation":  {
+                         "files_verified":  21149,
+                         "bytes_verified":  6998678864,
+                         "groups":  {
+                                        "data":  8863,
+                                        "models":  41,
+                                        "notebooks":  11195,
+                                        "evaluation_outputs":  178,
+                                        "presentation":  25,
+                                        "unity_source_and_media":  785,
+                                        "web_source":  52,
+                                        "environment_and_records":  10
+                                    },
+                         "unchanged":  true,
+                         "manifest_sha256":  "1f71d6d674ada75aeb5a44d4a83cb7dd8b1dcac215b211842d9755004b664b90"
+                     },
+    "retained_for_local_execution":  [
+                                         ".venv",
+                                         "sites/foldedvision-inspection/node_modules",
+                                         "unity/My project/Library"
+                                     ],
+    "verification":  {
+                         "archive_entries":  "All original sizes and SHA-256 digests matched the archive manifest.",
+                         "web_tests":  "4 passed",
+                         "web_production_build":  "Passed using an isolated temporary output folder.",
+                         "unity":  "Project source, packages, settings and presentation assets matched the before-cleanup hashes."
+                     }
+}

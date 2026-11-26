@@ -28,7 +28,7 @@ URP 17.6.0과 기존 PC 품질 설정으로 렌더링합니다. 에디터의 **T
 
 가상 시연은 화면에 **공정 시각화 데모 — 가상 검사 결과**로 표시합니다. 가상 모드에서는 PCB의 PASS·NG·REVIEW와 Ring의 REVIEW 경로, 결함 메시 예시를 볼 수 있습니다. 두 모드의 세션 집계는 전환 시 초기화됩니다. 공정 이동과 갠트리의 집기·이송·놓기는 사전에 정의한 키네마틱 경로로 재생합니다. 한 번에 한 부품을 처리하고, 목적지별 마지막 부품 한 개를 버퍼에 남깁니다.
 
-기록 데이터는 [Ring 테스트 예측 CSV](../../outputs/quality_upgrade/vision_ring_transfer_predictions.csv), [팀 PCB4 판정 CSV](../../notebooks/pcb/final/outputs/integration/pcb_predictions.csv), [검출 위치 JSON](../../notebooks/pcb/final/outputs/integration/pcb_detections.json)에서 가져왔습니다. [Tools/export_replay.py](Tools/export_replay.py)는 이전 PC의 절대 경로를 사용하지 않고 실제 저장 이미지와 좌표를 프로젝트 상대 경로의 재생 JSON으로 변환합니다. 이 시연은 저장된 추론 결과를 사용합니다. 공개 데이터 평가 수치는 [최종 발표자료](../../outputs/presentation/FoldedVision_최종발표.pdf)의 참고 수치이며, 실제 생산라인의 처리량이나 불량 감소율을 나타내지 않습니다. 전체 자료의 출처는 [DATA_SOURCES.md](../../DATA_SOURCES.md)를 참고하세요.
+기록 데이터는 [Ring 테스트 예측 CSV](../../outputs/quality_upgrade/vision_ring_transfer_predictions.csv), [팀 PCB4 판정 CSV](../../notebooks/pcb/final/outputs/integration/pcb_predictions.csv), [검출 위치 JSON](../../notebooks/pcb/final/outputs/integration/pcb_detections.json)에서 가져왔습니다. [Tools/export_replay.py](Tools/export_replay.py)는 이전 PC의 절대 경로를 사용하지 않고 실제 저장 이미지와 좌표를 프로젝트 상대 경로의 재생 JSON으로 변환합니다. 이 시연은 저장된 추론 결과를 사용합니다. [최종 발표자료](../../outputs/presentation/FoldedVision_최종발표.pptx)의 평가 수치는 공개 데이터에 대한 결과입니다. 전체 자료의 출처는 [DATA_SOURCES.md](../../DATA_SOURCES.md)를 참고하세요.
 
 ## 검증과 관리
 

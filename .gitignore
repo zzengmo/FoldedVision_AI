@@ -37,6 +37,7 @@ __pycache__/
 !/outputs/cleanup_records/inference_validation.json
 !/outputs/cleanup_records/presentation_cleanup_2026-11-23.json
 !/outputs/cleanup_records/workspace_reorganization_2026-11-23.json
+!/outputs/cleanup_records/workspace_cleanup_2026-11-26.json
 !/outputs/cleanup_records/presentation_history/
 !/outputs/presentation/
 /outputs/presentation/*
