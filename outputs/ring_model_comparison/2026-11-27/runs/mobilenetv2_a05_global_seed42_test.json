@@ -1,0 +1,75 @@
+{
+  "run_id": "mobilenetv2_a05_global_seed42",
+  "model_id": "mobilenetv2_a05",
+  "view": "global",
+  "seed": 42,
+  "signature": {
+    "protocol": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+    "manifest": "eccec0163730bf19fe48207684d06fe9dc8d5839a38b3b5776335b7cd9d7539f",
+    "model_id": "mobilenetv2_a05",
+    "view": "global",
+    "seed": 42,
+    "pretrained_weights": "070ad37fe8ad66e6b4ed991dd59bc3931094782a4a1e43ab0fa234194b928aa9"
+  },
+  "selection_lock_sha256": "b5f8762af569c34cdc3b23fb439ab7647ec58aae3193d4b970c5db12a4d23691",
+  "evaluated_at": "2026-11-27T07:23:53.496879+00:00",
+  "test": {
+    "n": 42,
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "macro_f1": 0.768769870383957,
+    "confusion": [
+      [
+        12,
+        1,
+        2
+      ],
+      [
+        0,
+        23,
+        0
+      ],
+      [
+        2,
+        0,
+        2
+      ]
+    ],
+    "per_class": {
+      "t_contamination": {
+        "precision": 0.8571428571428571,
+        "recall": 0.8,
+        "f1-score": 0.8275862068965517,
+        "support": 15.0
+      },
+      "t_scratch": {
+        "precision": 0.9583333333333334,
+        "recall": 1.0,
+        "f1-score": 0.9787234042553191,
+        "support": 23.0
+      },
+      "unfinished_surface": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1-score": 0.5,
+        "support": 4.0
+      },
+      "accuracy": 0.8809523809523809,
+      "macro avg": {
+        "precision": 0.7718253968253969,
+        "recall": 0.7666666666666666,
+        "f1-score": 0.768769870383957,
+        "support": 42.0
+      },
+      "weighted avg": {
+        "precision": 0.8785430839002268,
+        "recall": 0.8809523809523809,
+        "f1-score": 0.8791531286028719,
+        "support": 42.0
+      }
+    }
+  },
+  "predictions": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_seed42_test.csv",
+  "predictions_sha256": "ff8f8ae874cf3dd33905de5558c5fdbb213c0386fd9e40266a135d7b5404f7d8",
+  "historical_test_reused": true
+}

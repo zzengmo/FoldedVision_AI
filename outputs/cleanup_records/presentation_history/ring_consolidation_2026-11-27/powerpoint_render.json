@@ -1,0 +1,123 @@
+﻿{
+    "slides":  49,
+    "ring_rendered":  9,
+    "overflow_candidates":  [
+                                {
+                                    "slide":  18,
+                                    "name":  "링 사진에서 특징을 뽑는 과정",
+                                    "text":  "링 사진에서 특징을 뽑는 과정",
+                                    "shape_width":  864,
+                                    "shape_height":  21.8109455,
+                                    "text_width":  495.12503051757813,
+                                    "text_height":  43.200000762939453
+                                },
+                                {
+                                    "slide":  19,
+                                    "name":  "풀링과 결함 유형 분류",
+                                    "text":  "풀링과 결함 유형 분류",
+                                    "shape_width":  864,
+                                    "shape_height":  21.8109455,
+                                    "text_width":  374.5,
+                                    "text_height":  43.200000762939453
+                                },
+                                {
+                                    "slide":  19,
+                                    "name":  "최대 풀링",
+                                    "text":  "최대 풀링",
+                                    "shape_width":  402,
+                                    "shape_height":  21.8109455,
+                                    "text_width":  113,
+                                    "text_height":  28.799999237060547
+                                },
+                                {
+                                    "slide":  19,
+                                    "name":  "1",
+                                    "text":  "1",
+                                    "shape_width":  45,
+                                    "shape_height":  21.8109455,
+                                    "text_width":  18.624959945678711,
+                                    "text_height":  24
+                                },
+                                {
+                                    "slide":  19,
+                                    "name":  "3",
+                                    "text":  "3",
+                                    "shape_width":  45,
+                                    "shape_height":  21.8109455,
+                                    "text_width":  18.624959945678711,
+                                    "text_height":  24
+                                },
+                                {
+                                    "slide":  19,
+                                    "name":  "2",
+                                    "text":  "2",
+                                    "shape_width":  45,
+                                    "shape_height":  21.8109455,
+                                    "text_width":  18.624959945678711,
+                                    "text_height":  24
+                                },
+                                {
+                                    "slide":  19,
+                                    "name":  "7",
+                                    "text":  "7",
+                                    "shape_width":  45,
+                                    "shape_height":  21.8109455,
+                                    "text_width":  18.624959945678711,
+                                    "text_height":  24
+                                },
+                                {
+                                    "slide":  19,
+                                    "name":  "→",
+                                    "text":  "→",
+                                    "shape_width":  44,
+                                    "shape_height":  21.8109455,
+                                    "text_width":  29.75,
+                                    "text_height":  26.399999618530273
+                                },
+                                {
+                                    "slide":  19,
+                                    "name":  "7",
+                                    "text":  "7",
+                                    "shape_width":  58,
+                                    "shape_height":  21.8109455,
+                                    "text_width":  24.25,
+                                    "text_height":  31.200000762939453
+                                },
+                                {
+                                    "slide":  19,
+                                    "name":  "전역 평균 풀링",
+                                    "text":  "전역 평균 풀링",
+                                    "shape_width":  404,
+                                    "shape_height":  21.8109455,
+                                    "text_width":  169.5,
+                                    "text_height":  28.799999237060547
+                                },
+                                {
+                                    "slide":  19,
+                                    "name":  "524,288",
+                                    "text":  "524,288",
+                                    "shape_width":  177,
+                                    "shape_height":  21.8109455,
+                                    "text_width":  147.25,
+                                    "text_height":  43.200000762939453
+                                },
+                                {
+                                    "slide":  19,
+                                    "name":  "→",
+                                    "text":  "→",
+                                    "shape_width":  41,
+                                    "shape_height":  21.8109455,
+                                    "text_width":  31.125040054321289,
+                                    "text_height":  27.600000381469727
+                                },
+                                {
+                                    "slide":  19,
+                                    "name":  "128",
+                                    "text":  "128",
+                                    "shape_width":  152,
+                                    "shape_height":  21.8109455,
+                                    "text_width":  75.25,
+                                    "text_height":  43.200000762939453
+                                }
+                            ]
+}

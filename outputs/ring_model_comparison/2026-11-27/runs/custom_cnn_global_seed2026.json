@@ -1,0 +1,84 @@
+{
+  "run_id": "custom_cnn_global_seed2026",
+  "signature": {
+    "protocol": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+    "manifest": "eccec0163730bf19fe48207684d06fe9dc8d5839a38b3b5776335b7cd9d7539f",
+    "model_id": "custom_cnn",
+    "view": "global",
+    "seed": 2026,
+    "pretrained_weights": null
+  },
+  "model_id": "custom_cnn",
+  "view": "global",
+  "seed": 2026,
+  "started_at": "2026-11-27T07:18:19.689029+00:00",
+  "finished_at": "2026-11-27T07:18:31.706977+00:00",
+  "actual_epochs": 30,
+  "restored_epoch": 23,
+  "training_seconds": 11.881571100035217,
+  "training_scope": "all scratch weights",
+  "total_parameters": 99843,
+  "trainable_parameters": 99843,
+  "model_path": "models/ring_model_comparison/2026-11-27/custom_cnn_global_seed2026.keras",
+  "model_sha256": "30f453c64bbe7da80f8a3098084a0d9671d2a986f5a02ddde7847849183f79d5",
+  "history_path": "outputs/ring_model_comparison/2026-11-27/runs/custom_cnn_global_seed2026_history.json",
+  "history_sha256": "ff5b787be75ab69ed806691f5a136b58fd14509d7dc28e22d2f413d46dd1a648",
+  "validation_prediction_path": "outputs/ring_model_comparison/2026-11-27/predictions/custom_cnn_global_seed2026_validation.csv",
+  "validation_prediction_sha256": "a1c64e58207684dc285b95e38f989398f2ec1eb02e1031be6688e1bf1409dfb0",
+  "validation": {
+    "n": 12,
+    "correct": 9,
+    "accuracy": 0.75,
+    "macro_f1": 0.5714285714285714,
+    "confusion": [
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    "per_class": {
+      "t_contamination": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1-score": 0.8571428571428571,
+        "support": 3.0
+      },
+      "t_scratch": {
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1-score": 0.8571428571428571,
+        "support": 7.0
+      },
+      "unfinished_surface": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "accuracy": 0.75,
+      "macro avg": {
+        "precision": 0.5357142857142857,
+        "recall": 0.6190476190476191,
+        "f1-score": 0.5714285714285714,
+        "support": 12.0
+      },
+      "weighted avg": {
+        "precision": 0.6875,
+        "recall": 0.75,
+        "f1-score": 0.7142857142857143,
+        "support": 12.0
+      }
+    }
+  }
+}

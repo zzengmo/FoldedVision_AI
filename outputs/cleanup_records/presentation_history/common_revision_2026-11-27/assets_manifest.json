@@ -1,0 +1,44 @@
+[
+  {
+    "slide": 3,
+    "source": "outputs/cleanup_records/presentation_history/common_revision_2026-11-27/assets/lens_source_image6.png",
+    "source_sha256": "187152152f8a773bf34ca25897564aed7a3716eac93786bb41ce62699d71c7b7",
+    "embedded_sha256": "187152152f8a773bf34ca25897564aed7a3716eac93786bb41ce62699d71c7b7",
+    "description": "첨부 PPT 7장의 VISION Lens 사진. 원 표시는 위치 설명용이며 새 모델의 예측 결과가 아니다."
+  },
+  {
+    "slide": 3,
+    "source": "data/raw/Ring/val/000073.jpg",
+    "source_sha256": "78e3a207f5677087978c15af125252943defcd8af0da5a59fbaa60c5f1a9fbbb",
+    "embedded_sha256": "78e3a207f5677087978c15af125252943defcd8af0da5a59fbaa60c5f1a9fbbb",
+    "description": "VISION Ring 테스트 원본 000073.jpg. 유형 분류용 금속 표면 확대 사진이며 정상/불량 이진 검증 자료가 아니다."
+  },
+  {
+    "slide": 3,
+    "source": "notebooks/pcb/final/data/pcb4_yolo/images/test/component_damage_007.jpg",
+    "source_sha256": "a83335577081b46db08f7e3cbc2a713702d06c64829f83d096d4b108e226e882",
+    "embedded_sha256": "a83335577081b46db08f7e3cbc2a713702d06c64829f83d096d4b108e226e882",
+    "description": "팀 PCB4 테스트 원본 component_damage_007.jpg. 실제 공개 평가 사진으로, 생성 이미지가 아니다."
+  },
+  {
+    "slide": 5,
+    "source": "outputs/presentation/자료/자화전자_폴디드줌.jpg",
+    "source_sha256": "778bf4b195b729eaa3c97e2f93947569901c50698ffa7ce7ce98e7917911e161",
+    "embedded_sha256": "778bf4b195b729eaa3c97e2f93947569901c50698ffa7ce7ce98e7917911e161",
+    "description": "사용자 제공 카메라 액추에이터 참고 사진. 공개 실험 데이터나 현장 검사 결과 사진이 아님."
+  },
+  {
+    "slide": 6,
+    "source": "outputs/cleanup_records/business_web_2026-11-27/02-dashboard-sample.png",
+    "source_sha256": "09a2c52e34dfb650643f56a589e7a929fa0833286909b4c21d08ae5c6d71f57d",
+    "embedded_sha256": "09a2c52e34dfb650643f56a589e7a929fa0833286909b4c21d08ae5c6d71f57d",
+    "description": "실제 구현한 로컬 업무 웹. 예시 작업공간의 검증용 데이터 화면."
+  },
+  {
+    "slide": 6,
+    "source": "unity/My project/Presentation/01-factory-overview.png",
+    "source_sha256": "4e225f58fa2ec662529b4fbca349711d3733574ec2658621e7b3f9679fb57225",
+    "embedded_sha256": "4e225f58fa2ec662529b4fbca349711d3733574ec2658621e7b3f9679fb57225",
+    "description": "실제 Unity 프로젝트의 가상 검사 셀. 저장 결과 재생이며 실제 회사 생산라인 사진이 아님."
+  }
+]

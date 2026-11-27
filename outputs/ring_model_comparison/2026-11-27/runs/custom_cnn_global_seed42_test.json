@@ -1,0 +1,75 @@
+{
+  "run_id": "custom_cnn_global_seed42",
+  "model_id": "custom_cnn",
+  "view": "global",
+  "seed": 42,
+  "signature": {
+    "protocol": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+    "manifest": "eccec0163730bf19fe48207684d06fe9dc8d5839a38b3b5776335b7cd9d7539f",
+    "model_id": "custom_cnn",
+    "view": "global",
+    "seed": 42,
+    "pretrained_weights": null
+  },
+  "selection_lock_sha256": "b5f8762af569c34cdc3b23fb439ab7647ec58aae3193d4b970c5db12a4d23691",
+  "evaluated_at": "2026-11-27T07:23:32.857418+00:00",
+  "test": {
+    "n": 42,
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "macro_f1": 0.8261183261183261,
+    "confusion": [
+      [
+        12,
+        0,
+        3
+      ],
+      [
+        1,
+        21,
+        1
+      ],
+      [
+        0,
+        0,
+        4
+      ]
+    ],
+    "per_class": {
+      "t_contamination": {
+        "precision": 0.9230769230769231,
+        "recall": 0.8,
+        "f1-score": 0.8571428571428571,
+        "support": 15.0
+      },
+      "t_scratch": {
+        "precision": 1.0,
+        "recall": 0.9130434782608695,
+        "f1-score": 0.9545454545454546,
+        "support": 23.0
+      },
+      "unfinished_surface": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1-score": 0.6666666666666666,
+        "support": 4.0
+      },
+      "accuracy": 0.8809523809523809,
+      "macro avg": {
+        "precision": 0.8076923076923078,
+        "recall": 0.9043478260869565,
+        "f1-score": 0.8261183261183261,
+        "support": 42.0
+      },
+      "weighted avg": {
+        "precision": 0.924908424908425,
+        "recall": 0.8809523809523809,
+        "f1-score": 0.892341785198928,
+        "support": 42.0
+      }
+    }
+  },
+  "predictions": "outputs/ring_model_comparison/2026-11-27/predictions/custom_cnn_global_seed42_test.csv",
+  "predictions_sha256": "4f9ed94d0f97bfa93a83752ada6cf0f1432ad3ec6bf4f001c083648e7bcf6522",
+  "historical_test_reused": true
+}

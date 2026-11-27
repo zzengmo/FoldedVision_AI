@@ -4,10 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "node --test src/factoryTimeline.test.mjs"
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/local-server.mjs",
+    "preview": "node scripts/local-server.mjs",
+    "db:generate": "drizzle-kit generate",
+    "test": "node --test src/factoryTimeline.test.mjs server/*.test.mjs"
   },
   "dependencies": {
     "lucide-react": "0.468.0",
@@ -16,6 +18,11 @@
     "three": "0.180.0"
   },
   "devDependencies": {
-    "vite": "6.4.6"
+    "vite": "6.4.6",
+    "drizzle-kit": "0.31.10",
+    "drizzle-orm": "0.45.2"
+  },
+  "engines": {
+    "node": ">=22.13.0"
   }
 }

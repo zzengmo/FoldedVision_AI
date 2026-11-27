@@ -1,0 +1,3 @@
+WARNING:tensorflow:From C:\Users\kdt66\Desktop\FoldedVision_AI\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+Ring study: report | protocol ba6f37a75b01 | train/validation/test [33, 12, 42]

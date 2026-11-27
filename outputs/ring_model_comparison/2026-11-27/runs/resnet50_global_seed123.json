@@ -1,0 +1,84 @@
+{
+  "run_id": "resnet50_global_seed123",
+  "signature": {
+    "protocol": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+    "manifest": "eccec0163730bf19fe48207684d06fe9dc8d5839a38b3b5776335b7cd9d7539f",
+    "model_id": "resnet50",
+    "view": "global",
+    "seed": 123,
+    "pretrained_weights": "66c8b43daff3fcc15bc4f30e3d2a167e21a14d9c9598a5394e5516471f4af504"
+  },
+  "model_id": "resnet50",
+  "view": "global",
+  "seed": 123,
+  "started_at": "2026-11-27T07:20:31.086039+00:00",
+  "finished_at": "2026-11-27T07:20:33.535586+00:00",
+  "actual_epochs": 9,
+  "restored_epoch": 2,
+  "training_seconds": 2.31006950000301,
+  "training_scope": "classifier only; ImageNet backbone frozen",
+  "total_parameters": 23690307,
+  "trainable_parameters": 102595,
+  "model_path": "models/ring_model_comparison/2026-11-27/resnet50_global_seed123.keras",
+  "model_sha256": "b500d01a50b864943360311c2ad4469d26a9ad6d31398134660bc2d1eec006cc",
+  "history_path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_seed123_history.json",
+  "history_sha256": "0dd03227d1483878c472ab2b48e04de0fa22e7aa6dc45439c8b38fc0f8210250",
+  "validation_prediction_path": "outputs/ring_model_comparison/2026-11-27/predictions/resnet50_global_seed123_validation.csv",
+  "validation_prediction_sha256": "fd1cabc5142b00d78aa86094eb57f5c3e7f8b466fda85c115c94224d46d8f3fe",
+  "validation": {
+    "n": 12,
+    "correct": 7,
+    "accuracy": 0.5833333333333334,
+    "macro_f1": 0.5063492063492063,
+    "confusion": [
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        0,
+        5,
+        2
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "per_class": {
+      "t_contamination": {
+        "precision": 0.5,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.4,
+        "support": 3.0
+      },
+      "t_scratch": {
+        "precision": 1.0,
+        "recall": 0.7142857142857143,
+        "f1-score": 0.8333333333333334,
+        "support": 7.0
+      },
+      "unfinished_surface": {
+        "precision": 0.2,
+        "recall": 0.5,
+        "f1-score": 0.2857142857142857,
+        "support": 2.0
+      },
+      "accuracy": 0.5833333333333334,
+      "macro avg": {
+        "precision": 0.5666666666666667,
+        "recall": 0.5158730158730159,
+        "f1-score": 0.5063492063492063,
+        "support": 12.0
+      },
+      "weighted avg": {
+        "precision": 0.7416666666666667,
+        "recall": 0.5833333333333334,
+        "f1-score": 0.6337301587301588,
+        "support": 12.0
+      }
+    }
+  }
+}

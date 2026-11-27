@@ -1,0 +1,84 @@
+{
+  "run_id": "custom_cnn_global_seed123",
+  "signature": {
+    "protocol": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+    "manifest": "eccec0163730bf19fe48207684d06fe9dc8d5839a38b3b5776335b7cd9d7539f",
+    "model_id": "custom_cnn",
+    "view": "global",
+    "seed": 123,
+    "pretrained_weights": null
+  },
+  "model_id": "custom_cnn",
+  "view": "global",
+  "seed": 123,
+  "started_at": "2026-11-27T07:18:08.670499+00:00",
+  "finished_at": "2026-11-27T07:18:18.871603+00:00",
+  "actual_epochs": 20,
+  "restored_epoch": 13,
+  "training_seconds": 9.966575600032229,
+  "training_scope": "all scratch weights",
+  "total_parameters": 99843,
+  "trainable_parameters": 99843,
+  "model_path": "models/ring_model_comparison/2026-11-27/custom_cnn_global_seed123.keras",
+  "model_sha256": "14f74eb2c3681caf0a123957655c5515fba7b9415d675f24d4485afc6282c4ce",
+  "history_path": "outputs/ring_model_comparison/2026-11-27/runs/custom_cnn_global_seed123_history.json",
+  "history_sha256": "8ede7fcb1aebf3003232349d35954484059f7cd3b5ec63e269dd490527a213b5",
+  "validation_prediction_path": "outputs/ring_model_comparison/2026-11-27/predictions/custom_cnn_global_seed123_validation.csv",
+  "validation_prediction_sha256": "a2eff6665f34167d507766e98e51c1e932fd4d32c6ea7ef377aade83d52d3dc8",
+  "validation": {
+    "n": 12,
+    "correct": 8,
+    "accuracy": 0.6666666666666666,
+    "macro_f1": 0.5079365079365079,
+    "confusion": [
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        0,
+        6,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    "per_class": {
+      "t_contamination": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.6666666666666666,
+        "support": 3.0
+      },
+      "t_scratch": {
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1-score": 0.8571428571428571,
+        "support": 7.0
+      },
+      "unfinished_surface": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "accuracy": 0.6666666666666666,
+      "macro avg": {
+        "precision": 0.5079365079365079,
+        "recall": 0.5079365079365079,
+        "f1-score": 0.5079365079365079,
+        "support": 12.0
+      },
+      "weighted avg": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.6666666666666666,
+        "support": 12.0
+      }
+    }
+  }
+}

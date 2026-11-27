@@ -1,0 +1,75 @@
+{
+  "run_id": "mobilenetv2_a10_global_tiles_seed42",
+  "model_id": "mobilenetv2_a10",
+  "view": "global_tiles",
+  "seed": 42,
+  "signature": {
+    "protocol": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+    "manifest": "eccec0163730bf19fe48207684d06fe9dc8d5839a38b3b5776335b7cd9d7539f",
+    "model_id": "mobilenetv2_a10",
+    "view": "global_tiles",
+    "seed": 42,
+    "pretrained_weights": "1e9310d901d6e4346c8b4d89ad04267c3299ccf252dbe2641dd2b0eb048bf04e"
+  },
+  "selection_lock_sha256": "b5f8762af569c34cdc3b23fb439ab7647ec58aae3193d4b970c5db12a4d23691",
+  "evaluated_at": "2026-11-27T07:24:21.288730+00:00",
+  "test": {
+    "n": 42,
+    "correct": 31,
+    "accuracy": 0.7380952380952381,
+    "macro_f1": 0.5861471861471861,
+    "confusion": [
+      [
+        7,
+        6,
+        2
+      ],
+      [
+        0,
+        23,
+        0
+      ],
+      [
+        0,
+        3,
+        1
+      ]
+    ],
+    "per_class": {
+      "t_contamination": {
+        "precision": 1.0,
+        "recall": 0.4666666666666667,
+        "f1-score": 0.6363636363636364,
+        "support": 15.0
+      },
+      "t_scratch": {
+        "precision": 0.71875,
+        "recall": 1.0,
+        "f1-score": 0.8363636363636363,
+        "support": 23.0
+      },
+      "unfinished_surface": {
+        "precision": 0.3333333333333333,
+        "recall": 0.25,
+        "f1-score": 0.2857142857142857,
+        "support": 4.0
+      },
+      "accuracy": 0.7380952380952381,
+      "macro avg": {
+        "precision": 0.6840277777777778,
+        "recall": 0.5722222222222223,
+        "f1-score": 0.5861471861471861,
+        "support": 42.0
+      },
+      "weighted avg": {
+        "precision": 0.7824900793650794,
+        "recall": 0.7380952380952381,
+        "f1-score": 0.7124922696351268,
+        "support": 42.0
+      }
+    }
+  },
+  "predictions": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a10_global_tiles_seed42_test.csv",
+  "predictions_sha256": "c07c03d73891eb8af0d74040b6539da7e17c4aa5e83a04121be1162e11c2f873",
+  "historical_test_reused": true
+}

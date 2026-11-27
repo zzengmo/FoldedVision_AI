@@ -1,0 +1,75 @@
+{
+  "run_id": "custom_cnn_global_seed123",
+  "model_id": "custom_cnn",
+  "view": "global",
+  "seed": 123,
+  "signature": {
+    "protocol": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+    "manifest": "eccec0163730bf19fe48207684d06fe9dc8d5839a38b3b5776335b7cd9d7539f",
+    "model_id": "custom_cnn",
+    "view": "global",
+    "seed": 123,
+    "pretrained_weights": null
+  },
+  "selection_lock_sha256": "b5f8762af569c34cdc3b23fb439ab7647ec58aae3193d4b970c5db12a4d23691",
+  "evaluated_at": "2026-11-27T07:23:34.101431+00:00",
+  "test": {
+    "n": 42,
+    "correct": 30,
+    "accuracy": 0.7142857142857143,
+    "macro_f1": 0.5685425685425686,
+    "confusion": [
+      [
+        8,
+        2,
+        5
+      ],
+      [
+        1,
+        21,
+        1
+      ],
+      [
+        0,
+        3,
+        1
+      ]
+    ],
+    "per_class": {
+      "t_contamination": {
+        "precision": 0.8888888888888888,
+        "recall": 0.5333333333333333,
+        "f1-score": 0.6666666666666666,
+        "support": 15.0
+      },
+      "t_scratch": {
+        "precision": 0.8076923076923077,
+        "recall": 0.9130434782608695,
+        "f1-score": 0.8571428571428571,
+        "support": 23.0
+      },
+      "unfinished_surface": {
+        "precision": 0.14285714285714285,
+        "recall": 0.25,
+        "f1-score": 0.18181818181818182,
+        "support": 4.0
+      },
+      "accuracy": 0.7142857142857143,
+      "macro avg": {
+        "precision": 0.6131461131461131,
+        "recall": 0.5654589371980676,
+        "f1-score": 0.5685425685425686,
+        "support": 42.0
+      },
+      "weighted avg": {
+        "precision": 0.7733734519448804,
+        "recall": 0.7142857142857143,
+        "f1-score": 0.7247990105132962,
+        "support": 42.0
+      }
+    }
+  },
+  "predictions": "outputs/ring_model_comparison/2026-11-27/predictions/custom_cnn_global_seed123_test.csv",
+  "predictions_sha256": "9f9932df2a0d23edc20ca91fab7d661dc9678f98be04b77c8a5a0b28e6e17f9d",
+  "historical_test_reused": true
+}

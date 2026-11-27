@@ -1,0 +1,43 @@
+{
+  "task": "VISION Ring three defect types",
+  "status": "REVIEW",
+  "normal_defect_supported": false,
+  "model_id": "mobilenetv2_a10",
+  "view": "global",
+  "seed": 42,
+  "class_names": [
+    "t_contamination",
+    "t_scratch",
+    "unfinished_surface"
+  ],
+  "input": {
+    "dtype": "uint8",
+    "color": "RGB",
+    "size": 160,
+    "range": [
+      0,
+      255
+    ],
+    "external_divide_255": false
+  },
+  "classifier_path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a10_global_seed42.keras",
+  "classifier_sha256": "8294afee239f4c2aebd2ada343d777c32f0da5069511895a4bcf799ae684ae9c",
+  "encoder_path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a10_encoder.keras",
+  "encoder_sha256": "184232e56e91dac288c9d420337b3c0e1bed503ac3f20ffd753fb2a939bf03ec",
+  "protocol_sha256": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+  "selection_lock_sha256": "b5f8762af569c34cdc3b23fb439ab7647ec58aae3193d4b970c5db12a4d23691",
+  "selected_using": "mean validation macro F1 across 3 initializations; never test score",
+  "existing_deployed_model_replaced": false,
+  "preprocessing_and_views": {
+    "size": 160,
+    "color": "RGB",
+    "resize": "OpenCV INTER_AREA",
+    "global": "Whole image resized to 160x160",
+    "global_tiles": "Whole image plus four fixed overlapping 65-percent corner crops, each resized to 160x160; concatenate whole feature, tile-feature mean and tile-feature max",
+    "augmentation": "None in this controlled comparison",
+    "scratch_preprocessing": "Rescaling(1/255)",
+    "MobileNetV2_preprocessing": "Official preprocess_input, RGB 0..255 to -1..1",
+    "ResNet50_preprocessing": "Official preprocess_input, RGB to BGR and ImageNet channel centering",
+    "EfficientNetB0_preprocessing": "Official ImageNet constructor including built-in normalization; input RGB float32 0..255; no external /255"
+  }
+}

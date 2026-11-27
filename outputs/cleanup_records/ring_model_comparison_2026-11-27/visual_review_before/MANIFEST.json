@@ -1,0 +1,21 @@
+{
+  "reason": "Replace crowded scatter labels with a readable latency bar chart; add fixed-condition and file-size interpretation. No training, model, protocol or prediction changes.",
+  "files": [
+    {
+      "path": "outputs\\ring_model_comparison\\2026-11-27\\figures\\02_view_and_latency.png",
+      "sha256": "f8b50de3a0c4022137551e96dbc0983fd0068febff7aa30afb8cf2a574a2e301"
+    },
+    {
+      "path": "outputs\\ring_model_comparison\\2026-11-27\\REPORT.md",
+      "sha256": "11846fae97cfed50cce57dba92665e5b69c83e0ac4b831cf9d2ee93b7e4b5514"
+    },
+    {
+      "path": "outputs\\ring_model_comparison\\2026-11-27\\REPORT.html",
+      "sha256": "85281d63c560b1bfb95f3c16e6e846822c95f1652c2a030f024daaf02de0d1b0"
+    },
+    {
+      "path": "outputs\\ring_model_comparison\\2026-11-27\\Ring_모델비교_실험결과.pdf",
+      "sha256": "8e42420df10fabb4c84fdec992fed8ed0ef3e4dff8c40d38a162d607542ce9f2"
+    }
+  ]
+}

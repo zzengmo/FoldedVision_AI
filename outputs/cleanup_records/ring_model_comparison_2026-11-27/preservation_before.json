@@ -1,0 +1,223 @@
+{
+  "date": "2026-11-27",
+  "reason": "User authorized actual multi-backbone Ring experiments and selection evidence. Append isolated default-off notebook section; preserve every previous model, result and presentation.",
+  "original_final_notebook_cells": 69,
+  "files": [
+    {
+      "path": "notebooks/ring/01_Ring_CNN_Baseline.ipynb",
+      "bytes": 2359970,
+      "sha256": "01a1a0ff8ab2e2410e4360d279d9cdcd2520dd99c08a70221c1b6d2adf7f083c",
+      "copied": true
+    },
+    {
+      "path": "notebooks/ring/02_Ring_DeepLearning_Final.ipynb",
+      "bytes": 3776581,
+      "sha256": "bbb6405f45a6c3c16279116336fc2d3a7a4739b21bd78e5c6d3d9090a6e00d73",
+      "copied": true
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 51229,
+      "sha256": "2a4a5181544445a302eea0aa2cd5fa76d52c7cef7b07c9327a8250df65d3637c",
+      "copied": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 13254,
+      "sha256": "84aaad4dd2c5b151d0ba21226f613c67eed1045e27511abf79722abd55ea0d8f",
+      "copied": true
+    },
+    {
+      "path": "CODEX_PROMPT.txt",
+      "bytes": 12664,
+      "sha256": "9b8a97560e50d5a85b3e6f9bb6eabe3e5286760e2f710e1349daee3e57f25b7c",
+      "copied": true
+    },
+    {
+      "path": "outputs/metrics/split_manifest.csv",
+      "bytes": 16417,
+      "sha256": "290f10df2dc78988c592f2c5699356c6cf4146caec976c324031d5453b56efe3",
+      "copied": true
+    },
+    {
+      "path": "outputs/integration/ring_model_config.json",
+      "bytes": 2457,
+      "sha256": "7e331e990613adbae4221ab907c9734ebe221f84cc0310de371f0a7e945afc2e",
+      "copied": true
+    },
+    {
+      "path": "outputs/quality_upgrade/vision_ring_transfer_metrics.json",
+      "bytes": 2641,
+      "sha256": "b5ab79fb4ea18f7a68053dadcf0008d2e0ff1f55745b2b0b30981554c4795d74",
+      "copied": true
+    },
+    {
+      "path": "models/ring_cnn_baseline.keras",
+      "bytes": 1261294,
+      "sha256": "cd093eb93cefe86be60f2ac6f2be47890542a41b12ed67f14776ab2ef9277b3b",
+      "copied": false
+    },
+    {
+      "path": "models/ring_cnn_final.keras",
+      "bytes": 1256062,
+      "sha256": "4ddb59229a0c29fb30cfaf4a948a4e8e67ee21c86285a1bda54b587fdbd6cd19",
+      "copied": false
+    },
+    {
+      "path": "models/ring_cnn_improved_clahe.keras",
+      "bytes": 1413594,
+      "sha256": "794e507fcaef52a941b10cb5abc736135a9a0caa74dd07533fa7a1190a8b2adf",
+      "copied": false
+    },
+    {
+      "path": "models/ring_cnn_improved_denoise.keras",
+      "bytes": 1413594,
+      "sha256": "7fc21c266407ab0af697e6abf18d92cd0de9daeeeb463a184b598b47e2c98822",
+      "copied": false
+    },
+    {
+      "path": "models/ring_cnn_improved_rgb.keras",
+      "bytes": 1413594,
+      "sha256": "de93fb986ceb3e0a566ffe69c74726533d2091f980ed27563b680cb0c887edde",
+      "copied": false
+    },
+    {
+      "path": "models/ring_unet.keras",
+      "bytes": 565323,
+      "sha256": "04dfb9ee235dcb74f76462461466318bd28e36968c2292d5bd5c8901779b6ed8",
+      "copied": false
+    },
+    {
+      "path": "models/ring_unet_bce.keras",
+      "bytes": 1571758,
+      "sha256": "a585d89727778f1444aefaddf589c3f19a9f04fb91f17e138ea52ff120264234",
+      "copied": false
+    },
+    {
+      "path": "models/ring_unet_bce_dice.keras",
+      "bytes": 1571876,
+      "sha256": "7e9aa94d18c3a99b50bae19a8ed6b6c3cd1a1f68c41d50420a2b012fcd8cef27",
+      "copied": false
+    },
+    {
+      "path": "models/ring_cnn_baseline.json",
+      "bytes": 2740,
+      "sha256": "e6c22832b032da5fba387aabd8ead70ed4187e3696c6b761e6317bf7dcf84afe",
+      "copied": false
+    },
+    {
+      "path": "models/ring_cnn_improved_clahe.json",
+      "bytes": 1665,
+      "sha256": "e9dc3b11db9a53e626765b6a7d9a1df409ee596a81e8e651f2acd378eb5095b1",
+      "copied": false
+    },
+    {
+      "path": "models/ring_cnn_improved_denoise.json",
+      "bytes": 1681,
+      "sha256": "82e8f5e6f522f1cf10f32583a43eba3fde454b46226cbcef25c342fc4d80f964",
+      "copied": false
+    },
+    {
+      "path": "models/ring_cnn_improved_rgb.json",
+      "bytes": 1679,
+      "sha256": "6033eea430a1571d87fcabdb02f05ad9219448e5ef9f52aa93760e87dfd88e98",
+      "copied": false
+    },
+    {
+      "path": "models/ring_unet_bce.json",
+      "bytes": 1088,
+      "sha256": "a632591f5d4f1ce1134b99092c61a8caedadc11e66d490581a6a9a8cebc07f98",
+      "copied": false
+    },
+    {
+      "path": "models/ring_unet_bce_dice.json",
+      "bytes": 1079,
+      "sha256": "659075ecf3a7e26c654c8a4285ab2038f5df64c4ed929d603af00f7523b2bbaa",
+      "copied": false
+    },
+    {
+      "path": "models/quality_upgrade/vision_ring_encoder.keras",
+      "bytes": 3357982,
+      "sha256": "4199e9d5ba5388637c19a07c7df599aa10ee401d989f92bd0c3349a3a612e645",
+      "copied": false
+    },
+    {
+      "path": "models/quality_upgrade/vision_ring_global_48_head.keras",
+      "bytes": 2078401,
+      "sha256": "157109a315821dd028d5f8838a1008fd01a0d60a6093792111028a6a7604c77e",
+      "copied": false
+    },
+    {
+      "path": "models/quality_upgrade/vision_ring_global_linear_head.keras",
+      "bytes": 272130,
+      "sha256": "87e58e24a31f6c127351727459035f236391350cf36753ab468bbe3c3ba43aff",
+      "copied": false
+    },
+    {
+      "path": "models/quality_upgrade/vision_ring_global_tiles_48_head.keras",
+      "bytes": 6184417,
+      "sha256": "a41e14ebbe2c3515dcc92ea2c69fe2084c85dface30c026a1492701432c5c0d1",
+      "copied": false
+    },
+    {
+      "path": "models/quality_upgrade/vision_ring_global_tiles_linear_head.keras",
+      "bytes": 783908,
+      "sha256": "86e502fb223d1616bae4645dff53bb20edce87570091bf90d3cabe47ae1579ec",
+      "copied": false
+    },
+    {
+      "path": "outputs/quality_upgrade/vision_ring_global_48_history.json",
+      "bytes": 1435,
+      "sha256": "2460e7f2f4ae8eba589b52e338a15a71d4d2441d27e11276bc1319a8f1764914",
+      "copied": false
+    },
+    {
+      "path": "outputs/quality_upgrade/vision_ring_global_linear_history.json",
+      "bytes": 912,
+      "sha256": "a7cede9c45345a0f0ed2ec739d84b62c249ce3cdf3b5ba299bdac4437634788e",
+      "copied": false
+    },
+    {
+      "path": "outputs/quality_upgrade/vision_ring_global_tiles_48_history.json",
+      "bytes": 1674,
+      "sha256": "6a5e3f8190c33f1b92ba8cad8235bb16bf378b1ef3ddd62ac7a11542e3d6e22e",
+      "copied": false
+    },
+    {
+      "path": "outputs/quality_upgrade/vision_ring_global_tiles_linear_history.json",
+      "bytes": 1120,
+      "sha256": "d17d50b98adf97fcb8f48634ed3aedec18d41608c4e980ebf7c597ee077fe0c8",
+      "copied": false
+    },
+    {
+      "path": "outputs/quality_upgrade/vision_ring_transfer_predictions.csv",
+      "bytes": 8068,
+      "sha256": "06a52bc8f58f1cdf41ca78c894450f36694190d04053ee986710a24303aaa64b",
+      "copied": false
+    },
+    {
+      "path": "outputs/integration/ring_metrics.json",
+      "bytes": 3087,
+      "sha256": "1c89ff73bc6bc466aac6934cb83b178ce0259b9d39c8285c51e57efc5de9c789",
+      "copied": false
+    },
+    {
+      "path": "outputs/integration/ring_predictions.csv",
+      "bytes": 7718,
+      "sha256": "62566c66293dd674779725abe0b9225f6016dabb3938b7532b3ea42b74eff187",
+      "copied": false
+    },
+    {
+      "path": "outputs/presentation/FoldedVision_38페이지_손실비교.pptx",
+      "bytes": 38310,
+      "sha256": "3ba6d8c93ef7397b55aa9c03ed9ca645242aea4f986fae72d5d94b7400589f84",
+      "copied": false
+    },
+    {
+      "path": "outputs/presentation/FoldedVision_최종발표.pptx",
+      "bytes": 58662899,
+      "sha256": "8980f9a152eb30fd0f5d0b59f621f98927d6130deeee1f7c44b030bb3a6619a0",
+      "copied": false
+    }
+  ]
+}

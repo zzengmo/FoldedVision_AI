@@ -1,0 +1,38 @@
+{
+  "verified_at": "2026-11-27T07:31:38.981940+00:00",
+  "protocol_sha256": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+  "selection_lock_sha256": "b5f8762af569c34cdc3b23fb439ab7647ec58aae3193d4b970c5db12a4d23691",
+  "actual_training_runs": 27,
+  "configurations": 9,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "all_prediction_rows_verified": true,
+  "train_validation_test_counts": [
+    33,
+    12,
+    42
+  ],
+  "all_87_source_hashes_match": true,
+  "existing_protected_files_unchanged": 32,
+  "original_69_notebook_cells_preserved": true,
+  "fresh_selected_model_inference_checks": [
+    {
+      "image_id": "val:1",
+      "max_probability_difference": 4.335632297625125e-09
+    },
+    {
+      "image_id": "val:21",
+      "max_probability_difference": 2.8617095915173252e-08
+    },
+    {
+      "image_id": "val:42",
+      "max_probability_difference": 1.1627059937069362e-07
+    }
+  ],
+  "test_access_after_selection_lock": true,
+  "normal_defect_supported": false,
+  "existing_models_web_unity_ppt_replaced": false
+}

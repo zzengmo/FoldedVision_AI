@@ -1,0 +1,11 @@
+{
+  "record_id": "fe5ccd14-24e9-486e-92dc-8c81d7505b9f",
+  "code": "FV-261127-03609",
+  "expected": 0.9983523,
+  "actual": 0.9983522891998291,
+  "max_delta": 1.0800170868741077e-8,
+  "status": "REVIEW",
+  "final": "NG",
+  "model": "vision_ring_global_tiles_48",
+  "inference_ms": 39482
+}

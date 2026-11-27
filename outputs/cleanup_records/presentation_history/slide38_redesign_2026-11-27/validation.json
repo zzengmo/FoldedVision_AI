@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-27 Asia/Seoul",
+  "source": "C:\\Users\\kdt66\\Downloads\\FoldedVision_최종발표 (2).pptx",
+  "source_sha256": "6cd16fbd7c70ef209144398134a922dcc3e21c00cb141885abc0c9f4f89bd2fe",
+  "source_slide_count": 45,
+  "source_slide_ordinal": 38,
+  "source_slide_displayed_page": 42,
+  "output": "outputs\\presentation\\FoldedVision_38페이지_손실비교.pptx",
+  "output_slide_count": 1,
+  "output_bytes": 38310,
+  "source_unchanged": true,
+  "project_master_changed": false,
+  "user_confirmed_assumptions": {
+    "sum_three_parts": true,
+    "loss_per_defect_krw": 13000
+  },
+  "defects_before_by_part": [
+    750,
+    750,
+    750
+  ],
+  "defects_after_by_part": [
+    45,
+    54,
+    0
+  ],
+  "loss_before_krw": 29250000,
+  "loss_after_krw": 1287000,
+  "avoided_loss_krw": 27963000,
+  "projection_100million_krw": 93210000,
+  "projection_correction_krw": 10,
+  "original_ring_assumption_disclosure_retained": true,
+  "native_editable_shapes": true,
+  "generated_image_used": false,
+  "render_checked": true,
+  "text_overflow": 0,
+  "off_slide_shapes": 0,
+  "broken_relationships": 0,
+  "formulas_verified": true,
+  "full_source_archived": "archive\\2026-11-27_user_final_45slides\\FoldedVision_최종발표 (2).pptx",
+  "preview_thumbnail_updated": false,
+  "project_master_sha256": "8980f9a152eb30fd0f5d0b59f621f98927d6130deeee1f7c44b030bb3a6619a0",
+  "files": [
+    {
+      "path": "outputs\\presentation\\FoldedVision_38페이지_손실비교.pptx",
+      "bytes": 38310,
+      "sha256": "3ba6d8c93ef7397b55aa9c03ed9ca645242aea4f986fae72d5d94b7400589f84"
+    },
+    {
+      "path": "outputs\\presentation\\FoldedVision_38페이지_손실비교.png",
+      "bytes": 94127,
+      "sha256": "4f6e4926309004639b8c034b38669582e5ea9cdeb48f46510bd7a7bc34a1a1aa"
+    },
+    {
+      "path": "outputs\\presentation\\FoldedVision_38페이지_손실비교.pdf",
+      "bytes": 98415,
+      "sha256": "98155c6e39a82d15fe3026995b0cb1bbc24cee787eb527ef7081b4ada615f6e8"
+    }
+  ]
+}

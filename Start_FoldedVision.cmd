@@ -1,53 +1,37 @@
 @echo off
 setlocal EnableExtensions DisableDelayedExpansion
-title FoldedVision AI Inspection Lab
-
+title FoldedVision Inspection Workspace
 pushd "%~dp0sites\foldedvision-inspection" 2>nul
-if errorlevel 1 goto :missing_site
-if not exist "package.json" goto :missing_package
-
+if errorlevel 1 goto :missing
 where.exe node.exe >nul 2>&1
-if errorlevel 1 goto :missing_node
+if errorlevel 1 goto :node
+node -e "if(Number(process.versions.node.split('.')[0])<22)process.exit(1)"
+if errorlevel 1 goto :node
 where.exe npm.cmd >nul 2>&1
-if errorlevel 1 goto :missing_node
-
-if not exist "node_modules\.bin\vite.cmd" (
-    echo Installing the web dependencies for the first run...
-    call npm.cmd ci --include=dev
-    if errorlevel 1 goto :install_failed
+if errorlevel 1 goto :node
+if not exist "node_modules\drizzle-kit\bin.cjs" (
+  echo Installing web dependencies...
+  call npm.cmd ci --include=dev
+  if errorlevel 1 goto :failed
 )
-
-echo Preparing the latest FoldedVision AI build...
+echo Building the inspection workspace...
 call npm.cmd run build
-if errorlevel 1 goto :start_failed
-
-echo Starting FoldedVision AI and opening your browser...
-echo Keep this window open while using the site. Press Ctrl+C to stop.
-echo(
-call npm.cmd run preview -- --host 127.0.0.1 --open
-if errorlevel 1 goto :start_failed
+if errorlevel 1 goto :failed
+echo Starting the inspection workspace. Keep this window open.
+echo Records and photos are stored under sites/foldedvision-inspection/.runtime/
+echo Press Ctrl+C to stop. No model training will start.
+set FOLDEDVISION_OPEN=1
+call npm.cmd start
 popd
 exit /b 0
-
-:missing_package
-popd
-:missing_site
-echo The web project was not found. Keep this CMD file in the FoldedVision_AI folder.
+:node
+echo Node.js 22.13 or newer and npm are required.
 goto :failed
-
-:missing_node
-echo Node.js and npm are required. Install Node.js, then double-click this file again.
-goto :failed_in_site
-
-:install_failed
-echo Dependency installation failed. Check the npm message above and try again.
-goto :failed_in_site
-
-:start_failed
-echo The site could not start. Check the message above.
-
-:failed_in_site
-popd
+:missing
+echo The web project was not found. Keep this CMD in the project root.
+pause
+exit /b 1
 :failed
+popd
 pause
 exit /b 1

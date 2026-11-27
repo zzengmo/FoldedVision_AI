@@ -1,0 +1,84 @@
+{
+  "run_id": "mobilenetv2_a05_global_tiles_seed42",
+  "signature": {
+    "protocol": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+    "manifest": "eccec0163730bf19fe48207684d06fe9dc8d5839a38b3b5776335b7cd9d7539f",
+    "model_id": "mobilenetv2_a05",
+    "view": "global_tiles",
+    "seed": 42,
+    "pretrained_weights": "070ad37fe8ad66e6b4ed991dd59bc3931094782a4a1e43ab0fa234194b928aa9"
+  },
+  "model_id": "mobilenetv2_a05",
+  "view": "global_tiles",
+  "seed": 42,
+  "started_at": "2026-11-27T07:18:54.866737+00:00",
+  "finished_at": "2026-11-27T07:18:57.423004+00:00",
+  "actual_epochs": 13,
+  "restored_epoch": 6,
+  "training_seconds": 2.4035052999970503,
+  "training_scope": "classifier only; ImageNet backbone frozen",
+  "total_parameters": 898419,
+  "trainable_parameters": 192195,
+  "model_path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a05_global_tiles_seed42.keras",
+  "model_sha256": "10424be6842ed24f53ea823315c4605141a4641061af3d9d0e6132770c86037b",
+  "history_path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_tiles_seed42_history.json",
+  "history_sha256": "e0b0e4e57d56961538960d2763044a7ce2fedf88aacafde5b1c6abddad828c94",
+  "validation_prediction_path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_tiles_seed42_validation.csv",
+  "validation_prediction_sha256": "610ca4db2af4ba97b7f2b143049862b45b66efe063a7622bc3de586f3e87b325",
+  "validation": {
+    "n": 12,
+    "correct": 10,
+    "accuracy": 0.8333333333333334,
+    "macro_f1": 0.76007326007326,
+    "confusion": [
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "per_class": {
+      "t_contamination": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1-score": 0.8571428571428571,
+        "support": 3.0
+      },
+      "t_scratch": {
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "f1-score": 0.9230769230769231,
+        "support": 7.0
+      },
+      "unfinished_surface": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1-score": 0.5,
+        "support": 2.0
+      },
+      "accuracy": 0.8333333333333334,
+      "macro avg": {
+        "precision": 0.75,
+        "recall": 0.7857142857142857,
+        "f1-score": 0.76007326007326,
+        "support": 12.0
+      },
+      "weighted avg": {
+        "precision": 0.8541666666666666,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.8360805860805861,
+        "support": 12.0
+      }
+    }
+  }
+}

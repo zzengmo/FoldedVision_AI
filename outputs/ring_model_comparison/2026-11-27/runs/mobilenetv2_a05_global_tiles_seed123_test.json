@@ -1,0 +1,75 @@
+{
+  "run_id": "mobilenetv2_a05_global_tiles_seed123",
+  "model_id": "mobilenetv2_a05",
+  "view": "global_tiles",
+  "seed": 123,
+  "signature": {
+    "protocol": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+    "manifest": "eccec0163730bf19fe48207684d06fe9dc8d5839a38b3b5776335b7cd9d7539f",
+    "model_id": "mobilenetv2_a05",
+    "view": "global_tiles",
+    "seed": 123,
+    "pretrained_weights": "070ad37fe8ad66e6b4ed991dd59bc3931094782a4a1e43ab0fa234194b928aa9"
+  },
+  "selection_lock_sha256": "b5f8762af569c34cdc3b23fb439ab7647ec58aae3193d4b970c5db12a4d23691",
+  "evaluated_at": "2026-11-27T07:23:57.401494+00:00",
+  "test": {
+    "n": 42,
+    "correct": 34,
+    "accuracy": 0.8095238095238095,
+    "macro_f1": 0.7499167499167498,
+    "confusion": [
+      [
+        10,
+        1,
+        4
+      ],
+      [
+        1,
+        20,
+        2
+      ],
+      [
+        0,
+        0,
+        4
+      ]
+    ],
+    "per_class": {
+      "t_contamination": {
+        "precision": 0.9090909090909091,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.7692307692307693,
+        "support": 15.0
+      },
+      "t_scratch": {
+        "precision": 0.9523809523809523,
+        "recall": 0.8695652173913043,
+        "f1-score": 0.9090909090909091,
+        "support": 23.0
+      },
+      "unfinished_surface": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1-score": 0.5714285714285714,
+        "support": 4.0
+      },
+      "accuracy": 0.8095238095238095,
+      "macro avg": {
+        "precision": 0.7538239538239537,
+        "recall": 0.8454106280193235,
+        "f1-score": 0.7499167499167498,
+        "support": 42.0
+      },
+      "weighted avg": {
+        "precision": 0.8843125128839414,
+        "recall": 0.8095238095238095,
+        "f1-score": 0.8269825412682555,
+        "support": 42.0
+      }
+    }
+  },
+  "predictions": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_tiles_seed123_test.csv",
+  "predictions_sha256": "21b8eaf7b39c6ca3c2f253a1d10cd35fa6e690e8054f40749d1d7e62b1aec7fe",
+  "historical_test_reused": true
+}

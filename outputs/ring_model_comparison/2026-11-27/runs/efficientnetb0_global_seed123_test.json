@@ -1,0 +1,75 @@
+{
+  "run_id": "efficientnetb0_global_seed123",
+  "model_id": "efficientnetb0",
+  "view": "global",
+  "seed": 123,
+  "signature": {
+    "protocol": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+    "manifest": "eccec0163730bf19fe48207684d06fe9dc8d5839a38b3b5776335b7cd9d7539f",
+    "model_id": "efficientnetb0",
+    "view": "global",
+    "seed": 123,
+    "pretrained_weights": "0683edcf6151811fb3ddd6f098ac48df644d74592c4919a5acdee1c37554add2"
+  },
+  "selection_lock_sha256": "b5f8762af569c34cdc3b23fb439ab7647ec58aae3193d4b970c5db12a4d23691",
+  "evaluated_at": "2026-11-27T07:25:42.733987+00:00",
+  "test": {
+    "n": 42,
+    "correct": 29,
+    "accuracy": 0.6904761904761905,
+    "macro_f1": 0.4807256235827664,
+    "confusion": [
+      [
+        10,
+        5,
+        0
+      ],
+      [
+        3,
+        19,
+        1
+      ],
+      [
+        2,
+        2,
+        0
+      ]
+    ],
+    "per_class": {
+      "t_contamination": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.6666666666666666,
+        "support": 15.0
+      },
+      "t_scratch": {
+        "precision": 0.7307692307692307,
+        "recall": 0.8260869565217391,
+        "f1-score": 0.7755102040816326,
+        "support": 23.0
+      },
+      "unfinished_surface": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 4.0
+      },
+      "accuracy": 0.6904761904761905,
+      "macro avg": {
+        "precision": 0.46581196581196577,
+        "recall": 0.4975845410628019,
+        "f1-score": 0.4807256235827664,
+        "support": 42.0
+      },
+      "weighted avg": {
+        "precision": 0.6382783882783882,
+        "recall": 0.6904761904761905,
+        "f1-score": 0.662779397473275,
+        "support": 42.0
+      }
+    }
+  },
+  "predictions": "outputs/ring_model_comparison/2026-11-27/predictions/efficientnetb0_global_seed123_test.csv",
+  "predictions_sha256": "fd1e1ed8978e4160258e2232eb2710fd784e5830780f4584849f5f416e141079",
+  "historical_test_reused": true
+}

@@ -1,0 +1,144 @@
+{
+  "protocol_version": "ring-backbones-2026-11-27-v1",
+  "registered_before_new_training": true,
+  "task": "VISION Ring three defect types; no verified normal labels; always REVIEW in deployment",
+  "scope": "Additional experiments only. Existing models, metrics, web, Unity and presentations stay intact.",
+  "data": {
+    "manifest": "outputs/metrics/split_manifest.csv",
+    "train": 33,
+    "validation": 12,
+    "historical_test": 42,
+    "class_order": [
+      "t_contamination",
+      "t_scratch",
+      "unfinished_surface"
+    ],
+    "split_seed": 42,
+    "test_note": "These 42 images were evaluated previously. This is a repeated historical benchmark, not a new unseen external test.",
+    "tiles_note": "All five views of an image remain together in its original split. No annotation-derived crop or mask is used."
+  },
+  "candidates": [
+    {
+      "id": "custom_cnn",
+      "family": "custom_cnn",
+      "pretraining": null,
+      "views": [
+        "global"
+      ],
+      "reason": "Same-condition scratch-trained reference; preserves the original 256-pixel baseline separately."
+    },
+    {
+      "id": "mobilenetv2_a05",
+      "family": "MobileNetV2",
+      "alpha": 0.5,
+      "pretraining": "ImageNet",
+      "views": [
+        "global",
+        "global_tiles"
+      ],
+      "reason": "Matches the existing lightweight MobileNet width; test its quality-cost tradeoff."
+    },
+    {
+      "id": "mobilenetv2_a10",
+      "family": "MobileNetV2",
+      "alpha": 1.0,
+      "pretraining": "ImageNet",
+      "views": [
+        "global",
+        "global_tiles"
+      ],
+      "reason": "Check whether the existing width reduction sacrificed useful features."
+    },
+    {
+      "id": "resnet50",
+      "family": "ResNet50",
+      "pretraining": "ImageNet",
+      "views": [
+        "global",
+        "global_tiles"
+      ],
+      "reason": "Compare a larger residual-network feature extractor."
+    },
+    {
+      "id": "efficientnetb0",
+      "family": "EfficientNetB0",
+      "pretraining": "ImageNet",
+      "views": [
+        "global",
+        "global_tiles"
+      ],
+      "reason": "Compare a different efficiency-oriented architecture."
+    }
+  ],
+  "input": {
+    "size": 160,
+    "color": "RGB",
+    "resize": "OpenCV INTER_AREA",
+    "global": "Whole image resized to 160x160",
+    "global_tiles": "Whole image plus four fixed overlapping 65-percent corner crops, each resized to 160x160; concatenate whole feature, tile-feature mean and tile-feature max",
+    "augmentation": "None in this controlled comparison",
+    "scratch_preprocessing": "Rescaling(1/255)",
+    "MobileNetV2_preprocessing": "Official preprocess_input, RGB 0..255 to -1..1",
+    "ResNet50_preprocessing": "Official preprocess_input, RGB to BGR and ImageNet channel centering",
+    "EfficientNetB0_preprocessing": "Official ImageNet constructor including built-in normalization; input RGB float32 0..255; no external /255"
+  },
+  "architecture": {
+    "transfer_backbone": "Frozen ImageNet feature extractor; terminal global average pooling only in this study",
+    "scratch_backbone": "Conv2D 32,64,128 with ReLU, MaxPool after first two convolutions, terminal global average pooling",
+    "common_head": "LayerNormalization -> Dense(48,relu,L2=0.0008) -> Dropout(0.25) -> Dense(3,softmax,L2=0.001)",
+    "important_difference": "The previous 92.86-percent MobileNet model used multiscale intermediate features plus average/max pooling. It is a historical reference, not a controlled row in this new study."
+  },
+  "training": {
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "batch_size": 12,
+    "maximum_epochs": 55,
+    "loss": "sparse_categorical_crossentropy",
+    "class_weights": "Training set N/(3*class_count)",
+    "early_stopping": {
+      "monitor": "val_loss",
+      "patience": 7,
+      "min_delta": 0.0001,
+      "restore_best_weights": true
+    },
+    "cache": "Frozen image features may be cached once; record feature-extraction time separately from head-training time. No test image is decoded before the selection lock."
+  },
+  "selection": {
+    "unit": "Configuration (backbone,view), averaged over the three seeds",
+    "ranking": [
+      "validation_macro_f1_mean descending",
+      "validation_accuracy_mean descending",
+      "total_parameters ascending",
+      "configuration_id ascending"
+    ],
+    "main_backbone_comparison": "Global-only rows, including the same-condition custom CNN",
+    "final_configuration": "All preregistered configurations, including global_tiles",
+    "export_seed": 42,
+    "export_note": "Seed 42 is fixed in advance; never choose the run using test performance. No seed ensemble.",
+    "lock": "Write selection_lock.json and training artifact hashes before test decoding or scoring. Test results must not change the selected configuration.",
+    "score_rounding_decimals": 12
+  },
+  "measurement": {
+    "metrics": [
+      "accuracy",
+      "macro_f1",
+      "per_class_precision_recall_f1",
+      "confusion_matrix"
+    ],
+    "variation": "Mean and sample standard deviation over initializations on one fixed split; not cross-validation and not a confidence interval",
+    "latency": "Same CPU/thread settings, batch=1, 5 warmups then 30 measurements; include resize/crops, official preprocessing, backbone and classifier; exclude disk decode/model load; report median and p95",
+    "timing_note": "Latency is measured on the local machine, not a verified production cycle time."
+  },
+  "sources": [
+    "https://keras.io/2/api/applications/mobilenet/",
+    "https://keras.io/2/api/applications/resnet/",
+    "https://keras.io/2/api/applications/efficientnet/",
+    "https://keras.io/guides/transfer_learning/",
+    "https://huggingface.co/datasets/VISION-Workshop/VISION-Datasets"
+  ]
+}

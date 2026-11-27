@@ -1,0 +1,70 @@
+{
+  "output_stem": "FACT_공통부_수정본",
+  "brand": "FACT PROJECT",
+  "footer": "자화전자 KDT 딥러닝 프로젝트",
+  "source_date": "2026-11-27",
+  "contents": [
+    {"number": "01", "title": "프로젝트 개요", "items": ["프로젝트 목표와 검사 대상", "추진 일정", "주제 선정 배경과 필요성", "개발 환경과 활용 기술"]},
+    {"number": "02", "title": "LENS · 광학 부품 외관 검사", "items": ["데이터 구성과 결함 특성", "EDA 및 이미지 전처리", "기준 모델 구성", "개선 모델과 비교 실험", "성능 평가 및 오류 분석"]},
+    {"number": "03", "title": "RING · 금속 표면 결함 유형 분류", "items": ["데이터 구성과 결함 특성", "EDA 및 이미지 전처리", "직접 구성한 CNN 기준 모델", "사전학습 모델 비교 및 최종 선정", "성능 평가 및 오류 분석"]},
+    {"number": "04", "title": "PCB · 기판 결함 검출", "items": ["데이터 구성과 결함 특성", "EDA 및 이미지 전처리", "기준 검출 모델 구성", "추가 학습 및 성능 비교", "성능 평가 및 오류 분석"]},
+    {"number": "05", "title": "종합 결과 및 기대 효과", "items": ["부품별 실험 결과 종합", "검사 업무 활용과 기대 효과", "가정에 따른 손실 비교 시나리오", "적용 한계 및 향후 개선 과제"]},
+    {"number": "06", "title": "시스템 시연", "items": ["웹 기반 검사 업무 및 이력 관리", "Unity 기반 가상 검사 공정 시각화"]}
+  ],
+  "sources": {
+    "S1": {"label": "자화전자 공개특허 WO2022154244A1 (2022), 도 1·상세 설명", "url": "https://patents.google.com/patent/WO2022154244A1/ko", "claim": "렌즈 조립체, 캐리어, 회로기판 등으로 구성된 줌 구동 구조를 설명한다. 특정 현행 제품의 BOM이나 회사 검사 체계를 입증하는 자료로 사용하지 않는다."},
+    "S2": {"label": "ASQ, Cost of Quality — Appraisal costs / Internal failure costs", "url": "https://asq.org/quality-resources/cost-of-quality", "claim": "입고 자재 규격 확인은 품질 평가 활동이며, 폐기와 재작업은 내부 실패 비용의 예다. 이 프로젝트의 실제 절감 실적이나 특정 회사의 불량률을 입증하지 않는다."},
+    "S3": {"label": "VISION Datasets 공식 배포 — Lens·Ring", "url": "https://huggingface.co/datasets/VISION-Workshop/VISION-Datasets", "claim": "공개 산업 검사 데이터의 Lens·Ring 예시를 사용한다. 실제 자화전자 부품과 동일한 품목이라고 설명하지 않는다."},
+    "S4": {"label": "팀 PCB4 원본·저장 평가 자료", "path": "notebooks/pcb/final/data/pcb4_yolo/images/test/component_damage_007.jpg", "claim": "팀이 전달한 PCB4 테스트 사진이다. 사진의 정답·검출 사례와 특정 회사의 실물 부품을 구분한다."},
+    "P1": {"label": "사용자 제공 최신 PPT의 추진 일정", "claim": "2026.11.12–11.30 일정안을 유지한다. 계획표를 실제 실행 로그로 설명하지 않는다."},
+    "P2": {"label": "프로젝트 소스·실행 환경·검증 화면", "paths": ["requirements.txt", "notebooks/lens/03_Lens_YOLO.ipynb", "notebooks/ring/02_Ring_DeepLearning_Final.ipynb", "notebooks/pcb/final/README.md", "sites/foldedvision-inspection/package.json", "sites/foldedvision-inspection/README.md", "unity/My project/README.md"], "claim": "사용 기술과 연결 상태는 보존한 구현 기록을 기준으로 표시한다."}
+  },
+  "goals": {
+    "title": "프로젝트 목표와 검사 대상",
+    "lead": "조립 투입 전 부품 사진을 분석하고, 작업자의 재검 판단과 검사 이력 관리를 지원합니다.",
+    "parts": [
+      {"name": "LENS", "role": "광학 부품 외관 검사", "task": "작은 결함의 위치를 찾고\n구역별 상태를 평가합니다.", "asset": "outputs/cleanup_records/presentation_history/common_revision_2026-11-27/assets/lens_source_image6.png", "provenance": "첨부 PPT 7장의 VISION Lens 사진. 원 표시는 위치 설명용이며 새 모델의 예측 결과가 아니다."},
+      {"name": "RING", "role": "금속 표면 결함 유형 분류", "task": "오염·스크래치·표면 미가공을\n구분해 재검을 지원합니다.", "asset": "data/raw/Ring/val/000073.jpg", "provenance": "VISION Ring 테스트 원본 000073.jpg. 유형 분류용 금속 표면 확대 사진이며 정상/불량 이진 검증 자료가 아니다."},
+      {"name": "PCB", "role": "기판 결함 검출", "task": "결함 후보의 종류와 위치를 찾고\n사진 단위 판정을 확인합니다.", "asset": "notebooks/pcb/final/data/pcb4_yolo/images/test/component_damage_007.jpg", "provenance": "팀 PCB4 테스트 원본 component_damage_007.jpg. 실제 공개 평가 사진으로, 생성 이미지가 아니다."}
+    ],
+    "workflow": "원본 사진 · AI 제안 · 담당자 최종 판정 · 검사 이력을 함께 관리합니다.",
+    "scope": "검증 범위: 공개 데이터 기반 부품별 실험입니다. 실제 자화전자 부품·현장 적용 결과와 구분합니다."
+  },
+  "schedule": {
+    "title": "추진 일정",
+    "lead": "2026.11.12–11.30 · 주제 선정부터 모델 비교와 결과 해석까지 단계별로 진행합니다.",
+    "rows": [
+      {"name": "주제 선정", "detail": "검사 목적 · 부품별 역할", "start": 12, "end": 18},
+      {"name": "데이터 수집", "detail": "자료 분류 · 추가 수집", "start": 19, "end": 22},
+      {"name": "데이터 전처리", "detail": "EDA · 이미지 정리", "start": 23, "end": 24},
+      {"name": "모델 학습", "detail": "기준 모델 · 개선 실험", "start": 25, "end": 27},
+      {"name": "최종 모델링", "detail": "모델 비교 · 결과 해석", "start": 28, "end": 30}
+    ],
+    "note": "계획 일정표입니다. 11/28 이후 일정은 계획이며, 실제 학습일·소요시간은 부품별 실행 기록을 따릅니다."
+  },
+  "rationale": {
+    "title": "주제 선정 배경과 필요성",
+    "lead": "액추에이터의 부품 구조와 입고 품질관리 원칙을 바탕으로, 외관 검사 지원을 과제로 정했습니다.",
+    "items": [
+      {"label": "산업과의 연관성", "text": "자화전자 공개특허는 렌즈 조립체·캐리어·회로기판 등으로\n구성된 카메라 줌 구동 구조를 설명합니다. [S1]"},
+      {"label": "조립 투입 전 확인의 의미", "text": "미국품질협회(ASQ)는 입고 자재 확인을 품질 평가 활동으로,\n폐기·재작업을 내부 실패 비용으로 설명합니다. [S2]"},
+      {"label": "이번 프로젝트의 선정 과제", "text": "사진에서 외관 이상과 검사 근거를 제시하고,\n작업자의 재검 판단과 이력 관리를 지원합니다."}
+    ],
+    "hypothesis": "현장 검증 과제: 사전 확인이 후공정의 불필요한 투입을 줄이는지, 검사·재검 비용과 함께 확인합니다.",
+    "scope": "회사에 검사 체계가 없다고 전제하지 않습니다. 특허 구조와 공개 실험 데이터의 품목도 구분합니다."
+  },
+  "technology": {
+    "title": "개발 환경과 활용 기술",
+    "lead": "부품별 모델 실험, 검사 업무 웹, 가상 설비 시각화를 나눠 구현했습니다.",
+    "rows": [
+      {"area": "데이터 처리", "tech": "Python · OpenCV\nNumPy · Pandas", "use": "탐색적 데이터 분석(EDA)\n사진·라벨 정리 및 전처리"},
+      {"area": "모델 실험", "tech": "TensorFlow · Keras\nPyTorch · Ultralytics", "use": "Ring: CNN·전이학습 비교\nLens·PCB: YOLO 검출"},
+      {"area": "업무 웹", "tech": "React · Vite · Node.js\nSQLite (로컬)", "use": "입고 묶음(LOT)·검사 관리\n재검·판정·이력 저장"},
+      {"area": "가상 공정", "tech": "Unity · C# · URP", "use": "이송·촬영 동작 표현\n판정에 따른 분기 시각화"}
+    ],
+    "web_asset": "outputs/cleanup_records/business_web_2026-11-27/02-dashboard-sample.png",
+    "unity_asset": "unity/My project/Presentation/01-factory-overview.png",
+    "status": "연결 현황: 로컬 웹의 Ring 추론을 지원합니다. Lens·PCB는 연결 대기이며, Unity는 저장 결과·가상 경로를 재생합니다.",
+    "environment": "모델별 별도 실행 환경을 사용하며, 학습 코드와 평가 결과는 Jupyter Notebook·CSV·JSON으로 기록합니다."
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "sha256": "1ceb9f5ebf2421708878d7801a66eb1453885dfe3e0be4c37126bb9aa3851d84",
+  "reason": "Keep new experiment reports, predictions and reproducibility runner visible to Git while retaining existing data/model exclusions."
+}

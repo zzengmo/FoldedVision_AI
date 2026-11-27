@@ -1,0 +1,111 @@
+WARNING:tensorflow:From C:\Users\kdt66\Desktop\FoldedVision_AI\.venv\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+Ring study: prepare | protocol ba6f37a75b01 | train/validation/test [33, 12, 42]
+DOWNLOAD mobilenetv2_a10 https://storage.googleapis.com/tensorflow/keras-applications/mobilenet_v2/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_160_no_top.h5
+DOWNLOAD resnet50 https://storage.googleapis.com/tensorflow/keras-applications/resnet/resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5
+DOWNLOAD efficientnetb0 https://storage.googleapis.com/keras-applications/efficientnetb0_notop.h5
+Verified public ImageNet weight files: {'mobilenetv2_a05': 3201480, 'mobilenetv2_a10': 9406464, 'resnet50': 94765736, 'efficientnetb0': 16705208}
+WARNING:tensorflow:From C:\Users\kdt66\Desktop\FoldedVision_AI\.venv\Lib\site-packages\keras\src\backend.py:277: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\kdt66\Desktop\FoldedVision_AI\.venv\Lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+Downloading data from https://storage.googleapis.com/tensorflow/keras-applications/mobilenet_v2/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_0.5_160_no_top.h5
+
+   8192/3201480 [..............................] - ETA: 0s
+ 466944/3201480 [===>..........................] - ETA: 0s
+2252800/3201480 [====================>.........] - ETA: 0s
+3201480/3201480 [==============================] - 0s 0us/step
+ENCODER PREFLIGHT {'model_id': 'mobilenetv2_a05', 'feature_dimension': 1280, 'parameters': 706224, 'save_load_max_difference': 0.0}
+Downloading data from https://storage.googleapis.com/tensorflow/keras-applications/mobilenet_v2/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_160_no_top.h5
+
+   8192/9406464 [..............................] - ETA: 1s
+ 172032/9406464 [..............................] - ETA: 2s
+1138688/9406464 [==>...........................] - ETA: 0s
+3620864/9406464 [==========>...................] - ETA: 0s
+6725632/9406464 [====================>.........] - ETA: 0s
+9406464/9406464 [==============================] - 0s 0us/step
+ENCODER PREFLIGHT {'model_id': 'mobilenetv2_a10', 'feature_dimension': 1280, 'parameters': 2257984, 'save_load_max_difference': 0.0}
+Downloading data from https://storage.googleapis.com/tensorflow/keras-applications/resnet/resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5
+
+    8192/94765736 [..............................] - ETA: 0s
+   49152/94765736 [..............................] - ETA: 4:32
+   81920/94765736 [..............................] - ETA: 7:01
+  180224/94765736 [..............................] - ETA: 3:45
+  229376/94765736 [..............................] - ETA: 3:19
+  311296/94765736 [..............................] - ETA: 2:43
+  401408/94765736 [..............................] - ETA: 2:18
+  507904/94765736 [..............................] - ETA: 1:58
+  688128/94765736 [..............................] - ETA: 1:34
+  884736/94765736 [..............................] - ETA: 1:18
+ 1130496/94765736 [..............................] - ETA: 1:05
+ 1556480/94765736 [..............................] - ETA: 50s 
+ 2064384/94765736 [..............................] - ETA: 40s
+ 2744320/94765736 [..............................] - ETA: 31s
+ 3645440/94765736 [>.............................] - ETA: 24s
+ 4882432/94765736 [>.............................] - ETA: 19s
+ 6488064/94765736 [=>............................] - ETA: 14s
+ 8175616/94765736 [=>............................] - ETA: 12s
+ 9633792/94765736 [==>...........................] - ETA: 10s
+11567104/94765736 [==>...........................] - ETA: 8s 
+12935168/94765736 [===>..........................] - ETA: 8s
+14680064/94765736 [===>..........................] - ETA: 7s
+16211968/94765736 [====>.........................] - ETA: 6s
+17793024/94765736 [====>.........................] - ETA: 6s
+19447808/94765736 [=====>........................] - ETA: 5s
+21102592/94765736 [=====>........................] - ETA: 5s
+22937600/94765736 [======>.......................] - ETA: 5s
+24281088/94765736 [======>.......................] - ETA: 4s
+25985024/94765736 [=======>......................] - ETA: 4s
+27590656/94765736 [=======>......................] - ETA: 4s
+29171712/94765736 [========>.....................] - ETA: 4s
+30826496/94765736 [========>.....................] - ETA: 3s
+32391168/94765736 [=========>....................] - ETA: 3s
+34037760/94765736 [=========>....................] - ETA: 3s
+35643392/94765736 [==========>...................] - ETA: 3s
+37257216/94765736 [==========>...................] - ETA: 3s
+38952960/94765736 [===========>..................] - ETA: 3s
+40525824/94765736 [===========>..................] - ETA: 2s
+42082304/94765736 [============>.................] - ETA: 2s
+43778048/94765736 [============>.................] - ETA: 2s
+45309952/94765736 [=============>................] - ETA: 2s
+46989312/94765736 [=============>................] - ETA: 2s
+48603136/94765736 [==============>...............] - ETA: 2s
+50307072/94765736 [==============>...............] - ETA: 2s
+51863552/94765736 [===============>..............] - ETA: 2s
+53534720/94765736 [===============>..............] - ETA: 1s
+55058432/94765736 [================>.............] - ETA: 1s
+56762368/94765736 [================>.............] - ETA: 1s
+58343424/94765736 [=================>............] - ETA: 1s
+59990016/94765736 [=================>............] - ETA: 1s
+61628416/94765736 [==================>...........] - ETA: 1s
+63217664/94765736 [===================>..........] - ETA: 1s
+64897024/94765736 [===================>..........] - ETA: 1s
+66576384/94765736 [====================>.........] - ETA: 1s
+68173824/94765736 [====================>.........] - ETA: 1s
+69844992/94765736 [=====================>........] - ETA: 1s
+71434240/94765736 [=====================>........] - ETA: 1s
+73089024/94765736 [======================>.......] - ETA: 0s
+74694656/94765736 [======================>.......] - ETA: 0s
+76431360/94765736 [=======================>......] - ETA: 0s
+78012416/94765736 [=======================>......] - ETA: 0s
+79675392/94765736 [========================>.....] - ETA: 0s
+81027072/94765736 [========================>.....] - ETA: 0s
+83099648/94765736 [=========================>....] - ETA: 0s
+84721664/94765736 [=========================>....] - ETA: 0s
+86409216/94765736 [==========================>...] - ETA: 0s
+88047616/94765736 [==========================>...] - ETA: 0s
+89669632/94765736 [===========================>..] - ETA: 0s
+91242496/94765736 [===========================>..] - ETA: 0s
+92512256/94765736 [============================>.] - ETA: 0s
+94519296/94765736 [============================>.] - ETA: 0s
+94765736/94765736 [==============================] - 4s 0us/step
+Traceback (most recent call last):
+  File "C:\Users\kdt66\Desktop\FoldedVision_AI\outputs\cleanup_records\ring_model_comparison_2026-11-27\run_notebook.py", line 64, in <module>
+    exec(compile(cell.source, str(NOTEBOOK) + "#" + cell.id, "exec"), namespace)
+  File "C:\Users\kdt66\Desktop\FoldedVision_AI\notebooks\ring\02_Ring_DeepLearning_Final.ipynb#rbc-prepare-20261127", line 10, in <module>
+  File "C:\Users\kdt66\Desktop\FoldedVision_AI\notebooks\ring\02_Ring_DeepLearning_Final.ipynb#rbc-functions-20261127", line 95, in rbc_encoder
+  File "C:\Users\kdt66\Desktop\FoldedVision_AI\.venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\kdt66\Desktop\FoldedVision_AI\.venv\Lib\site-packages\keras\src\saving\serialization_lib.py", line 395, in _get_class_or_fn_config
+    raise TypeError(
+TypeError: Cannot serialize object Ellipsis of type <class 'ellipsis'>. To be serializable, a class must implement the `get_config()` method.

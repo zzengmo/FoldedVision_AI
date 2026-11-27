@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1795745658237,
+      "tag": "0000_light_squirrel_girl",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1795746165882,
+      "tag": "0001_same_nocturne",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1795746268013,
+      "tag": "0002_complex_red_wolf",
+      "breakpoints": true
+    }
+  ]
+}

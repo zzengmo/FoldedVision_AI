@@ -1,0 +1,1405 @@
+{
+  "files": [
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/actual_training_runs.csv",
+      "bytes": 9080,
+      "sha256": "17e6dd13dd4804260d6828cde3fcced4b6ad419091380d9188be79331a180563"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/comparison_all.csv",
+      "bytes": 3440,
+      "sha256": "26d0c35e33c564cf3c972d0a8553b6f697746ac9f356531bb9ce27bf8d344abd"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/comparison_global_only.csv",
+      "bytes": 2045,
+      "sha256": "a6ddea8449843e1a20d126f06329b1dca781aee2d06a4c1c8bfcb45f95a58b09"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/encoder_preflight.json",
+      "bytes": 571,
+      "sha256": "152a034c370c3cd66eb1aa6cf8c8210688509a8df9aafdb3fa4b65fdd3685f44"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/environment.json",
+      "bytes": 463,
+      "sha256": "865b0bd11d96ea598da691dc9adfd330c370a5ea35e850fee4545dca832b4669"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/figures/01_model_comparison.png",
+      "bytes": 127679,
+      "sha256": "356bca289c054031493b5680e7c4822f2d2c285c2e2a50a1ba2d8eb94b047248"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/figures/01_model_comparison.svg",
+      "bytes": 113608,
+      "sha256": "7faa652905e288179dcf32b313607967dd5f429ad77f643d994257d5741d49e1"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/figures/02_view_and_latency.png",
+      "bytes": 127274,
+      "sha256": "77e928db84e9c0c9fb691ad259afc651cd43588f8ce011ac3bfe713c1d2ce974"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/figures/02_view_and_latency.svg",
+      "bytes": 116526,
+      "sha256": "a51128afca42dab01a6b11753e91f4dbf115d0aaa5dd2b93de408a458489224c"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/figures/03_selected_details.png",
+      "bytes": 199899,
+      "sha256": "c7f9b0b5ead273d69ed11dd909266e8121dc8d85bdaecb9b4177fa35ba3c322e"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/figures/03_selected_details.svg",
+      "bytes": 118033,
+      "sha256": "4ab5f5aa350df6325915334f9f858114640ff74170eb671a0eaf7af9a3e10a3c"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/latency_custom_cnn__global.json",
+      "bytes": 1325,
+      "sha256": "ec6c3581e43a81dc70dd0abcccabdeaa1d88267b86982e3aa4521756476323c2"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/latency_efficientnetb0__global.json",
+      "bytes": 1339,
+      "sha256": "4e2b732d2b6b6379435258d388661a1059fc8242252b7efe2321b6dd3225307c"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/latency_efficientnetb0__global_tiles.json",
+      "bytes": 1340,
+      "sha256": "deb8a79201371d62a959a89b2388c808a2413f580ecf36e8e9eb7bd08f38d117"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/latency_mobilenetv2_a05__global.json",
+      "bytes": 1347,
+      "sha256": "9f868a824777e5265e9a99b8a6f43e2f550b8755187a00739f8144c4c5f55c8b"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/latency_mobilenetv2_a05__global_tiles.json",
+      "bytes": 1343,
+      "sha256": "41e95d63f74b78cd80869b0b7dc7508dea4e947d9462fc34a5ba433f4fc06f98"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/latency_mobilenetv2_a10__global.json",
+      "bytes": 1346,
+      "sha256": "971e8fff42e2078546b7ae1d4d10aa0bcfec3af7cfc9a0d38ebe392c3f781dd9"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/latency_mobilenetv2_a10__global_tiles.json",
+      "bytes": 1342,
+      "sha256": "bfab13a7a33e3772a034dd0bb31b38a8c511d3e3a665cfc1207d570cedced413"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/latency_resnet50__global.json",
+      "bytes": 1331,
+      "sha256": "eababe4282ee518c14c5ca2b0ac9d3c863b2cb5196f369265c3ca3923021ad90"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/latency_resnet50__global_tiles.json",
+      "bytes": 1361,
+      "sha256": "ce3e448c9bd874c59eac2db6050f40e2d48e882cb962258743e4e92f749b0755"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/custom_cnn_global_seed123_test.csv",
+      "bytes": 9185,
+      "sha256": "9f9932df2a0d23edc20ca91fab7d661dc9678f98be04b77c8a5a0b28e6e17f9d"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/custom_cnn_global_seed123_validation.csv",
+      "bytes": 2879,
+      "sha256": "a2eff6665f34167d507766e98e51c1e932fd4d32c6ea7ef377aade83d52d3dc8"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/custom_cnn_global_seed2026_test.csv",
+      "bytes": 9196,
+      "sha256": "cfcd775b00ff998e29d821e33bd4689fa996d2226f7d9b1ec6f47b157e04595e"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/custom_cnn_global_seed2026_validation.csv",
+      "bytes": 2875,
+      "sha256": "a1c64e58207684dc285b95e38f989398f2ec1eb02e1031be6688e1bf1409dfb0"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/custom_cnn_global_seed42_test.csv",
+      "bytes": 9183,
+      "sha256": "4f9ed94d0f97bfa93a83752ada6cf0f1432ad3ec6bf4f001c083648e7bcf6522"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/custom_cnn_global_seed42_validation.csv",
+      "bytes": 2881,
+      "sha256": "c34edea8c4a8be72d9b9c5c25463176caada07889d05f35d6c5668b4f2fb3807"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/efficientnetb0_global_seed123_test.csv",
+      "bytes": 9298,
+      "sha256": "fd1e1ed8978e4160258e2232eb2710fd784e5830780f4584849f5f416e141079"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/efficientnetb0_global_seed123_validation.csv",
+      "bytes": 2911,
+      "sha256": "92e868b1b10d01980553d2f8fa25f9f3795a9b0377b96e4913be99ba08a54c76"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/efficientnetb0_global_seed2026_test.csv",
+      "bytes": 9403,
+      "sha256": "365df64bf13724f11c147f2fbab7aa8fc895acd7574ea68e71d5f644733e891b"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/efficientnetb0_global_seed2026_validation.csv",
+      "bytes": 2954,
+      "sha256": "0f0f9dcc0e1b6ba91c239462755017c8a4353717b5d8f9706787598f167f8aa2"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/efficientnetb0_global_seed42_test.csv",
+      "bytes": 9351,
+      "sha256": "bb2eb3281c82cd886f35dbd39414281a60e7afe3fff0b1adfc5c42b27e164d2b"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/efficientnetb0_global_seed42_validation.csv",
+      "bytes": 2926,
+      "sha256": "f49a6dac23817765a1cc28ada99cdbc78605c6e3b98f4ed403e382f976de2786"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/efficientnetb0_global_tiles_seed123_test.csv",
+      "bytes": 9580,
+      "sha256": "58e8a3c729ffec93504791ba7827011779977ff30c3e978ebefc30882ca0f69c"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/efficientnetb0_global_tiles_seed123_validation.csv",
+      "bytes": 2997,
+      "sha256": "ab1f25c610cbbc8aabbace136c6fb34eb9629fe05a8ff4f8019fe691a2186815"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/efficientnetb0_global_tiles_seed2026_test.csv",
+      "bytes": 9652,
+      "sha256": "be3acabb25cdf8529f72f955aeb7b428f473d9fdca08949788c794a0c1a32963"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/efficientnetb0_global_tiles_seed2026_validation.csv",
+      "bytes": 3000,
+      "sha256": "19bd7df47825f7df0062d89f273225f427656388c0a504507dfa7a437e6250c2"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/efficientnetb0_global_tiles_seed42_test.csv",
+      "bytes": 9642,
+      "sha256": "2339b6fcd243c0a9094068a276b8ca25b8ea971efb0c329ea21d2c1a0220fb3e"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/efficientnetb0_global_tiles_seed42_validation.csv",
+      "bytes": 3006,
+      "sha256": "0ddf979fe9e9d69ef140aae02af267f5d8f2b855fcf683afac981075a7e7ebd3"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_seed123_test.csv",
+      "bytes": 9459,
+      "sha256": "9a4fba24eb574f0d4d6acbf7e9f22f01945b9f6528222ef3b65df1670c40f292"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_seed123_validation.csv",
+      "bytes": 2960,
+      "sha256": "30203e557942b11c6b2a7f0f597a699cea5bab2c251d68b5f87fb8dac5f71489"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_seed2026_test.csv",
+      "bytes": 9450,
+      "sha256": "77d84780fbe1a0e84a8b6bf81c69bd687a687f088610816ae2f6f04b5ea735c9"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_seed2026_validation.csv",
+      "bytes": 2951,
+      "sha256": "d08aaa146ab82938a0c8183bb0d2bd728a6b4aef56aa2d445967fa146a634181"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_seed42_test.csv",
+      "bytes": 9361,
+      "sha256": "ff8f8ae874cf3dd33905de5558c5fdbb213c0386fd9e40266a135d7b5404f7d8"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_seed42_validation.csv",
+      "bytes": 2913,
+      "sha256": "4f274704cc1b509277e443f3571ba94b0bdc08653ef8e860d6943921667bd472"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_tiles_seed123_test.csv",
+      "bytes": 9709,
+      "sha256": "21b8eaf7b39c6ca3c2f253a1d10cd35fa6e690e8054f40749d1d7e62b1aec7fe"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_tiles_seed123_validation.csv",
+      "bytes": 3031,
+      "sha256": "79660168d963f89e459ae95eca5ec17bd05b6c78abaf791e2aaa26b434062521"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_tiles_seed2026_test.csv",
+      "bytes": 9740,
+      "sha256": "48b98079ad75a899ba8d239e16742aa3f7aeff94b7acc9038f9dacb695cac870"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_tiles_seed2026_validation.csv",
+      "bytes": 3038,
+      "sha256": "363608bc8d4fea50fbc1a0c3154d2d5f3793125906bf2683db7f6eeb3e312367"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_tiles_seed42_test.csv",
+      "bytes": 9679,
+      "sha256": "58a714068c4acd26c50a87fc82a20a07a667288b1b33cc1ecee8c4d8658f9353"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a05_global_tiles_seed42_validation.csv",
+      "bytes": 3012,
+      "sha256": "610ca4db2af4ba97b7f2b143049862b45b66efe063a7622bc3de586f3e87b325"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a10_global_seed123_test.csv",
+      "bytes": 9461,
+      "sha256": "f1a2169fbde484baf4d39959841d1dbf83fc2f9edc2cf2ba3e9da534c1183aa1"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a10_global_seed123_validation.csv",
+      "bytes": 2962,
+      "sha256": "3f793c62a9c3209e2b358e197bc29955119ea71cb09259173e000a08e3fc73cd"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a10_global_seed2026_test.csv",
+      "bytes": 9545,
+      "sha256": "8d160d07de9f278059255abcf4f345f87eab7e2890d96f132736fdd67f1ecc4c"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a10_global_seed2026_validation.csv",
+      "bytes": 2962,
+      "sha256": "ec266f61c81133df9a5af7deb21be92824a788d20135066c9c2c3f8e07300f15"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a10_global_seed42_test.csv",
+      "bytes": 9440,
+      "sha256": "ea937bafe9cdbca87a22fbf9c51ee364d96b3695096ecdea14f2ffd1fbf4b59e"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a10_global_seed42_validation.csv",
+      "bytes": 2943,
+      "sha256": "26612927c47efb4935d21246524d2783d9495c7e42d3dbe981438ab372631516"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a10_global_tiles_seed123_test.csv",
+      "bytes": 9668,
+      "sha256": "04de9154d9ab47aea09a15a8f0e52ea0aeb42c501182757f6a8c8bf5fbc69c5d"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a10_global_tiles_seed123_validation.csv",
+      "bytes": 3026,
+      "sha256": "2c3c6dcfab2a3e0346dfb1d11de1ef831560c70a3173ac4f207cf1527b1da82e"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a10_global_tiles_seed2026_test.csv",
+      "bytes": 9770,
+      "sha256": "1eaedae0bca7fb96d28811509db3551ca5863e7b37a15377bff32fec957a73ad"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a10_global_tiles_seed2026_validation.csv",
+      "bytes": 3055,
+      "sha256": "aafda1b0420a3548e1ae12e7db3692c23e31071819fa792e92d27865a5e9fdeb"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a10_global_tiles_seed42_test.csv",
+      "bytes": 9582,
+      "sha256": "c07c03d73891eb8af0d74040b6539da7e17c4aa5e83a04121be1162e11c2f873"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/mobilenetv2_a10_global_tiles_seed42_validation.csv",
+      "bytes": 2975,
+      "sha256": "d1fd053ea344cf8f26a4a0d2a052bfd609c42b11ef9b27470f56465af712ab3d"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/resnet50_global_seed123_test.csv",
+      "bytes": 9133,
+      "sha256": "b48ba9f73111c664afb3740ba10844193440e440b9c456647a2946d15d572e0b"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/resnet50_global_seed123_validation.csv",
+      "bytes": 2866,
+      "sha256": "fd1cabc5142b00d78aa86094eb57f5c3e7f8b466fda85c115c94224d46d8f3fe"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/resnet50_global_seed2026_test.csv",
+      "bytes": 9284,
+      "sha256": "2e984216eacdb80704a180a1094c5ea2234c883078ac5264d6d926202ffc45c8"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/resnet50_global_seed2026_validation.csv",
+      "bytes": 2907,
+      "sha256": "86171af6f1c081655a3d913668b3ee6de51b466136bfb018c0a004d050c51dd0"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/resnet50_global_seed42_test.csv",
+      "bytes": 9077,
+      "sha256": "4c7b53e76c66791396c385a7566a552442064e508e7a40a70271b3ab27ad580e"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/resnet50_global_seed42_validation.csv",
+      "bytes": 2845,
+      "sha256": "360dc2fe3f0e5c600ea296f071e2b075c040224389907e31846cc55d08fdebab"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/resnet50_global_tiles_seed123_test.csv",
+      "bytes": 9463,
+      "sha256": "bbc5f4a5b8c05d7efc94349e8decef2e53eecae7c165932692e966f2d71a4953"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/resnet50_global_tiles_seed123_validation.csv",
+      "bytes": 2963,
+      "sha256": "e0fbc81c6026db648703db058d8c647f9cd8d092df3fdf999104c70b923317ff"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/resnet50_global_tiles_seed2026_test.csv",
+      "bytes": 9491,
+      "sha256": "273010a1df02ab30bd8f59f4272a33fd58f6198f61edb2137153d2806b99b63f"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/resnet50_global_tiles_seed2026_validation.csv",
+      "bytes": 2972,
+      "sha256": "1ea1f7f8cf29b27055da3f698866023d3301ac454cecec6c1c9a1f51db39bc5b"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/resnet50_global_tiles_seed42_test.csv",
+      "bytes": 9395,
+      "sha256": "2b6ee512a5c092d4286d6c173728c427741520e013f4ec7d3ce91ce109b85ded"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/predictions/resnet50_global_tiles_seed42_validation.csv",
+      "bytes": 2938,
+      "sha256": "eb2ea6747d99474c6c5319f56229607cfadcf651208b3c035533307b8945728b"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/presentation_comparison.csv",
+      "bytes": 957,
+      "sha256": "77ac038506198858eaa1e001fa1021b13e71eadf67c128ea3a177023f387462e"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/progress.json",
+      "bytes": 324,
+      "sha256": "be28cf2eee253a1611ed14c62af0dde142d7ccde272fdc4edd71cec047dcc568"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/protocol.json",
+      "bytes": 5956,
+      "sha256": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/REPORT.html",
+      "bytes": 11267,
+      "sha256": "bfc6ea714da539f8eae0b7112b4634b6973d0b42f83787539ee14ef86b5fc303"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/REPORT.md",
+      "bytes": 6404,
+      "sha256": "b0f64ebe9578beba7059a1aa3c35143437711b797a9def180eb73a0af4f4ca3f"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/results.json",
+      "bytes": 19669,
+      "sha256": "0f4d484d254e272edf89e6d8b2e5b49051e20bfcd27e1d90005ac0364f6245d1"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/Ring_모델비교_실험결과.pdf",
+      "bytes": 74960,
+      "sha256": "ea4dd28fb0057b1cccca45a63c2660129a909690af717bc515ea8b3e05cbfdca"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/custom_cnn_global_seed123.json",
+      "bytes": 2574,
+      "sha256": "47c04da5b03b373926f8d33635e5b977cc945866bed4bd2246bf2f31aba76920"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/custom_cnn_global_seed123_history.csv",
+      "bytes": 1526,
+      "sha256": "6c7a6c574f0404cfd223a2d39ca91b231333353f491fb2ac6a2fe3379f30cb64"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/custom_cnn_global_seed123_history.json",
+      "bytes": 2643,
+      "sha256": "8ede7fcb1aebf3003232349d35954484059f7cd3b5ec63e269dd490527a213b5"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/custom_cnn_global_seed123_test.json",
+      "bytes": 2079,
+      "sha256": "9c18af90fae6d5080c524c7403f1e42415871e6c866cc4d3c1cc5d7538533567"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/custom_cnn_global_seed2026.json",
+      "bytes": 2498,
+      "sha256": "f5262c95dca62826133117f87126da6561bfba56f9c0ca5155b93f385e9215f3"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/custom_cnn_global_seed2026_history.csv",
+      "bytes": 2206,
+      "sha256": "bee023837f6e8e7cd2efc045af6beb1c362a0984ffe01d3c9e8d0fa0879a2517"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/custom_cnn_global_seed2026_history.json",
+      "bytes": 3606,
+      "sha256": "ff5b787be75ab69ed806691f5a136b58fd14509d7dc28e22d2f413d46dd1a648"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/custom_cnn_global_seed2026_test.json",
+      "bytes": 2032,
+      "sha256": "c0b688ce27b62c0470f792d4a366b0027255ff7feb0ff6f5d52bdaa689a6eb98"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/custom_cnn_global_seed42.json",
+      "bytes": 2498,
+      "sha256": "5980601330baec6daa8da4725ac680382d4bda37df9a7e4439d3814471a54e7f"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/custom_cnn_global_seed42_history.csv",
+      "bytes": 1588,
+      "sha256": "1fdefde191f6c44c0523e22d8b35afdc7e97adb84c1ea727a3d0df6648f68db7"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/custom_cnn_global_seed42_history.json",
+      "bytes": 2760,
+      "sha256": "1468d0407047493a8d7a67ad3ca3d69f1eb6827b24df584ffb1ec0fc75b9ab3e"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/custom_cnn_global_seed42_test.json",
+      "bytes": 2026,
+      "sha256": "8886ae2a900b37d049df4384c3400ae0e302d44af2c894f466c4d3eb1aa93353"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_seed123.json",
+      "bytes": 2581,
+      "sha256": "d34ccae2e36271e4b573ca6cfe12074c5503ec90c17882497736021d496beb1a"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_seed123_history.csv",
+      "bytes": 672,
+      "sha256": "f0625c5cb1b64d1afda4c974780c34a09b69a3ff70a536cdc7abfdde0fccc0e1"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_seed123_history.json",
+      "bytes": 1519,
+      "sha256": "e2fe8028e1fea66f25c9817d4d3449d0a554aca5d9117b37f3a54ba8804c70db"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_seed123_test.json",
+      "bytes": 2125,
+      "sha256": "08282698815769b270d1a8b3423a28e4131ca397894cd600b55988222825bf61"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_seed2026.json",
+      "bytes": 2648,
+      "sha256": "c5c59087435059202c230fa4cec93be551429d89cfe5f992d654ebe8ca784dbd"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_seed2026_history.csv",
+      "bytes": 721,
+      "sha256": "1061f2af85104b8e24f04d84c13315e957c4f4e8796ce9ae97d32b0f08b95ada"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_seed2026_history.json",
+      "bytes": 1628,
+      "sha256": "e5bcb64b076d30e18af3d3ffdc21d91687403a91dd382f5d7356c5d8e7454788"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_seed2026_test.json",
+      "bytes": 2144,
+      "sha256": "a36fce6a7056b828e605d9518919f737089cf469d89be7bf318d6588d13406e3"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_seed42.json",
+      "bytes": 2621,
+      "sha256": "dedf9cb32e51d5ad3a2ff029ee7d031144194e71e3a4e46e6ae53a6317de436d"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_seed42_history.csv",
+      "bytes": 963,
+      "sha256": "03963ae646b3d93a6a7d18055aba22c71a4200838fe5ff567709b57c93c964aa"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_seed42_history.json",
+      "bytes": 1951,
+      "sha256": "648c3a95a8f70e064e33d59c7e88cfa96ea5aae2ff2c9f04be0b7d14ce48000a"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_seed42_test.json",
+      "bytes": 2108,
+      "sha256": "0657e6fbead4ae14b01df2575ec14e1871e6d9efc248b84cb9b0f8bf5c1bcccc"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_tiles_seed123.json",
+      "bytes": 2676,
+      "sha256": "79eae56e8a267b9fd2b68c130ed6fa29cdfd65af4ddc2e8240de7a36f988cab1"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_tiles_seed123_history.csv",
+      "bytes": 625,
+      "sha256": "dbf526cc0ea1e923a0a4446100e281c1dd0d65696d1995998cc3968460dea566"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_tiles_seed123_history.json",
+      "bytes": 1484,
+      "sha256": "ee21c7c0791a62e779a43826544cd66727422a1261f488c97797364feb017377"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_tiles_seed123_test.json",
+      "bytes": 2135,
+      "sha256": "70bba25decdd5da1d2ec31a009448643ce37c96cb466859e6f0f1e4542873213"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_tiles_seed2026.json",
+      "bytes": 2582,
+      "sha256": "20e9930beea9ad60766440b47e3b44dcc2deaff4d76c1a40687b60c43da2dc5a"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_tiles_seed2026_history.csv",
+      "bytes": 629,
+      "sha256": "d864e35ea413fdc50285014645270cf52ffeeb6a1daa57974676c098c45743fe"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_tiles_seed2026_history.json",
+      "bytes": 1518,
+      "sha256": "a1c55af26a6a7be24bc79461ae0c39ed5edf618a5b6b3c0d60e2b684913818e4"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_tiles_seed2026_test.json",
+      "bytes": 2169,
+      "sha256": "2d73da6b49c4202b658b23adea2d57d52f609cdc64f77dfe0a90d055894340aa"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_tiles_seed42.json",
+      "bytes": 2641,
+      "sha256": "567eb3de5adf9e49f71b59d974195e6df89c061d6083a09e3f87dd272fb0eeb5"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_tiles_seed42_history.csv",
+      "bytes": 1113,
+      "sha256": "3e8ccca9c403ad5e100434d8d3b8cbb03e64e8ad8b80bb043a351f3b0df49e96"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_tiles_seed42_history.json",
+      "bytes": 2197,
+      "sha256": "c01b960da0f0c84e54ae22a51f3ab68aa027ee4f03263121699fa9afb47f490c"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/efficientnetb0_global_tiles_seed42_test.json",
+      "bytes": 2131,
+      "sha256": "2c95be9cbe2e602175634b872d9e1c1500b17b0359c50d26240ef88672a9a3a3"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_seed123.json",
+      "bytes": 2660,
+      "sha256": "4977cbb45d7844ca8c6f0468c3e7d689cd95c86f2f5409b0befb1a7cf314b9ce"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_seed123_history.csv",
+      "bytes": 1626,
+      "sha256": "9de9d99ea0b089965237558f12cd55fee6062138ad5954c93a483a3ec47023e9"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_seed123_history.json",
+      "bytes": 2843,
+      "sha256": "2938cf2266dec4e1183c16a45104c5ff9e5548f1e9caeb717e1fe4a2368a41b5"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_seed123_test.json",
+      "bytes": 2128,
+      "sha256": "d185b4367f4c348ab635ce52be3df7c4f891e26f9202800aaba4f72055e6d04d"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_seed2026.json",
+      "bytes": 2606,
+      "sha256": "5a1d45547163a0f7178dc07a84b0248a6dbc039a2ddf17e604922cc8ab7e3be1"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_seed2026_history.csv",
+      "bytes": 1080,
+      "sha256": "6b81506294cffedc9f93c273c95a5bb2c2063d7e09994f0e6a067831881a19c2"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_seed2026_history.json",
+      "bytes": 2102,
+      "sha256": "fca53c41124b2ab821c09f828dba0058e34c4a43af500b696c4c27008d1d7ab3"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_seed2026_test.json",
+      "bytes": 2088,
+      "sha256": "8f0cf3f0f05dd7d2e8f453c137aa29ddafbeb6a86b7ed5c8574b354f4e175979"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_seed42.json",
+      "bytes": 2655,
+      "sha256": "7d3c5552ed540e72c442c8556f474ee9a856ec301d024242471b3a7dc1008862"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_seed42_history.csv",
+      "bytes": 843,
+      "sha256": "383241a0f9298d0d982302f77830893c8718aa04650250c3cb1d5cdd1a162dfa"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_seed42_history.json",
+      "bytes": 1749,
+      "sha256": "8aa9ab3330038976219e86a09420c64868f10c768f9ef862b6fc65af215d7013"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_seed42_test.json",
+      "bytes": 2093,
+      "sha256": "80ac05e32b9297688c8e5fa8ac27dede3ccd72b5ec776b73e9e0f380c0ef06ff"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_tiles_seed123.json",
+      "bytes": 2694,
+      "sha256": "211ff78bc9b845c39c82a78c9c8423dee366eedf0f56d58935804efacadf9442"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_tiles_seed123_history.csv",
+      "bytes": 747,
+      "sha256": "a91233d54ecccdd38ca908a232bc6b905b98123318e5164a31bf50326967784e"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_tiles_seed123_history.json",
+      "bytes": 1637,
+      "sha256": "3f53f814512da382629abcbe8df1ab4b61d6a613a4e1dd3320af4331ca501d48"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_tiles_seed123_test.json",
+      "bytes": 2168,
+      "sha256": "af830bd7280eaadd60fa3c44d4aac11d9232a9cceff86a3a636ec417a06803e7"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_tiles_seed2026.json",
+      "bytes": 2630,
+      "sha256": "449dc6376a5ec31772ccdf85f47fa55091708b6786749504dc8399baf6ff9071"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_tiles_seed2026_history.csv",
+      "bytes": 1372,
+      "sha256": "ede81d1957283a09872d01ae95a27cbfbb714f50b78692fdd92c4df4adad3c67"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_tiles_seed2026_history.json",
+      "bytes": 2546,
+      "sha256": "29b96879bc9af5fddc7cceb8116fe2e1fd0574f08ef5b6f8ff76d811931d7de2"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_tiles_seed2026_test.json",
+      "bytes": 2145,
+      "sha256": "b837d06cf32f54f7e83ca76fdefd42bcd79b0f713958008f19929c629ee9c510"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_tiles_seed42.json",
+      "bytes": 2659,
+      "sha256": "20548d18346180f2d34050a129f7a2da2cb8cdff46b1ce01d81f951c4fccf027"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_tiles_seed42_history.csv",
+      "bytes": 1057,
+      "sha256": "9aace8b7fea77eb934ad52e5f8e7c886de4fb10bab060c78bba5ee710596cf53"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_tiles_seed42_history.json",
+      "bytes": 2059,
+      "sha256": "e0b0e4e57d56961538960d2763044a7ce2fedf88aacafde5b1c6abddad828c94"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a05_global_tiles_seed42_test.json",
+      "bytes": 2148,
+      "sha256": "f0c897a917e4adc0b583ab01221e7ebfa245747d55f208c149ce4e2391d9c639"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_seed123.json",
+      "bytes": 2603,
+      "sha256": "0d911aead41d0938434dc423f1ba3a8b5744beb4365ba211f58bccccbc6bfc88"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_seed123_history.csv",
+      "bytes": 1709,
+      "sha256": "1633007e2ff8aac3371aa15ba063d5f6bf8652eaee3f29cc7712606f5ee48e5a"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_seed123_history.json",
+      "bytes": 3010,
+      "sha256": "6442de9633c9fbcfb7323a1907b2cacc8f5fd1fc4443cb4fc474579ccfccb0b8"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_seed123_test.json",
+      "bytes": 2114,
+      "sha256": "8735a5081ab211effd204d8aecf42ebcd270ca8d6bdf9b748935d4cacfbdc20f"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_seed2026.json",
+      "bytes": 2680,
+      "sha256": "91dd0f609ea4a9986958b6df37600511272ee3124f24e1491ed08b04f8131eb8"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_seed2026_history.csv",
+      "bytes": 2009,
+      "sha256": "4a44e9a50496e5e90b3f55d2d0f5b6399d86458cebaf1d008c74bbacfe13cfab"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_seed2026_history.json",
+      "bytes": 3367,
+      "sha256": "4c3e11f403d00da236f747c9f5cb95b4896ef4adb436cc7023a7668340ba7404"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_seed2026_test.json",
+      "bytes": 2088,
+      "sha256": "717b6bc009da1cd8e7ebe4b9f9212f85307aed0b492384149672c0d9a98bd39c"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_seed42.json",
+      "bytes": 2624,
+      "sha256": "83ad4bc82483d892acd0784e9e09946c68321f7818461f81fdf08cb72ea5d956"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_seed42_history.csv",
+      "bytes": 1817,
+      "sha256": "3ffb176486218f54422faf395f5e8db2e5569c51be48cf12a17340f7a85a4470"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_seed42_history.json",
+      "bytes": 3117,
+      "sha256": "81da1c7efa0959add680843c9b938c2ce994f28e4a842e66aa0c70418e31b8f3"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_seed42_test.json",
+      "bytes": 2110,
+      "sha256": "443480717b138bbeec5cfd7216b0bf4a06d3267ae925e22364e564ba1bc9ac1c"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_tiles_seed123.json",
+      "bytes": 2684,
+      "sha256": "92c8a62dc4fb51f5b357127f12c25fbb2cb564420c68032c285f1cf013960d92"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_tiles_seed123_history.csv",
+      "bytes": 850,
+      "sha256": "c1d46a98e53864cc2f52177582d9e1e088846fd50438a3d91b0b2fd71ebca108"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_tiles_seed123_history.json",
+      "bytes": 1797,
+      "sha256": "f5449f074bc8a45648f7c4126807dbb67ac9ead05a9fedd94ea4d66695ff916d"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_tiles_seed123_test.json",
+      "bytes": 2139,
+      "sha256": "77829863ff0c3fd07a45892bc13ae501f7252dfab16d8e5c153419c64d6eec6c"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_tiles_seed2026.json",
+      "bytes": 2662,
+      "sha256": "56a42f7d53a86f411047e2da01565116769f432045e19c7f0c653831291c0a68"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_tiles_seed2026_history.csv",
+      "bytes": 1073,
+      "sha256": "f0038f5aeee1716f196fad72cc45ff9974e9c350a763c5fc3f0eff6e3559f817"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_tiles_seed2026_history.json",
+      "bytes": 2107,
+      "sha256": "b8d9caebb9355ac280ff500ea2c054883b5abe7c225a859b7b1ed278a3ed1faa"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_tiles_seed2026_test.json",
+      "bytes": 2143,
+      "sha256": "857b4b07b2657b70395569684c5e1be28652df403dfe9a586325682ded89747d"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_tiles_seed42.json",
+      "bytes": 2676,
+      "sha256": "3614f8528c6eff969d21ffefd19a0711e5cdda05bc2eaf60bbd3a1d752071e31"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_tiles_seed42_history.csv",
+      "bytes": 894,
+      "sha256": "0f8d5c0b61e6b37a361809ad567dfc43316855a1b19777ea02e2c99f0190ed24"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_tiles_seed42_history.json",
+      "bytes": 1840,
+      "sha256": "bc86b58c680dc746c7da87ae2dad6dc55a4a7237c115df2f59f3288fa612ea3c"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/mobilenetv2_a10_global_tiles_seed42_test.json",
+      "bytes": 2138,
+      "sha256": "27e7f88bd9fc621bfa8c27abf7d200a5a122c47860b357ef015e7678ceb487f9"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_seed123.json",
+      "bytes": 2617,
+      "sha256": "59498dd2ab4c95364343a572d01d0c2607dbb156c71cb155c59dd1e9032b4787"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_seed123_history.csv",
+      "bytes": 747,
+      "sha256": "8dfcda915d5d77802d8194203658844f690e4e7a0b4bdf07e70e5200eaf58d7f"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_seed123_history.json",
+      "bytes": 1609,
+      "sha256": "0dd03227d1483878c472ab2b48e04de0fa22e7aa6dc45439c8b38fc0f8210250"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_seed123_test.json",
+      "bytes": 2088,
+      "sha256": "a6e9fda51e46a944a6e95f40eb5d8785401579b9efa13bdf2305f61294d405e2"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_seed2026.json",
+      "bytes": 2627,
+      "sha256": "c07bdb314ba6d1028284440f59b39b743d729bf67c851ff9f583896c2c04a558"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_seed2026_history.csv",
+      "bytes": 1713,
+      "sha256": "cc6ca98f081abe6a8ec8bff5e37f3d2d0500d6d4530ac92f419660db38d8450e"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_seed2026_history.json",
+      "bytes": 2975,
+      "sha256": "aa54f438d481b8859159bc6be74d8ccdc411dc9c9be4c662cc789c2346b079f2"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_seed2026_test.json",
+      "bytes": 2060,
+      "sha256": "4cd01393702946817b566df777601df798db699671b365ee9f798de9de5e3309"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_seed42.json",
+      "bytes": 2572,
+      "sha256": "ab8b1006b793e2b43f2a4cf76770d22f109eb64304e265b547a1fc2d9e55f112"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_seed42_history.csv",
+      "bytes": 815,
+      "sha256": "ca5c24b0e98f3e285caca24b57e0cef237f4e4546e7a7cdef60ab56ae8cc5f68"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_seed42_history.json",
+      "bytes": 1706,
+      "sha256": "b96076ad0d74c12f1a371c040e97637978afaae9fd348738004a85c281bc5c4f"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_seed42_test.json",
+      "bytes": 2096,
+      "sha256": "335227e636428f6cb30fff8748590e25af4e10572f3e177572f9aa6cdcd253ea"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_tiles_seed123.json",
+      "bytes": 2599,
+      "sha256": "220904cf8717eea1f5fbcdcfb497b218eb5bfa6dea96334491bed9cea2698e65"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_tiles_seed123_history.csv",
+      "bytes": 1170,
+      "sha256": "62441f46d4f5d1147b4bf6515f8eda025e44f8b78b2129466dcec416ec27db62"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_tiles_seed123_history.json",
+      "bytes": 2216,
+      "sha256": "4254d60425afa23141141d0cd53863dad5b816ec7ab1fc1592449ce2a96b66af"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_tiles_seed123_test.json",
+      "bytes": 2095,
+      "sha256": "ada080d34b35aa66516848b417dff53aefe5c7c065d7fc04ac0f4807cbb9b02e"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_tiles_seed2026.json",
+      "bytes": 2663,
+      "sha256": "16facd4e90a7bda5273b2d20d0a0388e3f5b665c9561385c2a5de8a1cca76019"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_tiles_seed2026_history.csv",
+      "bytes": 1133,
+      "sha256": "633f803325a8147abb70274c9172917dc2f2ee994336e0133be04e6a0bedbaf8"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_tiles_seed2026_history.json",
+      "bytes": 2153,
+      "sha256": "68e4ca0aa2d3be17a84c1fb1ac6ebf3242d745114407d52bc1a9312aa9cc57f4"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_tiles_seed2026_test.json",
+      "bytes": 2114,
+      "sha256": "83fa57107ab21ddba7dcf24e564d290f84550948e0cd88746225a2b938c11120"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_tiles_seed42.json",
+      "bytes": 2633,
+      "sha256": "67202091325ff520bf2f5ac75aec8207ad40c774b106325e4508b9176ae87d59"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_tiles_seed42_history.csv",
+      "bytes": 1293,
+      "sha256": "704ac9d73293f8467f6ae70601b4d79a96d51975a2f137cbd30aafa7e913a124"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_tiles_seed42_history.json",
+      "bytes": 2364,
+      "sha256": "fcbc1152c0c74a9ac38d2b6ef821af6e003e50e1580a46dc617bbb409132c0ac"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/runs/resnet50_global_tiles_seed42_test.json",
+      "bytes": 2121,
+      "sha256": "80a038a8226631dac07ed966bb959891ea2dae01a3e9cb83194183d834953d29"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/selected_model_config.json",
+      "bytes": 1915,
+      "sha256": "cb8243bdcfa40149e37cf18f86f40058a265e20d63adda45b662271c4322024d"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/selection_lock.json",
+      "bytes": 24911,
+      "sha256": "b5f8762af569c34cdc3b23fb439ab7647ec58aae3193d4b970c5db12a4d23691"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/split_manifest.csv",
+      "bytes": 12901,
+      "sha256": "efdc674f5e4a73000f5023ff4e7956d16262f58a5e064d9c6ede06efe58942eb"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/training_events.jsonl",
+      "bytes": 8892,
+      "sha256": "c83723cf96af9fd775130e03b66503e72ab40d8b414934723d50fece623256d6"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/validation_comparison.csv",
+      "bytes": 1635,
+      "sha256": "fb3293bf139377868959d790244e54a984ea79d57d732488e47e9238d41464a7"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/verification.json",
+      "bytes": 1085,
+      "sha256": "2b38b59494c33a25794a74bbcc2a3f9b9aa2f98f0706095d41c10982b4a8caf3"
+    },
+    {
+      "path": "outputs/ring_model_comparison/2026-11-27/모델선정_설명과질문답변.txt",
+      "bytes": 4886,
+      "sha256": "cb2f0f84ef44869a1b77092b42fb3a54507b9432b452d021b59b319a8822ea23"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/custom_cnn_global_seed123.keras",
+      "bytes": 1255687,
+      "sha256": "14f74eb2c3681caf0a123957655c5515fba7b9415d675f24d4485afc6282c4ce"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/custom_cnn_global_seed2026.keras",
+      "bytes": 1255687,
+      "sha256": "30f453c64bbe7da80f8a3098084a0d9671d2a986f5a02ddde7847849183f79d5"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/custom_cnn_global_seed42.keras",
+      "bytes": 1255687,
+      "sha256": "b053d9b1bb8c5322321c7557b7a704c82ebff4667ca0894ef8b97f7747831db3"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/efficientnetb0_encoder.json",
+      "bytes": 899,
+      "sha256": "9580dabd5a39b048e01c5de801f533351c4eebb16a574101a498868767fbcc81"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/efficientnetb0_encoder.keras",
+      "bytes": 16940171,
+      "sha256": "3b22732e848ee76ffc36bfb8b2331c4a7a17d383fb2accfb08024f0ee41163f5"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/efficientnetb0_global_seed123.keras",
+      "bytes": 799566,
+      "sha256": "2657e261f9e124b9a31ccf1e1003ad3401ccce2ca503feb49a60ade5a6e5d3cd"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/efficientnetb0_global_seed2026.keras",
+      "bytes": 799566,
+      "sha256": "603f11972eecb01dcbaf8d0ac34b14c3bfad4ea4c52c4ed0442a73dbaa5eb90b"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/efficientnetb0_global_seed42.keras",
+      "bytes": 799566,
+      "sha256": "6927665a4d924169e4c4a4a085ca48bc064c4ba5553c7f5172070dec1275e461"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/efficientnetb0_global_tiles_seed123.keras",
+      "bytes": 2335566,
+      "sha256": "7f43120e8f90390031ef2db0de6c007f74a9da6da0fefb9ff03907fe5a76be0f"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/efficientnetb0_global_tiles_seed2026.keras",
+      "bytes": 2335566,
+      "sha256": "228171bb5cb46a8eeabaae4cd7dafc1c0b2bc3319702e22a5e7210dac471250a"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/efficientnetb0_global_tiles_seed42.keras",
+      "bytes": 2335566,
+      "sha256": "a3611a4e8ed7fb43541155bc5bf3eb3a60220f92221b34066734ce0a79f6477b"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a05_encoder.json",
+      "bytes": 966,
+      "sha256": "5b9937fbf1510c56d403eb389a6dbaeb0460032566fd972a256c5641f2c34eae"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a05_encoder.keras",
+      "bytes": 3348995,
+      "sha256": "a18ccfe247ef458990026ef9a613a3858d21f56f98e21337b48b7cd56720e663"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a05_global_seed123.keras",
+      "bytes": 799566,
+      "sha256": "bbf83b58c3d72b91b68bd07ba49903016415442c984d77e6f4591476154efffb"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a05_global_seed2026.keras",
+      "bytes": 799566,
+      "sha256": "421ec8453ecdb0766d096ed4f15e9e1ace22dabd2796cffd46d3de67ad4344bd"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a05_global_seed42.keras",
+      "bytes": 799566,
+      "sha256": "9c54b3c32fd8758483606f38b53b273efc787fbeeed32d9f78236caf64b04d2f"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a05_global_tiles_seed123.keras",
+      "bytes": 2335566,
+      "sha256": "455459e20e41947ecfc02c0f3551b1971ae4ca6463a3c6733880aeaeeee0ca88"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a05_global_tiles_seed2026.keras",
+      "bytes": 2335566,
+      "sha256": "dbc35d8cc07f63f502e246f970a898dbf481dbc3486385f6d2bb0fc7130c2ec9"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a05_global_tiles_seed42.keras",
+      "bytes": 2335566,
+      "sha256": "10424be6842ed24f53ea823315c4605141a4641061af3d9d0e6132770c86037b"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a10_encoder.json",
+      "bytes": 977,
+      "sha256": "d00b678a233501059940b0c23bd4fccac6c1d7b11b9be34eb00ed4570af74e8d"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a10_encoder.keras",
+      "bytes": 9556088,
+      "sha256": "184232e56e91dac288c9d420337b3c0e1bed503ac3f20ffd753fb2a939bf03ec"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a10_global_seed123.keras",
+      "bytes": 799566,
+      "sha256": "d2738e7870e9f0b85feb778de7444f5f41941ec412cba3159dfd58d2b559adf8"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a10_global_seed2026.keras",
+      "bytes": 799566,
+      "sha256": "19283b3aeab1e31ce37790c046cbaf9991143ae2533b24faa7d21177b7e95712"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a10_global_seed42.keras",
+      "bytes": 799566,
+      "sha256": "8294afee239f4c2aebd2ada343d777c32f0da5069511895a4bcf799ae684ae9c"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a10_global_tiles_seed123.keras",
+      "bytes": 2335566,
+      "sha256": "7bdca51403a239b0814da63e9f6b04a8b733df574800935f3bb35f077b05a3bf"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a10_global_tiles_seed2026.keras",
+      "bytes": 2335566,
+      "sha256": "96c991028cf0a1bd1a47903ee1e7a84b93e75ee697d38ed720c1b99527afcc5d"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/mobilenetv2_a10_global_tiles_seed42.keras",
+      "bytes": 2335566,
+      "sha256": "caabe149883a99643f841e23407c075b8e14c2bc6f059c9f814f1fd8e704f9bf"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/resnet50_encoder.json",
+      "bytes": 970,
+      "sha256": "8063288b2d5875c13542768de3975e3655ef773bcc50aead54f0217d29bc792f"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/resnet50_encoder.keras",
+      "bytes": 94937340,
+      "sha256": "20a981a44c53f1433d8b2cc03be332230ec3eb11811f7337df076400d3c461c2"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/resnet50_global_seed123.keras",
+      "bytes": 1260366,
+      "sha256": "b500d01a50b864943360311c2ad4469d26a9ad6d31398134660bc2d1eec006cc"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/resnet50_global_seed2026.keras",
+      "bytes": 1260366,
+      "sha256": "bb31c73e958ee099dc9738de5401ea8c35da9133cc21254c8e4de1b22bc70dd0"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/resnet50_global_seed42.keras",
+      "bytes": 1260366,
+      "sha256": "e9f76fc8ac248f386f1b5c7950319aa25bf18f91b8ff93b9a61e907bcb05f182"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/resnet50_global_tiles_seed123.keras",
+      "bytes": 3717966,
+      "sha256": "a5196784345edc8bc8efd4df51f3c4403264bbd2f154fbcfc55c9857775f8ced"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/resnet50_global_tiles_seed2026.keras",
+      "bytes": 3717966,
+      "sha256": "53b86a3d50ab222713c7140184346032d9d40bac6201005e83d5b82bd2c99860"
+    },
+    {
+      "path": "models/ring_model_comparison/2026-11-27/resnet50_global_tiles_seed42.keras",
+      "bytes": 3717966,
+      "sha256": "199dab1eee256dc5be4dae0983d9c75fea157fe3ab84be9e44448bf6a9a1fca3"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/efficientnetb0_test.json",
+      "bytes": 1371,
+      "sha256": "9f834190e27e4bcef302069d366c8ba54385215e07bdad4b58a52bfa300662cf"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/efficientnetb0_test.npz",
+      "bytes": 792828,
+      "sha256": "cc481d3335e0de778762cd0671be1ff6bf2d750b398508fbabc3b21620045462"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/efficientnetb0_train.json",
+      "bytes": 1288,
+      "sha256": "8accbaaac139995bace456fa626bb5a9ff9b7487d2a3ed6ac8b93c785bc0e501"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/efficientnetb0_train.npz",
+      "bytes": 623491,
+      "sha256": "16498e687e716cc0c6b480ca50122f89dcc9d376f84413df8c7568d6913675e2"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/efficientnetb0_validation.json",
+      "bytes": 898,
+      "sha256": "b130c04791450371be3ab06a35b073ac230b5479787896868d77186b8b381034"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/efficientnetb0_validation.npz",
+      "bytes": 227118,
+      "sha256": "76729467edc43a1a1a9ba8b8cd8b54fa357a2b628865edf001880f8cb574920e"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/mobilenetv2_a05_test.json",
+      "bytes": 1372,
+      "sha256": "43946b6066a4836e17c6efea103c1195df488f101320d72070c0dfac870445a9"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/mobilenetv2_a05_test.npz",
+      "bytes": 540535,
+      "sha256": "5c942de99781f25753868759511d9953846fcec70ce9641bb8d28affcf2401ce"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/mobilenetv2_a05_train.json",
+      "bytes": 1288,
+      "sha256": "5ff426fea084559666eed439d05c60246110108dcb791177d80ade8e6ae6d52d"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/mobilenetv2_a05_train.npz",
+      "bytes": 425498,
+      "sha256": "1916d1188b899ac05ca4a8de507da8bb563090d3a1a77b5e0b7d96a7d3886b83"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/mobilenetv2_a05_validation.json",
+      "bytes": 900,
+      "sha256": "c2cbff35275df8cb84a79f0ba0f44c090e0be1d2e1dec309fad9838ac4e5c6fe"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/mobilenetv2_a05_validation.npz",
+      "bytes": 164289,
+      "sha256": "c881f79ed80147d663fe4f04924742ca0db70932b72a84c6fb8194d9a72750a9"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/mobilenetv2_a10_test.json",
+      "bytes": 1373,
+      "sha256": "967b49b3a5a469e6f9ecaa3e895ba6669438e76ce128fac884548831fce349cf"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/mobilenetv2_a10_test.npz",
+      "bytes": 645570,
+      "sha256": "2828a8546eea3cfc7666cd394c130266d076fa56e56462c089e8ba5022cbac54"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/mobilenetv2_a10_train.json",
+      "bytes": 1288,
+      "sha256": "f88dcf44d17e4980deaadb38cc38046e4d8636b7efb376199b1ca1ee0122bb2f"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/mobilenetv2_a10_train.npz",
+      "bytes": 509886,
+      "sha256": "e33c94ddc3ccf2257b5841b7402cebe5f886b4be6e807c1ff03669a1ba1e4017"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/mobilenetv2_a10_validation.json",
+      "bytes": 900,
+      "sha256": "18961c841182cc0d77dc23d8fbb9567241376dab806fb0a8f7d5fb7183c8d537"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/mobilenetv2_a10_validation.npz",
+      "bytes": 189552,
+      "sha256": "7d55479c6c6f41a9bbfda5c432e1f06d772059875d9c56a2547b584a75115343"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/resnet50_test.json",
+      "bytes": 1366,
+      "sha256": "a930850b41b82efa68876890456ac4d52e90b7f36421736a839efd238394f481"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/resnet50_test.npz",
+      "bytes": 1033155,
+      "sha256": "eadc1b30aacb60c326e7c6dc803249b84ee8b695e07a091b61f780e1453672c8"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/resnet50_train.json",
+      "bytes": 1281,
+      "sha256": "93b5df0b10d51a8d98ac3adf1709b38fe8165db1541750946b638cc660c07e36"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/resnet50_train.npz",
+      "bytes": 820955,
+      "sha256": "f35269ad0b573e915487eee438f85fc75434ccadcbc8f339aab42a2c7e1c9edc"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/resnet50_validation.json",
+      "bytes": 892,
+      "sha256": "fa110811cdcf67d04ac5de8d7c61110b3be903fffc17d97100c7c23cd3f91e83"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/features/resnet50_validation.npz",
+      "bytes": 305122,
+      "sha256": "789f6165ed30bdeb8f7b2bb00b750af1348ab222607c7be713ac8967a4dde6d5"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/keras_home/keras.json",
+      "bytes": 125,
+      "sha256": "c97b3b904eb5b209c949c8a5bafc25fac71c48829eaf4e410e72f8329c9e4a90"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/keras_home/models/efficientnetb0_notop.h5",
+      "bytes": 16705208,
+      "sha256": "0683edcf6151811fb3ddd6f098ac48df644d74592c4919a5acdee1c37554add2"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/keras_home/models/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_0.5_160_no_top.h5",
+      "bytes": 3201480,
+      "sha256": "070ad37fe8ad66e6b4ed991dd59bc3931094782a4a1e43ab0fa234194b928aa9"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/keras_home/models/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_160_no_top.h5",
+      "bytes": 9406464,
+      "sha256": "1e9310d901d6e4346c8b4d89ad04267c3299ccf252dbe2641dd2b0eb048bf04e"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/keras_home/models/resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5",
+      "bytes": 94765736,
+      "sha256": "66c8b43daff3fcc15bc4f30e3d2a167e21a14d9c9598a5394e5516471f4af504"
+    },
+    {
+      "path": "data/external/ring_model_comparison/2026-11-27/source_metadata.json",
+      "bytes": 2733,
+      "sha256": "830937c758c4dcaba329791f278db0502c89907633f16fe7b87cdcf027a6e6ed"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/console_all_20261127T071733Z.log",
+      "bytes": 25486,
+      "sha256": "bddce3e5f11edacf5f97710d53268ccc3b9da45cc1848a668280d9c6d398ce77"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/console_prepare_20261127T071256Z.log",
+      "bytes": 4110,
+      "sha256": "de303b3c8e4a7e8258119ed28b60eb7defd49a3b00dacec4706be7a7ee8a30c7"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/console_prepare_20261127T071402Z.log",
+      "bytes": 8243,
+      "sha256": "bf2e8948b5a252c7ef01181d92b0b2216540ebb9e48679a2a4d82aac28ee07bd"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/console_prepare_20261127T071554Z.log",
+      "bytes": 1466,
+      "sha256": "762fcd5a80c674a7c554b5a1f2074585efbc363a5bf190d13eb026f763974845"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/console_report_20261127T072844Z.log",
+      "bytes": 329,
+      "sha256": "de3fe07be58a1266fe792042ead13fdfd034c77dde7077510866985432629bce"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/console_report_20261127T073058Z.log",
+      "bytes": 3223,
+      "sha256": "7c6e882e9c195fafc73538323f01de5a15d01dfe0e1fa29b4107d969340f9c18"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/final_audit.json",
+      "bytes": 2242,
+      "sha256": "05573c56dc284fad97b02ffe1fe560e31cc334061bf179031cc1b74bb7008029"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/finalize_records.py",
+      "bytes": 9238,
+      "sha256": "03cd6034a38f43396edaa4eb440a783d8488385c24499a0c032fcf830f05d0af"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/gitignore_before.json",
+      "bytes": 231,
+      "sha256": "ba503358960f8c26ff3d816428e744e6b88cb8857fd6c5db7482db6e0d8659d1"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/implementation_fixes.json",
+      "bytes": 362,
+      "sha256": "41526448d9f3460992479db6e99cf65dabe5d734e8008c133b12ec32467403f8"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/preservation_before.json",
+      "bytes": 7709,
+      "sha256": "9b48a64aacca6b9915aadfb4b95fccd8be9d4a2e9039ed1ef4d8d298e87c3013"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/refine_report.py",
+      "bytes": 3990,
+      "sha256": "533cb145cce9bf83581cc9b599f3d74f1094eb247a711b7be0d3ee127c7377a4"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/run_notebook.py",
+      "bytes": 4433,
+      "sha256": "b407c60d168d131e06b1527a0ee97428471c45655c3d81038962e9bae0cd67fb"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/visual_review_before/02_view_and_latency.png",
+      "bytes": 128534,
+      "sha256": "f8b50de3a0c4022137551e96dbc0983fd0068febff7aa30afb8cf2a574a2e301"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/visual_review_before/MANIFEST.json",
+      "bytes": 940,
+      "sha256": "70e190e3ee4b8969f5cdabe91f1db689f8e1e085af5e9a10f53de0b84e80f6c1"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/visual_review_before/REPORT.html",
+      "bytes": 10781,
+      "sha256": "85281d63c560b1bfb95f3c16e6e846822c95f1652c2a030f024daaf02de0d1b0"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/visual_review_before/REPORT.md",
+      "bytes": 6196,
+      "sha256": "11846fae97cfed50cce57dba92665e5b69c83e0ac4b831cf9d2ee93b7e4b5514"
+    },
+    {
+      "path": "outputs/cleanup_records/ring_model_comparison_2026-11-27/visual_review_before/Ring_모델비교_실험결과.pdf",
+      "bytes": 75519,
+      "sha256": "8e42420df10fabb4c84fdec992fed8ed0ef3e4dff8c40d38a162d607542ce9f2"
+    }
+  ],
+  "new_artifact_files": 279,
+  "pdf_pages": 3,
+  "all_five_training_cell_outputs_preserved": true,
+  "notebook_error_outputs": 0,
+  "ppt_modified": false,
+  "existing_deployed_model_replaced": false
+}

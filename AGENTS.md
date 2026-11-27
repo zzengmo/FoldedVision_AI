@@ -1,9 +1,9 @@
 # 프로젝트 기억과 파일 보존 규칙
 
 이 문서는 다음 작업자가 먼저 읽어야 하는 프로젝트 기억 파일이다.
-마지막 정리 기준일: 2026-11-26, Asia/Seoul.
+마지막 정리 기준일: 2026-11-27, Asia/Seoul.
 
-현재 발표의 최신 기준은 문서 마지막의 **2026-11-26 Ring 모델 구성 통합 최종 50장**이다. 그 이전 발표판은 이력이다.
+현재 발표의 최신 사용자 제공본은 문서 마지막의 **2026-11-27 사용자 최신 44장과 공통부 6장 개편**이다. 새 공통부는 별도 6장 파일이며 전체 44장과 아직 합치지 않았다. 프로젝트의 기존 통합 PPT 49장 및 이전 45장 제공본과 구분한다. 그 이전 발표판은 이력이다.
 
 GitHub에서 작업을 이어갈 때는 README.md와 CODEX_PROMPT.txt를 참고한다. 아래 보존 경로는 원본 작업 PC 기준이다. 새 PC에는 원본 데이터, 환경, 과거 실험 백업과 일부 체크포인트를 필요한 경우 가져온다. `notebooks/lens/`와 `notebooks/pcb/`에는 팀원이 전달한 코드와 실행 결과가 있다. 기존 Lens 가중치와 통합 설정, PCB 재현 환경은 별도 전달이 필요하다.
 
@@ -14,7 +14,7 @@ GitHub에서 작업을 이어갈 때는 README.md와 CODEX_PROMPT.txt를 참고�
 - 실제 학습·평가·출처 기록을 남기고 검증과 최종 평가 점수를 혼동하지 않는다.
 - 코드 구현은 두 노트북에 유지한다. 임시 Python 스크립트를 루트에 쌓지 않는다.
 - 향후 PCB·렌즈 담당자의 모델과 입력/출력 규격을 받아 통합한다.
-- React 포트폴리오는 `sites/foldedvision-inspection/`에 있다. 저장된 평가 사례와 Three.js 3D 공정 게임을 사용한다. 팀 모델의 실시간 웹 추론 연결은 후속 작업이다.
+- 업무 웹은 `sites/foldedvision-inspection/`의 입고검사 관리실이다. LOT·사진·담당자 판정·재검·이력·품질·손실 계산을 제공하며, 로컬에서는 최신 Ring의 실제 추론을 연결했다. 게시 웹의 AI 추론은 별도 서버 연결이 필요하다. 이전 평가 포트폴리오와 Three.js 체험은 `/portfolio.html`에 보존했고 Unity 발표와 분리한다.
 
 ## 반드시 남길 파일
 
@@ -35,6 +35,7 @@ GitHub에서 작업을 이어갈 때는 README.md와 CODEX_PROMPT.txt를 참고�
 |`requirements*.txt`, `.venv/`, `.vscode/`|현재 실행 환경과 재설치 정보|
 |`archive/2026-11-19_before_cleanup.zip`|정리 전 코드·문서·full 모델·full 결과의 복원용 백업|
 |`outputs/cleanup_records/`|정리 전 보존 파일 해시, 삭제·보관 내역, 정리 후 검증 기록|
+|`sites/foldedvision-inspection/.runtime/operations.sqlite*`, `.runtime/uploads/`|업무 웹의 로컬 운영 DB·저널·원본 사진. 서버 종료 후 함께 백업하며 재생성 캐시로 삭제하지 않음|
 
 위 파일은 '중간 파일처럼 보인다'는 이유로 삭제하거나 덮어쓰지 않는다.
 `data/processed/`도 이번 사용자가 보존 요청한 data 범위에 포함한다.
@@ -275,3 +276,64 @@ GitHub에서 작업을 이어갈 때는 README.md와 CODEX_PROMPT.txt를 참고�
 - 작업 기준은 `outputs/presentation/FoldedVision_최종발표.pptx`다. 공통 1–6장, Lens 7–15장, Ring 16–25장, PCB 26–40장, 종합·손실·결론 41–44장, Unity 시연과 내장 영상 45–50장이다. Ring CNN 두 장은 19–20장, 학습 곡선과 혼동행렬은 23장이다. 개인 대본은 `outputs/presentation/FoldedVision_Ring_발표대본_김현모.pdf`다.
 - 현재 판본의 Lens 구역 테스트 52장·3,410구역은 AP 0.808, 정상 구역 오검출률 25.1%, 불량 구역 Recall 95.2%를 제시한다. `notebooks/lens/03_Lens_YOLO.ipynb`를 보존한다. 이전 46장 판본의 Lens 수치와 구분한다. 42–43장 손실 시나리오에는 별도 카메라 커버 평가 및 Ring의 유형 정분류율을 대입한 가정이 있다.
 - 이전 발표 PPT·PDF·대본·미리보기와 검토 캡처는 원본 PC의 `archive/2026-11-26_presentation_drafts.zip`에 모았다. ZIP 내부 `ARCHIVE_MANIFEST.json`은 각각의 원래 경로와 SHA-256을 담는다. 프로젝트 전체 정리 내용과 보존 검증은 `outputs/cleanup_records/workspace_cleanup_2026-11-26.json`에 있다.
+
+## 2026-11-27 Ring 발표 중복 통합 최종 49장
+
+- 사용자가 Ring 개인 파트의 반복 내용을 합치고 대본을 다시 만들도록 요청했다. 기준 파일은 기존 `outputs/presentation/FoldedVision_최종발표.pptx`이며 전체 49장이다. 공통 1–6장, Lens 7–15장, Ring 16–24장, PCB 25–39장, 종합·손실·결론 40–43장, Unity 시연·영상 44–49장이다. 다른 파트의 본문은 그대로이고 쪽번호만 동기화했다.
+- Ring 기존 데이터 소개·EDA 두 장을 16장으로 합쳤다. 17장은 전처리, 18–19장은 기준 CNN, 20장은 1차 오류와 개선 가설, 21장은 2차 특징 결합, 22장은 학습 곡선과 모델 선택, 23장은 동일 테스트 지표·두 혼동행렬·개선 사진, 24장은 적용 범위다. 검증과 최종 평가 설명을 나눴으며 같은 성능 수치를 여러 장에서 반복하지 않는다.
+- `outputs/presentation/FoldedVision_Ring_발표대본_김현모.pdf`는 새 16–24장 순서의 3쪽 대본이다. 같은 이름의 `.txt`도 만들었고, 9장 발표자 노트와 문단을 일치시켰다. 대본에서는 Macro F1 용어를 쉬운 말로 설명하며, 슬라이드의 실제 지표 이름·수치와 평가 단위는 유지한다.
+- 원본 PPT·대본·기억 문서는 `archive/2026-11-27_before_ring_consolidation/`과 `MANIFEST.json`에 보존했다. 검토 스크립트·원고·PowerPoint 미리보기·변경 검증은 `outputs/cleanup_records/presentation_history/ring_consolidation_2026-11-27/`에 있다. 다른 파트 40장의 본문, 원본 미디어 52개, 실제 예측 CSV의 혼동행렬과 16에포크·9에포크 복원 기록을 확인했다. 새 학습이나 모델·데이터 변경은 없다.
+- 손실 시나리오는 새 41–42장으로 이동했다. 기존 카메라 커버 별도 결과와 Ring 유형 정분류율을 대입한 가정이라는 범위는 그대로다. 이번 요청으로 그 수치·해석을 수정하지 않았다.
+
+## 2026-11-27 사용자 확정 45장과 38장 단독 리디자인
+
+- 사용자가 `Downloads/FoldedVision_최종발표 (2).pptx`를 최신 최종본으로 지정했다. 이 파일은 45장이고 실제 38번째 장이 손실 시나리오다. 원문 화면의 쪽번호 42와 구분한다. 전체 원본은 `archive/2026-11-27_user_final_45slides/`에 해시와 함께 보존했다. 후속 발표 작업은 이 사용자 제공본을 먼저 확인한다.
+- 이번 요청은 38장 한 장만 제작하는 것이므로 기존 `outputs/presentation/FoldedVision_최종발표.pptx` 49장이나 Downloads 원본을 덮어쓰지 않았다. 결과는 `outputs/presentation/FoldedVision_38페이지_손실비교.pptx`이며 1장이다. 같은 이름의 PNG·PDF도 있다. 표·수식·금액은 모두 편집 가능한 텍스트와 도형이다.
+- 사용자가 3종 불량 수 합산, 불량 1개당 손실 13,000원이라는 계산 기준을 명시적으로 확인했다. 부품별 3천만 개 × 25 ppm = 750개, 검사 전 (750×3)×13,000 = 29,250,000원, 적용 후 (45+54+0)×13,000 = 1,287,000원, 회피 손실 27,963,000원을 표시했다. 연 1억 개 확대 가정은 비례식에 맞춰 93,210,000원으로 정리했으며 원문 대비 10원 수정이다.
+- 이 계산은 사용자 가정을 표현한 시나리오다. Lens는 별도 카메라 커버 결과이며 Ring은 유형 분류율을 차단율로 대입한 가정이라는 주석을 유지했다. 실제 자동 차단율·절감 실적을 측정했다고 기록하지 않는다. 표의 잔존 수량은 원문과 같은 부품별 반올림을 쓴다.
+- 원문 38장 XML·미리보기, 제작·렌더 스크립트와 검증 기록은 `outputs/cleanup_records/presentation_history/slide38_redesign_2026-11-27/`에 있다. PowerPoint에서 1장·글자 넘침 0·화면 밖 도형 0·수식과 PDF 숫자를 확인했다. 원본과 기존 통합 PPT의 해시는 그대로다.
+
+## 2026-11-27 입고검사 업무 웹
+
+- 사용자가 전문적이고 읽기 쉬운 실제 업무 웹을 요청했다. 웹 업무 발표와 Unity 설비 구상 발표는 별개다. 웹 진입점을 입고검사 관리실로 바꾸고 이전 포트폴리오·Three.js 체험은 `portfolio.html`, `src/portfolio.jsx`에 보존했다. 수정 전 웹 53파일과 시작 CMD는 `archive/2026-11-27_before_business_web/web_source.zip`에 있다.
+- LOT·사진 등록, AI 제안과 최종 판정 분리, 확정 결함명·사유·처리자·시간, 재검·검색·기간 필터·CSV·원본 사진 다운로드·인쇄, 공급사·부품·결함 유형 집계, 손실 시나리오 저장, 관리자·검사자·조회자 역할을 구현했다. 실제 업무와 예시는 서버의 scope로 분리한다. 예시 LOT는 명시적으로 체험 버튼을 눌러 준비한다.
+- 로컬은 Node.js 22.13 이상에서 SQLite와 파일 저장소를 쓰고 127.0.0.1에만 바인딩한다. `Start_FoldedVision.cmd`가 빌드·서버 실행·브라우저 열기를 한다. DB는 `.runtime/operations.sqlite`, 업로드는 `.runtime/uploads/`다. `.runtime/client`와 dist는 재생성되지만 운영 DB·사진은 보존 대상이므로 `.runtime` 전체를 정리하지 않는다.
+- 기존 Sites project_id와 본인 전용 접근을 유지하며 Worker·D1(`DB`)·R2(`BUCKET`)로 전환했다. `.openai/hosting.json`의 static 필드는 제거했다. 게시 데이터와 로컬 데이터는 자동 동기화하지 않는다. Sites의 ChatGPT 인증을 사용하고 서버가 역할을 확인한다. `db/schema.js`, `drizzle/`의 생성 SQL·journal·snapshot을 보존한다. 이미 적용한 마이그레이션은 수정하지 않고 추가한다.
+- 로컬 `inference/app.py`는 최신 Ring encoder·global_tiles_48 head만 추론한다. 원본 RGB uint8, 전체+4구역, 160×160, 외부 /255 없음, encoder 내부 Rescaling이다. 실제 결과는 REVIEW이며 유형 점수다. 원본 000073.jpg의 웹 추론은 기존 0.9983523과 약 1.08e-8 차이였다. PCB는 별도 PyTorch 실행 환경이 필요하고 Lens는 최신 가중치가 없어 연결 대기로 표시한다. 연결되지 않은 모델의 가상 점수를 만들지 않는다.
+- 게시 Worker에서는 Python 모델을 실행하지 않는다. 게시 AI 분석에는 별도 HTTPS 추론 서버와 INFERENCE_URL·필요한 INFERENCE_TOKEN 런타임 설정이 필요하다. 토큰은 소스·브라우저·manifest에 넣지 않는다. 로컬은 프로세스 전용 토큰을 생성해 쓴다. 새 학습, 기존 모델·데이터·노트북·PPT·Unity 수정은 하지 않았다.
+- 10개 테스트와 빌드를 통과했다. 사진·DB 재시작 보존, 조회자 쓰기 차단, 동시 판정 충돌, 사유 입력, CSV 수식 차단, 실제 본문 용량 제한, 중단 분석 복구와 과거 AI 점수 보존을 점검했다. Chrome 1440px·390px에서 업무 흐름과 가로 넘침·콘솔 오류를 확인했다. 게시·검증 기록은 `outputs/cleanup_records/business_web_2026-11-27/validation.json`, 자세한 실행법은 웹 README를 따른다.
+- 최종 Sites 게시 소스 커밋은 `6b0cdae77888c5c8c3903897e013ef788b61cefc`, 배포 ID는 `appgdep_6b08ede48fbc8191969d17262ba2cde4`이며 게시가 성공했다. 주소는 기존 `https://foldedvision-inspection.wholehaven1026.chatgpt.site`다. D1의 업무 테이블 7개를 확인했고 접근은 본인만으로 유지했다. GitHub 커밋·push는 이번 요청에 포함하지 않았다.
+
+## 2026-11-27 Unity 발표 검토와 개인 대본
+
+- 사용자가 최신 PPT의 Unity 구성이 충분한지 판단하고 대본을 요청했다. 기준은 `Downloads/FoldedVision_최종발표 (2).pptx` 총 45장의 실제 40–45장이다. 화면 하단 45–49는 이전 쪽번호이며 대본은 실제 순서를 따른다. 추가 장 없이 발표 가능한 구성으로 판단했고 PPT 원본·프로젝트 통합본·Unity 구현은 변경하지 않았다.
+- `outputs/presentation/FoldedVision_Unity_발표대본.pdf`는 2쪽이며 같은 이름의 `.txt`도 있다. 40장은 설비 배치 이유, 41장은 Ring 한 개의 순서, 42장은 갠트리와 세 경로, 43장은 부품별 처리 기준과 PCB 오검출, 44장은 저장/가상 모드와 구현 범위, 45장은 영상과 마무리다. 성능과 손익 설명을 반복하지 않고 웹의 업무 관리와 Unity의 설비 구상을 구분한다. 내장 영상 34.625초 포함 예상 약 3분~3분 30초다.
+- Lens는 추론 연결 대기·설비 소개, Ring은 유형 제안·REVIEW, PCB는 저장된 검출 점수와 기준에 따른 분기를 설명한다. PCB `good_005.jpg`의 정상→NG 사례와 세 저장 점수는 원본 예측 CSV와 일치했다. Unity를 새로 실행하거나 실제 카메라·PLC 연동을 검증한 작업은 아니다.
+- PowerPoint에서 6장을 읽기 전용 렌더링해 글자 넘침 후보 0을 확인했다. 최종 45장의 내장 영상이 프로젝트 시네마틱과 바이트 단위 동일하고, 2쪽 대본 PDF에 모든 발표 문단이 있는지 확인했다. 원고·미리보기·검증은 `outputs/cleanup_records/presentation_history/unity_script_2026-11-27/`, 변경 전 이 기억 파일은 `archive/2026-11-27_before_unity_script_memory/`에 있다.
+
+## 2026-11-27 Ring 모델 계열 비교와 검증 기반 선정
+
+- 사용자가 MobileNet 선택 근거와 다른 계열 모델의 실제 비교 기록을 보완하도록 승인했다. PPT 제작은 이번 범위가 아니다. 기존 02 노트북 69셀을 그대로 두고 기본값 `off`인 비교 절 20셀을 추가했다. 기준 01 노트북·이전 가중치·이전 지표·PPT·웹·Unity는 보존했다. 변경 전 원본은 `archive/2026-11-27_before_ring_model_comparison/`와 MANIFEST.json에 있다.
+- `outputs/ring_model_comparison/2026-11-27/protocol.json`을 새 학습 전에 기록했다. 직접 CNN, MobileNetV2 폭 0.5/1.0, ResNet50, EfficientNetB0의 5설정이며 전이학습은 전체/전체+부분 입력을 나눠 총 9조건을 초기값 42·123·2026으로 반복했다. 실제 27회·총 419 epoch를 실행했다. 직접 CNN 3회는 전체 가중치, 전이학습 24회는 고정 ImageNet 특징 위의 분류층을 학습했다. 특징 추출부 미세조정은 하지 않았다.
+- 기존 33/12/42 분할과 87장 해시를 유지했다. 공통 160×160·분류층·클래스 가중치·학습률·조기 종료 규칙으로 비교했다. 모델별 공식 전처리를 적용했고 ResNet의 채널 역순은 Keras 2.15 저장 호환성을 위해 수치가 같은 gather+중심화로 구현·검증했다. 새 ImageNet 가중치·출처·해시는 `data/external/ring_model_comparison/2026-11-27/`에 있다.
+- 검증 F1 3회 평균으로 **MobileNetV2 폭 1.0 / 전체 사진**을 선정하고 `selection_lock.json`을 저장한 다음 테스트 사진을 디코딩했다. 선정 평균 검증 F1은 0.6590964591이다. 전체 사진 공통 조건의 테스트 정확도 평균은 직접 CNN 80.16%, MobileNet 0.5 91.27%, MobileNet 1.0 95.24%, ResNet50 90.48%, EfficientNetB0 79.37%다. 3회 초기값 반복은 교차검증이나 신뢰구간이 아니다.
+- 사전 고정한 초기값 42의 선정 모델은 테스트 **40/42, 95.2381%, Macro F1 0.9320612406**, 혼동행렬 `[[13,1,1],[0,23,0],[0,0,4]]`다. 실제 학습 24 epoch, 검증 손실로 17 epoch를 복원했다. 같은 CPU의 입력 준비·전처리·추론 중앙값은 23.53 ms, p95 26.32 ms이며 모델 로딩·디스크 읽기를 제외했다. 현장 처리량 수치가 아니다.
+- 새 가중치는 `models/ring_model_comparison/2026-11-27/mobilenetv2_a10_encoder.keras`와 `mobilenetv2_a10_global_seed42.keras`다. 설정은 같은 결과 폴더의 `selected_model_config.json`, 추론 함수는 새 절의 `rbc_predict_selected(path)`다. 기존 웹·Unity의 MobileNet 0.5 전체+부분 모델은 교체하지 않았다. 기존 92.86%는 여러 층의 평균/최대 특징을 쓴 다른 구성의 과거 결과로 유지한다.
+- 코드·실행 출력은 02 노트북 마지막 절, 27개 학습 이력과 54개 검증/테스트 예측 CSV·비교표·3쪽 PDF·선정 설명은 `outputs/ring_model_comparison/2026-11-27/`에 있다. 새 모델·출처·특징 캐시·실험 결과는 이후 정리에서도 보존한다. 실행기는 `outputs/cleanup_records/ring_model_comparison_2026-11-27/run_notebook.py`이며 `all`, `report`, `verify` 등을 받는다. 완료된 같은 서명의 학습은 재사용하고 부분 단계 재실행에서 기존 학습 셀 출력을 지우지 않는다.
+- 모든 CSV 지표 재계산, 원본 87장 해시, 기존 보호 파일 32개와 최초 69셀 보존, 저장 모델 재로딩과 새 선정 모델의 원본 3장 추론 일치를 확인했다. `verification.json`과 정리 기록 폴더의 `final_audit.json`을 참고한다. 테스트 42장은 이전에도 평가한 자료이고 정상 라벨이 없으므로 새 외부 검증·정상/불량 탐지율·실제 차단율·절감액으로 해석하지 않는다. 모든 추론은 REVIEW다.
+
+## 2026-11-27 사용자 최신 44장과 공통부 6장 개편
+
+- 사용자가 새로 제공한 최신 파일은 `Downloads/FoldedVision_최종발표 (4).pptx` 총 44장이다. SHA-256은 `8bbc670105e3d0ffeb1947603235bef50e7a40a59c33b2468d7451541b10bc06`이며 Lens는 실제 7장에서 시작한다. 이 원본과 수정 전 기억 문서는 `archive/2026-11-27_user_final_44slides_before_common_revision/`에 보존했다. 이전 45장 제공본과 프로젝트의 기존 49장 통합본으로 되돌리지 않는다.
+- 요청 범위는 Lens 이전 공통부다. 결과는 `outputs/presentation/FACT_공통부_수정본.pptx`와 같은 이름의 PDF, 총 6장이다. 아직 전체 44장과 통합하지 않았다. 원본 44장과 개인 파트·후반부는 수정하지 않았다. 1장은 원본 표지이며 렌더 PNG 해시까지 동일하다. 2장은 사용자 지정 6개 구분·25개 항목의 전체 목차, 3장은 목표와 검사 대상, 4장은 추진 일정, 5장은 주제 선정 배경과 필요성, 6장은 개발 환경과 활용 기술이다.
+- 본문은 FACT PROJECT 표지와 연결되는 밝은 배경·남색·청록색으로 구성했다. 목차 항목을 장 제목으로 표시하고 본문에 대상·목적·검사 범위·구현 역할을 서술해 발표 없이도 이해하도록 했다. 일정 막대·본문·표·출처는 편집 가능한 기본 도형과 텍스트이며 실제 공개 사진과 웹·Unity 캡처를 사용했다. EDA·LOT·미국품질협회(ASQ)를 풀어 썼다.
+- 5장의 선정 근거는 자화전자 공개특허 `WO2022154244A1`의 부품 구조와 ASQ `Cost of Quality`의 입고 확인·폐기·재작업 설명이다. 회사에 제조 전 검사가 없거나 실제 절감 효과를 확인했다고 주장하지 않는다. 제품 참고 사진은 사용자 제공으로 표기하고, 공개 데이터가 실제 자화전자 부품과 일치한다고 설명하지 않는다. 하단 출처는 PPT·PDF에서 클릭할 수 있고 발표자 노트에 URL·주장 범위·내부 자료 경로를 기록했다.
+- 일정의 11/12–11/30 구간은 사용자 원본을 유지한 계획표다. 11/28 이후 계획과 실제 실행 로그를 구분했다. 6장은 로컬 웹의 Ring 추론, Lens·PCB 연결 대기, Unity 저장 결과·가상 경로 재생을 표시한다. 새 Ring 비교 선정 모델을 웹에 연결했다고 설명하지 않는다.
+- 제작 원고·코드·원본/결과 미리보기·출처 기록·검증은 `outputs/cleanup_records/presentation_history/common_revision_2026-11-27/`에 있다. PowerPoint에서 6장 모두 렌더링하고 PDF 6쪽, 목차 25항목, 출처 링크, 표지 일치, 원본 파일 해시, 글자 넘침 0·화면 밖 도형 0·끊긴 내부 관계 0을 확인했다.
+
+## 2026-11-27 GitHub 업데이트와 인수인계
+
+- 사용자 요청으로 현재 PPT·노트북·Ring 비교 결과·업무 웹 소스·검증 기록을 `zzengmo/FoldedVision_AI`의 `main`에 저장하는 범위다. 원본 데이터, 새 학습 가중치·특징 캐시, 로컬 운영 DB·업로드 사진, 기존 로컬 백업의 Git 제외 규칙은 유지한다. 사이트 게시와 GitHub 소스 저장은 별개이며 이번 요청으로 접근 권한·배포를 변경하지 않는다.
+- 새 PC에서도 최신 사용자 원본을 볼 수 있도록 `outputs/presentation/FACT_사용자최신_44장.pptx`를 추가했다. 이 파일은 사용자 제공 `(4).pptx` 및 보존 사본과 SHA-256이 동일하다. 별도 `FACT_공통부_수정본.pptx` 6장과 아직 합치지 않았다. 기존 49장 통합본·과거 45장·Ring/Unity 개인 대본의 기준 순서를 구분하도록 README와 CODEX_PROMPT를 갱신했다.
+- GitHub에 결과 보고서·추론 설정은 저장하지만 새 모델 가중치가 자동 포함되는 것은 아니다. 새 PC에서 Ring 비교의 실제 재현·추론에는 `models/ring_model_comparison/2026-11-27/`과 `data/external/ring_model_comparison/2026-11-27/`의 보존 자료가 필요하다. 로컬 웹이 쓰는 기존 전체+부분 모델도 별도로 복원한다.
+- 업데이트 전 문서·제외 규칙은 `archive/2026-11-27_before_github_update/`에 보존했다. 포함 파일·출처 사본·공개 가능한 결과 검증은 `outputs/cleanup_records/github_update_2026-11-27/`에 기록한다. 로컬 웹 내부의 `.git`과 Sites 체크아웃의 Git 메타데이터를 삭제하거나 서브모듈로 바꾸지 않는다.

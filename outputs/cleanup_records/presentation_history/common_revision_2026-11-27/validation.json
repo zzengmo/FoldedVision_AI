@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-27",
+  "source": "C:\\Users\\kdt66\\Downloads\\FoldedVision_최종발표 (4).pptx",
+  "source_slides": 44,
+  "source_sha256": "8bbc670105e3d0ffeb1947603235bef50e7a40a59c33b2468d7451541b10bc06",
+  "source_unchanged": true,
+  "output_slides": 6,
+  "cover_render_identical": true,
+  "contents_sections": 6,
+  "contents_items": 25,
+  "all_requested_contents_present": true,
+  "editable_body_and_schedule": true,
+  "source_hyperlinks_in_pdf": [
+    "https://huggingface.co/datasets/VISION-Workshop/VISION-Datasets",
+    "https://huggingface.co/datasets/VISION-Workshop/VISION-Datasets",
+    "https://huggingface.co/datasets/VISION-Workshop/VISION-Datasets",
+    "https://patents.google.com/patent/WO2022154244A1/ko",
+    "https://patents.google.com/patent/WO2022154244A1/ko",
+    "https://patents.google.com/patent/WO2022154244A1/ko",
+    "https://patents.google.com/patent/WO2022154244A1/ko",
+    "https://patents.google.com/patent/WO2022154244A1/ko",
+    "https://patents.google.com/patent/WO2022154244A1/ko",
+    "https://asq.org/quality-resources/cost-of-quality",
+    "https://asq.org/quality-resources/cost-of-quality",
+    "https://asq.org/quality-resources/cost-of-quality",
+    "https://asq.org/quality-resources/cost-of-quality",
+    "https://asq.org/quality-resources/cost-of-quality",
+    "https://asq.org/quality-resources/cost-of-quality",
+    "https://asq.org/quality-resources/cost-of-quality",
+    "https://asq.org/quality-resources/cost-of-quality"
+  ],
+  "missing_internal_relationships": 0,
+  "overflow_candidates": 0,
+  "outside_shapes": 0,
+  "pdf_pages": 6,
+  "rationale_scope": "Public patent + ASQ quality principles; project proposal distinguished from measured factory effects.",
+  "user_product_photo_attributed": true,
+  "lens_ring_pcb_and_later_sections_modified": false,
+  "outputs": [
+    {
+      "path": "outputs\\presentation\\FACT_공통부_수정본.pptx",
+      "bytes": 4091229,
+      "sha256": "6ed6b5ada0e839f762b82b43b32ac5c9733eab4c9924026d33f92488a2392b65"
+    },
+    {
+      "path": "outputs\\presentation\\FACT_공통부_수정본.pdf",
+      "bytes": 438176,
+      "sha256": "e8fe61f72404d1dfd3c98cc6e76aef739e5503703334033d902d9c91444e33cb"
+    }
+  ]
+}

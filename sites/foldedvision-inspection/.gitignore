@@ -3,3 +3,9 @@ dist/
 .qa/
 .env*
 *.log
+.runtime/
+.sites-source/
+.sites-checkout*/
+.wrangler/
+.sites-runtime/
+inference/__pycache__/

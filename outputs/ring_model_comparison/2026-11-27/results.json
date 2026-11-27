@@ -1,0 +1,538 @@
+{
+  "protocol": {
+    "protocol_version": "ring-backbones-2026-11-27-v1",
+    "registered_before_new_training": true,
+    "task": "VISION Ring three defect types; no verified normal labels; always REVIEW in deployment",
+    "scope": "Additional experiments only. Existing models, metrics, web, Unity and presentations stay intact.",
+    "data": {
+      "manifest": "outputs/metrics/split_manifest.csv",
+      "train": 33,
+      "validation": 12,
+      "historical_test": 42,
+      "class_order": [
+        "t_contamination",
+        "t_scratch",
+        "unfinished_surface"
+      ],
+      "split_seed": 42,
+      "test_note": "These 42 images were evaluated previously. This is a repeated historical benchmark, not a new unseen external test.",
+      "tiles_note": "All five views of an image remain together in its original split. No annotation-derived crop or mask is used."
+    },
+    "candidates": [
+      {
+        "id": "custom_cnn",
+        "family": "custom_cnn",
+        "pretraining": null,
+        "views": [
+          "global"
+        ],
+        "reason": "Same-condition scratch-trained reference; preserves the original 256-pixel baseline separately."
+      },
+      {
+        "id": "mobilenetv2_a05",
+        "family": "MobileNetV2",
+        "alpha": 0.5,
+        "pretraining": "ImageNet",
+        "views": [
+          "global",
+          "global_tiles"
+        ],
+        "reason": "Matches the existing lightweight MobileNet width; test its quality-cost tradeoff."
+      },
+      {
+        "id": "mobilenetv2_a10",
+        "family": "MobileNetV2",
+        "alpha": 1.0,
+        "pretraining": "ImageNet",
+        "views": [
+          "global",
+          "global_tiles"
+        ],
+        "reason": "Check whether the existing width reduction sacrificed useful features."
+      },
+      {
+        "id": "resnet50",
+        "family": "ResNet50",
+        "pretraining": "ImageNet",
+        "views": [
+          "global",
+          "global_tiles"
+        ],
+        "reason": "Compare a larger residual-network feature extractor."
+      },
+      {
+        "id": "efficientnetb0",
+        "family": "EfficientNetB0",
+        "pretraining": "ImageNet",
+        "views": [
+          "global",
+          "global_tiles"
+        ],
+        "reason": "Compare a different efficiency-oriented architecture."
+      }
+    ],
+    "input": {
+      "size": 160,
+      "color": "RGB",
+      "resize": "OpenCV INTER_AREA",
+      "global": "Whole image resized to 160x160",
+      "global_tiles": "Whole image plus four fixed overlapping 65-percent corner crops, each resized to 160x160; concatenate whole feature, tile-feature mean and tile-feature max",
+      "augmentation": "None in this controlled comparison",
+      "scratch_preprocessing": "Rescaling(1/255)",
+      "MobileNetV2_preprocessing": "Official preprocess_input, RGB 0..255 to -1..1",
+      "ResNet50_preprocessing": "Official preprocess_input, RGB to BGR and ImageNet channel centering",
+      "EfficientNetB0_preprocessing": "Official ImageNet constructor including built-in normalization; input RGB float32 0..255; no external /255"
+    },
+    "architecture": {
+      "transfer_backbone": "Frozen ImageNet feature extractor; terminal global average pooling only in this study",
+      "scratch_backbone": "Conv2D 32,64,128 with ReLU, MaxPool after first two convolutions, terminal global average pooling",
+      "common_head": "LayerNormalization -> Dense(48,relu,L2=0.0008) -> Dropout(0.25) -> Dense(3,softmax,L2=0.001)",
+      "important_difference": "The previous 92.86-percent MobileNet model used multiscale intermediate features plus average/max pooling. It is a historical reference, not a controlled row in this new study."
+    },
+    "training": {
+      "seeds": [
+        42,
+        123,
+        2026
+      ],
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "batch_size": 12,
+      "maximum_epochs": 55,
+      "loss": "sparse_categorical_crossentropy",
+      "class_weights": "Training set N/(3*class_count)",
+      "early_stopping": {
+        "monitor": "val_loss",
+        "patience": 7,
+        "min_delta": 0.0001,
+        "restore_best_weights": true
+      },
+      "cache": "Frozen image features may be cached once; record feature-extraction time separately from head-training time. No test image is decoded before the selection lock."
+    },
+    "selection": {
+      "unit": "Configuration (backbone,view), averaged over the three seeds",
+      "ranking": [
+        "validation_macro_f1_mean descending",
+        "validation_accuracy_mean descending",
+        "total_parameters ascending",
+        "configuration_id ascending"
+      ],
+      "main_backbone_comparison": "Global-only rows, including the same-condition custom CNN",
+      "final_configuration": "All preregistered configurations, including global_tiles",
+      "export_seed": 42,
+      "export_note": "Seed 42 is fixed in advance; never choose the run using test performance. No seed ensemble.",
+      "lock": "Write selection_lock.json and training artifact hashes before test decoding or scoring. Test results must not change the selected configuration.",
+      "score_rounding_decimals": 12
+    },
+    "measurement": {
+      "metrics": [
+        "accuracy",
+        "macro_f1",
+        "per_class_precision_recall_f1",
+        "confusion_matrix"
+      ],
+      "variation": "Mean and sample standard deviation over initializations on one fixed split; not cross-validation and not a confidence interval",
+      "latency": "Same CPU/thread settings, batch=1, 5 warmups then 30 measurements; include resize/crops, official preprocessing, backbone and classifier; exclude disk decode/model load; report median and p95",
+      "timing_note": "Latency is measured on the local machine, not a verified production cycle time."
+    },
+    "sources": [
+      "https://keras.io/2/api/applications/mobilenet/",
+      "https://keras.io/2/api/applications/resnet/",
+      "https://keras.io/2/api/applications/efficientnet/",
+      "https://keras.io/guides/transfer_learning/",
+      "https://huggingface.co/datasets/VISION-Workshop/VISION-Datasets"
+    ]
+  },
+  "protocol_sha256": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+  "selected_configuration": "mobilenetv2_a10__global",
+  "global_only_selected": "mobilenetv2_a10__global",
+  "configurations": [
+    {
+      "configuration": "mobilenetv2_a10__global",
+      "model_id": "mobilenetv2_a10",
+      "view": "global",
+      "repeats": 3,
+      "total_parameters": 2322179,
+      "trainable_parameters": 64195,
+      "validation_accuracy_mean": 0.75,
+      "validation_accuracy_std": 0.08333333333333337,
+      "validation_macro_f1_mean": 0.659096459096459,
+      "validation_macro_f1_std": 0.10396500962490046,
+      "head_training_seconds_mean": 3.29692793332894,
+      "test_accuracy_mean": 0.9523809523809522,
+      "test_accuracy_std": 1.3597399555105182e-16,
+      "seed42_test_accuracy": 0.9523809523809523,
+      "test_macro_f1_mean": 0.9421413561484484,
+      "test_macro_f1_std": 0.017459272324784784,
+      "seed42_test_macro_f1": 0.9320612405718789,
+      "seed42_test_correct": 40,
+      "latency_median_ms": 23.52565000182949,
+      "latency_p95_ms": 26.32259499223437,
+      "model_mib": 9.875921249389648,
+      "selected": true
+    },
+    {
+      "configuration": "mobilenetv2_a05__global_tiles",
+      "model_id": "mobilenetv2_a05",
+      "view": "global_tiles",
+      "repeats": 3,
+      "total_parameters": 898419,
+      "trainable_parameters": 192195,
+      "validation_accuracy_mean": 0.7222222222222223,
+      "validation_accuracy_std": 0.1272937693043289,
+      "validation_macro_f1_mean": 0.6258648758648758,
+      "validation_macro_f1_std": 0.17865889484477676,
+      "head_training_seconds_mean": 2.2991766333191967,
+      "test_accuracy_mean": 0.888888888888889,
+      "test_accuracy_std": 0.06873217490352689,
+      "seed42_test_accuracy": 0.9285714285714286,
+      "test_macro_f1_mean": 0.8278104142234577,
+      "test_macro_f1_std": 0.06873616637944031,
+      "seed42_test_macro_f1": 0.879951690821256,
+      "seed42_test_correct": 39,
+      "latency_median_ms": 41.00845000357367,
+      "latency_p95_ms": 46.04763999232091,
+      "model_mib": 5.421219825744629,
+      "selected": false
+    },
+    {
+      "configuration": "resnet50__global",
+      "model_id": "resnet50",
+      "view": "global",
+      "repeats": 3,
+      "total_parameters": 23690307,
+      "trainable_parameters": 102595,
+      "validation_accuracy_mean": 0.6666666666666666,
+      "validation_accuracy_std": 0.08333333333333331,
+      "validation_macro_f1_mean": 0.6047619047619048,
+      "validation_macro_f1_std": 0.0953966933416935,
+      "head_training_seconds_mean": 2.6325674999970943,
+      "test_accuracy_mean": 0.9047619047619048,
+      "test_accuracy_std": 0.023809523809523836,
+      "seed42_test_accuracy": 0.9285714285714286,
+      "test_macro_f1_mean": 0.8386021527783981,
+      "test_macro_f1_std": 0.0523504537236983,
+      "seed42_test_macro_f1": 0.8914431673052364,
+      "seed42_test_correct": 39,
+      "latency_median_ms": 53.08085001888685,
+      "latency_p95_ms": 56.32115001208149,
+      "model_mib": 91.74128150939941,
+      "selected": false
+    },
+    {
+      "configuration": "mobilenetv2_a10__global_tiles",
+      "model_id": "mobilenetv2_a10",
+      "view": "global_tiles",
+      "repeats": 3,
+      "total_parameters": 2450179,
+      "trainable_parameters": 192195,
+      "validation_accuracy_mean": 0.7222222222222222,
+      "validation_accuracy_std": 0.048112522432468836,
+      "validation_macro_f1_mean": 0.5953330619997287,
+      "validation_macro_f1_std": 0.14766836494264285,
+      "head_training_seconds_mean": 2.54561546666082,
+      "test_accuracy_mean": 0.8650793650793651,
+      "test_accuracy_std": 0.10997147984564298,
+      "seed42_test_accuracy": 0.7380952380952381,
+      "test_macro_f1_mean": 0.8008245722531436,
+      "test_macro_f1_std": 0.18591606998579976,
+      "seed42_test_macro_f1": 0.5861471861471861,
+      "seed42_test_correct": 31,
+      "latency_median_ms": 47.79894999228418,
+      "latency_p95_ms": 54.53366998699494,
+      "model_mib": 11.340764999389648,
+      "selected": false
+    },
+    {
+      "configuration": "custom_cnn__global",
+      "model_id": "custom_cnn",
+      "view": "global",
+      "repeats": 3,
+      "total_parameters": 99843,
+      "trainable_parameters": 99843,
+      "validation_accuracy_mean": 0.7222222222222222,
+      "validation_accuracy_std": 0.048112522432468836,
+      "validation_macro_f1_mean": 0.5920634920634921,
+      "validation_macro_f1_std": 0.0961202530616044,
+      "head_training_seconds_mean": 11.031849100041049,
+      "test_accuracy_mean": 0.8015873015873017,
+      "test_accuracy_std": 0.08361629962581538,
+      "seed42_test_accuracy": 0.8809523809523809,
+      "test_macro_f1_mean": 0.655985626573862,
+      "test_macro_f1_std": 0.14735840774405745,
+      "seed42_test_macro_f1": 0.8261183261183261,
+      "seed42_test_correct": 37,
+      "latency_median_ms": 7.294600014574826,
+      "latency_p95_ms": 8.378234965493903,
+      "model_mib": 1.1975164413452148,
+      "selected": false
+    },
+    {
+      "configuration": "mobilenetv2_a05__global",
+      "model_id": "mobilenetv2_a05",
+      "view": "global",
+      "repeats": 3,
+      "total_parameters": 770419,
+      "trainable_parameters": 64195,
+      "validation_accuracy_mean": 0.638888888888889,
+      "validation_accuracy_std": 0.0962250448649376,
+      "validation_macro_f1_mean": 0.5610229276895943,
+      "validation_macro_f1_std": 0.15810930904047227,
+      "head_training_seconds_mean": 2.1607780666672625,
+      "test_accuracy_mean": 0.9126984126984127,
+      "test_accuracy_std": 0.036369648372665375,
+      "seed42_test_accuracy": 0.8809523809523809,
+      "test_macro_f1_mean": 0.8441193779907402,
+      "test_macro_f1_std": 0.07090201865553822,
+      "seed42_test_macro_f1": 0.768769870383957,
+      "seed42_test_correct": 37,
+      "latency_median_ms": 32.42539998609573,
+      "latency_p95_ms": 55.76882499153725,
+      "model_mib": 3.956376075744629,
+      "selected": false
+    },
+    {
+      "configuration": "resnet50__global_tiles",
+      "model_id": "resnet50",
+      "view": "global_tiles",
+      "repeats": 3,
+      "total_parameters": 23895107,
+      "trainable_parameters": 307395,
+      "validation_accuracy_mean": 0.5833333333333334,
+      "validation_accuracy_std": 0.08333333333333331,
+      "validation_macro_f1_mean": 0.4274521774521775,
+      "validation_macro_f1_std": 0.059072309535725086,
+      "head_training_seconds_mean": 2.7485638999884636,
+      "test_accuracy_mean": 0.8968253968253967,
+      "test_accuracy_std": 0.013746434980705392,
+      "seed42_test_accuracy": 0.9047619047619048,
+      "test_macro_f1_mean": 0.8479258008447821,
+      "test_macro_f1_std": 0.044807610360333455,
+      "seed42_test_macro_f1": 0.8507166592272976,
+      "seed42_test_correct": 38,
+      "latency_median_ms": 137.16549999662675,
+      "latency_p95_ms": 171.01693500007968,
+      "model_mib": 94.08503150939941,
+      "selected": false
+    },
+    {
+      "configuration": "efficientnetb0__global",
+      "model_id": "efficientnetb0",
+      "view": "global",
+      "repeats": 3,
+      "total_parameters": 4113766,
+      "trainable_parameters": 64195,
+      "validation_accuracy_mean": 0.5555555555555556,
+      "validation_accuracy_std": 0.1734721666221777,
+      "validation_macro_f1_mean": 0.3793243793243793,
+      "validation_macro_f1_std": 0.13883666225899519,
+      "head_training_seconds_mean": 2.211268300015945,
+      "test_accuracy_mean": 0.7936507936507936,
+      "test_accuracy_std": 0.09622504486493763,
+      "seed42_test_accuracy": 0.8809523809523809,
+      "test_macro_f1_mean": 0.6793755616522804,
+      "test_macro_f1_std": 0.19343334074064256,
+      "seed42_test_macro_f1": 0.8671319102353584,
+      "seed42_test_correct": 37,
+      "latency_median_ms": 35.46180002740584,
+      "latency_p95_ms": 40.12830003339331,
+      "model_mib": 16.91793155670166,
+      "selected": false
+    },
+    {
+      "configuration": "efficientnetb0__global_tiles",
+      "model_id": "efficientnetb0",
+      "view": "global_tiles",
+      "repeats": 3,
+      "total_parameters": 4241766,
+      "trainable_parameters": 192195,
+      "validation_accuracy_mean": 0.5555555555555555,
+      "validation_accuracy_std": 0.0962250448649376,
+      "validation_macro_f1_mean": 0.3598087098087099,
+      "validation_macro_f1_std": 0.1141079427398666,
+      "head_training_seconds_mean": 2.455546666654603,
+      "test_accuracy_mean": 0.8333333333333334,
+      "test_accuracy_std": 0.08584645893961883,
+      "seed42_test_accuracy": 0.9285714285714286,
+      "test_macro_f1_mean": 0.7047769030240266,
+      "test_macro_f1_std": 0.17672466763906303,
+      "seed42_test_macro_f1": 0.8750917094644167,
+      "seed42_test_correct": 39,
+      "latency_median_ms": 83.5969999898225,
+      "latency_p95_ms": 148.53861002775372,
+      "model_mib": 18.38277530670166,
+      "selected": false
+    }
+  ],
+  "representative_seed42": {
+    "n": 42,
+    "correct": 40,
+    "accuracy": 0.9523809523809523,
+    "macro_f1": 0.9320612405718789,
+    "confusion": [
+      [
+        13,
+        1,
+        1
+      ],
+      [
+        0,
+        23,
+        0
+      ],
+      [
+        0,
+        0,
+        4
+      ]
+    ],
+    "per_class": {
+      "t_contamination": {
+        "precision": 1.0,
+        "recall": 0.8666666666666667,
+        "f1-score": 0.9285714285714286,
+        "support": 15.0
+      },
+      "t_scratch": {
+        "precision": 0.9583333333333334,
+        "recall": 1.0,
+        "f1-score": 0.9787234042553191,
+        "support": 23.0
+      },
+      "unfinished_surface": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1-score": 0.8888888888888888,
+        "support": 4.0
+      },
+      "accuracy": 0.9523809523809523,
+      "macro avg": {
+        "precision": 0.9194444444444446,
+        "recall": 0.9555555555555556,
+        "f1-score": 0.9320612405718789,
+        "support": 42.0
+      },
+      "weighted avg": {
+        "precision": 0.9581349206349208,
+        "recall": 0.9523809523809523,
+        "f1-score": 0.9522563162380793,
+        "support": 42.0
+      }
+    }
+  },
+  "historical_references": {
+    "scope": "VISION Ring existing same split, three defect types. No verified normal images.",
+    "split_counts": {
+      "test": {
+        "0": 15,
+        "1": 23,
+        "2": 4
+      },
+      "train": {
+        "0": 10,
+        "1": 18,
+        "2": 5
+      },
+      "validation": {
+        "0": 3,
+        "1": 7,
+        "2": 2
+      }
+    },
+    "class_names": [
+      "t_contamination",
+      "t_scratch",
+      "unfinished_surface"
+    ],
+    "selected_transfer": "global_tiles_48",
+    "encoder": "vision_ring_encoder.keras",
+    "head": "vision_ring_global_tiles_48_head.keras",
+    "feature_views": "global_tiles",
+    "candidates": {
+      "global_linear": {
+        "validation_macro_f1": 0.5063492063492063,
+        "checkpoint": "vision_ring_global_linear_head.keras"
+      },
+      "global_48": {
+        "validation_macro_f1": 0.4487734487734487,
+        "checkpoint": "vision_ring_global_48_head.keras"
+      },
+      "global_tiles_linear": {
+        "validation_macro_f1": 0.611111111111111,
+        "checkpoint": "vision_ring_global_tiles_linear_head.keras"
+      },
+      "global_tiles_48": {
+        "validation_macro_f1": 0.8333333333333334,
+        "checkpoint": "vision_ring_global_tiles_48_head.keras"
+      }
+    },
+    "legacy": {
+      "n": 42,
+      "correct": 34,
+      "accuracy": 0.8095238095238095,
+      "macro_f1": 0.5677655677655677
+    },
+    "test": {
+      "n": 42,
+      "accuracy": 0.9285714285714286,
+      "macro_f1": 0.8914431673052364,
+      "correct": 39,
+      "confusion": [
+        [
+          13,
+          0,
+          2
+        ],
+        [
+          1,
+          22,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "per_class": {
+        "t_contamination": {
+          "precision": 0.9285714285714286,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.896551724137931,
+          "support": 15.0
+        },
+        "t_scratch": {
+          "precision": 1.0,
+          "recall": 0.9565217391304348,
+          "f1-score": 0.9777777777777777,
+          "support": 23.0
+        },
+        "unfinished_surface": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 4.0
+        },
+        "accuracy": 0.9285714285714286,
+        "macro avg": {
+          "precision": 0.8650793650793651,
+          "recall": 0.9410628019323672,
+          "f1-score": 0.8914431673052364,
+          "support": 42.0
+        },
+        "weighted avg": {
+          "precision": 0.9427437641723356,
+          "recall": 0.9285714285714286,
+          "f1-score": 0.9318372559751871,
+          "support": 42.0
+        }
+      }
+    },
+    "input_dtype": "uint8 RGB",
+    "legacy_preserved": true
+  },
+  "evaluated_existing_test": true,
+  "real_training_runs": 27,
+  "backbones_finetuned": false,
+  "initial_seed_variation_is_not_cross_validation": true
+}

@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-27 Asia/Seoul",
+  "site_url": "https://foldedvision-inspection.wholehaven1026.chatgpt.site",
+  "source_commit": "6b0cdae77888c5c8c3903897e013ef788b61cefc",
+  "deployment_status": "succeeded",
+  "deployment_id": "appgdep_6b08ede48fbc8191969d17262ba2cde4",
+  "saved_version_id": "appgprj_6b039a2d1f5881919ddbc8acaf4588c1~appgver_25f42d50c03081918d0dacf04ea5fd75",
+  "audience_preserved": "owner-only; custom policy with one owner and zero external visitors",
+  "hosted_storage": {
+    "DB": [
+      "app_config",
+      "audit",
+      "inspections",
+      "lots",
+      "photos",
+      "scenarios",
+      "users"
+    ],
+    "photos": "R2 BUCKET"
+  },
+  "tests_passed": 10,
+  "build_passed": true,
+  "desktop_viewport": [
+    1440,
+    1080
+  ],
+  "mobile_viewport": [
+    390,
+    844
+  ],
+  "browser_workflow": {
+    "lot_created": "UI-QA-1795746704819",
+    "record_hash": "#record/e47fd0eb-789b-43d0-912c-7b0e1c7d3499",
+    "reason_required": true,
+    "decision_update": true,
+    "scenario_saved": true,
+    "mobile_no_horizontal_overflow": true,
+    "console_errors": []
+  },
+  "real_ring_inference": {
+    "record_id": "fe5ccd14-24e9-486e-92dc-8c81d7505b9f",
+    "code": "FV-261127-03609",
+    "expected": 0.9983523,
+    "actual": 0.9983522891998291,
+    "max_delta": 1.0800170868741077e-08,
+    "status": "REVIEW",
+    "final": "NG",
+    "model": "vision_ring_global_tiles_48",
+    "inference_ms": 39482
+  },
+  "multiphoto": {
+    "per_photo_display": true,
+    "types": [
+      "표면 미가공",
+      "오염"
+    ],
+    "draft_preserved": true,
+    "record_id": "7b1e9f53-ad35-4c6a-a9fd-dfc9a638fdfb"
+  },
+  "original_web_evidence_files_preserved": [
+    "sites/foldedvision-inspection/public/mark.svg",
+    "sites/foldedvision-inspection/public/evidence/bearing-confusion.webp",
+    "sites/foldedvision-inspection/public/evidence/bearing-model-comparison.webp",
+    "sites/foldedvision-inspection/public/evidence/bearing-samples.webp",
+    "sites/foldedvision-inspection/public/evidence/lens-cnn-fp.webp",
+    "sites/foldedvision-inspection/public/evidence/lens-eda.webp",
+    "sites/foldedvision-inspection/public/evidence/lens-eval.webp",
+    "sites/foldedvision-inspection/public/evidence/lens-miss-original.webp",
+    "sites/foldedvision-inspection/public/evidence/lens-miss-overlay.webp",
+    "sites/foldedvision-inspection/public/evidence/lens-patches.webp",
+    "sites/foldedvision-inspection/public/evidence/lens-preprocessing.webp",
+    "sites/foldedvision-inspection/public/evidence/lens-success-original.webp",
+    "sites/foldedvision-inspection/public/evidence/lens-success-overlay.webp",
+    "sites/foldedvision-inspection/public/evidence/pcb-baseline-comparison.webp",
+    "sites/foldedvision-inspection/public/evidence/pcb-baseline-ground-truth.webp",
+    "sites/foldedvision-inspection/public/evidence/pcb-baseline-prediction.webp",
+    "sites/foldedvision-inspection/public/evidence/pcb-original-labels.webp",
+    "sites/foldedvision-inspection/public/evidence/pcb4-detected-chart.webp",
+    "sites/foldedvision-inspection/public/evidence/pcb4-eda.webp",
+    "sites/foldedvision-inspection/public/evidence/pcb4-fp-chart.webp",
+    "sites/foldedvision-inspection/public/evidence/ring-baseline.webp",
+    "sites/foldedvision-inspection/public/evidence/ring-eda.webp",
+    "sites/foldedvision-inspection/public/evidence/ring-eval.webp",
+    "sites/foldedvision-inspection/public/evidence/ring-failure-ground-truth.webp",
+    "sites/foldedvision-inspection/public/evidence/ring-failure-original.webp",
+    "sites/foldedvision-inspection/public/evidence/ring-preprocessing.webp",
+    "sites/foldedvision-inspection/public/evidence/ring-success-attention.webp",
+    "sites/foldedvision-inspection/public/evidence/ring-success-original.webp",
+    "sites/foldedvision-inspection/public/evidence/quality/lens-error.webp",
+    "sites/foldedvision-inspection/public/evidence/quality/lens-hit.webp",
+    "sites/foldedvision-inspection/public/evidence/quality/pcb-error.webp",
+    "sites/foldedvision-inspection/public/evidence/quality/pcb-hit.webp",
+    "sites/foldedvision-inspection/public/evidence/quality/pcb-normal.webp",
+    "sites/foldedvision-inspection/public/evidence/quality/ring-error.webp",
+    "sites/foldedvision-inspection/public/evidence/quality/ring-hit.webp",
+    "sites/foldedvision-inspection/public/visuals/clean-inspection.png",
+    "sites/foldedvision-inspection/public/visuals/inspection-parts.png",
+    "sites/foldedvision-inspection/src/console.css",
+    "sites/foldedvision-inspection/src/evidence.json",
+    "sites/foldedvision-inspection/src/FactoryConsole.jsx",
+    "sites/foldedvision-inspection/src/FactoryScene.jsx",
+    "sites/foldedvision-inspection/src/factoryTimeline.mjs",
+    "sites/foldedvision-inspection/src/factoryTimeline.test.mjs",
+    "sites/foldedvision-inspection/src/qualityResults.json",
+    "sites/foldedvision-inspection/src/styles.css"
+  ],
+  "original_portfolio_preserved": true,
+  "presentation_master_unchanged": true,
+  "model_training": false,
+  "hosted_live_inference_requires_external_server": true,
+  "local_ring_live_inference": true,
+  "pcb": "runtime environment pending",
+  "lens": "latest weights pending",
+  "local_operational_data": {
+    "database": "sites/foldedvision-inspection/.runtime/operations.sqlite",
+    "photos": "sites/foldedvision-inspection/.runtime/uploads/",
+    "protected": true
+  },
+  "archive_sha256": "37a15f32bee65de4d3da5f973f345ffbad55ad8577aaacfa1b68a5c204186878"
+}

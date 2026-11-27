@@ -1,0 +1,31 @@
+{
+  "completed_at": "2026-11-27T07:32:41.696616+00:00",
+  "total_actual_epochs": 419,
+  "training_runs": 27,
+  "learned_weight_files": 27,
+  "frozen_encoder_files": 4,
+  "original_69_cells_preserved": true,
+  "unchanged_protected_files": 32,
+  "selected_configuration": "mobilenetv2_a10__global",
+  "source_sha256": {
+    "rbc-config-20261127": "7150f01bb8440b860457c128935764f88839c355f0568e29d4a2ca7eea7c4a01",
+    "rbc-functions-20261127": "965232cb97fd8a6bd7c743fffb793ed536416c073d2e2fdd6ac322e088546ad0",
+    "rbc-training-functions-20261127": "d8da2280671fe0b351530548845b099d070e05ac828c2e5f9bf49249a0a3ec44",
+    "rbc-prepare-20261127": "382d759d350ffb9e2d0ef406fd42e0851f726da51ab9b92e2c6cc42a1a912247",
+    "rbc-train-custom_cnn": "af9c9c2fda8a720e25232cdf812840bc8289879a4320d240e658b9aaadf89c7e",
+    "rbc-train-mobilenetv2_a05": "5ea57fc7ffc9cb19495b45dc2daa12be654dbadaa3ab0bb299d00a95a7c9446c",
+    "rbc-train-mobilenetv2_a10": "763639965d2d27f0783842bf5facb948e25963a3d43ed2eb0369d72448bddffd",
+    "rbc-train-resnet50": "6a679376b09b7f2e2f31e9b0316ea4a6e6bfc458b5a7f2844ec6146188252655",
+    "rbc-train-efficientnetb0": "2d7af3697a6b4556708afee8a6a449cc589ed8555e25f1fcb3bda578d3ba19e0",
+    "rbc-lock-20261127": "ff89454f97e703cbdfe356e02fa8b2b9879aa7895ce899ac6ec3f3704ab02fa7",
+    "rbc-eval-custom_cnn": "80dc8c99aff4459eed4ddf85c2a2c39320e51259133fc588a3aa69c73d3f6687",
+    "rbc-eval-mobilenetv2_a05": "190343f475d5cb8e5dce56be1d79ec53d2df287da04d633bc9c0f987b6f13843",
+    "rbc-eval-mobilenetv2_a10": "937ec2c0744aa9414c951db76297b272d7a9f52dcdb2d0564acc6ab0249d8112",
+    "rbc-eval-resnet50": "3c736befc1abde0d39b4d2f1a048a5ae8c8ced028860b8ceb8a2196a2efc91c5",
+    "rbc-eval-efficientnetb0": "68f5e1c5b65d362b8bfbc58a48bb06c6b8149ec144c2f011104e904a7b3da405",
+    "rbc-report-functions-20261127": "de5c11379119518a64875c2ca8f6150f832688d5b58c7f22c21202ae625847c1",
+    "rbc-report-20261127": "34c237c3b3ad91f2e117024b076ed3e949435d711aeac630b22fcb41d0302ef2",
+    "rbc-verify-20261127": "6560ddb4c9012999cfde2aa48046da911d150f0a68f520ae75504becdc0a2a24"
+  },
+  "interpretation": "Validation-only selection; historical reused test; initialization SD, not cross-validation; all REVIEW."
+}

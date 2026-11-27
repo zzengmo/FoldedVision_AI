@@ -1,0 +1,75 @@
+{
+  "run_id": "efficientnetb0_global_seed2026",
+  "model_id": "efficientnetb0",
+  "view": "global",
+  "seed": 2026,
+  "signature": {
+    "protocol": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+    "manifest": "eccec0163730bf19fe48207684d06fe9dc8d5839a38b3b5776335b7cd9d7539f",
+    "model_id": "efficientnetb0",
+    "view": "global",
+    "seed": 2026,
+    "pretrained_weights": "0683edcf6151811fb3ddd6f098ac48df644d74592c4919a5acdee1c37554add2"
+  },
+  "selection_lock_sha256": "b5f8762af569c34cdc3b23fb439ab7647ec58aae3193d4b970c5db12a4d23691",
+  "evaluated_at": "2026-11-27T07:25:43.666892+00:00",
+  "test": {
+    "n": 42,
+    "correct": 34,
+    "accuracy": 0.8095238095238095,
+    "macro_f1": 0.6902691511387163,
+    "confusion": [
+      [
+        10,
+        1,
+        4
+      ],
+      [
+        1,
+        22,
+        0
+      ],
+      [
+        2,
+        0,
+        2
+      ]
+    ],
+    "per_class": {
+      "t_contamination": {
+        "precision": 0.7692307692307693,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.7142857142857143,
+        "support": 15.0
+      },
+      "t_scratch": {
+        "precision": 0.9565217391304348,
+        "recall": 0.9565217391304348,
+        "f1-score": 0.9565217391304348,
+        "support": 23.0
+      },
+      "unfinished_surface": {
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "f1-score": 0.4,
+        "support": 4.0
+      },
+      "accuracy": 0.8095238095238095,
+      "macro avg": {
+        "precision": 0.6863619472315126,
+        "recall": 0.7077294685990339,
+        "f1-score": 0.6902691511387163,
+        "support": 42.0
+      },
+      "weighted avg": {
+        "precision": 0.8302808302808303,
+        "recall": 0.8095238095238095,
+        "f1-score": 0.8170068027210885,
+        "support": 42.0
+      }
+    }
+  },
+  "predictions": "outputs/ring_model_comparison/2026-11-27/predictions/efficientnetb0_global_seed2026_test.csv",
+  "predictions_sha256": "365df64bf13724f11c147f2fbab7aa8fc895acd7574ea68e71d5f644733e891b",
+  "historical_test_reused": true
+}

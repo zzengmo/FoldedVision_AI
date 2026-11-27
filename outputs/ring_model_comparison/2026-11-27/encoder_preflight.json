@@ -1,0 +1,26 @@
+[
+  {
+    "model_id": "mobilenetv2_a05",
+    "feature_dimension": 1280,
+    "parameters": 706224,
+    "save_load_max_difference": 0.0
+  },
+  {
+    "model_id": "mobilenetv2_a10",
+    "feature_dimension": 1280,
+    "parameters": 2257984,
+    "save_load_max_difference": 0.0
+  },
+  {
+    "model_id": "resnet50",
+    "feature_dimension": 2048,
+    "parameters": 23587712,
+    "save_load_max_difference": 0.0
+  },
+  {
+    "model_id": "efficientnetb0",
+    "feature_dimension": 1280,
+    "parameters": 4049571,
+    "save_load_max_difference": 0.0
+  }
+]

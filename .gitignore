@@ -39,6 +39,10 @@ __pycache__/
 !/outputs/cleanup_records/workspace_reorganization_2026-11-23.json
 !/outputs/cleanup_records/workspace_cleanup_2026-11-26.json
 !/outputs/cleanup_records/presentation_history/
+!/outputs/cleanup_records/business_web_2026-11-27/
+!/outputs/cleanup_records/ring_model_comparison_2026-11-27/
+!/outputs/cleanup_records/github_update_2026-11-27/
+!/outputs/ring_model_comparison/
 !/outputs/presentation/
 /outputs/presentation/*
 !/outputs/presentation/*.pptx
@@ -46,6 +50,8 @@ __pycache__/
 !/outputs/presentation/FoldedVision_최종발표_대본.txt
 !/outputs/presentation/*_최종_대본.txt
 !/outputs/presentation/FoldedVision_공통발표_대본.txt
+!/outputs/presentation/FoldedVision_Ring_발표대본_김현모.txt
+!/outputs/presentation/FoldedVision_Unity_발표대본.txt
 !/outputs/presentation/REVIEW_NOTES.md
 !/outputs/presentation/slide_previews/
 !/outputs/presentation/slide_previews/slide-*.png
@@ -80,6 +86,7 @@ __pycache__/
 !/outputs/quality_upgrade/preservation_check.json
 !/outputs/quality_upgrade/web_validation.json
 *.log
+!/outputs/cleanup_records/ring_model_comparison_2026-11-27/console_*.log
 
 /unity/*/Library/
 /unity/*/Temp/

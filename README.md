@@ -5,19 +5,21 @@
 
 다른 PC에서 Codex로 이어갈 때는 이 저장소를 복제해서 폴더를 열고, [인수인계 프롬프트](CODEX_PROMPT.txt)의 마지막 줄에 목표를 적어 Codex에 붙여 넣어 주세요. Windows 설치 명령은 아래 노트북 실행 절에 있습니다.
 
-웹 작업을 이어갈 때는 Node.js와 npm만 준비한 뒤 `sites/foldedvision-inspection/`에서 `npm.cmd ci`, `npm.cmd test`, `npm.cmd run dev -- --host 127.0.0.1`을 실행합니다. Mac/Linux는 `npm`을 사용합니다. 웹의 저장 사례 시연에는 Python·원본 데이터·모델 가중치가 필요 없습니다. 최신 디자인, 3D 파일별 역할, 미완료 시각 검수와 게시 정보는 [인수인계 프롬프트](CODEX_PROMPT.txt)에 정리했습니다.
+웹은 **입고검사 관리실**입니다. Node.js 22.13 이상에서 `sites/foldedvision-inspection/`의 `npm.cmd ci`, `npm.cmd test`, `npm.cmd run dev`로 실행합니다. 평소에는 루트의 [시작 CMD](Start_FoldedVision.cmd)를 사용합니다. 로컬은 SQLite·사진 파일, 게시 웹은 D1·R2에 기록을 저장하며 서로 자동 동기화하지 않습니다. 실제 Ring 추론에는 보존된 Python 환경과 웹에 연결된 기존 전체+부분 모델 가중치가 필요합니다. [웹 실행 안내](sites/foldedvision-inspection/README.md)
 
-React 포트폴리오는 부품별 평가 사례, 모델 비교, 개발 과정과 3D 자동 검사 시연을 제공합니다. 밝은 화면에서 투입·촬영·분류를 재생하며 일시정지·배속·직접 분류를 지원합니다. [웹 실행 안내](sites/foldedvision-inspection/README.md)
+업무 웹에서 LOT 등록, 사진 검사, 담당자 판정·재검, 이력 검색·CSV 내보내기, 품질 분석과 손실 시뮬레이션을 사용합니다. 이전 React 포트폴리오와 Three.js 체험은 `/portfolio.html`에 보존했습니다. Unity 공정 시각화와 웹 업무 발표는 분리합니다.
 
 Unity 공정 시연에서는 외주 부품 투입부터 사전 검사와 갠트리 분류까지 확인할 수 있습니다. Lens는 3D 전시, Ring과 PCB는 저장 결과 재생이며 가상 공정 모드도 제공합니다. [Unity 실행 CMD](Start_FoldedVision_Unity.cmd) · [Unity 프로젝트 안내](unity/My%20project/README.md)
 
 [게시된 웹](https://foldedvision-inspection.wholehaven1026.chatgpt.site)은 기존 본인 전용 접근 설정을 유지합니다. GitHub의 소스와 Sites의 게시 저장소는 별개입니다.
 
-최종 발표 기준은 2026-11-26 정리한 **[50장 PowerPoint](outputs/presentation/FoldedVision_최종발표.pptx)**입니다. 공통 1–6장 → Lens 7–15장 → Ring 16–25장 → PCB 26–40장 → 종합·손실·결론 41–44장 → Unity 시각화와 내장 영상 45–50장 순서입니다. [Ring 발표 대본](outputs/presentation/FoldedVision_Ring_발표대본_김현모.pdf)은 16–25장 순서입니다.
+최신 발표 작업은 **[사용자 제공 원본 44장](outputs/presentation/FACT_사용자최신_44장.pptx)**과 **[공통부 수정본 6장](outputs/presentation/FACT_공통부_수정본.pptx)**을 기준으로 이어갑니다. 두 파일은 아직 통합하지 않았습니다. 공통부 수정본은 표지 유지 → 전체 목차 → 목표와 검사 대상 → 일정 → 선정 배경과 필요성 → 사용 기술 순서입니다. [공통부 PDF](outputs/presentation/FACT_공통부_수정본.pdf)도 함께 확인할 수 있습니다. 사용자 원본의 Lens는 7장에서 시작하며, 새 Ring 비교 실험의 95.24% 결과는 원본 PPT에 아직 반영하지 않았습니다.
 
-최종 발표 15장은 VISION 렌즈 테스트 52장·3,410구역에서 AP 0.419 → 0.808, 정상 구역 오검출률 65.4% → 25.1%, 불량 구역 Recall 95.2%를 제시합니다. 42–43장의 손실 비교는 카메라 커버의 이전 결과와 Ring 결함 유형 정분류율을 대입한 시나리오입니다. Unity는 저장 결과와 가상 경로를 재생합니다.
+이전 **[49장 통합 PowerPoint](outputs/presentation/FoldedVision_최종발표.pptx)**는 보관본입니다. 그 파일의 공통 1–6장 → Lens 7–15장 → Ring 16–24장 → PCB 25–39장 → 종합·손실·결론 40–43장 → Unity 44–49장 순서와 [Ring 대본 PDF](outputs/presentation/FoldedVision_Ring_발표대본_김현모.pdf)·[TXT](outputs/presentation/FoldedVision_Ring_발표대본_김현모.txt)를 최신 44장 순서와 혼동하지 않습니다. [Unity 대본 PDF](outputs/presentation/FoldedVision_Unity_발표대본.pdf)·[TXT](outputs/presentation/FoldedVision_Unity_발표대본.txt)는 이전 사용자 45장 판본의 실제 40–45장 기준입니다.
 
-발표 질문 대비 자료는 [Lens 과거 실험 자료](outputs/presentation/공부자료/Lens_딥러닝_공부자료.pdf), [Ring 기준 CNN과 전이학습](outputs/presentation/공부자료/Ring_딥러닝_공부자료.pdf), [PCB 기준 YOLO와 PCB4 전이학습](outputs/presentation/공부자료/PCB_딥러닝_공부자료.pdf)입니다. 최신 렌즈 전이학습 설명은 최종 PPT 7–15장에 있습니다. [전체 데이터 출처](DATA_SOURCES.md)
+보관된 49장 판본의 15장은 VISION 렌즈 테스트 52장·3,410구역에서 AP 0.419 → 0.808, 정상 구역 오검출률 65.4% → 25.1%, 불량 구역 Recall 95.2%를 제시합니다. 같은 판본의 41–42장 손실 비교는 카메라 커버의 이전 결과와 Ring 결함 유형 정분류율을 대입한 시나리오입니다. Unity는 저장 결과와 가상 경로를 재생합니다.
+
+발표 질문 대비 자료는 [Lens 과거 실험 자료](outputs/presentation/공부자료/Lens_딥러닝_공부자료.pdf), [Ring 기준 CNN과 전이학습](outputs/presentation/공부자료/Ring_딥러닝_공부자료.pdf), [PCB 기준 YOLO와 PCB4 전이학습](outputs/presentation/공부자료/PCB_딥러닝_공부자료.pdf)입니다. 최신 사용자 원본의 Lens 파트는 7–16장입니다. 새 Ring 모델 선정 설명은 [비교 실험 보고서](outputs/ring_model_comparison/2026-11-27/REPORT.md)를 따릅니다. [전체 데이터 출처](DATA_SOURCES.md)
 
 ## 2026-11-23 추가 학습
 
@@ -131,3 +133,17 @@ React 포트폴리오에서 세 부품의 저장된 평가 사례를 볼 수 있
 자세한 삭제·보관 내역과 실제 재검증은 원본 PC의 `outputs/cleanup_records/cleanup_result.json`에서 확인하세요.
 
 2026-11-26에는 이전 발표본, 대본, 미리보기, 검토용 캡처를 원본 PC의 `archive/2026-11-26_presentation_drafts.zip`으로 모았습니다. 이동과 보존 내역은 [정리 기록](outputs/cleanup_records/workspace_cleanup_2026-11-26.json)에 있습니다.
+
+## 2026-11-27 Ring 모델 비교 실험
+
+MobileNet 선택 근거를 보완하기 위해 직접 CNN, MobileNetV2(폭 0.5/1.0), ResNet50, EfficientNetB0를 실제 비교했습니다. 전체/부분 사진을 구분한 9조건을 초기값 3개로 반복해 총 27회 학습했습니다. 구현과 실제 출력은 `notebooks/ring/02_Ring_DeepLearning_Final.ipynb` 마지막 절에 있으며 기본 실행은 `off`입니다. 최초 69셀과 이전 모델·결과는 보존했습니다.
+
+검증 결과로 선정한 **MobileNetV2 폭 1.0·전체 사진**의 사전 고정 초기값 42는 기존 테스트 42장에서 **95.24%(40/42), Macro F1 0.9321**입니다. 학습 33장·검증 12장·기존 테스트 42장의 같은 분할을 사용했고, 테스트 점수로 후보나 초기값을 고르지 않았습니다. 이는 정상/불량 검출률이나 새로운 외부 검증 결과가 아닙니다. 기존 92.86% MobileNet 다중 특징 모델과 이번 공통 조건의 모델을 구분합니다.
+
+[실험 설명과 전체 결과](outputs/ring_model_comparison/2026-11-27/REPORT.md) · [3쪽 결과 PDF](outputs/ring_model_comparison/2026-11-27/Ring_모델비교_실험결과.pdf) · [전체 비교 CSV](outputs/ring_model_comparison/2026-11-27/comparison_all.csv) · [선정 근거와 질문 답변](outputs/ring_model_comparison/2026-11-27/모델선정_설명과질문답변.txt)
+
+```powershell
+.\.venv\Scripts\python.exe -X utf8 outputs/cleanup_records/ring_model_comparison_2026-11-27/run_notebook.py all
+```
+
+새 가중치는 `models/ring_model_comparison/2026-11-27/`, ImageNet 출처·원본 가중치·특징 캐시는 `data/external/ring_model_comparison/2026-11-27/`에 보존합니다. 새 PC에서 실제 재현하려면 이 파일이 필요합니다. 결과 폴더의 `selected_model_config.json`이 새 후보 설정이며, 기존 웹·Unity 추론 연결과 PPT는 변경하지 않았습니다.

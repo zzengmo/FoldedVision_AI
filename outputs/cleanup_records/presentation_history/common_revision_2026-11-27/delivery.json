@@ -1,0 +1,10 @@
+{
+  "pptx": "outputs/presentation/FACT_공통부_수정본.pptx",
+  "slides": 6,
+  "source_slides": 44,
+  "original_cover_xml_unchanged": true,
+  "original_source_sha256": "8bbc670105e3d0ffeb1947603235bef50e7a40a59c33b2468d7451541b10bc06",
+  "output_sha256": "6ed6b5ada0e839f762b82b43b32ac5c9733eab4c9924026d33f92488a2392b65",
+  "package_parts": 71,
+  "unused_video_and_slides_removed": true
+}

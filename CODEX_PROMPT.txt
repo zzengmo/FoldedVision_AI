@@ -1,41 +1,41 @@
 다른 PC에서 FoldedVision_AI 저장소를 열었어. 이 프로젝트를 이어서 작업해줘.
 
-기준일은 2026-11-26이고 저장소는 https://github.com/zzengmo/FoldedVision_AI.git, 작업 브랜치는 main이야. README.md, AGENTS.md, DATA_SOURCES.md를 읽고 현재 Git 상태와 파일을 확인해줘. 아래 50장 최종 PowerPoint를 기준으로 이어가줘. 이번 목표는 마지막 줄에 적을게. 원본 작업 PC에만 있던 data, archive, 일부 체크포인트가 새 PC에 필요하면 어떤 경로와 자료가 필요한지 알려줘. 자동으로 대용량 데이터를 받거나 전체 학습을 시작하지 말고, 요청한 기능부터 확인해줘.
+기준일은 2026-11-27이고 저장소는 https://github.com/zzengmo/FoldedVision_AI.git, 작업 브랜치는 main이야. README.md, AGENTS.md, DATA_SOURCES.md를 읽고 현재 Git 상태와 파일을 확인해줘. 최신 사용자 원본 44장과 별도 공통부 수정본 6장을 기준으로 이어가줘. 두 파일은 아직 합치지 않았어. 이번 목표는 마지막 줄에 적을게. 원본 작업 PC에만 있던 data, archive, 일부 체크포인트가 새 PC에 필요하면 어떤 경로와 자료가 필요한지 알려줘. 자동으로 대용량 데이터를 받거나 전체 학습을 시작하지 말고, 요청한 기능부터 확인해줘.
 
-웹만 수정할 때는 Python, 학습 데이터, 체크포인트가 필요 없어. 노트북 학습·추론 작업이 필요할 때만 Python 3.11 가상환경을 만들어줘. Windows에서 py -3.11 -m venv .venv 실행 후 .venv\Scripts\python.exe -m pip install -r requirements-lock.txt로 설치하고, 노트북 커널을 같은 Python으로 선택해줘. OS가 다르면 호환되는 패키지를 확인해줘.
+[최신 발표 파일 · 2026-11-27 GitHub 반영]
+outputs/presentation/FACT_사용자최신_44장.pptx는 Downloads/FoldedVision_최종발표 (4).pptx와 바이트가 같은 원본이야. SHA-256은 8bbc670105e3d0ffeb1947603235bef50e7a40a59c33b2468d7451541b10bc06이고 Lens는 7장에서 시작해. 공통부 수정본은 FACT_공통부_수정본.pptx와 PDF, 총 6장이야. 표지 보존, 사용자 지정 목차 6개 구분·25항목, 목표·대상, 일정, 선정 근거, 사용 기술을 담았어. 전체 44장과 아직 통합하지 않았고 다른 개인 파트는 수정하지 않았어. 기존 FoldedVision_최종발표.pptx 49장은 보관본이며 최신 원본과 혼동하지 마. 새 Ring 비교 결과 95.24%는 노트북·별도 보고서에 있고 최신 44장 PPT에는 아직 반영하지 않았어.
 
-[최신 웹 상태와 다른 PC 실행]
-웹은 sites/foldedvision-inspection/의 React 19.1.0 + Vite 6.4.6 + Three.js 0.180.0 프로젝트야. 이번 작업은 어두운 화면과 반복적인 네모 상자 구성을 흰색·남색·청록색의 밝은 디자인으로 바꾸고, 3D 공정을 자동 시연으로 확장한 거야. 부품 클러스터 이미지, 외주 입고 → 제조 전 외관 검사 → 제조 투입 흐름, 주제 선정 배경, 실제 평가 사진과 지표를 배치했어. 사용자는 전문적이고 풍성한 구성을 원하며 반복되는 카드와 상자·화살표 도식을 싫어해.
+웹 화면과 수동 검사 업무는 Node.js로 실행하고, 실제 Ring 추론은 보존된 Python 환경과 가중치가 필요해. 노트북 학습·추론 작업이 필요할 때만 Python 3.11 가상환경을 만들어줘. Windows에서 py -3.11 -m venv .venv 실행 후 .venv\Scripts\python.exe -m pip install -r requirements-lock.txt로 설치하고, 노트북 커널을 같은 Python으로 선택해줘. OS가 다르면 호환되는 패키지를 확인해줘.
 
-새 PC에서 저장소를 clone하거나 기존 작업 폴더에서 git pull --ff-only를 실행하고, Node.js와 npm을 준비해줘. 이번 검증 환경은 Node.js 24.14.1 / npm 11.11.0이었어. Windows PowerShell에서 저장소 루트를 기준으로:
-  Set-Location sites/foldedvision-inspection
-  npm.cmd ci
-  npm.cmd test
-  npm.cmd run dev -- --host 127.0.0.1
-터미널에 표시되는 Local 주소로 접속해줘. 코드 편집은 dev 서버를 사용해. 최종 빌드는 npm.cmd run build, 빌드 미리보기는 npm.cmd run preview -- --host 127.0.0.1이야. Mac/Linux는 npm.cmd 대신 npm을 사용해. Windows에서 발표 시연만 할 때는 저장소 루트의 Start_FoldedVision.cmd를 더블클릭하면 설치·빌드·브라우저 열기를 진행해. node_modules, dist, .venv는 GitHub에 넣지 않고 새 PC에서 만들어.
+[최신 웹 상태와 다른 PC 실행 · 2026-11-27]
+웹은 sites/foldedvision-inspection/의 React 19.1.0 + Vite 6.4.6 기반 입고검사 관리실이야. 입고 LOT, 사진 등록, AI 제안, 담당자 최종 판정·재검, 이력·CSV, 품질 분석과 손실 시나리오를 구현했어. 업무 데이터와 예시 작업공간은 서버 DB에서 분리해. 사용자 요청에 따라 웹 업무 발표와 Unity 설비 구상 발표를 분리했고, 이전 웹 포트폴리오와 Three.js 체험은 /portfolio.html에 보존했어.
 
-3D는 금속 컨베이어, 광학 촬영 카메라와 링 조명, 유리 가드, 조작 패널, 상태등, Lens·Ring·PCB 형상, 분류 갠트리와 세 트레이를 구현했어. 전체/촬영부/분류부 시점이 단계에 따라 전환되고 드래그 회전·스크롤 확대도 돼. 투입 대기 → 이송 → 촬영 → 저장 결과 확인 → 분류 → 복귀를 네 사례에 반복해. 화면 밖과 백그라운드에서는 진행을 멈추며 동작 줄이기 설정에서는 정지 상태로 시작해. 일시정지·재생, 1×/2×, 초기화, 사례 선택, 직접 분류 모드가 있어.
+Node.js 22.13 이상이 필요하고 이번 검증은 Node.js 26.13.0이야. Windows에서는 Start_FoldedVision.cmd를 실행하거나 sites/foldedvision-inspection/에서 npm.cmd ci, npm.cmd test, npm.cmd run build, npm.cmd start를 실행해. 주소는 http://127.0.0.1:4173이야. 개발은 npm.cmd run dev를 사용하면 화면 5173과 API 8788이 함께 실행돼.
 
-네 시나리오는 PCB 납땜 과다 검출 → 분리, Lens 정상 구역 오검출 → 재검, Ring 오염 유형 오분류 → 재검, PCB2 정상 확인 → 통과야. 저장된 모델 결과와 정답을 이용한 시뮬레이션이지, 새 사진을 실시간 추론하거나 실제 설비를 제어하는 시스템은 아니야. Ring 유형 점수나 Lens 구역 점수를 정상/불량 확률로 바꾸지 말아줘.
+로컬 검사 기록은 .runtime/operations.sqlite, 사진은 .runtime/uploads/에 남아. 운영 데이터는 재생성 캐시로 지우면 안 돼. .runtime/client와 dist는 빌드 산출물이지만 같은 .runtime 안에 운영 DB와 사진이 있으므로 .runtime 전체를 일괄 정리하면 안 돼. 로컬 백업은 서버 종료 후 DB·사진을 함께 보관해. 실제 기록은 localStorage에 저장하지 않아.
+
+게시 웹은 같은 비공개 Site를 재사용하고 D1(DB), R2(BUCKET)에 데이터를 저장해. 로컬과 게시 DB는 자동 동기화하지 않아. .openai/hosting.json은 project_id=appgprj_6b039a2d1f5881919ddbc8acaf4588c1, d1="DB", r2="BUCKET"야. Worker 방식이므로 static 필드를 되살리지 마. Sites의 ChatGPT 로그인과 계정별 역할 검사를 사용하며 접근 대상을 바꾸지 않아. db/schema.js와 drizzle/의 실제 생성한 SQL·metadata를 보존하고, 적용된 마이그레이션은 수정하지 말고 새 파일을 추가해.
+
+실제 Ring 업로드 추론은 로컬에서 inference/app.py가 담당해. 프로젝트 .venv의 TensorFlow 환경과 models/quality_upgrade/vision_ring_encoder.keras, vision_ring_global_tiles_48_head.keras를 사용해. RGB uint8 0~255, 전체+부분 4개, 160×160이며 encoder 안에 Rescaling이 있어. 외부에서 /255를 추가하지 마. 항상 REVIEW, 유형 점수이며 정상·불량 확률이 아니야. 원본 000073.jpg의 실제 웹 추론 점수는 저장값과 약 1.08e-8 차이로 확인했어.
+
+PCB는 최종 가중치가 있지만 현재 TF 환경에 PyTorch·Ultralytics가 없어 별도 환경 준비가 필요하고, 최신 Lens YOLO 가중치는 아직 없어. 연결되지 않은 부품의 가상 추론 점수를 만들지 마. 사진 등록·사람 판정은 계속 사용할 수 있어. 게시 Worker는 Python 모델을 실행하지 않으므로 게시 웹에서 실제 AI 분석을 하려면 별도 HTTPS 추론 서버와 INFERENCE_URL, 필요한 INFERENCE_TOKEN 런타임 설정이 필요해. 토큰은 소스나 브라우저에 넣지 않아.
 
 수정 위치:
-  src/main.jsx: 메인 화면, 부품 소개·배경, 실제 사례, 지표, 개발 과정
-  src/styles.css / src/console.css: 밝은 전체 디자인, 3D 콘솔, 반응형 배치
-  src/FactoryScene.jsx: Three.js 모델·재질·조명·카메라·분류 동작
-  src/FactoryConsole.jsx: 재생 조작, 자동 시점, 평가 화면, 수동 분류와 기록
-  src/factoryTimeline.mjs: 자동 시연 시계와 상태 전환
-  src/factoryTimeline.test.mjs: 네 사례 반복, 일시정지·배속, 수동 경로, 초기화 테스트
-  src/projectData.js: 부품 설명, 네 공정 사례와 경로 정책
-  src/evidence.json / src/qualityResults.json: 기존 실제 평가 근거와 수치
-  public/evidence/: 실제 평가 이미지
-  public/visuals/inspection-parts.png / clean-inspection.png: 발표에서 가져온 AI 생성 콘셉트 이미지
-위 src/public 경로는 모두 sites/foldedvision-inspection/ 아래야. AI 생성 이미지를 실제 자화전자 제품이나 현장 사진으로 설명하지 말아줘.
+  src/business/App.jsx: 현황, LOT, 대기함, 이력, 품질 분석, 사용자 권한
+  src/business/Records.jsx: 사진 등록, 원본 확대·다운로드, AI 제안, 최종 판정
+  src/business/Finance.jsx: 3종 합산·13,000원 기본 시나리오와 저장
+  src/business/business.css: 데스크톱·모바일·인쇄 UI
+  server/api.mjs, server/domain.mjs: 권한·검증·저장·동시 수정·계산
+  scripts/local-server.mjs, scripts/local-store.mjs: 로컬 API·DB·사진·모델 프로세스
+  scripts/build.mjs, worker/index.mjs: Vite 화면과 API를 한 Worker로 포장
+  db/schema.js, drizzle/: DB 스키마와 마이그레이션
+  inference/app.py: 최신 Ring 추론 전용 어댑터
+  src/portfolio.jsx, portfolio.html: 이전 발표용 포트폴리오·3D 체험
 
-완료한 검증은 상태 전환 테스트 4개, 프로덕션 빌드, 콘솔 마크업 확인, 평가 이미지 30개 경로와 두 콘셉트 이미지, 로컬 HTTP 200 응답, 기존 평가 JSON 내용 보존이야. 브라우저 제어 서비스 연결 불가로 실제 데스크톱·모바일 화면과 WebGL 동작의 최종 시각 검수는 아직 못 했어. 다음 웹 작업에서는 먼저 브라우저로 밝은 테마, 이미지 비율, 글자 잘림, 모바일 가로 넘침, 카메라 전환, 네 사례 자동 반복, 정지·배속·초기화·수동 분류, 페이지 이동 후 재생, 콘솔 오류를 확인하고 관찰된 문제를 수정해줘. 테스트 통과를 시각 검수 완료로 표현하지 말아줘.
+10개 테스트를 통과했고, Chrome 1440px·390px에서 화면을 확인했어. LOT 등록 → 실제 원본 사진 업로드 → Ring 추론 → 불량·재검 변경 → 시나리오 저장을 브라우저에서 실행했어. 동시 수정 충돌, 조회자 쓰기 차단, 재시작 후 기록 보존, CSV 수식 차단, 업로드 실수량 제한, 중단된 분석 복구와 과거 AI 결과 보존도 확인했어. 기존 공정 시계 테스트 4개를 보존했지만 이번 작업에서 Unity나 이전 WebGL 화면을 새로 검증한 것은 아니야.
 
-게시된 웹 주소는 https://foldedvision-inspection.wholehaven1026.chatgpt.site 야. 기존 본인 전용 접근 설정을 유지했어. GitHub에는 로컬 편집 가능한 소스를 저장해. Sites 게시 소스는 별도 저장소이며 로컬 .cache의 작업 경로는 다른 PC에서 필요 없어. Sites로 다시 게시할 때는 해당 스킬을 읽고 .openai/hosting.json의 기존 project_id=appgprj_6b039a2d1f5881919ddbc8acaf4588c1과 static.directory=dist를 유지해. 새 사이트를 중복 생성하거나 접근 범위를 바꾸지 말아줘. 인증은 새 PC의 연결 도구에서 새로 받아야 하고 토큰을 파일에 저장하지 않아.
+게시 주소는 https://foldedvision-inspection.wholehaven1026.chatgpt.site 를 재사용해. Sites 소스 저장소와 GitHub는 별개야. 게시·검증 상태는 outputs/cleanup_records/business_web_2026-11-27/validation.json을 확인해. 수정 전 웹과 시작 CMD는 archive/2026-11-27_before_business_web/web_source.zip에 보존했어. 원본 노트북·모델·데이터·PPT·Unity 소스는 변경하지 않았어.
 
-현재 게시 성공 판본의 Sites 소스 커밋은 b2ef8e76f9d85a4dbc552d827ef1cf33aa5952f6, 배포 ID는 appgdep_6b04473d8dc4819187132cba3b29821c야. 이 커밋은 GitHub main의 커밋과 별개야. 원본 Windows PC에서는 Sites 포장 도구의 Node 자식 프로세스가 종료 코드 3221226505로 실패했고, 같은 소스를 서버에서 빌드해 게시에 성공했어. 새 PC에서는 우선 정상 포장 절차를 시도하고, 기존 실패를 웹 앱 코드 오류로 단정하지 말아줘.
 
 [모델과 데이터의 보존]
 
@@ -51,11 +51,11 @@ Ring 기준·최종 노트북은 notebooks/ring/에 있어. 이 폴더나 프로
 
 웹과 과거 추가 실험의 저장 수치는 src/qualityResults.json을 기준으로 해. Ring은 같은 테스트 42장의 유형 정확도 92.86%(39/42), Macro F1 0.8914야. 과거 Lens 추가 실험은 같은 3,410구역 AP 0.6681, Recall 92.40%, 정상 구역 오검출률 53.16%이며 최신 PPT 전이학습 결과와 구분해. VisA PCB1–3 사진 분류는 1,324장 AP 0.7846, F1 0.7136이야. PCB4 YOLO의 이미지 F1 93.02%와 서로 다른 실험이므로 합치지 말아줘. 이 문단의 src는 웹 프로젝트 아래야. 추가 실험 가중치는 Git에 포함되지 않으므로 새 PC에서 웹 수치를 읽는 것과 그 모델을 실제 추론하는 것은 구분해줘.
 
-현재 발표 기준은 outputs/presentation/FoldedVision_최종발표.pptx 50장이야. 공통 1–6, Lens 7–15, Ring 16–25, PCB 26–40, 종합·손실·결론 41–44, Unity 시각화와 내장 영상 45–50장이야. Ring 기준 CNN은 19–20장이고 학습 곡선은 Lens 12장, Ring 23장, PCB 36장이야. Ring 대본은 같은 폴더의 FoldedVision_Ring_발표대본_김현모.pdf야. 이전 PDF, 대본, 미리보기와 단독 발표본의 복원 위치는 원본 PC의 archive/2026-11-26_presentation_drafts.zip이야.
+이전 사용자 확정 발표는 archive/2026-11-27_user_final_45slides/의 45장이고, 38장 단독 교체본은 outputs/presentation/FoldedVision_38페이지_손실비교.pptx야. 기존 outputs/presentation/FoldedVision_최종발표.pptx 49장은 별도 보관본이야. 공통 1–6, Lens 7–15, Ring 16–24, PCB 25–39, 종합·손실·결론 40–43, Unity 시각화와 내장 영상 44–49장이야. Ring 기준 CNN은 18–19장이고 학습 곡선은 Lens 12장, Ring 22장, PCB 35장이야. Ring 23장은 최종 테스트 지표·두 혼동행렬·개선 사진을 모았어. Ring 대본은 같은 폴더의 FoldedVision_Ring_발표대본_김현모.pdf와 .txt이며 16–24장과 발표자 노트에 맞췄어. 이번 수정 전 PPT와 대본은 archive/2026-11-27_before_ring_consolidation/에 있어. 더 이전 PDF, 대본, 미리보기와 단독 발표본의 복원 위치는 원본 PC의 archive/2026-11-26_presentation_drafts.zip이야.
 
 최종 PPT의 15장은 VISION 렌즈 테스트 52장·3,410구역의 AP 0.419 → 0.808, 정상 구역 오검출률 65.4% → 25.1%, 불량 구역 Recall 95.2%를 제시해. 게시 웹의 Lens AP 0.6681 및 이전 46장 발표의 AP 0.843과 구분해줘.
 
-42–43장은 부품별 연 3,000만 개·불량률 2.3%·건당 손실 1,000원 가정이야. 카메라 커버의 별도 평가 결과를 사용하고, Ring은 결함 유형 정분류율 39/42를 가정 차단율로 대입했어. 이 사례들은 발표 본문의 광학 렌즈 구역 평가 및 실제 공정 검증과 구분해줘. 시연은 저장 결과와 가상 경로 동작을 구분하고, 최신 Lens 추론은 Unity에서 PENDING으로 표시해.
+이전 45장 발표의 실제 38번째 장은 부품별 연 3천만 개·25 ppm·불량 1개당 13,000원·3종 합산 가정이야. 검사 전 29,250,000원, 적용 후 1,287,000원, 회피 손실 27,963,000원이며 연 1억 개 확대 가정은 93,210,000원이야. Lens는 별도 카메라 커버 결과이고 Ring은 유형 정분류율을 차단율로 대입한 가정이라는 범위를 보존해. 실제 공정 차단율·절감 실적으로 설명하지 마. 웹의 계산 시나리오도 실제 업무 통계와 구분해. 기존 49장 보관본의 41–42장은 과거 가정이며 당시 38장을 그 수치로 되돌리지 마.
 
 발표 질문을 준비할 때는 outputs/presentation/공부자료/에 있는 Lens 9쪽, Ring 8쪽, PCB 8쪽 PDF를 열어줘. 실제 모델 설정과 오판 사례, 예상 질문, 답변과 계산 연습이 들어 있어.
 
@@ -66,3 +66,15 @@ Ring 기준·최종 노트북은 notebooks/ring/에 있어. 이 폴더나 프로
 Unity 시각화가 목표면 unity/My project/README.md를 먼저 읽어줘. Unity 6000.6.9f1, URP 17.6.0에서 만든 Assets/FoldedVision/Scenes/FoldedVisionFactory.unity를 Start_FoldedVision_Unity.cmd 또는 Tools → FoldedVision → Open Factory로 열고 Play를 눌러. Lens는 3D 모델과 설비만 제공하고, Ring은 저장 유형 결과로 REVIEW, PCB는 팀 PCB4 검증 임계값과 저장 예측으로 분류해. 가상 시연의 집계와 실제 테스트는 따로 표시해. 생성 메시와 프리팹을 그대로 보존하고, 장면 수정 전에는 기존 씬의 수동 편집을 확인해.
 
 이번에 진행할 작업: [여기에 이번 목표를 적기]
+
+[2026-11-27 Ring 여러 모델 비교 추가]
+
+MobileNet 선택 이유와 다른 모델의 실제 비교를 보완했어. 02 노트북 기존 69셀을 보존하고 마지막 20셀에 기본 off인 실험을 추가했어. 직접 CNN, MobileNetV2 폭 0.5/1.0, ResNet50, EfficientNetB0의 전체/부분 사진 9조건을 초기값 3개로 반복해 27회·419 epoch를 실제 학습했어. 전이학습 24회는 ImageNet 특징 추출부를 고정하고 분류층만 학습한 것이며 특징 추출부 미세조정으로 설명하지 마.
+
+이번 검증 평균으로 선정한 모델은 MobileNetV2 폭 1.0·전체 사진이야. 검증 F1 평균 0.6590964591, 고정 초기값 42 테스트 40/42 = 95.2381%, Macro F1 0.9320612406이야. 24 epoch 학습 후 17 epoch를 복원했어. 기존 92.86%는 폭 0.5·전체+부분·여러 층 특징을 사용한 별도 실험이야. 새 모델을 기존 웹·Unity에 연결하거나 PPT를 수정하지 않았어.
+
+결과는 outputs/ring_model_comparison/2026-11-27/REPORT.md, 3쪽 PDF, comparison_all.csv, 모델선정_설명과질문답변.txt에 있어. 코드와 실제 출력은 02 마지막 절이고 실행기는 outputs/cleanup_records/ring_model_comparison_2026-11-27/run_notebook.py야. .venv Python에서 all/report/verify를 실행할 수 있어. 같은 서명으로 완료된 학습은 재사용해. 원본 데이터·이전 모델·이전 결과를 덮어쓰지 마.
+
+새 가중치는 models/ring_model_comparison/2026-11-27/mobilenetv2_a10_encoder.keras와 mobilenetv2_a10_global_seed42.keras, 설정은 결과 폴더의 selected_model_config.json이야. 원본 RGB uint8 0..255 전체 사진을 160×160으로 만들며 encoder 안에서 공식 전처리를 해. 외부 /255나 기존 global_tiles head를 섞지 마. 추론은 마지막 절의 rbc_predict_selected(path), 상태는 항상 REVIEW야.
+
+새 ImageNet 가중치·출처·특징 캐시는 data/external/ring_model_comparison/2026-11-27/에 있어. 노트북·기억 문서의 변경 전 백업은 archive/2026-11-27_before_ring_model_comparison/이고, 실제 실행 로그와 최종 보존 검증은 outputs/cleanup_records/ring_model_comparison_2026-11-27/에 있어. 새 모델·출처·캐시·실험 결과도 보존 대상이야. 초기값 3회 반복은 교차검증이 아니며 기존 테스트 42장은 새 외부 검증으로 표현하지 마. 정상/불량 탐지율과 공정 차단율·절감액도 평가하지 않았어.

@@ -1,0 +1,21 @@
+{
+  "python": "3.11.9",
+  "tensorflow": "2.15.0",
+  "keras": "2.15.0",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "cpu": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+  "devices": [
+    "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+  ],
+  "intra_threads": 4,
+  "inter_threads": 2,
+  "op_determinism": true,
+  "onednn": "1",
+  "numpy": "1.26.4",
+  "opencv": "4.11.0",
+  "seeds": [
+    42,
+    123,
+    2026
+  ]
+}

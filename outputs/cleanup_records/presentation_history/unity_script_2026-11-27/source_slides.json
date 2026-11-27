@@ -1,0 +1,149 @@
+[
+  {
+    "actual_slide": 40,
+    "xml": "ppt/slides/slide40.xml",
+    "text": "UNITY  /   검사 셀 촬영부와 분류부를 떨어뜨린 이유 각 부품에 검사 위치를 두고 ,  결과가 정해진 뒤 하류의 갠트리에서 분류합니다 . 입고 · 이송 컨베이어를 따라 한 부품씩 이동시킵니다 . 정지 · 촬영 부품을 검사 위치에 멈추고 링 조명을 켭니다 . 분류 · 기록 결과가 뜨면 이송하고 ,  배치가 끝난 건만 집계합니다 . 자화전자  KDT  최종 프로젝트 45",
+    "relationships": [
+      {
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "../media/image40.png"
+      },
+      {
+        "Id": "rId2",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/notesSlide",
+        "Target": "../notesSlides/notesSlide40.xml"
+      },
+      {
+        "Id": "rId1",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "Target": "../slideLayouts/slideLayout7.xml"
+      }
+    ]
+  },
+  {
+    "actual_slide": 41,
+    "xml": "ppt/slides/slide41.xml",
+    "text": "UNITY  /   공정 단계 이송 → 정지 · 촬영 → 결과 확인 같은 검사 위치에서 사진을 확인하고 ,  결과가 표시되면 부품을 분류 구간으로 보냅니다 . 01   이송 컨베이어가 부품을 카메라 아래 검사 위치까지 보냅니다 . 02   정지 · 촬영 스토퍼 위치와 조명으로 검사 중인 상태를 보여줍니다 . 03   결과 확인 저장된 원본 사진 ,  결함 유형 ,  분류 경로를 표시합니다 . 전이학습  Ring  사례에서는 유형을 화면에 표시하고 작업자 재검으로 보냅니다 . 자화전자  KDT  최종 프로젝트 46",
+    "relationships": [
+      {
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "../media/image41.jpeg"
+      },
+      {
+        "Id": "rId2",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/notesSlide",
+        "Target": "../notesSlides/notesSlide41.xml"
+      },
+      {
+        "Id": "rId1",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "Target": "../slideLayouts/slideLayout7.xml"
+      },
+      {
+        "Id": "rId5",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "../media/image43.png"
+      },
+      {
+        "Id": "rId4",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "../media/image42.png"
+      }
+    ]
+  },
+  {
+    "actual_slide": 42,
+    "xml": "ppt/slides/slide42.xml",
+    "text": "UNITY  /   분류 장치 판정이 바뀌면 목적지가 바뀝니다 갠트리가 부품을 들어 올려 정해진 경로에 놓고 ,  완료된 이동을 기록합니다 . PASS   통과 제조로 이어지는 통과 경로 NG   격리 불량으로 판정된 부품의 격리 트레이 REVIEW   재검 작업자의 추가 확인이 필요한 트레이 하강 → 집기 → 들어 올리기 → 목적지 이동 → 놓기 자화전자  KDT  최종 프로젝트 47",
+    "relationships": [
+      {
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "../media/image44.jpeg"
+      },
+      {
+        "Id": "rId2",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/notesSlide",
+        "Target": "../notesSlides/notesSlide42.xml"
+      },
+      {
+        "Id": "rId1",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "Target": "../slideLayouts/slideLayout7.xml"
+      }
+    ]
+  },
+  {
+    "actual_slide": 43,
+    "xml": "ppt/slides/slide43.xml",
+    "text": "UNITY  /   부품별 판정 Lens·Ring·PCB 는 근거가 다릅니다 각 부품의 실험이 제공하는 정보에 맞춰 화면과 분류 정책을 정리했습니다 . 부품 시연에서 읽는 근거 공정에서의 표시 Lens 광학 모듈과 검사기  3D  형상 PENDING ·  설비 소개 Ring VISION Ring  결함 유형과 분류 점수 REVIEW ·  사람 재검 PCB PCB4  검출 박스 ,  최고 점수 ,  운영 기준 PASS  또는  NG ·  자동 분기 PCB4 ·  검사 기준  0.10296 0.06187  /   정상 →  PASS good_097.jpg 0.30890  /   불량 →  NG component_damage_007.jpg 0.16728  /   정상 →  NG ·  오검출 good_005.jpg 자화전자  KDT  최종 프로젝트 48",
+    "relationships": [
+      {
+        "Id": "rId2",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/notesSlide",
+        "Target": "../notesSlides/notesSlide43.xml"
+      },
+      {
+        "Id": "rId1",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "Target": "../slideLayouts/slideLayout7.xml"
+      }
+    ]
+  },
+  {
+    "actual_slide": 44,
+    "xml": "ppt/slides/slide44.xml",
+    "text": "UNITY  /   표시 기준 저장 결과와 가상 시연을 나눴습니다 어떤 화면이 실제 평가 기록을 사용하고 ,  어떤 화면이 동작 예시인지 표시합니다 . 저장 결과 모드 테스트 사진 · 판정 · 점수 · 박스를 표시 실험에서 나온 오검출도 그대로 재생 가상 시연 모드 PASS·NG·REVIEW  경로의 동작을 비교 화면에 가상 검사 결과라고 표시 자화전자  KDT  최종 프로젝트 49",
+    "relationships": [
+      {
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "../media/image45.png"
+      },
+      {
+        "Id": "rId2",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/notesSlide",
+        "Target": "../notesSlides/notesSlide44.xml"
+      },
+      {
+        "Id": "rId1",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "Target": "../slideLayouts/slideLayout7.xml"
+      },
+      {
+        "Id": "rId4",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "../media/image46.png"
+      }
+    ]
+  },
+  {
+    "actual_slide": 45,
+    "xml": "ppt/slides/slide45.xml",
+    "text": "",
+    "relationships": [
+      {
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "Target": "../slideLayouts/slideLayout7.xml"
+      },
+      {
+        "Id": "rId2",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/video",
+        "Target": "../media/media1.mp4"
+      },
+      {
+        "Id": "rId1",
+        "Type": "http://schemas.microsoft.com/office/2007/relationships/media",
+        "Target": "../media/media1.mp4"
+      },
+      {
+        "Id": "rId4",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "../media/image47.png"
+      }
+    ]
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "run_id": "resnet50_global_seed2026",
+  "model_id": "resnet50",
+  "view": "global",
+  "seed": 2026,
+  "signature": {
+    "protocol": "ba6f37a75b01f36a50a8856ea8c02ed94a883b785e26eaee998931e75c2c8421",
+    "manifest": "eccec0163730bf19fe48207684d06fe9dc8d5839a38b3b5776335b7cd9d7539f",
+    "model_id": "resnet50",
+    "view": "global",
+    "seed": 2026,
+    "pretrained_weights": "66c8b43daff3fcc15bc4f30e3d2a167e21a14d9c9598a5394e5516471f4af504"
+  },
+  "selection_lock_sha256": "b5f8762af569c34cdc3b23fb439ab7647ec58aae3193d4b970c5db12a4d23691",
+  "evaluated_at": "2026-11-27T07:25:07.463886+00:00",
+  "test": {
+    "n": 42,
+    "correct": 38,
+    "accuracy": 0.9047619047619048,
+    "macro_f1": 0.8376068376068376,
+    "confusion": [
+      [
+        11,
+        0,
+        4
+      ],
+      [
+        0,
+        23,
+        0
+      ],
+      [
+        0,
+        0,
+        4
+      ]
+    ],
+    "per_class": {
+      "t_contamination": {
+        "precision": 1.0,
+        "recall": 0.7333333333333333,
+        "f1-score": 0.8461538461538461,
+        "support": 15.0
+      },
+      "t_scratch": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 23.0
+      },
+      "unfinished_surface": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1-score": 0.6666666666666666,
+        "support": 4.0
+      },
+      "accuracy": 0.9047619047619048,
+      "macro avg": {
+        "precision": 0.8333333333333334,
+        "recall": 0.9111111111111111,
+        "f1-score": 0.8376068376068376,
+        "support": 42.0
+      },
+      "weighted avg": {
+        "precision": 0.9523809523809523,
+        "recall": 0.9047619047619048,
+        "f1-score": 0.9133089133089133,
+        "support": 42.0
+      }
+    }
+  },
+  "predictions": "outputs/ring_model_comparison/2026-11-27/predictions/resnet50_global_seed2026_test.csv",
+  "predictions_sha256": "2e984216eacdb80704a180a1094c5ea2234c883078ac5264d6d926202ffc45c8",
+  "historical_test_reused": true
+}

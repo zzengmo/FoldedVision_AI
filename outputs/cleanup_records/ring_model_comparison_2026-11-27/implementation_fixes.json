@@ -1,0 +1,8 @@
+{
+  "before_training": true,
+  "model_scores_seen": false,
+  "fixes": [
+    "Keras 2.15 ResNet symbolic preprocessing serialization: replace Ellipsis channel reversal with mathematically equivalent gather and fixed mean centering; verify numerical equality.",
+    "Bind the Keras 2.15 weight cache to the workspace explicitly; verify source hashes."
+  ]
+}
